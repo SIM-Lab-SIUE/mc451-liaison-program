@@ -11,6 +11,7 @@ website:
     - title: "The Mission"
       contents:
         - index.qmd
+        - about.qmd
         - syllabus.qmd
     - title: "Phase 1: Orientation"
       contents:

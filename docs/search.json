@@ -385,6 +385,76 @@
     "text": "Q: GitHub Pages shows 404 - Make sure you selected /_site folder (not root) - Wait 3-5 minutes for the first build - Check Settings → Pages for build status\nQ: Push failed - authentication error - You may need to set up a Personal Access Token - Go to GitHub Settings → Developer settings → Personal access tokens - Create token with repo scope - Use token as password when pushing\nQ: Resource files (Liaison_Vault.zip) not showing - The .gitignore should NOT exclude resources/ - Check that resources/Liaison_Vault.zip was committed - Run: git ls-files resources/ to verify\n\nReady to go! Create the repository on GitHub, then run the push commands above. 🚀"
   },
   {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About Dr. Leith",
+    "section": "",
+    "text": "Associate Professor & Director, SIM Lab\nDepartment of Mass Communications\nSouthern Illinois University Edwardsville",
+    "crumbs": [
+      "About Dr. Leith"
+    ]
+  },
+  {
+    "objectID": "about.html#alex-p.-leith-phd",
+    "href": "about.html#alex-p.-leith-phd",
+    "title": "About Dr. Leith",
+    "section": "",
+    "text": "Associate Professor & Director, SIM Lab\nDepartment of Mass Communications\nSouthern Illinois University Edwardsville",
+    "crumbs": [
+      "About Dr. Leith"
+    ]
+  },
+  {
+    "objectID": "about.html#background",
+    "href": "about.html#background",
+    "title": "About Dr. Leith",
+    "section": "Background",
+    "text": "Background\nI’m an Associate Professor of Mass Communications at SIUE, where I direct the Social Interaction & Media Lab (SIM Lab). My research focuses on how people communicate, connect, and collaborate through digital platforms—from video games and streaming to virtual reality and remote work environments.\nBefore joining SIUE, I completed my PhD in Information and Media at Michigan State University, where I studied gameplay livestreaming and how audiences build relationships with streamers. My master’s degree in Speech Communication from SIUE examined parasocial relationships on social media platforms like Facebook.",
+    "crumbs": [
+      "About Dr. Leith"
+    ]
+  },
+  {
+    "objectID": "about.html#research-interests",
+    "href": "about.html#research-interests",
+    "title": "About Dr. Leith",
+    "section": "Research Interests",
+    "text": "Research Interests\nMy current work explores:\n\nVirtual Communication: How people interact, experience fatigue, and find authentic connection in virtual meetings and VR spaces\nGaming & Media: The psychology of gameplay, streaming, and how games shape communication and identity\nRemote Work & Education: Supporting wellbeing and equity in virtual classrooms and distributed teams\nData & Communication: Using computational methods to understand media consumption and online behavior",
+    "crumbs": [
+      "About Dr. Leith"
+    ]
+  },
+  {
+    "objectID": "about.html#teaching-philosophy",
+    "href": "about.html#teaching-philosophy",
+    "title": "About Dr. Leith",
+    "section": "Teaching Philosophy",
+    "text": "Teaching Philosophy\nI believe the best research methods courses empower students to ask good questions before worrying about technical answers. This course is structured around the idea that you’re a Communication Liaison—someone who bridges data science and creative thinking.\nI’m committed to: - Making research methods accessible (not just for math people) - Using real data and meaningful projects - Supporting diverse learning styles and backgrounds - Building a collaborative, judgment-free classroom",
+    "crumbs": [
+      "About Dr. Leith"
+    ]
+  },
+  {
+    "objectID": "about.html#current-projects",
+    "href": "about.html#current-projects",
+    "title": "About Dr. Leith",
+    "section": "Current Projects",
+    "text": "Current Projects\nSIM Lab focuses on: - Improving equity and wellbeing in virtual classrooms - Understanding play and professionalism in remote environments\n- Designing AI-enhanced tools for better virtual interaction - Building open-source resources for communication research\nYou can find more at: - Web: apleith.github.io - GitHub: github.com/apleith - ORCID: 0000-0003-1310-6763",
+    "crumbs": [
+      "About Dr. Leith"
+    ]
+  },
+  {
+    "objectID": "about.html#connect",
+    "href": "about.html#connect",
+    "title": "About Dr. Leith",
+    "section": "Connect",
+    "text": "Connect\nEmail: aleith@siue.edu\nOffice Hours: MW 10:00-11:30 AM and 1:30-3:00 PM (or by appointment)\nFeel free to stop by or email questions about the course, research methods, media and communication, or anything else on your mind!",
+    "crumbs": [
+      "About Dr. Leith"
+    ]
+  },
+  {
     "objectID": "DEPLOYMENT.html",
     "href": "DEPLOYMENT.html",
     "title": "Deployment Guide",

@@ -1,0 +1,63 @@
+---
+title: "About Dr. Leith"
+---
+
+## Alex P. Leith, PhD
+**Associate Professor & Director, SIM Lab**  
+Department of Mass Communications  
+Southern Illinois University Edwardsville
+
+---
+
+## Background
+
+I'm an Associate Professor of Mass Communications at SIUE, where I direct the Social Interaction & Media Lab (SIM Lab). My research focuses on how people communicate, connect, and collaborate through digital platforms—from video games and streaming to virtual reality and remote work environments.
+
+Before joining SIUE, I completed my PhD in Information and Media at Michigan State University, where I studied gameplay livestreaming and how audiences build relationships with streamers. My master's degree in Speech Communication from SIUE examined parasocial relationships on social media platforms like Facebook.
+
+---
+
+## Research Interests
+
+My current work explores:
+
+- **Virtual Communication**: How people interact, experience fatigue, and find authentic connection in virtual meetings and VR spaces
+- **Gaming & Media**: The psychology of gameplay, streaming, and how games shape communication and identity
+- **Remote Work & Education**: Supporting wellbeing and equity in virtual classrooms and distributed teams
+- **Data & Communication**: Using computational methods to understand media consumption and online behavior
+
+---
+
+## Teaching Philosophy
+
+I believe the best research methods courses empower students to ask *good questions* before worrying about technical answers. This course is structured around the idea that you're a **Communication Liaison**—someone who bridges data science and creative thinking.
+
+I'm committed to:
+- Making research methods accessible (not just for math people)
+- Using real data and meaningful projects
+- Supporting diverse learning styles and backgrounds
+- Building a collaborative, judgment-free classroom
+
+---
+
+## Current Projects
+
+**SIM Lab** focuses on:
+- Improving equity and wellbeing in virtual classrooms
+- Understanding play and professionalism in remote environments  
+- Designing AI-enhanced tools for better virtual interaction
+- Building open-source resources for communication research
+
+You can find more at:
+- **Web**: [apleith.github.io](https://apleith.github.io)
+- **GitHub**: [github.com/apleith](https://github.com/apleith)
+- **ORCID**: [0000-0003-1310-6763](https://orcid.org/0000-0003-1310-6763)
+
+---
+
+## Connect
+
+**Email**: aleith@siue.edu  
+**Office Hours**: MW 10:00-11:30 AM and 1:30-3:00 PM (or by appointment)
+
+Feel free to stop by or email questions about the course, research methods, media and communication, or anything else on your mind!
