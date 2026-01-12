@@ -1,0 +1,56 @@
+---
+title: "Course Syllabus"
+---
+
+## MC 451: Research Methods for Mass Communications
+### Spring 2026
+
+---
+
+## Course Overview
+
+This course equips you with research methodologies, tools, and frameworks to excel as a **Communication Liaison**—bridging data scientists and creative teams. Over 17 weeks across five phases, you'll develop skills to navigate data-driven projects while maintaining clear communication with all stakeholders.
+
+---
+
+## Essential Information
+
+| Item | Details |
+|------|---------|
+| **Instructor** | Alex P. Leith, PhD |
+| **Meeting Time** | Monday & Wednesday, 3:00–4:15 PM |
+| **Office Hours** | MW 10:00–11:30 AM and 1:30–3:00 PM (or by appointment) |
+| **Email** | aleith@siue.edu |
+| **Course Website** | https://sim-lab-siue.github.io/mc451-liaison-program/ |
+
+---
+
+## Complete Syllabus
+
+For full course details including learning objectives, grading policies, assignments, course schedule, and university policies, download the complete syllabus:
+
+[📄 Download Full Syllabus (PDF)](MC451-Syllabus-2026Spring.pdf){.btn .btn-primary}
+
+---
+
+## Quick Reference
+
+### Course Structure: Five Phases
+
+1. **Phase 1: Orientation** — Understand your role and set up your workspace
+2. **Phase 2: Discovery** — Learn research methodologies and ask the right questions
+3. **Phase 3: The Dictionary** — Master codebook creation and variable definition
+4. **Phase 4: Execution** — Apply what you've learned to real projects
+5. **Phase 5: Delivery** — Present findings and communicate impact
+
+### Key Resources
+
+- **Liaison Obsidian Vault** — Download on the [Resources](resources/) page
+- **Weekly Journal Template** — Included in vault; guidance on the Resources page
+- **Data Dictionary Template** — Included in vault for Week 8–10 projects
+
+### Getting Help
+
+- **Office hours**: Stop by anytime during posted hours or schedule an appointment
+- **Email**: Send questions to aleith@siue.edu
+- **Course site**: Check the sidebar for Phase-specific materials and guidance
