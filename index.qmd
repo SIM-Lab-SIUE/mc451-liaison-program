@@ -49,10 +49,11 @@ Each phase builds on the previous one. Start with Phase 1 in the sidebar.
 
 ## Course Information
 
-- **Instructor**: [Your Name]
-- **Meeting Time**: [Your Schedule]
-- **Office Hours**: [Your Availability]
-- **Questions?** See the syllabus for contact information
+- **Instructor**: Alex P. Leith, PhD
+- **Meeting Time**: MW 15:00-16:15
+- **Office Hours**: MW 10:00-11:30 and 13:30-15:00
+- **Course Syllabus**: [Download PDF](MC451-Syllabus-2026Spring.pdf){.btn .btn-sm .btn-outline-secondary}
+- **Questions?** See the syllabus for contact information and course details
 
 ---
 
