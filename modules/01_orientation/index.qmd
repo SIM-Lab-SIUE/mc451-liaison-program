@@ -1,0 +1,110 @@
+---
+title: "Phase 1: Orientation"
+---
+
+## Welcome to Phase 1: Orientation
+
+In this phase, you'll:
+- Understand your role as a Communication Liaison
+- Set up your digital workspace
+- Learn the program structure
+- Get familiar with Obsidian and your vault
+
+---
+
+## What is a Communication Liaison?
+
+*Edit this section with your course context and examples.*
+
+A Communication Liaison bridges the gap between:
+- **Data scientists** who understand the numbers
+- **Creative teams** who understand the audience
+- **Project stakeholders** who understand the goals
+
+Your job is to translate, facilitate, and document.
+
+---
+
+## The Five-Phase Journey
+
+```
+Phase 1 → Phase 2 → Phase 3 → Phase 4 → Phase 5
+Orientation Discovery Dictionary Execution Delivery
+```
+
+Each phase builds skills you'll use throughout your career.
+
+---
+
+## Activities for Phase 1
+
+### Activity 1: Complete Your Setup (Homework)
+1. Go to the Resources page and download Liaison_Vault.zip
+2. Follow the Setup Guide step-by-step
+3. Configure your Obsidian vault
+4. Open your 00_START_HERE.md file
+
+**Due**: Before our next meeting
+
+### Activity 2: Explore Your Vault (In Class)
+1. Open your Liaison_Vault in Obsidian
+2. Create a file in `00_Inbox` named `First_Reflection.md`
+3. Write 3-5 sentences about what you hope to learn this semester
+
+### Activity 3: Vault Navigation Tour (Self-Paced)
+Navigate through each folder and understand:
+- What goes in each folder
+- How folders connect to each other
+- Why the structure matters for your thinking
+
+---
+
+## Key Concepts
+
+### The Liaison Mindset
+- **Translate**: Turn jargon into clarity
+- **Facilitate**: Help people understand each other
+- **Document**: Create records for future reference
+- **Guide**: Lead projects toward success
+
+### Tools You'll Use
+- **Obsidian** - Your personal knowledge system
+- **GitHub** - Version control and collaboration
+- **Quarto** - Documentation and reporting
+- **Data tools** - R, Python, Excel (in later phases)
+
+---
+
+## Reflection Prompt
+
+Before moving to Phase 2, write a journal entry in `01_Journal/` answering:
+
+*"What does it mean to be a Communication Liaison in my field? Who do I need to bridge gaps between?"*
+
+Use one of the three thinking paths:
+1. **The Connector** - How does this relate to what I already know?
+2. **The Troubleshooter** - What challenges might I face?
+3. **The Critic** - Does this resonate with my experience?
+
+---
+
+## Resources for This Phase
+
+- 📖 [Your course readings - add links here]
+- 🎥 [Your video tutorials - add links here]
+- 📝 [Your lecture slides - add links here]
+- 🔗 [External resources - add links here]
+
+---
+
+## Next Steps
+
+Once you complete Phase 1:
+1. ✅ Vault is set up and configured
+2. ✅ You've explored all folders
+3. ✅ You've written your first journal reflection
+4. → Move to **Phase 2: Discovery**
+
+---
+
+**Questions?** Use your Inbox in Obsidian or reach out during office hours.

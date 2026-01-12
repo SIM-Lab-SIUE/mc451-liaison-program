@@ -1,0 +1,57 @@
+---
+title: "Resources & Downloads"
+---
+
+## Essential Downloads
+
+### Liaison Obsidian Vault
+
+Your complete knowledge management system for the Liaison Program. This vault includes:
+
+- **00_Inbox**: Quick capture area for notes and ideas
+- **01_Journal**: Weekly reflection templates (Connector/Troubleshooter/Critic)
+- **02_Literature**: Centralized space for reading notes and citations
+- **03_Project**: Active research work with codebooks and data organization
+- **04_Resources**: Attachment storage for images, PDFs, and media
+- **99_Templates**: Ready-to-use templates for assignments and documentation
+
+**[📥 Download Liaison_Vault.zip](Liaison_Vault.zip)** - Extract this to get started immediately.
+
+---
+
+## Software & Tools
+
+Before starting Phase 1, ensure you have these installed:
+
+### Required
+- **[Obsidian](https://obsidian.md/)** - FREE - Your note-taking workspace
+- **[Git](https://git-scm.com/)** - FREE - Version control for your projects
+- **[VS Code](https://code.visualstudio.com/)** - FREE - Code editor
+
+### Recommended
+- **[Python 3.10+](https://www.python.org/)** - FREE - For data analysis and automation
+- **[R & RStudio](https://posit.co/products/open-source/rstudio/)** - FREE - Statistical analysis
+
+---
+
+## Documentation & Guides
+
+### Quick Start
+- [Setting up your Obsidian Vault](#setup) - 5 minutes
+- [Understanding the Liaison Program Structure](#program-structure) - 10 minutes
+
+### Templates Available in Your Vault
+- **Weekly Journal Template** - For reflective practice with three thinking paths
+- **Data Dictionary Template** - For codebook creation and variable definition
+
+---
+
+## Getting Help
+
+- **Questions about the program?** Check your module's orientation page
+- **Technical issues?** Review the Software & Tools section above
+- **Need to provide feedback?** Use the Inbox in your Obsidian Vault
+
+---
+
+Last updated: January 2026

@@ -1,0 +1,59 @@
+---
+title: "Welcome to the Data Team"
+---
+
+## Your Role as a Communication Liaison
+
+Welcome! As a **Communication Liaison**, you are the vital bridge between our data scientists and creative teams. Your role is to:
+
+- **Translate** complex data concepts into clear, actionable insights
+- **Facilitate** collaboration between technical and creative professionals
+- **Document** findings and processes for team understanding
+- **Guide** projects from discovery through delivery
+
+This program is designed to equip you with the research methodologies, tools, and frameworks you need to excel in this unique position. Over five phases, you'll develop the skills to navigate data-driven projects while maintaining clear communication across all stakeholders.
+
+---
+
+## Quick Start
+
+Ready to begin your journey? Start with our setup guide to configure your workspace and understand the program structure.
+
+[**→ Get Started**](setup.qmd){.btn .btn-primary .btn-lg}
+
+---
+
+## Essential Resources
+
+Download the **Liaison Obsidian Vault** — your complete knowledge management system with templates, structure, and documentation to succeed in this program.
+
+[**→ Download Liaison_Vault.zip**](resources/Liaison_Vault.zip){.btn .btn-secondary .btn-lg}
+
+Or visit the [Resources page](resources/) to see what's included and other helpful downloads.
+
+---
+
+## The Five Phases
+
+This program is structured in five interconnected phases:
+
+1. **Phase 1: Orientation** - Understand your role, the program structure, and set up your workspace
+2. **Phase 2: Discovery** - Learn research methodologies and how to ask the right questions
+3. **Phase 3: The Dictionary** - Master codebook creation and variable definition
+4. **Phase 4: Execution** - Apply what you've learned to real projects
+5. **Phase 5: Delivery** - Present findings and communicate impact
+
+Each phase builds on the previous one. Start with Phase 1 in the sidebar.
+
+---
+
+## Course Information
+
+- **Instructor**: [Your Name]
+- **Meeting Time**: [Your Schedule]
+- **Office Hours**: [Your Availability]
+- **Questions?** See the syllabus for contact information
+
+---
+
+Let's get to work and build something great together!

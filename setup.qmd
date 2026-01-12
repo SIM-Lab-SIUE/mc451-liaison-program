@@ -1,0 +1,92 @@
+---
+title: "Getting Started"
+---
+
+## Welcome to the Liaison Program
+
+This page will guide you through your initial setup. Complete these steps before Phase 1.
+
+---
+
+## Step 1: Download Your Workspace (5 minutes)
+
+Visit the **[Resources page](resources/)** and download the `Liaison_Vault.zip` file.
+
+Extract it to a location like:
+- **Mac/Linux**: `~/Documents/Liaison_Vault`
+- **Windows**: `C:\Users\YourName\Documents\Liaison_Vault`
+
+---
+
+## Step 2: Install Obsidian (5 minutes)
+
+1. Go to [obsidian.md](https://obsidian.md/) and download Obsidian
+2. Install it on your computer
+3. Open Obsidian and select **"Open folder as vault"**
+4. Navigate to your `Liaison_Vault` folder and open it
+
+**First time in Obsidian?**
+- Click the folder icon on the left sidebar to see your vault structure
+- Open `00_START_HERE.md` to read your orientation guide
+
+---
+
+## Step 3: Configure Obsidian Settings (3 minutes)
+
+Once your vault is open in Obsidian:
+
+1. Go to **Settings** (gear icon, bottom left)
+2. Click **Files & Links** in the sidebar
+3. Under "Default location for new attachments", select **04_Resources**
+4. This ensures all images, PDFs, and media files go to the right place
+
+---
+
+## Step 4: Explore Your Vault Structure
+
+Your vault contains:
+
+| Folder | Purpose | Action |
+|--------|---------|--------|
+| **00_Inbox** | Quick notes & ideas | Capture thoughts here first |
+| **01_Journal** | Weekly reflections | Use the template to reflect each week |
+| **02_Literature** | Reading notes | Store all your research notes here |
+| **03_Project** | Active research work | Organize by prospectus, codebook, data, drafts |
+| **04_Resources** | Media & attachments | Images, PDFs, external files |
+| **99_Templates** | Reusable templates | Copy these to start assignments |
+
+---
+
+## Step 5: Review the Weekly Journal Template (5 minutes)
+
+Open **99_Templates** → **Weekly_Journal_Template.md**
+
+This template guides you to reflect using one of three thinking paths:
+- **The Connector**: How does this apply to my project?
+- **The Troubleshooter**: What broke and how did I fix it?
+- **The Critic**: Does this hold true in my experience?
+
+---
+
+## Step 6: You're Ready!
+
+Once you complete these steps, move to **Phase 1: Orientation** in the sidebar to begin.
+
+---
+
+## Troubleshooting
+
+**Q: I extracted the ZIP file but Obsidian won't open it as a vault**
+- Make sure you're opening the folder that contains the `.obsidian` hidden folder
+- Try right-clicking the folder and checking "Show hidden files" if needed
+
+**Q: Where do I put my weekly journal entries?**
+- Create a new file in `01_Journal` named something like `Week_01_MyName.md`
+- Copy the template from `99_Templates/Weekly_Journal_Template.md` and fill it out
+
+**Q: Can I share my vault with classmates?**
+- Yes! You can email them the ZIP file, or sync it via Git/GitHub for collaborative projects
+
+---
+
+**Questions?** Reach out via your course management system or check your course syllabus for contact information.

@@ -1,0 +1,38 @@
+project:
+  type: website
+  title: "MC Research Methods: The Liaison Program"
+  output-dir: _site
+
+website:
+  title: "MC Research Methods: The Liaison Program"
+  navbar:
+    background: primary
+  sidebar:
+    - title: "The Mission"
+      contents:
+        - index.qmd
+        - syllabus.qmd
+    - title: "Phase 1: Orientation"
+      contents:
+        - modules/01_orientation/index.qmd
+    - title: "Phase 2: Discovery"
+      contents:
+        - modules/02_discovery/index.qmd
+    - title: "Phase 3: The Dictionary"
+      contents:
+        - modules/03_dictionary/index.qmd
+    - title: "Phase 4: Execution"
+      contents:
+        - modules/04_execution/index.qmd
+    - title: "Phase 5: Delivery"
+      contents:
+        - modules/05_delivery/index.qmd
+    - title: "Resources"
+      contents:
+        - resources/index.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    code-fold: false
