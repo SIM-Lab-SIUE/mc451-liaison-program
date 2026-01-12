@@ -132,10 +132,15 @@ def zip_vault():
     vault_path = Path("Liaison_Vault")
     output_path = "Liaison_Vault"
     
-    # Create zip file
-    shutil.make_archive(output_path, "zip", ".", "Liaison_Vault")
+    # Create zip file - zip the contents directly without the outer folder
+    shutil.make_archive(output_path, "zip", vault_path)
+    
+    # Copy to resources folder for website deployment
+    resources_path = Path("resources") / "Liaison_Vault.zip"
+    shutil.copy2("Liaison_Vault.zip", resources_path)
     
     print("Vault creation complete")
+    print(f"ZIP copied to {resources_path}")
 
 
 if __name__ == "__main__":

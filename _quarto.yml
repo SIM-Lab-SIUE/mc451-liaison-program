@@ -16,6 +16,7 @@ website:
     - title: "Phase 1: Orientation"
       contents:
         - modules/01_orientation/index.qmd
+        - modules/01_orientation/chapter_01.qmd
     - title: "Phase 2: Discovery"
       contents:
         - modules/02_discovery/index.qmd
