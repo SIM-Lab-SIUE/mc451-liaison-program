@@ -1,5 +1,4 @@
-# Quarto build outputs
-_site/
+# Quarto build outputs (keep docs/ for GitHub Pages)
 .quarto/
 
 # Python
@@ -40,6 +39,3 @@ Thumbs.db
 *.tmp
 *.bak
 *.log
-
-# Don't ignore the Liaison_Vault folder (we want to keep it in repo)
-!Liaison_Vault/

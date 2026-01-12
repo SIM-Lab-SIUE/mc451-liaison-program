@@ -1,7 +1,7 @@
 project:
   type: website
   title: "MC Research Methods: The Liaison Program"
-  output-dir: _site
+  output-dir: docs
 
 website:
   title: "MC Research Methods: The Liaison Program"

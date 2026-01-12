@@ -1,0 +1,685 @@
+[
+  {
+    "objectID": "START_HERE.html",
+    "href": "START_HERE.html",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "You now have a professional, production-ready student resource website with everything students need to succeed in your Liaison Program course.\n\n\n\n\n\n\n\nHome page with course overview\nGetting started guide for students\nResources hub with downloads\nFive course modules (Orientation through Delivery)\nBuilt-in search functionality\nMobile-responsive design\nReady to deploy in 15 minutes\n\n\n\n\n\nPre-configured folder structure\n6 main directories + 4 project subdirectories\nWelcome/orientation file (00_START_HERE.md)\nWeekly Journal Template (Connector/Troubleshooter/Critic)\nData Dictionary Template (for codebook creation)\nAll folders include .gitkeep files for Git tracking\n\n\n\n\n\nREADME.md - Project overview and next steps\nQUICK_START.md - Visual reference guide\nDEPLOYMENT.md - Detailed deployment instructions\nsetup.qmd - Student setup guide (live on website)\nresources/index.qmd - Resources page (live on website)\n\n\n\n\n\nPhase 1: Orientation module with activities\nClear instructions for each phase\nReflection prompts using three thinking paths\nTemplate links and resource organization\n\n\n\n\n\n\nquarto_website/\n│\n├── Core Website Files\n│   ├── _quarto.yml              ← Site configuration\n│   ├── index.qmd                ← Home page\n│   ├── setup.qmd                ← Student setup guide\n│   ├── syllabus.qmd             ← Your course syllabus (add content)\n│   │\n├── Content Folders\n│   ├── modules/\n│   │   ├── 01_orientation/      ← Phase 1 (has example content)\n│   │   ├── 02_discovery/        ← Phase 2 (add content)\n│   │   ├── 03_dictionary/       ← Phase 3 (add content)\n│   │   ├── 04_execution/        ← Phase 4 (add content)\n│   │   └── 05_delivery/         ← Phase 5 (add content)\n│   │\n│   ├── resources/\n│   │   ├── index.qmd            ← Resources page\n│   │   └── Liaison_Vault.zip    ← Student download\n│   │\n│   ├── assignments/             ← For assignment details (optional)\n│   └── slides/                  ← For lecture slides (optional)\n│\n├── Student Resources\n│   ├── Liaison_Vault/           ← Pre-built vault folder\n│   └── Liaison_Vault.zip        ← Zipped for download\n│\n├── Built Website\n│   └── _site/                   ← HTML ready to deploy\n│\n└── Documentation\n    ├── README.md                ← This overview\n    ├── QUICK_START.md           ← Quick reference\n    ├── DEPLOYMENT.md            ← Deployment guide\n    └── build_vault.py           ← Script that created vault\n\n\n\n\n\n\n\n\nEdit index.qmd - Add your name, meeting time, office hours\nCreate syllabus.qmd - Your course syllabus\nEdit modules/01_orientation/index.qmd - Add orientation content\n\n\n\n\nPick ONE option and follow DEPLOYMENT.md:\n\n\n\nOption\nTime\nBest For\n\n\n\n\nGitHub Pages ⭐\n15 min\nEasy updates, free\n\n\nNetlify\n10 min\nExtra features, automatic\n\n\nUniversity Server\n30 min\nInstitutional control\n\n\n\n\n\n\n\nCopy your deployed URL\nPost in Blackboard\nStudents access everything from one place!\n\n\n\n\n\n\nEach student downloads Liaison_Vault.zip with:\n\n\n\n\n\n\n\n\n\n\nFolder\nPurpose\nFirst Task\n\n\n\n\n00_Inbox\nQuick capture\nEmpty (students add notes here)\n\n\n01_Journal\nWeekly reflections\nUse template for weekly entries\n\n\n02_Literature\nResearch & reading notes\nAdd Zotero/citation notes\n\n\n03_Project\nActive research work\nOrganize with subfolders\n\n\n04_Resources\nImages, PDFs, media\nAuto-save location for attachments\n\n\n99_Templates\nReusable templates\nCopy & customize as needed\n\n\n\n\n\n\n\n✅ 00_START_HERE.md - Orientation guide\n✅ Weekly_Journal_Template.md - With three thinking paths\n✅ Data_Dictionary_Template.md - For Week 8/codebook creation\n\n\n\n\n\n\n\n\ncd C:\\mc451-sp26\\quarto_website\nquarto render\n\n\n\nquarto preview\n\n\n\ngit add .\ngit commit -m \"Update course materials\"\ngit push\n\n\n\n\n\n\nCustomize content\n\nAdd your info to index.qmd\nCreate syllabus.qmd\nAdd Phase 1 activities\n\nTest everything\n\nDownload Liaison_Vault.zip from resources\nFollow setup guide yourself\nTest as a student (incognito browser)\n\nDeploy\n\nChoose GitHub, Netlify, or university server\nFollow DEPLOYMENT.md instructions\nVerify live URL works\n\nShare\n\nPost link to Blackboard\nTest link from student perspective\nMonitor for student questions\n\n\n\n\n\n\nStudent joins course\n        ↓\nVisit Blackboard → See website link\n        ↓\nClick link → Land on home page\n        ↓\nRead overview → Click \"Get Started\"\n        ↓\nFollow setup guide → Download Liaison_Vault.zip\n        ↓\nInstall Obsidian → Extract vault\n        ↓\nConfigure settings → Open vault\n        ↓\nComplete Phase 1 → Begin course\n        ↓\nUse templates → Weekly journals, projects\n        ↓\nProgress through 5 phases → Learn skills\n        ↓\nComplete program → Ready for career!\n\n\n\n\n\n\n\nSave image as images/logo.png\nReference in index.qmd or _quarto.yml\n\n\n\n\nEdit _quarto.yml theme to: darkly, lumen, readable, or spacelab\n\n\n\n\nCreate new file.qmd\nAdd to sidebar in _quarto.yml\nRun quarto render\n\n\n\n\nIn any .qmd file:\n[Link Text](https://external-url.com)\n\n\n\n\n\n\n\n\nFile\nPurpose\nAudience\n\n\n\n\nindex.qmd\nHome page & overview\nStudents\n\n\nsetup.qmd\nStep-by-step setup\nStudents (first time)\n\n\nresources/index.qmd\nDownloads & links\nStudents\n\n\n**modules/*/index.qmd**\nCourse content\nStudents\n\n\nREADME.md\nProject overview\nYou\n\n\nDEPLOYMENT.md\nHow to go live\nYou\n\n\nQUICK_START.md\nQuick reference\nYou\n\n\n**_quarto.yml**\nSite configuration\nYou\n\n\n\n\n\n\n\nEach module (01-05) should include: - ✅ Learning objectives - ✅ Key readings/videos - ✅ In-class activities\n- ✅ Assignments due dates - ✅ Reflection prompts - ✅ Links to vault templates - ✅ Resources & external links\nPhase 1 template has an example structure you can follow.\n\n\n\n\n\n\n\n\n\n\n\nProblem\nSolution\n\n\n\n\nWebsite won’t build\nCheck _quarto.yml syntax, run quarto render again\n\n\nVault won’t download\nCheck resources/Liaison_Vault.zip exists\n\n\nLinks are broken\nVerify relative paths in .qmd files\n\n\nStyling looks weird\nClear browser cache, try different browser\n\n\nDeployment failed\nReview DEPLOYMENT.md for your chosen option\n\n\n\n\n\n\n\n\nQuarto Issues: https://quarto.org/docs\nObsidian Help: https://help.obsidian.md\nGitHub Pages: https://pages.github.com\nYour IT Department: For university server hosting\n\n\n\n\n\nYour complete student resource website is: - ✅ Built and tested - ✅ Professionally designed - ✅ Documented for students - ✅ Ready to deploy - ✅ Easy to update\n\n\n\nCustomize with your course details\nPick your deployment option\nDeploy to the web\nShare link with students\nWatch them succeed!\n\n\n\n\n\n\n\nRead README.md (you’re doing this now!)\nCustomize index.qmd with your details\nCreate your syllabus.qmd\nAdd Phase 1 content (example is there)\nReview DEPLOYMENT.md\nChoose your deployment option\nDeploy to web\nTest as a student\nPost link to Blackboard\nDone! 🚀\n\n\nCongratulations on building a professional student resource website!\nFor detailed deployment instructions, see DEPLOYMENT.md For a quick overview, see QUICK_START.md\nYour students are going to love this! 🎓"
+  },
+  {
+    "objectID": "START_HERE.html#summary-of-whats-been-built",
+    "href": "START_HERE.html#summary-of-whats-been-built",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "You now have a professional, production-ready student resource website with everything students need to succeed in your Liaison Program course."
+  },
+  {
+    "objectID": "START_HERE.html#what-you-have",
+    "href": "START_HERE.html#what-you-have",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Home page with course overview\nGetting started guide for students\nResources hub with downloads\nFive course modules (Orientation through Delivery)\nBuilt-in search functionality\nMobile-responsive design\nReady to deploy in 15 minutes\n\n\n\n\n\nPre-configured folder structure\n6 main directories + 4 project subdirectories\nWelcome/orientation file (00_START_HERE.md)\nWeekly Journal Template (Connector/Troubleshooter/Critic)\nData Dictionary Template (for codebook creation)\nAll folders include .gitkeep files for Git tracking\n\n\n\n\n\nREADME.md - Project overview and next steps\nQUICK_START.md - Visual reference guide\nDEPLOYMENT.md - Detailed deployment instructions\nsetup.qmd - Student setup guide (live on website)\nresources/index.qmd - Resources page (live on website)\n\n\n\n\n\nPhase 1: Orientation module with activities\nClear instructions for each phase\nReflection prompts using three thinking paths\nTemplate links and resource organization"
+  },
+  {
+    "objectID": "START_HERE.html#project-structure",
+    "href": "START_HERE.html#project-structure",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "quarto_website/\n│\n├── Core Website Files\n│   ├── _quarto.yml              ← Site configuration\n│   ├── index.qmd                ← Home page\n│   ├── setup.qmd                ← Student setup guide\n│   ├── syllabus.qmd             ← Your course syllabus (add content)\n│   │\n├── Content Folders\n│   ├── modules/\n│   │   ├── 01_orientation/      ← Phase 1 (has example content)\n│   │   ├── 02_discovery/        ← Phase 2 (add content)\n│   │   ├── 03_dictionary/       ← Phase 3 (add content)\n│   │   ├── 04_execution/        ← Phase 4 (add content)\n│   │   └── 05_delivery/         ← Phase 5 (add content)\n│   │\n│   ├── resources/\n│   │   ├── index.qmd            ← Resources page\n│   │   └── Liaison_Vault.zip    ← Student download\n│   │\n│   ├── assignments/             ← For assignment details (optional)\n│   └── slides/                  ← For lecture slides (optional)\n│\n├── Student Resources\n│   ├── Liaison_Vault/           ← Pre-built vault folder\n│   └── Liaison_Vault.zip        ← Zipped for download\n│\n├── Built Website\n│   └── _site/                   ← HTML ready to deploy\n│\n└── Documentation\n    ├── README.md                ← This overview\n    ├── QUICK_START.md           ← Quick reference\n    ├── DEPLOYMENT.md            ← Deployment guide\n    └── build_vault.py           ← Script that created vault"
+  },
+  {
+    "objectID": "START_HERE.html#ready-to-deploy-in-3-steps",
+    "href": "START_HERE.html#ready-to-deploy-in-3-steps",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Edit index.qmd - Add your name, meeting time, office hours\nCreate syllabus.qmd - Your course syllabus\nEdit modules/01_orientation/index.qmd - Add orientation content\n\n\n\n\nPick ONE option and follow DEPLOYMENT.md:\n\n\n\nOption\nTime\nBest For\n\n\n\n\nGitHub Pages ⭐\n15 min\nEasy updates, free\n\n\nNetlify\n10 min\nExtra features, automatic\n\n\nUniversity Server\n30 min\nInstitutional control\n\n\n\n\n\n\n\nCopy your deployed URL\nPost in Blackboard\nStudents access everything from one place!"
+  },
+  {
+    "objectID": "START_HERE.html#the-liaison-vault-includes",
+    "href": "START_HERE.html#the-liaison-vault-includes",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Each student downloads Liaison_Vault.zip with:\n\n\n\n\n\n\n\n\n\n\nFolder\nPurpose\nFirst Task\n\n\n\n\n00_Inbox\nQuick capture\nEmpty (students add notes here)\n\n\n01_Journal\nWeekly reflections\nUse template for weekly entries\n\n\n02_Literature\nResearch & reading notes\nAdd Zotero/citation notes\n\n\n03_Project\nActive research work\nOrganize with subfolders\n\n\n04_Resources\nImages, PDFs, media\nAuto-save location for attachments\n\n\n99_Templates\nReusable templates\nCopy & customize as needed\n\n\n\n\n\n\n\n✅ 00_START_HERE.md - Orientation guide\n✅ Weekly_Journal_Template.md - With three thinking paths\n✅ Data_Dictionary_Template.md - For Week 8/codebook creation"
+  },
+  {
+    "objectID": "START_HERE.html#commands-youll-use",
+    "href": "START_HERE.html#commands-youll-use",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "cd C:\\mc451-sp26\\quarto_website\nquarto render\n\n\n\nquarto preview\n\n\n\ngit add .\ngit commit -m \"Update course materials\"\ngit push"
+  },
+  {
+    "objectID": "START_HERE.html#to-do-before-going-live",
+    "href": "START_HERE.html#to-do-before-going-live",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Customize content\n\nAdd your info to index.qmd\nCreate syllabus.qmd\nAdd Phase 1 activities\n\nTest everything\n\nDownload Liaison_Vault.zip from resources\nFollow setup guide yourself\nTest as a student (incognito browser)\n\nDeploy\n\nChoose GitHub, Netlify, or university server\nFollow DEPLOYMENT.md instructions\nVerify live URL works\n\nShare\n\nPost link to Blackboard\nTest link from student perspective\nMonitor for student questions"
+  },
+  {
+    "objectID": "START_HERE.html#student-experience-overview",
+    "href": "START_HERE.html#student-experience-overview",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Student joins course\n        ↓\nVisit Blackboard → See website link\n        ↓\nClick link → Land on home page\n        ↓\nRead overview → Click \"Get Started\"\n        ↓\nFollow setup guide → Download Liaison_Vault.zip\n        ↓\nInstall Obsidian → Extract vault\n        ↓\nConfigure settings → Open vault\n        ↓\nComplete Phase 1 → Begin course\n        ↓\nUse templates → Weekly journals, projects\n        ↓\nProgress through 5 phases → Learn skills\n        ↓\nComplete program → Ready for career!"
+  },
+  {
+    "objectID": "START_HERE.html#common-customizations",
+    "href": "START_HERE.html#common-customizations",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Save image as images/logo.png\nReference in index.qmd or _quarto.yml\n\n\n\n\nEdit _quarto.yml theme to: darkly, lumen, readable, or spacelab\n\n\n\n\nCreate new file.qmd\nAdd to sidebar in _quarto.yml\nRun quarto render\n\n\n\n\nIn any .qmd file:\n[Link Text](https://external-url.com)"
+  },
+  {
+    "objectID": "START_HERE.html#what-each-document-does",
+    "href": "START_HERE.html#what-each-document-does",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "File\nPurpose\nAudience\n\n\n\n\nindex.qmd\nHome page & overview\nStudents\n\n\nsetup.qmd\nStep-by-step setup\nStudents (first time)\n\n\nresources/index.qmd\nDownloads & links\nStudents\n\n\n**modules/*/index.qmd**\nCourse content\nStudents\n\n\nREADME.md\nProject overview\nYou\n\n\nDEPLOYMENT.md\nHow to go live\nYou\n\n\nQUICK_START.md\nQuick reference\nYou\n\n\n**_quarto.yml**\nSite configuration\nYou"
+  },
+  {
+    "objectID": "START_HERE.html#for-your-phases",
+    "href": "START_HERE.html#for-your-phases",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Each module (01-05) should include: - ✅ Learning objectives - ✅ Key readings/videos - ✅ In-class activities\n- ✅ Assignments due dates - ✅ Reflection prompts - ✅ Links to vault templates - ✅ Resources & external links\nPhase 1 template has an example structure you can follow."
+  },
+  {
+    "objectID": "START_HERE.html#if-something-goes-wrong",
+    "href": "START_HERE.html#if-something-goes-wrong",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Problem\nSolution\n\n\n\n\nWebsite won’t build\nCheck _quarto.yml syntax, run quarto render again\n\n\nVault won’t download\nCheck resources/Liaison_Vault.zip exists\n\n\nLinks are broken\nVerify relative paths in .qmd files\n\n\nStyling looks weird\nClear browser cache, try different browser\n\n\nDeployment failed\nReview DEPLOYMENT.md for your chosen option"
+  },
+  {
+    "objectID": "START_HERE.html#getting-help",
+    "href": "START_HERE.html#getting-help",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Quarto Issues: https://quarto.org/docs\nObsidian Help: https://help.obsidian.md\nGitHub Pages: https://pages.github.com\nYour IT Department: For university server hosting"
+  },
+  {
+    "objectID": "START_HERE.html#youre-all-set",
+    "href": "START_HERE.html#youre-all-set",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Your complete student resource website is: - ✅ Built and tested - ✅ Professionally designed - ✅ Documented for students - ✅ Ready to deploy - ✅ Easy to update\n\n\n\nCustomize with your course details\nPick your deployment option\nDeploy to the web\nShare link with students\nWatch them succeed!"
+  },
+  {
+    "objectID": "START_HERE.html#final-checklist",
+    "href": "START_HERE.html#final-checklist",
+    "title": "🎉 Liaison Program Website - Complete & Ready!",
+    "section": "",
+    "text": "Read README.md (you’re doing this now!)\nCustomize index.qmd with your details\nCreate your syllabus.qmd\nAdd Phase 1 content (example is there)\nReview DEPLOYMENT.md\nChoose your deployment option\nDeploy to web\nTest as a student\nPost link to Blackboard\nDone! 🚀\n\n\nCongratulations on building a professional student resource website!\nFor detailed deployment instructions, see DEPLOYMENT.md For a quick overview, see QUICK_START.md\nYour students are going to love this! 🎓"
+  },
+  {
+    "objectID": "resources/index.html",
+    "href": "resources/index.html",
+    "title": "Resources & Downloads",
+    "section": "",
+    "text": "Your complete knowledge management system for the Liaison Program. This vault includes:\n\n00_Inbox: Quick capture area for notes and ideas\n01_Journal: Weekly reflection templates (Connector/Troubleshooter/Critic)\n02_Literature: Centralized space for reading notes and citations\n03_Project: Active research work with codebooks and data organization\n04_Resources: Attachment storage for images, PDFs, and media\n99_Templates: Ready-to-use templates for assignments and documentation\n\n📥 Download Liaison_Vault.zip - Extract this to get started immediately.",
+    "crumbs": [
+      "Resources & Downloads"
+    ]
+  },
+  {
+    "objectID": "resources/index.html#essential-downloads",
+    "href": "resources/index.html#essential-downloads",
+    "title": "Resources & Downloads",
+    "section": "",
+    "text": "Your complete knowledge management system for the Liaison Program. This vault includes:\n\n00_Inbox: Quick capture area for notes and ideas\n01_Journal: Weekly reflection templates (Connector/Troubleshooter/Critic)\n02_Literature: Centralized space for reading notes and citations\n03_Project: Active research work with codebooks and data organization\n04_Resources: Attachment storage for images, PDFs, and media\n99_Templates: Ready-to-use templates for assignments and documentation\n\n📥 Download Liaison_Vault.zip - Extract this to get started immediately.",
+    "crumbs": [
+      "Resources & Downloads"
+    ]
+  },
+  {
+    "objectID": "resources/index.html#software-tools",
+    "href": "resources/index.html#software-tools",
+    "title": "Resources & Downloads",
+    "section": "Software & Tools",
+    "text": "Software & Tools\nBefore starting Phase 1, ensure you have these installed:\n\nRequired\n\nObsidian - FREE - Your note-taking workspace\nGit - FREE - Version control for your projects\nVS Code - FREE - Code editor\n\n\n\nRecommended\n\nPython 3.10+ - FREE - For data analysis and automation\nR & RStudio - FREE - Statistical analysis",
+    "crumbs": [
+      "Resources & Downloads"
+    ]
+  },
+  {
+    "objectID": "resources/index.html#documentation-guides",
+    "href": "resources/index.html#documentation-guides",
+    "title": "Resources & Downloads",
+    "section": "Documentation & Guides",
+    "text": "Documentation & Guides\n\nQuick Start\n\nSetting up your Obsidian Vault - 5 minutes\nUnderstanding the Liaison Program Structure - 10 minutes\n\n\n\nTemplates Available in Your Vault\n\nWeekly Journal Template - For reflective practice with three thinking paths\nData Dictionary Template - For codebook creation and variable definition",
+    "crumbs": [
+      "Resources & Downloads"
+    ]
+  },
+  {
+    "objectID": "resources/index.html#getting-help",
+    "href": "resources/index.html#getting-help",
+    "title": "Resources & Downloads",
+    "section": "Getting Help",
+    "text": "Getting Help\n\nQuestions about the program? Check your module’s orientation page\nTechnical issues? Review the Software & Tools section above\nNeed to provide feedback? Use the Inbox in your Obsidian Vault\n\n\nLast updated: January 2026",
+    "crumbs": [
+      "Resources & Downloads"
+    ]
+  },
+  {
+    "objectID": "modules/01_orientation/index.html",
+    "href": "modules/01_orientation/index.html",
+    "title": "Phase 1: Orientation",
+    "section": "",
+    "text": "In this phase, you’ll: - Understand your role as a Communication Liaison - Set up your digital workspace - Learn the program structure - Get familiar with Obsidian and your vault",
+    "crumbs": [
+      "Phase 1: Orientation"
+    ]
+  },
+  {
+    "objectID": "modules/01_orientation/index.html#welcome-to-phase-1-orientation",
+    "href": "modules/01_orientation/index.html#welcome-to-phase-1-orientation",
+    "title": "Phase 1: Orientation",
+    "section": "",
+    "text": "In this phase, you’ll: - Understand your role as a Communication Liaison - Set up your digital workspace - Learn the program structure - Get familiar with Obsidian and your vault",
+    "crumbs": [
+      "Phase 1: Orientation"
+    ]
+  },
+  {
+    "objectID": "modules/01_orientation/index.html#what-is-a-communication-liaison",
+    "href": "modules/01_orientation/index.html#what-is-a-communication-liaison",
+    "title": "Phase 1: Orientation",
+    "section": "What is a Communication Liaison?",
+    "text": "What is a Communication Liaison?\nEdit this section with your course context and examples.\nA Communication Liaison bridges the gap between: - Data scientists who understand the numbers - Creative teams who understand the audience - Project stakeholders who understand the goals\nYour job is to translate, facilitate, and document.",
+    "crumbs": [
+      "Phase 1: Orientation"
+    ]
+  },
+  {
+    "objectID": "modules/01_orientation/index.html#the-five-phase-journey",
+    "href": "modules/01_orientation/index.html#the-five-phase-journey",
+    "title": "Phase 1: Orientation",
+    "section": "The Five-Phase Journey",
+    "text": "The Five-Phase Journey\nPhase 1 → Phase 2 → Phase 3 → Phase 4 → Phase 5\nOrientation Discovery Dictionary Execution Delivery\nEach phase builds skills you’ll use throughout your career.",
+    "crumbs": [
+      "Phase 1: Orientation"
+    ]
+  },
+  {
+    "objectID": "modules/01_orientation/index.html#activities-for-phase-1",
+    "href": "modules/01_orientation/index.html#activities-for-phase-1",
+    "title": "Phase 1: Orientation",
+    "section": "Activities for Phase 1",
+    "text": "Activities for Phase 1\n\nActivity 1: Complete Your Setup (Homework)\n\nGo to the Resources page and download Liaison_Vault.zip\nFollow the Setup Guide step-by-step\nConfigure your Obsidian vault\nOpen your 00_START_HERE.md file\n\nDue: Before our next meeting\n\n\nActivity 2: Explore Your Vault (In Class)\n\nOpen your Liaison_Vault in Obsidian\nCreate a file in 00_Inbox named First_Reflection.md\nWrite 3-5 sentences about what you hope to learn this semester\n\n\n\nActivity 3: Vault Navigation Tour (Self-Paced)\nNavigate through each folder and understand: - What goes in each folder - How folders connect to each other - Why the structure matters for your thinking",
+    "crumbs": [
+      "Phase 1: Orientation"
+    ]
+  },
+  {
+    "objectID": "modules/01_orientation/index.html#key-concepts",
+    "href": "modules/01_orientation/index.html#key-concepts",
+    "title": "Phase 1: Orientation",
+    "section": "Key Concepts",
+    "text": "Key Concepts\n\nThe Liaison Mindset\n\nTranslate: Turn jargon into clarity\nFacilitate: Help people understand each other\nDocument: Create records for future reference\nGuide: Lead projects toward success\n\n\n\nTools You’ll Use\n\nObsidian - Your personal knowledge system\nGitHub - Version control and collaboration\nQuarto - Documentation and reporting\nData tools - R, Python, Excel (in later phases)",
+    "crumbs": [
+      "Phase 1: Orientation"
+    ]
+  },
+  {
+    "objectID": "modules/01_orientation/index.html#reflection-prompt",
+    "href": "modules/01_orientation/index.html#reflection-prompt",
+    "title": "Phase 1: Orientation",
+    "section": "Reflection Prompt",
+    "text": "Reflection Prompt\nBefore moving to Phase 2, write a journal entry in 01_Journal/ answering:\n“What does it mean to be a Communication Liaison in my field? Who do I need to bridge gaps between?”\nUse one of the three thinking paths: 1. The Connector - How does this relate to what I already know? 2. The Troubleshooter - What challenges might I face? 3. The Critic - Does this resonate with my experience?",
+    "crumbs": [
+      "Phase 1: Orientation"
+    ]
+  },
+  {
+    "objectID": "modules/01_orientation/index.html#resources-for-this-phase",
+    "href": "modules/01_orientation/index.html#resources-for-this-phase",
+    "title": "Phase 1: Orientation",
+    "section": "Resources for This Phase",
+    "text": "Resources for This Phase\n\n📖 [Your course readings - add links here]\n🎥 [Your video tutorials - add links here]\n📝 [Your lecture slides - add links here]\n🔗 [External resources - add links here]",
+    "crumbs": [
+      "Phase 1: Orientation"
+    ]
+  },
+  {
+    "objectID": "modules/01_orientation/index.html#next-steps",
+    "href": "modules/01_orientation/index.html#next-steps",
+    "title": "Phase 1: Orientation",
+    "section": "Next Steps",
+    "text": "Next Steps\nOnce you complete Phase 1: 1. ✅ Vault is set up and configured 2. ✅ You’ve explored all folders 3. ✅ You’ve written your first journal reflection 4. → Move to Phase 2: Discovery\n\nQuestions? Use your Inbox in Obsidian or reach out during office hours.",
+    "crumbs": [
+      "Phase 1: Orientation"
+    ]
+  },
+  {
+    "objectID": "Liaison_Vault/99_Templates/Data_Dictionary_Template.html",
+    "href": "Liaison_Vault/99_Templates/Data_Dictionary_Template.html",
+    "title": "Data Dictionary",
+    "section": "",
+    "text": "Data Dictionary\n\n\n\n\n\n\n\n\n\nVariable Name\nConceptual Definition (The Dictionary)\nOperational Definition (The Checklist)\nLevels of Measurement\n\n\n\n\nframe_type\nThe dominant angle of the story.\n1 = Economic, 2 = Conflict, 3 = Human Interest\nNominal\n\n\ntone\nThe emotional feeling of the text.\nCount of negative words vs positive words.\nRatio"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html",
+    "href": "LAUNCH_CHECKLIST.html",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "File: index.qmd\n\nAdd your instructor name\nAdd meeting time and location\nAdd your office hours\nAdd contact email/phone\nCustomize the course description\nReview the quick-start buttons\n\n\n\n\nFile: syllabus.qmd (create this file)\nAdd: - [ ] Course title and number - [ ] Course description - [ ] Learning objectives - [ ] Required materials - [ ] Grading breakdown - [ ] Attendance policy - [ ] Academic integrity statement - [ ] Disability services info - [ ] Office hours and contact info\n\n\n\nFiles: modules/01_orientation/index.qmd through modules/05_delivery/index.qmd\nFor each phase: - [ ] Update learning objectives - [ ] Add readings/videos - [ ] Add activities with due dates - [ ] Add reflection prompts - [ ] Link to templates - [ ] Add resources\n(Phase 1 has an example you can follow!)\n\n\n\n\n\n\n\nSteps in DEPLOYMENT.md: 1. Create GitHub account & repository 2. Push your code 3. Enable GitHub Pages in settings 4. Share URL: https://yourname.github.io/quarto_website\nTime: ~15 minutes\nCost: FREE\nUpdates: Automatic when you push\n\n\n\nSteps in DEPLOYMENT.md: 1. Sign up at netlify.com 2. Connect GitHub repo 3. Configure build settings 4. Deploy!\nTime: ~10 minutes\nCost: FREE\nUpdates: Automatic when you push\n\n\n\nSteps in DEPLOYMENT.md: 1. Contact your IT department 2. Get FTP/server access 3. Upload _site/ folder 4. Get your URL\nTime: ~30 minutes\nCost: Usually FREE\nUpdates: Manual FTP upload\n\n\n\n\n\nTest the student experience:\n\nDownload Vault\n\nGo to Resources page\nDownload Liaison_Vault.zip\nVerify it downloads and extracts\n\nFollow Setup Guide\n\nGo to “Getting Started” page\nFollow ALL steps yourself\nVerify each step works\nNote any issues\n\nUse Obsidian\n\nOpen vault in Obsidian\nCheck all 6 folders exist\nVerify templates are there\nCreate a test note\nVerify 00_START_HERE.md is readable\n\nTest as a Student\n\nOpen site in private/incognito browser\nTry clicking all links\nTry downloading the vault\nTry following the setup guide\nPretend you’re a new student\n\n\n\n\n\n\n\n\n\nFinalize all customizations\nTest everything thoroughly\nFix any broken links\nGet feedback from a colleague\n\n\n\n\n\nRun quarto render one final time\nDeploy (GitHub, Netlify, or server)\nTest the live URL\nVerify Vault downloads correctly\n\n\n\n\n\nPost URL to Blackboard\nSend announcement to students\nMonitor for questions/issues\nUpdate content as needed\n\n\n\n\n\n\nEvery time you update:\n# 1. Make your changes to .qmd files in VS Code\n# 2. Build the site\nquarto render\n\n# 3. If using GitHub:\ngit add .\ngit commit -m \"Update course materials\"\ngit push\n\n# 4. If using Netlify:\n# (Automatic! Just push to GitHub)\n\n# 5. If using university server:\n# Upload _site/ folder via FTP\n\n\n\n\nWebsite won’t build: - Check _quarto.yml for syntax errors - Run quarto render again - See DEPLOYMENT.md\nLinks are broken: - Check file paths in .qmd files - Use relative paths: setup.qmd, resources/Liaison_Vault.zip - Never use absolute paths\nVault won’t download: - Verify resources/Liaison_Vault.zip exists - Check file permissions - Try manually downloading from resources page\nLooks weird on mobile: - Quarto is responsive by default - Clear browser cache - Try different browser - Check for custom CSS conflicts\n\n\n\n\nSet your own dates:\n\nWeek 1: Customization complete, deployed\nWeek 2: Module 1 content added\nWeek 3: Module 2 content added\nWeek 4: Module 3 content added\nWeek 5: Module 4 content added\nWeek 6: Module 5 content added\n\n\n\n\n\nAfter launch, you’ll know it’s working when:\n✅ Students access the website\n✅ Students download the Vault\n✅ Students complete setup\n✅ Students ask informed questions\n✅ Students use templates\n✅ Students progress through phases\n\n\n\n\nThis is YOUR site. Feel free to: - Change colors/themes - Add more content - Create custom templates - Link to external resources - Update weekly - Gather student feedback - Iterate and improve\nYour students have access to a professional learning environment. Great job! 🎉\n\nQuick Links to Guides: - START_HERE.md - Complete overview - README.md - Full project guide\n- DEPLOYMENT.md - Deployment instructions - QUICK_START.md - Visual reference"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html#before-you-deploy-customize-these",
+    "href": "LAUNCH_CHECKLIST.html#before-you-deploy-customize-these",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "File: index.qmd\n\nAdd your instructor name\nAdd meeting time and location\nAdd your office hours\nAdd contact email/phone\nCustomize the course description\nReview the quick-start buttons\n\n\n\n\nFile: syllabus.qmd (create this file)\nAdd: - [ ] Course title and number - [ ] Course description - [ ] Learning objectives - [ ] Required materials - [ ] Grading breakdown - [ ] Attendance policy - [ ] Academic integrity statement - [ ] Disability services info - [ ] Office hours and contact info\n\n\n\nFiles: modules/01_orientation/index.qmd through modules/05_delivery/index.qmd\nFor each phase: - [ ] Update learning objectives - [ ] Add readings/videos - [ ] Add activities with due dates - [ ] Add reflection prompts - [ ] Link to templates - [ ] Add resources\n(Phase 1 has an example you can follow!)"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html#deployment-options-pick-one",
+    "href": "LAUNCH_CHECKLIST.html#deployment-options-pick-one",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "Steps in DEPLOYMENT.md: 1. Create GitHub account & repository 2. Push your code 3. Enable GitHub Pages in settings 4. Share URL: https://yourname.github.io/quarto_website\nTime: ~15 minutes\nCost: FREE\nUpdates: Automatic when you push\n\n\n\nSteps in DEPLOYMENT.md: 1. Sign up at netlify.com 2. Connect GitHub repo 3. Configure build settings 4. Deploy!\nTime: ~10 minutes\nCost: FREE\nUpdates: Automatic when you push\n\n\n\nSteps in DEPLOYMENT.md: 1. Contact your IT department 2. Get FTP/server access 3. Upload _site/ folder 4. Get your URL\nTime: ~30 minutes\nCost: Usually FREE\nUpdates: Manual FTP upload"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html#testing-before-launch",
+    "href": "LAUNCH_CHECKLIST.html#testing-before-launch",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "Test the student experience:\n\nDownload Vault\n\nGo to Resources page\nDownload Liaison_Vault.zip\nVerify it downloads and extracts\n\nFollow Setup Guide\n\nGo to “Getting Started” page\nFollow ALL steps yourself\nVerify each step works\nNote any issues\n\nUse Obsidian\n\nOpen vault in Obsidian\nCheck all 6 folders exist\nVerify templates are there\nCreate a test note\nVerify 00_START_HERE.md is readable\n\nTest as a Student\n\nOpen site in private/incognito browser\nTry clicking all links\nTry downloading the vault\nTry following the setup guide\nPretend you’re a new student"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html#launch-sequence",
+    "href": "LAUNCH_CHECKLIST.html#launch-sequence",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "Finalize all customizations\nTest everything thoroughly\nFix any broken links\nGet feedback from a colleague\n\n\n\n\n\nRun quarto render one final time\nDeploy (GitHub, Netlify, or server)\nTest the live URL\nVerify Vault downloads correctly\n\n\n\n\n\nPost URL to Blackboard\nSend announcement to students\nMonitor for questions/issues\nUpdate content as needed"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html#keep-it-fresh",
+    "href": "LAUNCH_CHECKLIST.html#keep-it-fresh",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "Every time you update:\n# 1. Make your changes to .qmd files in VS Code\n# 2. Build the site\nquarto render\n\n# 3. If using GitHub:\ngit add .\ngit commit -m \"Update course materials\"\ngit push\n\n# 4. If using Netlify:\n# (Automatic! Just push to GitHub)\n\n# 5. If using university server:\n# Upload _site/ folder via FTP"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html#troubleshooting-quick-links",
+    "href": "LAUNCH_CHECKLIST.html#troubleshooting-quick-links",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "Website won’t build: - Check _quarto.yml for syntax errors - Run quarto render again - See DEPLOYMENT.md\nLinks are broken: - Check file paths in .qmd files - Use relative paths: setup.qmd, resources/Liaison_Vault.zip - Never use absolute paths\nVault won’t download: - Verify resources/Liaison_Vault.zip exists - Check file permissions - Try manually downloading from resources page\nLooks weird on mobile: - Quarto is responsive by default - Clear browser cache - Try different browser - Check for custom CSS conflicts"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html#key-deadlines-example",
+    "href": "LAUNCH_CHECKLIST.html#key-deadlines-example",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "Set your own dates:\n\nWeek 1: Customization complete, deployed\nWeek 2: Module 1 content added\nWeek 3: Module 2 content added\nWeek 4: Module 3 content added\nWeek 5: Module 4 content added\nWeek 6: Module 5 content added"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html#success-indicators",
+    "href": "LAUNCH_CHECKLIST.html#success-indicators",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "After launch, you’ll know it’s working when:\n✅ Students access the website\n✅ Students download the Vault\n✅ Students complete setup\n✅ Students ask informed questions\n✅ Students use templates\n✅ Students progress through phases"
+  },
+  {
+    "objectID": "LAUNCH_CHECKLIST.html#remember",
+    "href": "LAUNCH_CHECKLIST.html#remember",
+    "title": "📋 Website Launch Checklist",
+    "section": "",
+    "text": "This is YOUR site. Feel free to: - Change colors/themes - Add more content - Create custom templates - Link to external resources - Update weekly - Gather student feedback - Iterate and improve\nYour students have access to a professional learning environment. Great job! 🎉\n\nQuick Links to Guides: - START_HERE.md - Complete overview - README.md - Full project guide\n- DEPLOYMENT.md - Deployment instructions - QUICK_START.md - Visual reference"
+  },
+  {
+    "objectID": "GITHUB_SETUP.html",
+    "href": "GITHUB_SETUP.html",
+    "title": "GitHub Deployment Instructions",
+    "section": "",
+    "text": "Go to https://github.com/SIM-Lab-SIUE\nClick the “New” button (or go to https://github.com/organizations/SIM-Lab-SIUE/repositories/new)\nFill in the repository details:\n\nRepository name: mc451-liaison-program (or your preferred name)\nDescription: Liaison Program course website with Obsidian vault for students\nVisibility: Choose Public (so GitHub Pages works for free)\nDO NOT initialize with README, .gitignore, or license (we already have these)\n\nClick “Create repository”\n\n\n\n\nOnce you create the repository, GitHub will show you commands. Use these:\ngit remote add origin https://github.com/SIM-Lab-SIUE/mc451-liaison-program.git\ngit push -u origin main\nOR run this command in your terminal:\ncd C:\\mc451-sp26\\quarto_website\ngit remote add origin https://github.com/SIM-Lab-SIUE/mc451-liaison-program.git\ngit push -u origin main\n\n\n\nAfter pushing:\n\nGo to your repository on GitHub\nClick Settings → Pages (in the left sidebar)\nUnder “Build and deployment”:\n\nSource: Deploy from a branch\nBranch: main\nFolder: /_site\n\nClick Save\n\nGitHub will build your site. Wait 2-3 minutes, then your site will be live at:\nhttps://sim-lab-siue.github.io/mc451-liaison-program/\n\n\n\nCopy your GitHub Pages URL and post it in Blackboard:\n📚 Course Website\nAccess all Liaison Program materials here:\nhttps://sim-lab-siue.github.io/mc451-liaison-program/\n\nYou'll find:\n✓ Getting started guide\n✓ Liaison Obsidian Vault download\n✓ All course modules and materials\n✓ Weekly templates and resources\n\nStart with the \"Get Started\" page!\n\n\n\nWhenever you make changes:\ncd C:\\mc451-sp26\\quarto_website\nquarto render\ngit add .\ngit commit -m \"Update course materials\"\ngit push\nGitHub Pages will automatically rebuild in 2-3 minutes.\n\n\n\n\nIf mc451-liaison-program is taken, try: - liaison-program-website - mc451-sp26 - communication-liaison-course - liaison-research-methods\n\n\n\n\nQ: GitHub Pages shows 404 - Make sure you selected /_site folder (not root) - Wait 3-5 minutes for the first build - Check Settings → Pages for build status\nQ: Push failed - authentication error - You may need to set up a Personal Access Token - Go to GitHub Settings → Developer settings → Personal access tokens - Create token with repo scope - Use token as password when pushing\nQ: Resource files (Liaison_Vault.zip) not showing - The .gitignore should NOT exclude resources/ - Check that resources/Liaison_Vault.zip was committed - Run: git ls-files resources/ to verify\n\nReady to go! Create the repository on GitHub, then run the push commands above. 🚀"
+  },
+  {
+    "objectID": "GITHUB_SETUP.html#step-1-create-the-repository-on-github",
+    "href": "GITHUB_SETUP.html#step-1-create-the-repository-on-github",
+    "title": "GitHub Deployment Instructions",
+    "section": "",
+    "text": "Go to https://github.com/SIM-Lab-SIUE\nClick the “New” button (or go to https://github.com/organizations/SIM-Lab-SIUE/repositories/new)\nFill in the repository details:\n\nRepository name: mc451-liaison-program (or your preferred name)\nDescription: Liaison Program course website with Obsidian vault for students\nVisibility: Choose Public (so GitHub Pages works for free)\nDO NOT initialize with README, .gitignore, or license (we already have these)\n\nClick “Create repository”"
+  },
+  {
+    "objectID": "GITHUB_SETUP.html#step-2-push-your-code",
+    "href": "GITHUB_SETUP.html#step-2-push-your-code",
+    "title": "GitHub Deployment Instructions",
+    "section": "",
+    "text": "Once you create the repository, GitHub will show you commands. Use these:\ngit remote add origin https://github.com/SIM-Lab-SIUE/mc451-liaison-program.git\ngit push -u origin main\nOR run this command in your terminal:\ncd C:\\mc451-sp26\\quarto_website\ngit remote add origin https://github.com/SIM-Lab-SIUE/mc451-liaison-program.git\ngit push -u origin main"
+  },
+  {
+    "objectID": "GITHUB_SETUP.html#step-3-enable-github-pages",
+    "href": "GITHUB_SETUP.html#step-3-enable-github-pages",
+    "title": "GitHub Deployment Instructions",
+    "section": "",
+    "text": "After pushing:\n\nGo to your repository on GitHub\nClick Settings → Pages (in the left sidebar)\nUnder “Build and deployment”:\n\nSource: Deploy from a branch\nBranch: main\nFolder: /_site\n\nClick Save\n\nGitHub will build your site. Wait 2-3 minutes, then your site will be live at:\nhttps://sim-lab-siue.github.io/mc451-liaison-program/"
+  },
+  {
+    "objectID": "GITHUB_SETUP.html#step-4-share-with-students",
+    "href": "GITHUB_SETUP.html#step-4-share-with-students",
+    "title": "GitHub Deployment Instructions",
+    "section": "",
+    "text": "Copy your GitHub Pages URL and post it in Blackboard:\n📚 Course Website\nAccess all Liaison Program materials here:\nhttps://sim-lab-siue.github.io/mc451-liaison-program/\n\nYou'll find:\n✓ Getting started guide\n✓ Liaison Obsidian Vault download\n✓ All course modules and materials\n✓ Weekly templates and resources\n\nStart with the \"Get Started\" page!"
+  },
+  {
+    "objectID": "GITHUB_SETUP.html#updating-your-site-later",
+    "href": "GITHUB_SETUP.html#updating-your-site-later",
+    "title": "GitHub Deployment Instructions",
+    "section": "",
+    "text": "Whenever you make changes:\ncd C:\\mc451-sp26\\quarto_website\nquarto render\ngit add .\ngit commit -m \"Update course materials\"\ngit push\nGitHub Pages will automatically rebuild in 2-3 minutes."
+  },
+  {
+    "objectID": "GITHUB_SETUP.html#repository-name-suggestions",
+    "href": "GITHUB_SETUP.html#repository-name-suggestions",
+    "title": "GitHub Deployment Instructions",
+    "section": "",
+    "text": "If mc451-liaison-program is taken, try: - liaison-program-website - mc451-sp26 - communication-liaison-course - liaison-research-methods"
+  },
+  {
+    "objectID": "GITHUB_SETUP.html#troubleshooting",
+    "href": "GITHUB_SETUP.html#troubleshooting",
+    "title": "GitHub Deployment Instructions",
+    "section": "",
+    "text": "Q: GitHub Pages shows 404 - Make sure you selected /_site folder (not root) - Wait 3-5 minutes for the first build - Check Settings → Pages for build status\nQ: Push failed - authentication error - You may need to set up a Personal Access Token - Go to GitHub Settings → Developer settings → Personal access tokens - Create token with repo scope - Use token as password when pushing\nQ: Resource files (Liaison_Vault.zip) not showing - The .gitignore should NOT exclude resources/ - Check that resources/Liaison_Vault.zip was committed - Run: git ls-files resources/ to verify\n\nReady to go! Create the repository on GitHub, then run the push commands above. 🚀"
+  },
+  {
+    "objectID": "DEPLOYMENT.html",
+    "href": "DEPLOYMENT.html",
+    "title": "Deployment Guide",
+    "section": "",
+    "text": "Congratulations! Your student resource website has been successfully built. Here’s how to deploy it for your students."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#your-quarto-website-is-ready",
+    "href": "DEPLOYMENT.html#your-quarto-website-is-ready",
+    "title": "Deployment Guide",
+    "section": "",
+    "text": "Congratulations! Your student resource website has been successfully built. Here’s how to deploy it for your students."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#what-you-have",
+    "href": "DEPLOYMENT.html#what-you-have",
+    "title": "Deployment Guide",
+    "section": "What You Have",
+    "text": "What You Have\n✅ Quarto Website - A fully functional, professional resource site\n✅ Liaison Vault - Pre-configured Obsidian vault for students\n✅ Setup Instructions - Step-by-step guide for students\n✅ Built HTML - Ready to deploy (in the _site/ folder)"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#deployment-options",
+    "href": "DEPLOYMENT.html#deployment-options",
+    "title": "Deployment Guide",
+    "section": "Deployment Options",
+    "text": "Deployment Options\n\nOption 1: GitHub Pages (Recommended - FREE)\n\nCreate a GitHub repository\n\nGo to github.com and create a new public repo named quarto_website\n\nPush your site\ncd C:\\mc451-sp26\\quarto_website\ngit init\ngit add .\ngit commit -m \"Initial commit: Liaison Program website\"\ngit branch -M main\ngit remote add origin https://github.com/YOUR_USERNAME/quarto_website.git\ngit push -u origin main\nEnable GitHub Pages\n\nGo to your repo Settings → Pages\nSet Source to “Deploy from a branch”\nSet Branch to main and folder to _site\nYour site will be live at: https://YOUR_USERNAME.github.io/quarto_website\n\nShare the link in Blackboard\n\nCopy the GitHub Pages URL\nAdd it to your Blackboard course as a web link or announcement\n\n\n\n\nOption 2: Netlify (FREE, Easier Setup)\n\nGo to netlify.com and sign up\nClick “New site from Git” and connect your GitHub repo\nSet Build Command to: quarto render\nSet Publish Directory to: _site\nDeploy automatically on every push\n\n\n\nOption 3: University Server/Portal\nContact your IT department about hosting the _site/ folder on your institution’s server."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#what-students-see",
+    "href": "DEPLOYMENT.html#what-students-see",
+    "title": "Deployment Guide",
+    "section": "What Students See",
+    "text": "What Students See\nWhen students visit your site, they’ll find:\n\nHome page - Welcome and quick-start buttons\nSetup instructions - How to install and configure Obsidian\nResources page - Downloads (Liaison_Vault.zip and tools)\nFive phase modules - Course content (01_orientation through 05_delivery)\nSidebar navigation - Easy access to all sections"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#after-deployment",
+    "href": "DEPLOYMENT.html#after-deployment",
+    "title": "Deployment Guide",
+    "section": "After Deployment",
+    "text": "After Deployment\n\nShare with Students\nAdd this to your Blackboard Course:\n📚 Course Resources\nWelcome! Access all course materials here: [YOUR_WEBSITE_URL]\n\nOn this site you'll find:\n✓ Your Liaison Obsidian Vault (download & setup)\n✓ Step-by-step getting started guide\n✓ All course modules and materials\n✓ Weekly templates and tools\n\nStart with the Setup page if this is your first time!\n\n\nKeep It Updated\nAfter deployment, whenever you update content:\n\nEdit your .qmd files in VS Code\nRun quarto render to rebuild\nGit commit and push to update the live site\ngit add .\ngit commit -m \"Update course materials\"\ngit push"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#customization-tips",
+    "href": "DEPLOYMENT.html#customization-tips",
+    "title": "Deployment Guide",
+    "section": "Customization Tips",
+    "text": "Customization Tips\n\nUpdate Your Course Info\nEdit index.qmd to add: - Instructor name and contact info - Meeting times and location - Office hours\n\n\nAdd More Content\nCreate new .qmd files in the modules/ folder and add them to _quarto.yml sidebar\n\n\nChange the Theme\nIn _quarto.yml, change the theme from cosmo to: - darkly - Dark theme - readable - High contrast - lumen - Light and clean - spacelab - Modern\n\n\nAdd Syllabus\nCreate syllabus.qmd (it’s already referenced in the sidebar!)"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#file-structure",
+    "href": "DEPLOYMENT.html#file-structure",
+    "title": "Deployment Guide",
+    "section": "File Structure",
+    "text": "File Structure\nquarto_website/\n├── _quarto.yml          # Site config & navigation\n├── index.qmd            # Home page\n├── setup.qmd            # Getting started guide\n├── syllabus.qmd         # Add your course syllabus here\n├── build_vault.py       # Script that created your vault\n├── resources/\n│   ├── index.qmd        # Resources page\n│   └── Liaison_Vault.zip # Student download\n├── modules/             # Course content (5 phases)\n├── slides/              # Presentation slides (optional)\n├── assignments/         # Assignment details (optional)\n└── _site/               # Built website (don't edit directly)"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#next-steps",
+    "href": "DEPLOYMENT.html#next-steps",
+    "title": "Deployment Guide",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nAdd your syllabus - Create/edit syllabus.qmd\nCustomize home page - Edit index.qmd with your details\nAdd module content - Fill in each phase (01-05) modules\nDeploy - Choose Option 1, 2, or 3 above\nShare link - Post in Blackboard for your students\n\n\nQuestions or need help? Let me know - I can help you customize this further!"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome to the Data Team",
+    "section": "",
+    "text": "Welcome! As a Communication Liaison, you are the vital bridge between our data scientists and creative teams. Your role is to:\n\nTranslate complex data concepts into clear, actionable insights\nFacilitate collaboration between technical and creative professionals\nDocument findings and processes for team understanding\nGuide projects from discovery through delivery\n\nThis program is designed to equip you with the research methodologies, tools, and frameworks you need to excel in this unique position. Over five phases, you’ll develop the skills to navigate data-driven projects while maintaining clear communication across all stakeholders.",
+    "crumbs": [
+      "Welcome to the Data Team"
+    ]
+  },
+  {
+    "objectID": "index.html#your-role-as-a-communication-liaison",
+    "href": "index.html#your-role-as-a-communication-liaison",
+    "title": "Welcome to the Data Team",
+    "section": "",
+    "text": "Welcome! As a Communication Liaison, you are the vital bridge between our data scientists and creative teams. Your role is to:\n\nTranslate complex data concepts into clear, actionable insights\nFacilitate collaboration between technical and creative professionals\nDocument findings and processes for team understanding\nGuide projects from discovery through delivery\n\nThis program is designed to equip you with the research methodologies, tools, and frameworks you need to excel in this unique position. Over five phases, you’ll develop the skills to navigate data-driven projects while maintaining clear communication across all stakeholders.",
+    "crumbs": [
+      "Welcome to the Data Team"
+    ]
+  },
+  {
+    "objectID": "index.html#quick-start",
+    "href": "index.html#quick-start",
+    "title": "Welcome to the Data Team",
+    "section": "Quick Start",
+    "text": "Quick Start\nReady to begin your journey? Start with our setup guide to configure your workspace and understand the program structure.\n→ Get Started",
+    "crumbs": [
+      "Welcome to the Data Team"
+    ]
+  },
+  {
+    "objectID": "index.html#essential-resources",
+    "href": "index.html#essential-resources",
+    "title": "Welcome to the Data Team",
+    "section": "Essential Resources",
+    "text": "Essential Resources\nDownload the Liaison Obsidian Vault — your complete knowledge management system with templates, structure, and documentation to succeed in this program.\n→ Download Liaison_Vault.zip\nOr visit the Resources page to see what’s included and other helpful downloads.",
+    "crumbs": [
+      "Welcome to the Data Team"
+    ]
+  },
+  {
+    "objectID": "index.html#the-five-phases",
+    "href": "index.html#the-five-phases",
+    "title": "Welcome to the Data Team",
+    "section": "The Five Phases",
+    "text": "The Five Phases\nThis program is structured in five interconnected phases:\n\nPhase 1: Orientation - Understand your role, the program structure, and set up your workspace\nPhase 2: Discovery - Learn research methodologies and how to ask the right questions\nPhase 3: The Dictionary - Master codebook creation and variable definition\nPhase 4: Execution - Apply what you’ve learned to real projects\nPhase 5: Delivery - Present findings and communicate impact\n\nEach phase builds on the previous one. Start with Phase 1 in the sidebar.",
+    "crumbs": [
+      "Welcome to the Data Team"
+    ]
+  },
+  {
+    "objectID": "index.html#course-information",
+    "href": "index.html#course-information",
+    "title": "Welcome to the Data Team",
+    "section": "Course Information",
+    "text": "Course Information\n\nInstructor: [Your Name]\nMeeting Time: [Your Schedule]\nOffice Hours: [Your Availability]\nQuestions? See the syllabus for contact information\n\n\nLet’s get to work and build something great together!",
+    "crumbs": [
+      "Welcome to the Data Team"
+    ]
+  },
+  {
+    "objectID": "Liaison_Vault/00_START_HERE.html",
+    "href": "Liaison_Vault/00_START_HERE.html",
+    "title": "Welcome to your Digital Office",
+    "section": "",
+    "text": "00_Inbox: Quick notes and rough thoughts.\n01_Journal: Your weekly field notes.\n02_Literature: Notes from Zotero and readings.\n03_Project: Your active research work.\n99_Templates: Copy these files to start your assignments.\n\n\n\nGo to Settings &gt; Files & Links &gt; Default location for new attachments → set to ‘04_Resources’."
+  },
+  {
+    "objectID": "Liaison_Vault/00_START_HERE.html#task-1-configure-obsidian-settings",
+    "href": "Liaison_Vault/00_START_HERE.html#task-1-configure-obsidian-settings",
+    "title": "Welcome to your Digital Office",
+    "section": "",
+    "text": "Go to Settings &gt; Files & Links &gt; Default location for new attachments → set to ‘04_Resources’."
+  },
+  {
+    "objectID": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html",
+    "href": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html",
+    "title": "Week X: [Title Here]",
+    "section": "",
+    "text": "Date: [Insert Date] Reading: [Insert Chapter]\n\n\n(Choose one path below and delete the others)\n\n\nHow does this week’s theory specifically apply to the project I am building?\n\n\n\nWhat went wrong in the Lab this week, and exactly how did I fix it?\n\n\n\nThe author claims X, but does that hold true in my experience/modern media?\n\nTags: #journal #weekX"
+  },
+  {
+    "objectID": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#the-reflection",
+    "href": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#the-reflection",
+    "title": "Week X: [Title Here]",
+    "section": "",
+    "text": "(Choose one path below and delete the others)\n\n\nHow does this week’s theory specifically apply to the project I am building?\n\n\n\nWhat went wrong in the Lab this week, and exactly how did I fix it?\n\n\n\nThe author claims X, but does that hold true in my experience/modern media?\n\nTags: #journal #weekX"
+  },
+  {
+    "objectID": "QUICK_START.html",
+    "href": "QUICK_START.html",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Built with Quarto, featuring the Liaison Obsidian Vault for student success.\n\n\n\n\n\n\nHome Page (index.qmd)\n├── Getting Started (setup.qmd)\n├── Resources & Downloads (resources/index.qmd)\n│   └── Liaison_Vault.zip ⬇️\n├── Phase 1: Orientation (modules/01_orientation/)\n├── Phase 2: Discovery (modules/02_discovery/)\n├── Phase 3: Dictionary (modules/03_dictionary/)\n├── Phase 4: Execution (modules/04_execution/)\n└── Phase 5: Delivery (modules/05_delivery/)\n\n\n\nLiaison_Vault/\n├── 00_Inbox/          (Quick capture)\n├── 01_Journal/        (Weekly reflections)\n├── 02_Literature/     (Research notes)\n├── 03_Project/        (Active work)\n│   ├── 01_Prospectus/\n│   ├── 02_Codebook/\n│   ├── 03_Data/\n│   └── 04_Drafts/\n├── 04_Resources/      (Media & attachments)\n├── 99_Templates/      (Reusable templates)\n└── 00_START_HERE.md   (Student orientation)\n\n\n\n\n\n\n\n\nCost: FREE\nSetup: 15 minutes\nURL Pattern: https://yourname.github.io/quarto_website\nBest for: Easy updates, automatic deployment\n\n\n\n\n\nCost: FREE\nSetup: 10 minutes\nBest for: Even easier, fancy features\n\n\n\n\n\nCost: Usually FREE (already hosted)\nSetup: Contact IT\nBest for: Keeping everything institutional\n\nSee DEPLOYMENT.md for detailed instructions.\n\n\n\n\n\n\nCustomize home page - Add your name, meeting time, office hours\nCreate syllabus - Fill in syllabus.qmd\nAdd module content - Fill in each Phase (1-5)\nPick deployment - GitHub, Netlify, or University server\nDeploy - Follow your chosen method\nTest as student - Download vault and follow setup guide\nPost to Blackboard - Share the URL\nShare with students - Done! ✅\n\n\n\n\n\nAfter deployment, making changes is easy:\n\nEdit .qmd files in VS Code\nBuild by running quarto render\nPush to GitHub with git (if using GitHub Pages)\nDone - Live updates automatically!\n\n# Standard update workflow\nquarto render\ngit add .\ngit commit -m \"Update course materials\"\ngit push\n\n\n\n\n\n\n\nMake the Getting Started page prominent\nInclude screenshots in setup.qmd\nLink to Obsidian help resources\nCreate a “Common Issues” section\n\n\n\n\n\nStart with learning objectives\nInclude readings, videos, and activities\nAdd reflection prompts\nLink to templates in the vault\nInclude due dates and deadlines\n\n\n\n\n\nList all required software with download links\nProvide quick reference guides\nLink to external tools (Zotero, GitHub, etc.)\nCreate a FAQ section\n\n\n\n\n\n\nEach Phase module should include:\n# Phase X: [Title]\n\n## Learning Objectives\n- Objective 1\n- Objective 2\n- Objective 3\n\n## Key Concepts\n- Concept A: explanation\n- Concept B: explanation\n\n## Activities\n1. Activity name\n   - Step 1\n   - Step 2\n   - Due date\n\n## Resources\n- Reading 1\n- Video 1\n- Template link\n\n## Reflection Prompt\n[Use the three thinking paths]\n\n\n\n\n\n\nEdit _quarto.yml:\nformat:\n  html:\n    theme: cosmo  # Try: darkly, lumen, readable, spacelab\n\n\n\n\nCreate new file.qmd\nAdd to _quarto.yml sidebar\nRun quarto render\nRedeploy!\n\n\n\n\nPlace image in images/ folder and reference in setup.\n\n\n\n\n\nWhen students visit your site:\n\nLand on home page → See course overview\nClick “Get Started” → View step-by-step setup\nGo to Resources → Download Liaison_Vault.zip\nFollow setup guide → Install Obsidian & vault\nEnter Phase 1 → Begin course content\nUse templates → Weekly journals, data dictionaries\nLearn through 5 phases → Complete program\nSucceed! → Ready for future careers\n\n\n\n\n\n\nQuarto help: https://quarto.org/docs\nObsidian tutorials: https://obsidian.md/\nGitHub Pages: https://pages.github.com/\nYour students: Use Blackboard announcements\n\n\n\n\n\nYour professional student resource website is built, tested, and ready to deploy.\nNext step: Pick your deployment option and share with your students.\nSee README.md and DEPLOYMENT.md for detailed guidance.\n\nQuestions? Check the detailed guides or customize to fit your needs!"
+  },
+  {
+    "objectID": "QUICK_START.html#your-complete-student-resource-website",
+    "href": "QUICK_START.html#your-complete-student-resource-website",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Built with Quarto, featuring the Liaison Obsidian Vault for student success."
+  },
+  {
+    "objectID": "QUICK_START.html#whats-included",
+    "href": "QUICK_START.html#whats-included",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Home Page (index.qmd)\n├── Getting Started (setup.qmd)\n├── Resources & Downloads (resources/index.qmd)\n│   └── Liaison_Vault.zip ⬇️\n├── Phase 1: Orientation (modules/01_orientation/)\n├── Phase 2: Discovery (modules/02_discovery/)\n├── Phase 3: Dictionary (modules/03_dictionary/)\n├── Phase 4: Execution (modules/04_execution/)\n└── Phase 5: Delivery (modules/05_delivery/)\n\n\n\nLiaison_Vault/\n├── 00_Inbox/          (Quick capture)\n├── 01_Journal/        (Weekly reflections)\n├── 02_Literature/     (Research notes)\n├── 03_Project/        (Active work)\n│   ├── 01_Prospectus/\n│   ├── 02_Codebook/\n│   ├── 03_Data/\n│   └── 04_Drafts/\n├── 04_Resources/      (Media & attachments)\n├── 99_Templates/      (Reusable templates)\n└── 00_START_HERE.md   (Student orientation)"
+  },
+  {
+    "objectID": "QUICK_START.html#three-ways-to-deploy",
+    "href": "QUICK_START.html#three-ways-to-deploy",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Cost: FREE\nSetup: 15 minutes\nURL Pattern: https://yourname.github.io/quarto_website\nBest for: Easy updates, automatic deployment\n\n\n\n\n\nCost: FREE\nSetup: 10 minutes\nBest for: Even easier, fancy features\n\n\n\n\n\nCost: Usually FREE (already hosted)\nSetup: Contact IT\nBest for: Keeping everything institutional\n\nSee DEPLOYMENT.md for detailed instructions."
+  },
+  {
+    "objectID": "QUICK_START.html#setup-checklist",
+    "href": "QUICK_START.html#setup-checklist",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Customize home page - Add your name, meeting time, office hours\nCreate syllabus - Fill in syllabus.qmd\nAdd module content - Fill in each Phase (1-5)\nPick deployment - GitHub, Netlify, or University server\nDeploy - Follow your chosen method\nTest as student - Download vault and follow setup guide\nPost to Blackboard - Share the URL\nShare with students - Done! ✅"
+  },
+  {
+    "objectID": "QUICK_START.html#keep-it-updated",
+    "href": "QUICK_START.html#keep-it-updated",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "After deployment, making changes is easy:\n\nEdit .qmd files in VS Code\nBuild by running quarto render\nPush to GitHub with git (if using GitHub Pages)\nDone - Live updates automatically!\n\n# Standard update workflow\nquarto render\ngit add .\ngit commit -m \"Update course materials\"\ngit push"
+  },
+  {
+    "objectID": "QUICK_START.html#content-tips",
+    "href": "QUICK_START.html#content-tips",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Make the Getting Started page prominent\nInclude screenshots in setup.qmd\nLink to Obsidian help resources\nCreate a “Common Issues” section\n\n\n\n\n\nStart with learning objectives\nInclude readings, videos, and activities\nAdd reflection prompts\nLink to templates in the vault\nInclude due dates and deadlines\n\n\n\n\n\nList all required software with download links\nProvide quick reference guides\nLink to external tools (Zotero, GitHub, etc.)\nCreate a FAQ section"
+  },
+  {
+    "objectID": "QUICK_START.html#example-module-structure",
+    "href": "QUICK_START.html#example-module-structure",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Each Phase module should include:\n# Phase X: [Title]\n\n## Learning Objectives\n- Objective 1\n- Objective 2\n- Objective 3\n\n## Key Concepts\n- Concept A: explanation\n- Concept B: explanation\n\n## Activities\n1. Activity name\n   - Step 1\n   - Step 2\n   - Due date\n\n## Resources\n- Reading 1\n- Video 1\n- Template link\n\n## Reflection Prompt\n[Use the three thinking paths]"
+  },
+  {
+    "objectID": "QUICK_START.html#customization-options",
+    "href": "QUICK_START.html#customization-options",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Edit _quarto.yml:\nformat:\n  html:\n    theme: cosmo  # Try: darkly, lumen, readable, spacelab\n\n\n\n\nCreate new file.qmd\nAdd to _quarto.yml sidebar\nRun quarto render\nRedeploy!\n\n\n\n\nPlace image in images/ folder and reference in setup."
+  },
+  {
+    "objectID": "QUICK_START.html#student-experience",
+    "href": "QUICK_START.html#student-experience",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "When students visit your site:\n\nLand on home page → See course overview\nClick “Get Started” → View step-by-step setup\nGo to Resources → Download Liaison_Vault.zip\nFollow setup guide → Install Obsidian & vault\nEnter Phase 1 → Begin course content\nUse templates → Weekly journals, data dictionaries\nLearn through 5 phases → Complete program\nSucceed! → Ready for future careers"
+  },
+  {
+    "objectID": "QUICK_START.html#support",
+    "href": "QUICK_START.html#support",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Quarto help: https://quarto.org/docs\nObsidian tutorials: https://obsidian.md/\nGitHub Pages: https://pages.github.com/\nYour students: Use Blackboard announcements"
+  },
+  {
+    "objectID": "QUICK_START.html#youre-ready",
+    "href": "QUICK_START.html#youre-ready",
+    "title": "Quick Reference Guide",
+    "section": "",
+    "text": "Your professional student resource website is built, tested, and ready to deploy.\nNext step: Pick your deployment option and share with your students.\nSee README.md and DEPLOYMENT.md for detailed guidance.\n\nQuestions? Check the detailed guides or customize to fit your needs!"
+  },
+  {
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Getting Started",
+    "section": "",
+    "text": "This page will guide you through your initial setup. Complete these steps before Phase 1."
+  },
+  {
+    "objectID": "setup.html#welcome-to-the-liaison-program",
+    "href": "setup.html#welcome-to-the-liaison-program",
+    "title": "Getting Started",
+    "section": "",
+    "text": "This page will guide you through your initial setup. Complete these steps before Phase 1."
+  },
+  {
+    "objectID": "setup.html#step-1-download-your-workspace-5-minutes",
+    "href": "setup.html#step-1-download-your-workspace-5-minutes",
+    "title": "Getting Started",
+    "section": "Step 1: Download Your Workspace (5 minutes)",
+    "text": "Step 1: Download Your Workspace (5 minutes)\nVisit the Resources page and download the Liaison_Vault.zip file.\nExtract it to a location like: - Mac/Linux: ~/Documents/Liaison_Vault - Windows: C:\\Users\\YourName\\Documents\\Liaison_Vault"
+  },
+  {
+    "objectID": "setup.html#step-2-install-obsidian-5-minutes",
+    "href": "setup.html#step-2-install-obsidian-5-minutes",
+    "title": "Getting Started",
+    "section": "Step 2: Install Obsidian (5 minutes)",
+    "text": "Step 2: Install Obsidian (5 minutes)\n\nGo to obsidian.md and download Obsidian\nInstall it on your computer\nOpen Obsidian and select “Open folder as vault”\nNavigate to your Liaison_Vault folder and open it\n\nFirst time in Obsidian? - Click the folder icon on the left sidebar to see your vault structure - Open 00_START_HERE.md to read your orientation guide"
+  },
+  {
+    "objectID": "setup.html#step-3-configure-obsidian-settings-3-minutes",
+    "href": "setup.html#step-3-configure-obsidian-settings-3-minutes",
+    "title": "Getting Started",
+    "section": "Step 3: Configure Obsidian Settings (3 minutes)",
+    "text": "Step 3: Configure Obsidian Settings (3 minutes)\nOnce your vault is open in Obsidian:\n\nGo to Settings (gear icon, bottom left)\nClick Files & Links in the sidebar\nUnder “Default location for new attachments”, select 04_Resources\nThis ensures all images, PDFs, and media files go to the right place"
+  },
+  {
+    "objectID": "setup.html#step-4-explore-your-vault-structure",
+    "href": "setup.html#step-4-explore-your-vault-structure",
+    "title": "Getting Started",
+    "section": "Step 4: Explore Your Vault Structure",
+    "text": "Step 4: Explore Your Vault Structure\nYour vault contains:\n\n\n\n\n\n\n\n\nFolder\nPurpose\nAction\n\n\n\n\n00_Inbox\nQuick notes & ideas\nCapture thoughts here first\n\n\n01_Journal\nWeekly reflections\nUse the template to reflect each week\n\n\n02_Literature\nReading notes\nStore all your research notes here\n\n\n03_Project\nActive research work\nOrganize by prospectus, codebook, data, drafts\n\n\n04_Resources\nMedia & attachments\nImages, PDFs, external files\n\n\n99_Templates\nReusable templates\nCopy these to start assignments"
+  },
+  {
+    "objectID": "setup.html#step-5-review-the-weekly-journal-template-5-minutes",
+    "href": "setup.html#step-5-review-the-weekly-journal-template-5-minutes",
+    "title": "Getting Started",
+    "section": "Step 5: Review the Weekly Journal Template (5 minutes)",
+    "text": "Step 5: Review the Weekly Journal Template (5 minutes)\nOpen 99_Templates → Weekly_Journal_Template.md\nThis template guides you to reflect using one of three thinking paths: - The Connector: How does this apply to my project? - The Troubleshooter: What broke and how did I fix it? - The Critic: Does this hold true in my experience?"
+  },
+  {
+    "objectID": "setup.html#step-6-youre-ready",
+    "href": "setup.html#step-6-youre-ready",
+    "title": "Getting Started",
+    "section": "Step 6: You’re Ready!",
+    "text": "Step 6: You’re Ready!\nOnce you complete these steps, move to Phase 1: Orientation in the sidebar to begin."
+  },
+  {
+    "objectID": "setup.html#troubleshooting",
+    "href": "setup.html#troubleshooting",
+    "title": "Getting Started",
+    "section": "Troubleshooting",
+    "text": "Troubleshooting\nQ: I extracted the ZIP file but Obsidian won’t open it as a vault - Make sure you’re opening the folder that contains the .obsidian hidden folder - Try right-clicking the folder and checking “Show hidden files” if needed\nQ: Where do I put my weekly journal entries? - Create a new file in 01_Journal named something like Week_01_MyName.md - Copy the template from 99_Templates/Weekly_Journal_Template.md and fill it out\nQ: Can I share my vault with classmates? - Yes! You can email them the ZIP file, or sync it via Git/GitHub for collaborative projects\n\nQuestions? Reach out via your course management system or check your course syllabus for contact information."
+  }
+]
