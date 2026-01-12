@@ -524,16 +524,37 @@
   {
     "objectID": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html",
     "href": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html",
-    "title": "Week X: [Title Here]",
+    "title": "Weekly Journal Entry Guide",
     "section": "",
-    "text": "Date: [Insert Date] Reading: [Insert Chapter]\n\n\n(Choose one path below and delete the others)\n\n\nHow does this week’s theory specifically apply to the project I am building?\n\n\n\nWhat went wrong in the Lab this week, and exactly how did I fix it?\n\n\n\nThe author claims X, but does that hold true in my experience/modern media?\n\nTags: #journal #weekX"
+    "text": "Each week, you’ll reflect on course material using one of three approaches. Pick the one that connects most to what you’re thinking about this week.\n\n\n\n\n\n\nDefinition: Link this week’s material to something bigger—your project, a previous concept, real-world examples, or your own experience.\nExample Prompt: “How does this week’s reading connect to what I’m working on?”\n\n\n\n\nDefinition: Document a challenge you faced and how you worked through it—technical, conceptual, or practical.\nExample Prompt: “What was difficult this week, and how did I solve it?”\n\n\n\n\nDefinition: Ask a critical question about the material. Challenge an assumption, identify a gap, or explore an implication.\nExample Prompt: “What question or assumption from this week intrigues or concerns me?”\n\n\n\n\n\n\nLength: 250-300 words\nDue: Every Friday by 11:59 PM\nChoose ONE approach and delete the other two\nTag: Include #journal #weekX at the bottom"
   },
   {
-    "objectID": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#the-reflection",
-    "href": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#the-reflection",
-    "title": "Week X: [Title Here]",
+    "objectID": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#how-to-approach-your-reflection",
+    "href": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#how-to-approach-your-reflection",
+    "title": "Weekly Journal Entry Guide",
     "section": "",
-    "text": "(Choose one path below and delete the others)\n\n\nHow does this week’s theory specifically apply to the project I am building?\n\n\n\nWhat went wrong in the Lab this week, and exactly how did I fix it?\n\n\n\nThe author claims X, but does that hold true in my experience/modern media?\n\nTags: #journal #weekX"
+    "text": "Each week, you’ll reflect on course material using one of three approaches. Pick the one that connects most to what you’re thinking about this week."
+  },
+  {
+    "objectID": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#the-three-approaches",
+    "href": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#the-three-approaches",
+    "title": "Weekly Journal Entry Guide",
+    "section": "",
+    "text": "Definition: Link this week’s material to something bigger—your project, a previous concept, real-world examples, or your own experience.\nExample Prompt: “How does this week’s reading connect to what I’m working on?”\n\n\n\n\nDefinition: Document a challenge you faced and how you worked through it—technical, conceptual, or practical.\nExample Prompt: “What was difficult this week, and how did I solve it?”\n\n\n\n\nDefinition: Ask a critical question about the material. Challenge an assumption, identify a gap, or explore an implication.\nExample Prompt: “What question or assumption from this week intrigues or concerns me?”"
+  },
+  {
+    "objectID": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#requirements",
+    "href": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#requirements",
+    "title": "Weekly Journal Entry Guide",
+    "section": "",
+    "text": "Length: 250-300 words\nDue: Every Friday by 11:59 PM\nChoose ONE approach and delete the other two\nTag: Include #journal #weekX at the bottom"
+  },
+  {
+    "objectID": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#your-reflection",
+    "href": "Liaison_Vault/99_Templates/Weekly_Journal_Template.html#your-reflection",
+    "title": "Weekly Journal Entry Guide",
+    "section": "Your Reflection",
+    "text": "Your Reflection\n[Write your 250-300 word reflection here. Focus on one of the three approaches above.]\n\nTags: #journal #weekX"
   },
   {
     "objectID": "QUICK_START.html",

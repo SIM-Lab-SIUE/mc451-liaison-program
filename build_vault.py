@@ -76,7 +76,9 @@ def create_journal_template():
     vault_path = Path("Liaison_Vault")
     template_path = vault_path / "99_Templates" / "Weekly_Journal_Template.md"
     
-    content = """# Week X: [Title Here]
+    # Only create if it doesn't exist - don't overwrite manually edited versions
+    if not template_path.exists():
+        content = """# Week X: [Title Here]
 
 **Date:** [Insert Date]
 **Reading:** [Insert Chapter]
@@ -101,8 +103,8 @@ def create_journal_template():
 
 **Tags:** #journal #weekX
 """
-    
-    template_path.write_text(content, encoding='utf-8')
+        
+        template_path.write_text(content, encoding='utf-8')
 
 
 def create_data_dictionary_template():
@@ -111,15 +113,17 @@ def create_data_dictionary_template():
     vault_path = Path("Liaison_Vault")
     template_path = vault_path / "99_Templates" / "Data_Dictionary_Template.md"
     
-    content = """# Data Dictionary
+    # Only create if it doesn't exist - don't overwrite manually edited versions
+    if not template_path.exists():
+        content = """# Data Dictionary
 
 | Variable Name | Conceptual Definition (The Dictionary) | Operational Definition (The Checklist) | Levels of Measurement |
 | :--- | :--- | :--- | :--- |
 | `frame_type` | The dominant angle of the story. | 1 = Economic, 2 = Conflict, 3 = Human Interest | Nominal |
 | `tone` | The emotional feeling of the text. | Count of negative words vs positive words. | Ratio |
 """
-    
-    template_path.write_text(content, encoding='utf-8')
+        
+        template_path.write_text(content, encoding='utf-8')
 
 
 def zip_vault():
