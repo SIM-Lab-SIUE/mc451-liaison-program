@@ -460,6 +460,69 @@
     "text": "Q: GitHub Pages shows 404 - Make sure you selected /_site folder (not root) - Wait 3-5 minutes for the first build - Check Settings → Pages for build status\nQ: Push failed - authentication error - You may need to set up a Personal Access Token - Go to GitHub Settings → Developer settings → Personal access tokens - Create token with repo scope - Use token as password when pushing\nQ: Resource files (Liaison_Vault.zip) not showing - The .gitignore should NOT exclude resources/ - Check that resources/Liaison_Vault.zip was committed - Run: git ls-files resources/ to verify\n\nReady to go! Create the repository on GitHub, then run the push commands above. 🚀"
   },
   {
+    "objectID": "DEPLOYMENT.html",
+    "href": "DEPLOYMENT.html",
+    "title": "Deployment Guide",
+    "section": "",
+    "text": "Congratulations! Your student resource website has been successfully built. Here’s how to deploy it for your students."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#your-quarto-website-is-ready",
+    "href": "DEPLOYMENT.html#your-quarto-website-is-ready",
+    "title": "Deployment Guide",
+    "section": "",
+    "text": "Congratulations! Your student resource website has been successfully built. Here’s how to deploy it for your students."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#what-you-have",
+    "href": "DEPLOYMENT.html#what-you-have",
+    "title": "Deployment Guide",
+    "section": "What You Have",
+    "text": "What You Have\n✅ Quarto Website - A fully functional, professional resource site\n✅ Liaison Vault - Pre-configured Obsidian vault for students\n✅ Setup Instructions - Step-by-step guide for students\n✅ Built HTML - Ready to deploy (in the _site/ folder)"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#deployment-options",
+    "href": "DEPLOYMENT.html#deployment-options",
+    "title": "Deployment Guide",
+    "section": "Deployment Options",
+    "text": "Deployment Options\n\nOption 1: GitHub Pages (Recommended - FREE)\n\nCreate a GitHub repository\n\nGo to github.com and create a new public repo named quarto_website\n\nPush your site\ncd C:\\mc451-sp26\\quarto_website\ngit init\ngit add .\ngit commit -m \"Initial commit: Liaison Program website\"\ngit branch -M main\ngit remote add origin https://github.com/YOUR_USERNAME/quarto_website.git\ngit push -u origin main\nEnable GitHub Pages\n\nGo to your repo Settings → Pages\nSet Source to “Deploy from a branch”\nSet Branch to main and folder to _site\nYour site will be live at: https://YOUR_USERNAME.github.io/quarto_website\n\nShare the link in Blackboard\n\nCopy the GitHub Pages URL\nAdd it to your Blackboard course as a web link or announcement\n\n\n\n\nOption 2: Netlify (FREE, Easier Setup)\n\nGo to netlify.com and sign up\nClick “New site from Git” and connect your GitHub repo\nSet Build Command to: quarto render\nSet Publish Directory to: _site\nDeploy automatically on every push\n\n\n\nOption 3: University Server/Portal\nContact your IT department about hosting the _site/ folder on your institution’s server."
+  },
+  {
+    "objectID": "DEPLOYMENT.html#what-students-see",
+    "href": "DEPLOYMENT.html#what-students-see",
+    "title": "Deployment Guide",
+    "section": "What Students See",
+    "text": "What Students See\nWhen students visit your site, they’ll find:\n\nHome page - Welcome and quick-start buttons\nSetup instructions - How to install and configure Obsidian\nResources page - Downloads (Liaison_Vault.zip and tools)\nFive phase modules - Course content (01_orientation through 05_delivery)\nSidebar navigation - Easy access to all sections"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#after-deployment",
+    "href": "DEPLOYMENT.html#after-deployment",
+    "title": "Deployment Guide",
+    "section": "After Deployment",
+    "text": "After Deployment\n\nShare with Students\nAdd this to your Blackboard Course:\n📚 Course Resources\nWelcome! Access all course materials here: [YOUR_WEBSITE_URL]\n\nOn this site you'll find:\n✓ Your Liaison Obsidian Vault (download & setup)\n✓ Step-by-step getting started guide\n✓ All course modules and materials\n✓ Weekly templates and tools\n\nStart with the Setup page if this is your first time!\n\n\nKeep It Updated\nAfter deployment, whenever you update content:\n\nEdit your .qmd files in VS Code\nRun quarto render to rebuild\nGit commit and push to update the live site\ngit add .\ngit commit -m \"Update course materials\"\ngit push"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#customization-tips",
+    "href": "DEPLOYMENT.html#customization-tips",
+    "title": "Deployment Guide",
+    "section": "Customization Tips",
+    "text": "Customization Tips\n\nUpdate Your Course Info\nEdit index.qmd to add: - Instructor name and contact info - Meeting times and location - Office hours\n\n\nAdd More Content\nCreate new .qmd files in the modules/ folder and add them to _quarto.yml sidebar\n\n\nChange the Theme\nIn _quarto.yml, change the theme from cosmo to: - darkly - Dark theme - readable - High contrast - lumen - Light and clean - spacelab - Modern\n\n\nAdd Syllabus\nCreate syllabus.qmd (it’s already referenced in the sidebar!)"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#file-structure",
+    "href": "DEPLOYMENT.html#file-structure",
+    "title": "Deployment Guide",
+    "section": "File Structure",
+    "text": "File Structure\nquarto_website/\n├── _quarto.yml          # Site config & navigation\n├── index.qmd            # Home page\n├── setup.qmd            # Getting started guide\n├── syllabus.qmd         # Add your course syllabus here\n├── build_vault.py       # Script that created your vault\n├── resources/\n│   ├── index.qmd        # Resources page\n│   └── Liaison_Vault.zip # Student download\n├── modules/             # Course content (5 phases)\n├── slides/              # Presentation slides (optional)\n├── assignments/         # Assignment details (optional)\n└── _site/               # Built website (don't edit directly)"
+  },
+  {
+    "objectID": "DEPLOYMENT.html#next-steps",
+    "href": "DEPLOYMENT.html#next-steps",
+    "title": "Deployment Guide",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nAdd your syllabus - Create/edit syllabus.qmd\nCustomize home page - Edit index.qmd with your details\nAdd module content - Fill in each phase (01-05) modules\nDeploy - Choose Option 1, 2, or 3 above\nShare link - Post in Blackboard for your students\n\n\nQuestions or need help? Let me know - I can help you customize this further!"
+  },
+  {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About Dr. Leith",
@@ -530,67 +593,134 @@
     ]
   },
   {
-    "objectID": "DEPLOYMENT.html",
-    "href": "DEPLOYMENT.html",
-    "title": "Deployment Guide",
+    "objectID": "github-setup.html",
+    "href": "github-setup.html",
+    "title": "Getting Started with GitHub",
     "section": "",
-    "text": "Congratulations! Your student resource website has been successfully built. Here’s how to deploy it for your students."
+    "text": "As a Communication Liaison, you’ll work with data and research projects that require collaboration and version control. GitHub is the industry standard for managing code, sharing research, and collaborating with teams. This guide walks you through creating your GitHub account and getting comfortable with the basics.",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
   },
   {
-    "objectID": "DEPLOYMENT.html#your-quarto-website-is-ready",
-    "href": "DEPLOYMENT.html#your-quarto-website-is-ready",
-    "title": "Deployment Guide",
+    "objectID": "github-setup.html#why-github",
+    "href": "github-setup.html#why-github",
+    "title": "Getting Started with GitHub",
     "section": "",
-    "text": "Congratulations! Your student resource website has been successfully built. Here’s how to deploy it for your students."
+    "text": "As a Communication Liaison, you’ll work with data and research projects that require collaboration and version control. GitHub is the industry standard for managing code, sharing research, and collaborating with teams. This guide walks you through creating your GitHub account and getting comfortable with the basics.",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
   },
   {
-    "objectID": "DEPLOYMENT.html#what-you-have",
-    "href": "DEPLOYMENT.html#what-you-have",
-    "title": "Deployment Guide",
-    "section": "What You Have",
-    "text": "What You Have\n✅ Quarto Website - A fully functional, professional resource site\n✅ Liaison Vault - Pre-configured Obsidian vault for students\n✅ Setup Instructions - Step-by-step guide for students\n✅ Built HTML - Ready to deploy (in the _site/ folder)"
+    "objectID": "github-setup.html#step-1-create-your-github-account",
+    "href": "github-setup.html#step-1-create-your-github-account",
+    "title": "Getting Started with GitHub",
+    "section": "Step 1: Create Your GitHub Account",
+    "text": "Step 1: Create Your GitHub Account\n\n1.1 Go to GitHub\nOpen your web browser and navigate to github.com. You’ll see the GitHub homepage with a signup form.\n\n\n1.2 Sign Up\nClick the “Sign up” button (or the email field) and enter:\n\nEmail address: Use your SIUE email or personal email (you can change this later)\nPassword: Create a strong password (mix of uppercase, lowercase, numbers, and symbols)\nUsername: Choose a professional username that you’d be comfortable using in a job application\n\nTip: Avoid numbers or special characters if possible; keep it simple and memorable\nExample: alex-leith or apleith works better than leith1993 or alex_code_master\n\n\n\n\n1.3 Verify Your Email\nGitHub will send you a verification email. Check your inbox, open the email from GitHub, and click the verification link. This confirms your account.\n\n\n1.4 Complete Your Profile\nAfter verification, GitHub will ask you setup questions:\n\nWould you like to receive product updates and announcements via email? → Your choice\nHow many people are in your team? → Select “Just me”\nWhat are you most interested in? → Select options relevant to you (data, journalism, communication, etc.)",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
   },
   {
-    "objectID": "DEPLOYMENT.html#deployment-options",
-    "href": "DEPLOYMENT.html#deployment-options",
-    "title": "Deployment Guide",
-    "section": "Deployment Options",
-    "text": "Deployment Options\n\nOption 1: GitHub Pages (Recommended - FREE)\n\nCreate a GitHub repository\n\nGo to github.com and create a new public repo named quarto_website\n\nPush your site\ncd C:\\mc451-sp26\\quarto_website\ngit init\ngit add .\ngit commit -m \"Initial commit: Liaison Program website\"\ngit branch -M main\ngit remote add origin https://github.com/YOUR_USERNAME/quarto_website.git\ngit push -u origin main\nEnable GitHub Pages\n\nGo to your repo Settings → Pages\nSet Source to “Deploy from a branch”\nSet Branch to main and folder to _site\nYour site will be live at: https://YOUR_USERNAME.github.io/quarto_website\n\nShare the link in Blackboard\n\nCopy the GitHub Pages URL\nAdd it to your Blackboard course as a web link or announcement\n\n\n\n\nOption 2: Netlify (FREE, Easier Setup)\n\nGo to netlify.com and sign up\nClick “New site from Git” and connect your GitHub repo\nSet Build Command to: quarto render\nSet Publish Directory to: _site\nDeploy automatically on every push\n\n\n\nOption 3: University Server/Portal\nContact your IT department about hosting the _site/ folder on your institution’s server."
+    "objectID": "github-setup.html#step-2-set-up-your-github-profile",
+    "href": "github-setup.html#step-2-set-up-your-github-profile",
+    "title": "Getting Started with GitHub",
+    "section": "Step 2: Set Up Your GitHub Profile",
+    "text": "Step 2: Set Up Your GitHub Profile\n\n2.1 Add a Profile Picture\nClick your profile icon (top right corner) → Settings → Profile picture\nAdd a professional headshot or avatar. This helps collaborators recognize you and makes your profile more personal.\n\n\n2.2 Fill Out Your Profile\nIn Settings, complete these fields:\n\n\n\nField\nWhat to Enter\n\n\n\n\nBio\nBrief description: e.g., “Mass Communications student\n\n\nCompany\nSIUE or your workplace\n\n\nLocation\nYour city or “Edwardsville, IL”\n\n\nWebsite\n(Optional) Your personal website or portfolio\n\n\n\nExample Bio:\nCommunication Liaison | Mass Communications @ SIUE\nExploring research methodologies and data storytelling\n\n\n2.3 Make Your Profile Public\nIn Settings → Visibility, ensure: - ☑️ Make my profile public (this allows others to see your work and contributions) - ☑️ Include private contributions in my contribution graph (shows your activity)",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
   },
   {
-    "objectID": "DEPLOYMENT.html#what-students-see",
-    "href": "DEPLOYMENT.html#what-students-see",
-    "title": "Deployment Guide",
-    "section": "What Students See",
-    "text": "What Students See\nWhen students visit your site, they’ll find:\n\nHome page - Welcome and quick-start buttons\nSetup instructions - How to install and configure Obsidian\nResources page - Downloads (Liaison_Vault.zip and tools)\nFive phase modules - Course content (01_orientation through 05_delivery)\nSidebar navigation - Easy access to all sections"
+    "objectID": "github-setup.html#step-3-understand-githubs-key-features",
+    "href": "github-setup.html#step-3-understand-githubs-key-features",
+    "title": "Getting Started with GitHub",
+    "section": "Step 3: Understand GitHub’s Key Features",
+    "text": "Step 3: Understand GitHub’s Key Features\n\nRepositories (Repos)\nA repository is a folder that stores your project files, code, and documentation. Think of it as a project folder in the cloud that tracks all changes over time.\n\n\nCreating a Test Repository\nLet’s create your first repository to get comfortable:\n\nClick the “+” icon (top right) → New repository\nRepository name: hello-world or my-first-repo\nDescription: “My first GitHub repository”\nPublic or Private? → Select Public (this is important for sharing your work)\n☑️ Initialize with README (this creates a welcome file)\nClick Create repository\n\n\n\nThe README File\nEvery repository should have a README.md file. This is like a cover page that explains: - What the project is about - How to use it - Who created it\nWhen you visit a repository on GitHub, the README appears automatically below the file list.",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
   },
   {
-    "objectID": "DEPLOYMENT.html#after-deployment",
-    "href": "DEPLOYMENT.html#after-deployment",
-    "title": "Deployment Guide",
-    "section": "After Deployment",
-    "text": "After Deployment\n\nShare with Students\nAdd this to your Blackboard Course:\n📚 Course Resources\nWelcome! Access all course materials here: [YOUR_WEBSITE_URL]\n\nOn this site you'll find:\n✓ Your Liaison Obsidian Vault (download & setup)\n✓ Step-by-step getting started guide\n✓ All course modules and materials\n✓ Weekly templates and tools\n\nStart with the Setup page if this is your first time!\n\n\nKeep It Updated\nAfter deployment, whenever you update content:\n\nEdit your .qmd files in VS Code\nRun quarto render to rebuild\nGit commit and push to update the live site\ngit add .\ngit commit -m \"Update course materials\"\ngit push"
+    "objectID": "github-setup.html#step-4-clone-a-repository-get-it-on-your-computer",
+    "href": "github-setup.html#step-4-clone-a-repository-get-it-on-your-computer",
+    "title": "Getting Started with GitHub",
+    "section": "Step 4: Clone a Repository (Get It on Your Computer)",
+    "text": "Step 4: Clone a Repository (Get It on Your Computer)\n\n4.1 Install Git\nTo work with repositories on your computer, you need Git (the tool GitHub uses).\nWindows: 1. Download Git from git-scm.com 2. Run the installer and follow default options 3. Restart your computer\nMac: 1. Download Git from git-scm.com or use Homebrew 2. Open Terminal and run: brew install git\nLinux: Open Terminal and run:\nsudo apt-get install git\n\n\n4.2 Clone Your First Repository\n\nGo to your hello-world repository on GitHub\nClick the green “Code” button\nCopy the HTTPS URL (should look like https://github.com/yourusername/hello-world.git)\nOpen Terminal (Mac/Linux) or PowerShell (Windows)\nNavigate to where you want to store your repository:\ncd Documents\nClone the repository:\ngit clone https://github.com/yourusername/hello-world.git\nEnter the repository folder:\ncd hello-world\n\nCongratulations! You now have a copy of your repository on your computer.",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
   },
   {
-    "objectID": "DEPLOYMENT.html#customization-tips",
-    "href": "DEPLOYMENT.html#customization-tips",
-    "title": "Deployment Guide",
-    "section": "Customization Tips",
-    "text": "Customization Tips\n\nUpdate Your Course Info\nEdit index.qmd to add: - Instructor name and contact info - Meeting times and location - Office hours\n\n\nAdd More Content\nCreate new .qmd files in the modules/ folder and add them to _quarto.yml sidebar\n\n\nChange the Theme\nIn _quarto.yml, change the theme from cosmo to: - darkly - Dark theme - readable - High contrast - lumen - Light and clean - spacelab - Modern\n\n\nAdd Syllabus\nCreate syllabus.qmd (it’s already referenced in the sidebar!)"
+    "objectID": "github-setup.html#step-5-make-your-first-commit",
+    "href": "github-setup.html#step-5-make-your-first-commit",
+    "title": "Getting Started with GitHub",
+    "section": "Step 5: Make Your First Commit",
+    "text": "Step 5: Make Your First Commit\n\n5.1 Edit Your README\n\nOpen the folder hello-world on your computer\nFind the file README.md and open it in a text editor (Notepad, VS Code, etc.)\nAdd some content:\n\n# Hello World\n\nThis is my first GitHub repository.\n\n## About Me\n- I'm a Communication Liaison\n- I'm learning research methods\n- I'm excited to collaborate\n\n## Goals\n- Master data analysis\n- Tell stories with data\n- Connect technical and creative teams\n\nSave the file\n\n\n\n5.2 Push Changes to GitHub\nBack in Terminal/PowerShell, run these commands:\n# Stage your changes (tell Git which files to save)\ngit add README.md\n\n# Commit your changes (save them locally with a message)\ngit commit -m \"Update README with introduction\"\n\n# Push changes to GitHub (send them to the website)\ngit push\nGo back to GitHub.com, refresh your hello-world repository page, and you’ll see your updated README!",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
   },
   {
-    "objectID": "DEPLOYMENT.html#file-structure",
-    "href": "DEPLOYMENT.html#file-structure",
-    "title": "Deployment Guide",
-    "section": "File Structure",
-    "text": "File Structure\nquarto_website/\n├── _quarto.yml          # Site config & navigation\n├── index.qmd            # Home page\n├── setup.qmd            # Getting started guide\n├── syllabus.qmd         # Add your course syllabus here\n├── build_vault.py       # Script that created your vault\n├── resources/\n│   ├── index.qmd        # Resources page\n│   └── Liaison_Vault.zip # Student download\n├── modules/             # Course content (5 phases)\n├── slides/              # Presentation slides (optional)\n├── assignments/         # Assignment details (optional)\n└── _site/               # Built website (don't edit directly)"
+    "objectID": "github-setup.html#step-6-github-vocabulary-key-concepts",
+    "href": "github-setup.html#step-6-github-vocabulary-key-concepts",
+    "title": "Getting Started with GitHub",
+    "section": "Step 6: GitHub Vocabulary & Key Concepts",
+    "text": "Step 6: GitHub Vocabulary & Key Concepts\n\n\n\n\n\n\n\nTerm\nMeaning\n\n\n\n\nRepository (Repo)\nA folder that stores your project and its history\n\n\nCommit\nA saved version of your work with a message describing what changed\n\n\nPush\nSend your local changes to GitHub\n\n\nPull\nDownload changes from GitHub to your computer\n\n\nBranch\nA separate version of your project (useful for testing new ideas)\n\n\nIssue\nA task, bug, or discussion for a project\n\n\nPull Request (PR)\nA proposal to add changes from one branch to another\n\n\nFork\nCreate your own copy of someone else’s repository",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
   },
   {
-    "objectID": "DEPLOYMENT.html#next-steps",
-    "href": "DEPLOYMENT.html#next-steps",
-    "title": "Deployment Guide",
+    "objectID": "github-setup.html#step-7-best-practices",
+    "href": "github-setup.html#step-7-best-practices",
+    "title": "Getting Started with GitHub",
+    "section": "Step 7: Best Practices",
+    "text": "Step 7: Best Practices\n\n1. Use Clear Commit Messages\nBad: “Update stuff” or “Fix”\nGood: “Add data analysis section to README” or “Fix typo in methods section”\n\n\n2. Commit Often\nMake commits when you complete a logical task, not just once per day.\n\n\n3. Keep Your README Updated\nYour README is the first impression. Keep it current and clear.\n\n\n4. Make It Public\nFor this course, make your repository public so I can see your work. You can always make it private later for sensitive projects.\n\n\n5. Use Meaningful Repository Names\nBad: project or stuff\nGood: mc451-research-analysis or data-storytelling-project",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
+  },
+  {
+    "objectID": "github-setup.html#step-8-troubleshooting",
+    "href": "github-setup.html#step-8-troubleshooting",
+    "title": "Getting Started with GitHub",
+    "section": "Step 8: Troubleshooting",
+    "text": "Step 8: Troubleshooting\n\n“Permission denied” Error\nIf you see Permission denied (publickey), you need to set up SSH authentication. For now, use HTTPS (which you’re already doing). Later, GitHub has tutorials to set up SSH if needed.\n\n\nChanges Not Appearing on GitHub\nMake sure you: 1. ✅ Used git add to stage files 2. ✅ Used git commit -m \"message\" to commit 3. ✅ Used git push to push to GitHub\nAll three steps are necessary!\n\n\nHow to Undo a Commit\nIf you made a mistake, run:\ngit log  # See your commit history\ngit revert HEAD  # Undo the last commit",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
+  },
+  {
+    "objectID": "github-setup.html#next-steps",
+    "href": "github-setup.html#next-steps",
+    "title": "Getting Started with GitHub",
     "section": "Next Steps",
-    "text": "Next Steps\n\nAdd your syllabus - Create/edit syllabus.qmd\nCustomize home page - Edit index.qmd with your details\nAdd module content - Fill in each phase (01-05) modules\nDeploy - Choose Option 1, 2, or 3 above\nShare link - Post in Blackboard for your students\n\n\nQuestions or need help? Let me know - I can help you customize this further!"
+    "text": "Next Steps\n\nCreate your GitHub account using this guide\nCreate your hello-world repository\nEdit the README and push changes\nShare your GitHub profile URL (format: github.com/yourusername) with me\nExplore other repositories and see how others organize their work",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
+  },
+  {
+    "objectID": "github-setup.html#resources",
+    "href": "github-setup.html#resources",
+    "title": "Getting Started with GitHub",
+    "section": "Resources",
+    "text": "Resources\n\nGitHub Docs: docs.github.com\nGit Basics: git-scm.com/book (Pro Git book, free online)\nGitHub Learning Lab: lab.github.com (interactive tutorials)\nMarkdown Guide: markdownguide.org (learn to format your README)",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
+  },
+  {
+    "objectID": "github-setup.html#questions",
+    "href": "github-setup.html#questions",
+    "title": "Getting Started with GitHub",
+    "section": "Questions?",
+    "text": "Questions?\nIf you get stuck, check the GitHub Docs, try a Google search with your specific error message, or come to office hours. We’ll work through it together!",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
   },
   {
     "objectID": "index.html",

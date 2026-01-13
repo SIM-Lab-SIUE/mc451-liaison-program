@@ -1,0 +1,278 @@
+---
+title: "Getting Started with GitHub"
+---
+
+## Why GitHub?
+
+As a Communication Liaison, you'll work with data and research projects that require collaboration and version control. GitHub is the industry standard for managing code, sharing research, and collaborating with teams. This guide walks you through creating your GitHub account and getting comfortable with the basics.
+
+---
+
+## Step 1: Create Your GitHub Account
+
+### 1.1 Go to GitHub
+
+Open your web browser and navigate to [github.com](https://github.com). You'll see the GitHub homepage with a signup form.
+
+### 1.2 Sign Up
+
+Click the **"Sign up"** button (or the email field) and enter:
+
+- **Email address**: Use your SIUE email or personal email (you can change this later)
+- **Password**: Create a strong password (mix of uppercase, lowercase, numbers, and symbols)
+- **Username**: Choose a professional username that you'd be comfortable using in a job application
+  - **Tip**: Avoid numbers or special characters if possible; keep it simple and memorable
+  - **Example**: `alex-leith` or `apleith` works better than `leith1993` or `alex_code_master`
+
+### 1.3 Verify Your Email
+
+GitHub will send you a verification email. Check your inbox, open the email from GitHub, and click the verification link. This confirms your account.
+
+### 1.4 Complete Your Profile
+
+After verification, GitHub will ask you setup questions:
+
+- **Would you like to receive product updates and announcements via email?** → Your choice
+- **How many people are in your team?** → Select "Just me"
+- **What are you most interested in?** → Select options relevant to you (data, journalism, communication, etc.)
+
+---
+
+## Step 2: Set Up Your GitHub Profile
+
+### 2.1 Add a Profile Picture
+
+Click your **profile icon** (top right corner) → **Settings** → **Profile picture**
+
+Add a professional headshot or avatar. This helps collaborators recognize you and makes your profile more personal.
+
+### 2.2 Fill Out Your Profile
+
+In Settings, complete these fields:
+
+| Field | What to Enter |
+|-------|---------------|
+| **Bio** | Brief description: e.g., "Mass Communications student | Communication Liaison | Research & Data" |
+| **Company** | SIUE or your workplace |
+| **Location** | Your city or "Edwardsville, IL" |
+| **Website** | (Optional) Your personal website or portfolio |
+
+**Example Bio:**
+```
+Communication Liaison | Mass Communications @ SIUE
+Exploring research methodologies and data storytelling
+```
+
+### 2.3 Make Your Profile Public
+
+In **Settings** → **Visibility**, ensure:
+- ☑️ Make my profile public (this allows others to see your work and contributions)
+- ☑️ Include private contributions in my contribution graph (shows your activity)
+
+---
+
+## Step 3: Understand GitHub's Key Features
+
+### Repositories (Repos)
+
+A **repository** is a folder that stores your project files, code, and documentation. Think of it as a project folder in the cloud that tracks all changes over time.
+
+### Creating a Test Repository
+
+Let's create your first repository to get comfortable:
+
+1. Click the **"+"** icon (top right) → **New repository**
+2. **Repository name**: `hello-world` or `my-first-repo`
+3. **Description**: "My first GitHub repository"
+4. **Public or Private?** → Select **Public** (this is important for sharing your work)
+5. ☑️ **Initialize with README** (this creates a welcome file)
+6. Click **Create repository**
+
+### The README File
+
+Every repository should have a **README.md** file. This is like a cover page that explains:
+- What the project is about
+- How to use it
+- Who created it
+
+When you visit a repository on GitHub, the README appears automatically below the file list.
+
+---
+
+## Step 4: Clone a Repository (Get It on Your Computer)
+
+### 4.1 Install Git
+
+To work with repositories on your computer, you need **Git** (the tool GitHub uses).
+
+**Windows:**
+1. Download Git from [git-scm.com](https://git-scm.com)
+2. Run the installer and follow default options
+3. Restart your computer
+
+**Mac:**
+1. Download Git from [git-scm.com](https://git-scm.com) or use Homebrew
+2. Open Terminal and run: `brew install git`
+
+**Linux:**
+Open Terminal and run:
+```bash
+sudo apt-get install git
+```
+
+### 4.2 Clone Your First Repository
+
+1. Go to your `hello-world` repository on GitHub
+2. Click the green **"Code"** button
+3. Copy the HTTPS URL (should look like `https://github.com/yourusername/hello-world.git`)
+4. Open **Terminal** (Mac/Linux) or **PowerShell** (Windows)
+5. Navigate to where you want to store your repository:
+   ```bash
+   cd Documents
+   ```
+6. Clone the repository:
+   ```bash
+   git clone https://github.com/yourusername/hello-world.git
+   ```
+7. Enter the repository folder:
+   ```bash
+   cd hello-world
+   ```
+
+Congratulations! You now have a copy of your repository on your computer.
+
+---
+
+## Step 5: Make Your First Commit
+
+### 5.1 Edit Your README
+
+1. Open the folder `hello-world` on your computer
+2. Find the file `README.md` and open it in a text editor (Notepad, VS Code, etc.)
+3. Add some content:
+
+```markdown
+# Hello World
+
+This is my first GitHub repository.
+
+## About Me
+- I'm a Communication Liaison
+- I'm learning research methods
+- I'm excited to collaborate
+
+## Goals
+- Master data analysis
+- Tell stories with data
+- Connect technical and creative teams
+```
+
+4. Save the file
+
+### 5.2 Push Changes to GitHub
+
+Back in Terminal/PowerShell, run these commands:
+
+```bash
+# Stage your changes (tell Git which files to save)
+git add README.md
+
+# Commit your changes (save them locally with a message)
+git commit -m "Update README with introduction"
+
+# Push changes to GitHub (send them to the website)
+git push
+```
+
+Go back to GitHub.com, refresh your `hello-world` repository page, and you'll see your updated README!
+
+---
+
+## Step 6: GitHub Vocabulary & Key Concepts
+
+| Term | Meaning |
+|------|---------|
+| **Repository (Repo)** | A folder that stores your project and its history |
+| **Commit** | A saved version of your work with a message describing what changed |
+| **Push** | Send your local changes to GitHub |
+| **Pull** | Download changes from GitHub to your computer |
+| **Branch** | A separate version of your project (useful for testing new ideas) |
+| **Issue** | A task, bug, or discussion for a project |
+| **Pull Request (PR)** | A proposal to add changes from one branch to another |
+| **Fork** | Create your own copy of someone else's repository |
+
+---
+
+## Step 7: Best Practices
+
+### 1. Use Clear Commit Messages
+
+**Bad:** "Update stuff" or "Fix"  
+**Good:** "Add data analysis section to README" or "Fix typo in methods section"
+
+### 2. Commit Often
+
+Make commits when you complete a logical task, not just once per day.
+
+### 3. Keep Your README Updated
+
+Your README is the first impression. Keep it current and clear.
+
+### 4. Make It Public
+
+For this course, make your repository **public** so I can see your work. You can always make it private later for sensitive projects.
+
+### 5. Use Meaningful Repository Names
+
+**Bad:** `project` or `stuff`  
+**Good:** `mc451-research-analysis` or `data-storytelling-project`
+
+---
+
+## Step 8: Troubleshooting
+
+### "Permission denied" Error
+
+If you see `Permission denied (publickey)`, you need to set up SSH authentication. For now, use HTTPS (which you're already doing). Later, GitHub has tutorials to set up SSH if needed.
+
+### Changes Not Appearing on GitHub
+
+Make sure you:
+1. ✅ Used `git add` to stage files
+2. ✅ Used `git commit -m "message"` to commit
+3. ✅ Used `git push` to push to GitHub
+
+All three steps are necessary!
+
+### How to Undo a Commit
+
+If you made a mistake, run:
+```bash
+git log  # See your commit history
+git revert HEAD  # Undo the last commit
+```
+
+---
+
+## Next Steps
+
+1. **Create your GitHub account** using this guide
+2. **Create your `hello-world` repository**
+3. **Edit the README and push changes**
+4. **Share your GitHub profile URL** (format: `github.com/yourusername`) with me
+5. **Explore other repositories** and see how others organize their work
+
+---
+
+## Resources
+
+- **GitHub Docs**: [docs.github.com](https://docs.github.com)
+- **Git Basics**: [git-scm.com/book](https://git-scm.com/book) (Pro Git book, free online)
+- **GitHub Learning Lab**: [lab.github.com](https://lab.github.com) (interactive tutorials)
+- **Markdown Guide**: [markdownguide.org](https://www.markdownguide.org) (learn to format your README)
+
+---
+
+## Questions?
+
+If you get stuck, check the [GitHub Docs](https://docs.github.com), try a Google search with your specific error message, or come to office hours. We'll work through it together!
