@@ -103,6 +103,55 @@
     "text": "Troubleshooting\nQ: I extracted the ZIP file but Obsidian won’t open it as a vault - Make sure you’re opening the folder that contains the .obsidian hidden folder - Try right-clicking the folder and checking “Show hidden files” if needed\nQ: Where do I put my weekly journal entries? - Create a new file in 01_Journal named something like Week_01_MyName.md - Copy the template from 99_Templates/Weekly_Journal_Template.md and fill it out\nQ: Can I share my vault with classmates? - Yes! You can email them the ZIP file, or sync it via Git/GitHub for collaborative projects\n\nQuestions? Reach out via your course management system or check your course syllabus for contact information."
   },
   {
+    "objectID": "resources/install-r-rstudio.html",
+    "href": "resources/install-r-rstudio.html",
+    "title": "Installing R & RStudio",
+    "section": "",
+    "text": "R and RStudio are essential tools for statistical analysis and data science in this course. This guide covers installation on all major operating systems.\n\n\n\nR: The core statistical programming language and environment\nRStudio: An IDE (Integrated Development Environment) that makes R much easier to use\n\n\n\n\n\n\n\n\n\nGo to CRAN (Comprehensive R Archive Network)\nClick “Download R for Windows”\nClick “base” (first option)\nClick the download link for the latest version (typically named something like R-4.x.x-win.exe)\nRun the installer\n\nAccept default settings (you can leave everything as-is)\nClick through the installation wizard\nInstallation typically takes 2-5 minutes\n\n\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for Windows\nRun the installer\n\nAccept default settings\nThe installer will detect your R installation automatically\nComplete the installation\n\n\n\n\n\n\nOpen RStudio (search for it in Windows Start menu)\nIn the Console pane (usually bottom-left), you should see something like:\nR version 4.x.x (20XX-XX-XX) -- \"...\"\nType: print(\"Hello, R!\") and press Enter\nIf you see [1] \"Hello, R!\", you’re ready to go!\n\n\n\n\n\n\n\n\nOption A: Using the installer (Recommended for beginners)\n\nGo to CRAN macOS\nClick “Download R for macOS”\nSelect the appropriate version:\n\nFor Apple Silicon (M1/M2/M3 chips): Download R-x.x.x-arm64.pkg\nFor Intel Macs: Download R-x.x.x-x86_64.pkg\n(Unsure? Check Apple menu → About This Mac → Chip)\n\nRun the .pkg installer and follow the prompts\nInstallation takes 2-5 minutes\n\nOption B: Using Homebrew (if you use Homebrew)\nbrew install r\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for macOS\nSelect the appropriate version for your Mac (Apple Silicon or Intel)\nOpen the downloaded .dmg file\nDrag RStudio to the Applications folder\nLaunch RStudio from Applications\n\n\n\n\n\nOpen RStudio (find in Applications folder or Spotlight search)\nIn the Console, type: print(\"Hello, R!\") and press Enter\nConfirm you see: [1] \"Hello, R!\"\n\n\n\n\n\n\n\n\n# Update package lists\nsudo apt update\n\n# Install R\nsudo apt install -y r-base r-base-dev\n\n\n\n\nGo to Posit RStudio Downloads\nSelect “RStudio Desktop” → Choose Linux version (Ubuntu 20/22 or Debian)\nDownload the .deb file\nInstall it:\nsudo dpkg -i rstudio-[version].deb\n\nOr install from terminal directly:\nsudo apt install -y rstudio\n\n\n\n\nLaunch RStudio from applications menu or terminal:\nrstudio &\nTest in Console: print(\"Hello, R!\")\nConfirm output: [1] \"Hello, R!\"\n\n\n\n\n\n\n\nOnce R and RStudio are installed, you need to set up your R environment for the course:\n\n\nIn RStudio Console, run:\nsetwd(\"~/Documents\")  # Or your preferred workspace folder\n\n\n\nWe’ll use these packages throughout the course. Install them with:\n# Core data science packages\ninstall.packages(c(\n  \"tidyverse\",      # Data wrangling and visualization\n  \"rmarkdown\",      # Create documents with R code\n  \"quarto\",         # Publishing system\n  \"shiny\",          # Interactive web apps\n  \"ggplot2\"         # Advanced visualization\n))\nThis may take 5-15 minutes (packages are downloading and installing).\n\n\n\nTest that the main packages work:\nlibrary(tidyverse)\nlibrary(ggplot2)\nprint(\"All packages loaded successfully!\")\nIf no errors appear, you’re all set!\n\n\n\n\n\n\n\n\nWindows: Try reinstalling R with administrator privileges\nMac: Restart your computer and try again\nLinux: Run sudo apt install -y r-base to ensure all dependencies are installed\n\n\n\n\n\nRStudio should auto-detect R, but if not:\n\nTools → Global Options → General\nLook for “R version” section\nIf blank, manually browse to your R installation\n\n\n\n\n\n\nMake sure you have internet connection\nTry: install.packages(\"package_name\", repos=\"http://cran.r-project.org\")\nSome packages require additional system libraries (ask in course chat!)\n\n\n\n\n\nTry: install.packages(\"package\", type=\"source\")\n\n\n\n\n\n\n\n\n\nAction\nCommand\n\n\n\n\nSee R version\nR.version.string\n\n\nList installed packages\nlibrary()\n\n\nLoad a package\nlibrary(package_name)\n\n\nInstall a package\ninstall.packages(\"package_name\")\n\n\nGet help\nhelp(function_name) or ?function_name\n\n\nExit R\nq()\n\n\n\n\n\n\n\n\nOfficial R Documentation: https://www.r-project.org/\nRStudio Cheat Sheets: https://posit.co/resources/cheatsheets/\nR for Data Science (Book): https://r4ds.hadley.nz/\nCourse Support: Check the course discussion board for questions\n\nYou’re ready to start the course! See you in Module 1."
+  },
+  {
+    "objectID": "resources/install-r-rstudio.html#what-youre-installing",
+    "href": "resources/install-r-rstudio.html#what-youre-installing",
+    "title": "Installing R & RStudio",
+    "section": "",
+    "text": "R: The core statistical programming language and environment\nRStudio: An IDE (Integrated Development Environment) that makes R much easier to use"
+  },
+  {
+    "objectID": "resources/install-r-rstudio.html#installation-by-operating-system",
+    "href": "resources/install-r-rstudio.html#installation-by-operating-system",
+    "title": "Installing R & RStudio",
+    "section": "",
+    "text": "Go to CRAN (Comprehensive R Archive Network)\nClick “Download R for Windows”\nClick “base” (first option)\nClick the download link for the latest version (typically named something like R-4.x.x-win.exe)\nRun the installer\n\nAccept default settings (you can leave everything as-is)\nClick through the installation wizard\nInstallation typically takes 2-5 minutes\n\n\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for Windows\nRun the installer\n\nAccept default settings\nThe installer will detect your R installation automatically\nComplete the installation\n\n\n\n\n\n\nOpen RStudio (search for it in Windows Start menu)\nIn the Console pane (usually bottom-left), you should see something like:\nR version 4.x.x (20XX-XX-XX) -- \"...\"\nType: print(\"Hello, R!\") and press Enter\nIf you see [1] \"Hello, R!\", you’re ready to go!\n\n\n\n\n\n\n\n\nOption A: Using the installer (Recommended for beginners)\n\nGo to CRAN macOS\nClick “Download R for macOS”\nSelect the appropriate version:\n\nFor Apple Silicon (M1/M2/M3 chips): Download R-x.x.x-arm64.pkg\nFor Intel Macs: Download R-x.x.x-x86_64.pkg\n(Unsure? Check Apple menu → About This Mac → Chip)\n\nRun the .pkg installer and follow the prompts\nInstallation takes 2-5 minutes\n\nOption B: Using Homebrew (if you use Homebrew)\nbrew install r\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for macOS\nSelect the appropriate version for your Mac (Apple Silicon or Intel)\nOpen the downloaded .dmg file\nDrag RStudio to the Applications folder\nLaunch RStudio from Applications\n\n\n\n\n\nOpen RStudio (find in Applications folder or Spotlight search)\nIn the Console, type: print(\"Hello, R!\") and press Enter\nConfirm you see: [1] \"Hello, R!\"\n\n\n\n\n\n\n\n\n# Update package lists\nsudo apt update\n\n# Install R\nsudo apt install -y r-base r-base-dev\n\n\n\n\nGo to Posit RStudio Downloads\nSelect “RStudio Desktop” → Choose Linux version (Ubuntu 20/22 or Debian)\nDownload the .deb file\nInstall it:\nsudo dpkg -i rstudio-[version].deb\n\nOr install from terminal directly:\nsudo apt install -y rstudio\n\n\n\n\nLaunch RStudio from applications menu or terminal:\nrstudio &\nTest in Console: print(\"Hello, R!\")\nConfirm output: [1] \"Hello, R!\""
+  },
+  {
+    "objectID": "resources/install-r-rstudio.html#essential-next-steps",
+    "href": "resources/install-r-rstudio.html#essential-next-steps",
+    "title": "Installing R & RStudio",
+    "section": "",
+    "text": "Once R and RStudio are installed, you need to set up your R environment for the course:\n\n\nIn RStudio Console, run:\nsetwd(\"~/Documents\")  # Or your preferred workspace folder\n\n\n\nWe’ll use these packages throughout the course. Install them with:\n# Core data science packages\ninstall.packages(c(\n  \"tidyverse\",      # Data wrangling and visualization\n  \"rmarkdown\",      # Create documents with R code\n  \"quarto\",         # Publishing system\n  \"shiny\",          # Interactive web apps\n  \"ggplot2\"         # Advanced visualization\n))\nThis may take 5-15 minutes (packages are downloading and installing).\n\n\n\nTest that the main packages work:\nlibrary(tidyverse)\nlibrary(ggplot2)\nprint(\"All packages loaded successfully!\")\nIf no errors appear, you’re all set!"
+  },
+  {
+    "objectID": "resources/install-r-rstudio.html#troubleshooting",
+    "href": "resources/install-r-rstudio.html#troubleshooting",
+    "title": "Installing R & RStudio",
+    "section": "",
+    "text": "Windows: Try reinstalling R with administrator privileges\nMac: Restart your computer and try again\nLinux: Run sudo apt install -y r-base to ensure all dependencies are installed\n\n\n\n\n\nRStudio should auto-detect R, but if not:\n\nTools → Global Options → General\nLook for “R version” section\nIf blank, manually browse to your R installation\n\n\n\n\n\n\nMake sure you have internet connection\nTry: install.packages(\"package_name\", repos=\"http://cran.r-project.org\")\nSome packages require additional system libraries (ask in course chat!)\n\n\n\n\n\nTry: install.packages(\"package\", type=\"source\")"
+  },
+  {
+    "objectID": "resources/install-r-rstudio.html#quick-reference",
+    "href": "resources/install-r-rstudio.html#quick-reference",
+    "title": "Installing R & RStudio",
+    "section": "",
+    "text": "Action\nCommand\n\n\n\n\nSee R version\nR.version.string\n\n\nList installed packages\nlibrary()\n\n\nLoad a package\nlibrary(package_name)\n\n\nInstall a package\ninstall.packages(\"package_name\")\n\n\nGet help\nhelp(function_name) or ?function_name\n\n\nExit R\nq()"
+  },
+  {
+    "objectID": "resources/install-r-rstudio.html#resources",
+    "href": "resources/install-r-rstudio.html#resources",
+    "title": "Installing R & RStudio",
+    "section": "",
+    "text": "Official R Documentation: https://www.r-project.org/\nRStudio Cheat Sheets: https://posit.co/resources/cheatsheets/\nR for Data Science (Book): https://r4ds.hadley.nz/\nCourse Support: Check the course discussion board for questions\n\nYou’re ready to start the course! See you in Module 1."
+  },
+  {
     "objectID": "QUICK_START.html",
     "href": "QUICK_START.html",
     "title": "Quick Reference Guide",
@@ -402,6 +451,111 @@
     "title": "📋 Website Launch Checklist",
     "section": "",
     "text": "This is YOUR site. Feel free to: - Change colors/themes - Add more content - Create custom templates - Link to external resources - Update weekly - Gather student feedback - Iterate and improve\nYour students have access to a professional learning environment. Great job! 🎉\n\nQuick Links to Guides: - START_HERE.md - Complete overview - README.md - Full project guide\n- DEPLOYMENT.md - Deployment instructions - QUICK_START.md - Visual reference"
+  },
+  {
+    "objectID": "install-r-rstudio.html",
+    "href": "install-r-rstudio.html",
+    "title": "Install R & RStudio",
+    "section": "",
+    "text": "R is the industry standard for statistical analysis, data visualization, and reproducible research in mass communications. RStudio is the professional interface that makes R accessible and powerful. Together, they’re essential tools for any Communication Liaison who works with data.\nIn this course, you’ll use R to: - Clean and analyze data from surveys and content analysis - Create publication-ready visualizations and reports - Build reproducible workflows for your research - Collaborate on data analysis projects"
+  },
+  {
+    "objectID": "install-r-rstudio.html#why-r-rstudio",
+    "href": "install-r-rstudio.html#why-r-rstudio",
+    "title": "Install R & RStudio",
+    "section": "",
+    "text": "R is the industry standard for statistical analysis, data visualization, and reproducible research in mass communications. RStudio is the professional interface that makes R accessible and powerful. Together, they’re essential tools for any Communication Liaison who works with data.\nIn this course, you’ll use R to: - Clean and analyze data from surveys and content analysis - Create publication-ready visualizations and reports - Build reproducible workflows for your research - Collaborate on data analysis projects"
+  },
+  {
+    "objectID": "install-r-rstudio.html#what-youll-install",
+    "href": "install-r-rstudio.html#what-youll-install",
+    "title": "Install R & RStudio",
+    "section": "What You’ll Install",
+    "text": "What You’ll Install\n\nR — The programming language (free, open-source)\nRStudio — The professional development environment (free, open-source)\n\nThis is a two-step process: install R first, then RStudio."
+  },
+  {
+    "objectID": "install-r-rstudio.html#step-1-install-r",
+    "href": "install-r-rstudio.html#step-1-install-r",
+    "title": "Install R & RStudio",
+    "section": "Step 1: Install R",
+    "text": "Step 1: Install R\n\nFor Windows\n\nGo to r-project.org\nClick “Download R” in the left menu\nClick the “Download R for Windows” link\nClick “base”\nClick “Download R X.X.X for Windows” (where X.X.X is the latest version number)\nRun the installer (.exe file)\n\nClick “Next” through all screens\nAccept the default installation location\nAccept all default components\n\nClick “Finish”\n\nTo verify installation: - Open PowerShell or Command Prompt - Type R --version - You should see R’s version information\n\n\nFor macOS\n\nGo to r-project.org\nClick “Download R” in the left menu\nClick “Download R for macOS”\nDownload the appropriate .pkg file for your Mac:\n\nApple Silicon (M1/M2/M3 chips): Download the “ARM64” version\nIntel Macs: Download the “Intel 64” version\nNot sure? Click the Apple icon (top left) → “About This Mac” → check under “Processor”\n\nRun the installer (.pkg file)\n\nClick through all prompts\nAccept the default installation location\n\nRestart your Mac\n\nTo verify installation: - Open Terminal - Type R --version - You should see R’s version information\n\n\nFor Linux (Ubuntu/Debian)\nOpen Terminal and run:\nsudo apt update\nsudo apt install r-base\nTo verify: Type R --version in Terminal."
+  },
+  {
+    "objectID": "install-r-rstudio.html#step-2-install-rstudio",
+    "href": "install-r-rstudio.html#step-2-install-rstudio",
+    "title": "Install R & RStudio",
+    "section": "Step 2: Install RStudio",
+    "text": "Step 2: Install RStudio\n\nFor Windows, macOS, or Linux\n\nGo to posit.co/download/rstudio-desktop/\nScroll down to “All Installers” or “Download RStudio Desktop”\nSelect your operating system:\n\nWindows: Download the .exe file\nmacOS: Download the .dmg file\nLinux: Download the appropriate .deb or .rpm file\n\nRun the installer\n\nWindows: Click through all default options\nMac: Drag RStudio to Applications folder\nLinux: Follow the package manager prompts\n\nOpen RStudio (you should see R is installed when you open it)"
+  },
+  {
+    "objectID": "install-r-rstudio.html#step-3-verify-rstudio-works",
+    "href": "install-r-rstudio.html#step-3-verify-rstudio-works",
+    "title": "Install R & RStudio",
+    "section": "Step 3: Verify RStudio Works",
+    "text": "Step 3: Verify RStudio Works\n\nOpen RStudio (should be in your Applications/Programs menu)\nYou should see four panes:\n\nTop left: Script editor (blank)\nBottom left: Console (shows &gt; prompt)\nTop right: Environment & History\nBottom right: Files, Plots, Packages, Help\n\nIn the Console (bottom left), type this command and press Enter:\n\nprint(\"Hello, Communication Liaison!\")\n\nYou should see the output:\n\n[1] \"Hello, Communication Liaison!\"\nIf you see this output, you’re ready to go!"
+  },
+  {
+    "objectID": "install-r-rstudio.html#step-4-install-key-packages",
+    "href": "install-r-rstudio.html#step-4-install-key-packages",
+    "title": "Install R & RStudio",
+    "section": "Step 4: Install Key Packages",
+    "text": "Step 4: Install Key Packages\nRStudio comes with base R, but you’ll need additional packages for data analysis. Open RStudio and copy these commands into the Console one at a time:\n\nFor Data Analysis & Visualization\ninstall.packages(\"tidyverse\")\nThis installs a collection of packages including: - ggplot2 — Create professional visualizations - dplyr — Clean and transform data - readr — Import data from CSV, Excel, etc. - tidyr — Reshape data\nWait for it to finish (you’ll see a blank &gt; prompt when done)\n\n\nFor Survey Analysis\ninstall.packages(\"likert\")\nUsed for analyzing Likert-scale survey responses.\n\n\nFor Reporting\ninstall.packages(\"rmarkdown\")\nCreates professional PDF and HTML reports from your analysis.\n\n\nOptional: Statistics Packages\nFor later phases, you might want these too:\ninstall.packages(\"lm.beta\")  # Standardized regression coefficients\ninstall.packages(\"car\")       # Post-hoc tests and diagnostics\ninstall.packages(\"ggstatsplot\")  # Statistical plots with test results"
+  },
+  {
+    "objectID": "install-r-rstudio.html#step-5-create-your-first-r-project",
+    "href": "install-r-rstudio.html#step-5-create-your-first-r-project",
+    "title": "Install R & RStudio",
+    "section": "Step 5: Create Your First R Project",
+    "text": "Step 5: Create Your First R Project\nRStudio projects help you organize your work. Let’s create one:\n\nIn RStudio, click File → New Project\nSelect New Directory → New Project\nName your project mc451-research or similar\nChoose where to save it (suggest Documents)\nClick Create Project\n\nYou should now see your project name in the top-right corner of RStudio."
+  },
+  {
+    "objectID": "install-r-rstudio.html#step-6-test-your-setup-with-data",
+    "href": "install-r-rstudio.html#step-6-test-your-setup-with-data",
+    "title": "Install R & RStudio",
+    "section": "Step 6: Test Your Setup with Data",
+    "text": "Step 6: Test Your Setup with Data\nLet’s make sure everything works by loading a dataset:\nIn the Console, type:\n# Load the tidyverse library\nlibrary(tidyverse)\n\n# Load a built-in dataset\ndata(mtcars)\n\n# View the first few rows\nhead(mtcars)\nYou should see a table with car data. If this works, your R setup is complete!"
+  },
+  {
+    "objectID": "install-r-rstudio.html#understanding-the-rstudio-interface",
+    "href": "install-r-rstudio.html#understanding-the-rstudio-interface",
+    "title": "Install R & RStudio",
+    "section": "Understanding the RStudio Interface",
+    "text": "Understanding the RStudio Interface\n\n\n\n\n\n\n\nArea\nPurpose\n\n\n\n\nTop Left (Script Editor)\nWrite R code here and save as .R files\n\n\nBottom Left (Console)\nResults appear here; you can type commands directly\n\n\nTop Right (Environment)\nShows all variables and data you’ve loaded\n\n\nBottom Right (Files/Plots/Help)\nNavigate files, view plots, access documentation"
+  },
+  {
+    "objectID": "install-r-rstudio.html#basic-rstudio-workflow",
+    "href": "install-r-rstudio.html#basic-rstudio-workflow",
+    "title": "Install R & RStudio",
+    "section": "Basic RStudio Workflow",
+    "text": "Basic RStudio Workflow\n\nCreate a new script: File → New File → R Script\nWrite code: Type your commands in the script\nRun code: Select lines and press Ctrl+Enter (Windows/Linux) or Cmd+Enter (Mac)\nSee results: Output appears in the Console or Plots pane\nSave your work: Ctrl+S or File → Save"
+  },
+  {
+    "objectID": "install-r-rstudio.html#common-first-time-issues",
+    "href": "install-r-rstudio.html#common-first-time-issues",
+    "title": "Install R & RStudio",
+    "section": "Common First-Time Issues",
+    "text": "Common First-Time Issues\n\n“Command not found: R”\nProblem: Your computer doesn’t recognize the R command.\nSolution: - Try restarting your computer after installation - Check that R installed correctly (reinstall if needed) - On Mac/Linux, you may need to use /usr/bin/R instead\n\n\nRStudio Opens But Doesn’t Find R\nProblem: RStudio says “R not found” when you open it.\nSolution: 1. Make sure you installed R first (before RStudio) 2. In RStudio, go to Tools → Global Options → General 3. Under “R sessions”, check the “R home directory” 4. If empty, browse to your R installation folder and select it 5. Click “OK”\n\n\n“Error: Could not find function”\nProblem: You get an error like could not find function \"ggplot\"\nSolution: You need to load the package first. Run:\nlibrary(ggplot2)  # or whichever package you need\n\n\nInstallation Stuck or Takes Forever\nProblem: install.packages() command seems frozen.\nSolution: 1. Press Escape to stop it 2. Try installing from a different CRAN mirror:\ninstall.packages(\"tidyverse\", repos=\"https://cloud.r-project.org\")\n\n\n“Permission denied” Error (Mac/Linux)\nProblem: Error when installing packages.\nSolution: Try:\nSys.which(\"R\")  # Check where R is installed\nIf you’re still stuck, reach out during office hours."
+  },
+  {
+    "objectID": "install-r-rstudio.html#next-steps",
+    "href": "install-r-rstudio.html#next-steps",
+    "title": "Install R & RStudio",
+    "section": "Next Steps",
+    "text": "Next Steps\n\n✅ Installed R\n✅ Installed RStudio\n✅ Verified it works\n✅ Installed key packages\nNext: Learn R basics with your first assignment in Phase 2"
+  },
+  {
+    "objectID": "install-r-rstudio.html#resources",
+    "href": "install-r-rstudio.html#resources",
+    "title": "Install R & RStudio",
+    "section": "Resources",
+    "text": "Resources\n\nOfficial R Website: r-project.org\nRStudio Documentation: posit.co/support/\nBookdown R for Data Science: r4ds.had.co.nz (free online book)\nMy Open-Source R Course: bookdown.org/alex_leith/mc451/ (free, written for this class!)"
+  },
+  {
+    "objectID": "install-r-rstudio.html#questions",
+    "href": "install-r-rstudio.html#questions",
+    "title": "Install R & RStudio",
+    "section": "Questions?",
+    "text": "Questions?\nR and RStudio have a learning curve, but the payoff is huge. If you run into issues:\n\nCheck the troubleshooting section above\nSearch stackoverflow.com for your error (others have likely encountered it)\nVisit office hours—we’ll debug together\nEmail with your specific error message\n\nYou’ve got this! 💪"
   },
   {
     "objectID": "GITHUB_SETUP.html",
@@ -783,6 +937,139 @@
     ]
   },
   {
+    "objectID": "install-vscode.html",
+    "href": "install-vscode.html",
+    "title": "Install VS Code (Recommended)",
+    "section": "",
+    "text": "VS Code (Visual Studio Code) is a professional, lightweight code editor used by developers worldwide. While RStudio handles R code well, VS Code is excellent for:\n\nWriting Python scripts for data analysis and automation\nManaging Git repositories and GitHub\nWorking with multiple file types (R, Python, Markdown, JSON, etc.)\nVersion control and collaboration\nBuilding a professional development workflow\n\nThis is optional but highly recommended if you plan to work with Python or want to explore coding beyond this course."
+  },
+  {
+    "objectID": "install-vscode.html#why-vs-code",
+    "href": "install-vscode.html#why-vs-code",
+    "title": "Install VS Code (Recommended)",
+    "section": "",
+    "text": "VS Code (Visual Studio Code) is a professional, lightweight code editor used by developers worldwide. While RStudio handles R code well, VS Code is excellent for:\n\nWriting Python scripts for data analysis and automation\nManaging Git repositories and GitHub\nWorking with multiple file types (R, Python, Markdown, JSON, etc.)\nVersion control and collaboration\nBuilding a professional development workflow\n\nThis is optional but highly recommended if you plan to work with Python or want to explore coding beyond this course."
+  },
+  {
+    "objectID": "install-vscode.html#system-requirements",
+    "href": "install-vscode.html#system-requirements",
+    "title": "Install VS Code (Recommended)",
+    "section": "System Requirements",
+    "text": "System Requirements\n\nWindows 10+, macOS 10.12+, or Linux (most distributions)\nAt least 200 MB of disk space\nWorks on all computers that can run R and RStudio"
+  },
+  {
+    "objectID": "install-vscode.html#step-1-download-vs-code",
+    "href": "install-vscode.html#step-1-download-vs-code",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 1: Download VS Code",
+    "text": "Step 1: Download VS Code\n\nGo to code.visualstudio.com\nClick the large “Download” button\nSelect your operating system:\n\nWindows: Choose “Windows (64-bit)” or “Windows (32-bit)”\nmacOS: Choose based on your processor (Intel or Apple Silicon)\nLinux: Choose your distribution (Ubuntu, Debian, Red Hat, etc.)"
+  },
+  {
+    "objectID": "install-vscode.html#step-2-install-vs-code",
+    "href": "install-vscode.html#step-2-install-vs-code",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 2: Install VS Code",
+    "text": "Step 2: Install VS Code\n\nFor Windows\n\nRun the downloaded .exe file\nClick “I accept the agreement” → Next\nChoose installation location (default is fine) → Next\nClick through all remaining options → Install\nClick Finish\n\n\n\nFor macOS\n\nOpen the downloaded .dmg file\nDrag the VS Code icon to the Applications folder\nWait for the copy process to complete\nOpen Applications → Double-click Visual Studio Code\n\n\n\nFor Linux (Ubuntu/Debian)\nOpen Terminal and run:\nsudo apt update\nsudo apt install code"
+  },
+  {
+    "objectID": "install-vscode.html#step-3-first-launch",
+    "href": "install-vscode.html#step-3-first-launch",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 3: First Launch",
+    "text": "Step 3: First Launch\nWhen you open VS Code for the first time:\n\nYou’ll see a Welcome tab\nThe interface has:\n\nLeft Sidebar: File explorer, search, source control, extensions\nEditor (center): Where you write code\nBottom Panel: Terminal, debugging, problems\nTop Bar: File, Edit, View, Run menus"
+  },
+  {
+    "objectID": "install-vscode.html#step-4-install-recommended-extensions",
+    "href": "install-vscode.html#step-4-install-recommended-extensions",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 4: Install Recommended Extensions",
+    "text": "Step 4: Install Recommended Extensions\nExtensions add functionality to VS Code. Here’s what to install for this course:\n\n1. Python (for data analysis)\n\nClick the Extensions icon (left sidebar, looks like blocks)\nSearch for Python\nClick the result by Microsoft\nClick Install\n\nThis gives you Python code completion, debugging, and data analysis support.\n\n\n2. R Extension (for R support in VS Code)\n\nIn Extensions, search for R\nInstall R by REditorSupport\nWhen prompted, let it install supporting files\n\n\n\n3. Git Graph (for version control)\n\nSearch for Git Graph\nInstall by mhutchie\nThis gives you a visual representation of your Git history\n\n\n\n4. Prettier (for code formatting)\n\nSearch for Prettier - Code formatter\nInstall by Prettier\nThis automatically formats your code to professional standards\n\n\n\nOptional: Markdown Preview Enhanced\nIf you want a live preview of Markdown files:\n\nSearch for Markdown Preview Enhanced\nInstall by Yiyi Wang"
+  },
+  {
+    "objectID": "install-vscode.html#step-5-connect-to-github",
+    "href": "install-vscode.html#step-5-connect-to-github",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 5: Connect to GitHub",
+    "text": "Step 5: Connect to GitHub\nIf you created a GitHub account (from our GitHub setup guide), you can integrate it with VS Code:\n\nClick the Source Control icon (left sidebar, branch symbol)\nClick Sign in with GitHub\nComplete the authentication in your browser\nReturn to VS Code (it should be authorized)\n\nNow you can: - Clone repositories directly into VS Code - View Git history visually - Commit and push changes - Manage GitHub issues and PRs"
+  },
+  {
+    "objectID": "install-vscode.html#step-6-create-your-first-project",
+    "href": "install-vscode.html#step-6-create-your-first-project",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 6: Create Your First Project",
+    "text": "Step 6: Create Your First Project\nLet’s create a simple project folder:\n\nClick File → Open Folder\nCreate or select a folder (e.g., ~/Documents/mc451-code)\nClick Select Folder\n\nYou now have a workspace. Let’s create a file:\n\nClick the New File icon (top of the file explorer)\nName it hello.py\nType this Python code:\n\n# My first Python script\nmessage = \"Hello, Communication Liaison!\"\nprint(message)\n\nPress Ctrl+S (Windows/Linux) or Cmd+S (Mac) to save\nClick the Run button (play icon, top right) or press Ctrl+Shift+D\n\nYou should see the output in the Terminal:\nHello, Communication Liaison!"
+  },
+  {
+    "objectID": "install-vscode.html#step-7-set-up-an-integrated-terminal",
+    "href": "install-vscode.html#step-7-set-up-an-integrated-terminal",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 7: Set Up an Integrated Terminal",
+    "text": "Step 7: Set Up an Integrated Terminal\nVS Code has a built-in terminal (great for running Git commands):\n\nPress Ctrl+` (backtick, below Escape key) or go to View → Terminal\nThe terminal opens at the bottom\nYou can now run:\n\ngit status to check your repository status\npython script.py to run Python files\nR --vanilla to start an R session\n\nType exit to close the terminal"
+  },
+  {
+    "objectID": "install-vscode.html#step-8-keyboard-shortcuts-essential",
+    "href": "install-vscode.html#step-8-keyboard-shortcuts-essential",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 8: Keyboard Shortcuts (Essential)",
+    "text": "Step 8: Keyboard Shortcuts (Essential)\n\n\n\nAction\nWindows/Linux\nMac\n\n\n\n\nOpen file\nCtrl+O\nCmd+O\n\n\nSave file\nCtrl+S\nCmd+S\n\n\nFind text\nCtrl+F\nCmd+F\n\n\nReplace\nCtrl+H\nCmd+H\n\n\nOpen terminal\nCtrl+| Ctrl+\n\n\n\nFormat document\nShift+Alt+F\nShift+Opt+F\n\n\nAdd comment\nCtrl+/\nCmd+/\n\n\nGo to line\nCtrl+G\nCmd+G"
+  },
+  {
+    "objectID": "install-vscode.html#step-9-clone-a-github-repository",
+    "href": "install-vscode.html#step-9-clone-a-github-repository",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 9: Clone a GitHub Repository",
+    "text": "Step 9: Clone a GitHub Repository\nIf you created a GitHub project, you can work on it in VS Code:\n\nClick the Source Control icon (left sidebar)\nClick Clone Repository\nPaste your GitHub repo URL (from github.com)\nChoose a folder to save it\nClick Open when prompted\n\nYour entire repository is now in VS Code, and you can edit, commit, and push changes."
+  },
+  {
+    "objectID": "install-vscode.html#step-10-settings-customization",
+    "href": "install-vscode.html#step-10-settings-customization",
+    "title": "Install VS Code (Recommended)",
+    "section": "Step 10: Settings & Customization",
+    "text": "Step 10: Settings & Customization\n\nChange the Theme\n\nGo to File → Preferences → Theme → Color Theme\nBrowse options (popular: Dark+, Light+, Dracula, One Dark Pro)\nClick to apply\n\n\n\nChange Font Size\n\nGo to File → Preferences → Settings\nSearch for “font size”\nChange the number (default is 14)\n\n\n\nAuto-Format on Save\n\nGo to File → Preferences → Settings\nSearch for “format on save”\nCheck the box"
+  },
+  {
+    "objectID": "install-vscode.html#useful-workflow-editing-code-git-integration",
+    "href": "install-vscode.html#useful-workflow-editing-code-git-integration",
+    "title": "Install VS Code (Recommended)",
+    "section": "Useful Workflow: Editing Code + Git Integration",
+    "text": "Useful Workflow: Editing Code + Git Integration\n\nTypical workflow for an assignment:\n\nOpen your project folder in VS Code\nCreate/edit files in the editor\nSave your changes (Ctrl+S)\nOpen Terminal (Ctrl+`)\nCheck status: git status\nAdd changes: git add .\nCommit: git commit -m \"Update analysis script\"\nPush: git push\nVerify on GitHub: Go to github.com and refresh"
+  },
+  {
+    "objectID": "install-vscode.html#common-issues-fixes",
+    "href": "install-vscode.html#common-issues-fixes",
+    "title": "Install VS Code (Recommended)",
+    "section": "Common Issues & Fixes",
+    "text": "Common Issues & Fixes\n\n“Python not found”\nProblem: VS Code can’t find Python.\nSolution: 1. Make sure you installed Python (go back to your system settings) 2. In VS Code, press Ctrl+Shift+P (Cmd+Shift+P on Mac) 3. Type “Python: Select Interpreter” 4. Choose your Python installation from the list\n\n\nExtensions Won’t Install\nProblem: You can’t install an extension.\nSolution: 1. Check your internet connection 2. Try uninstalling and reinstalling VS Code 3. Try installing the extension from the Extension Marketplace website instead\n\n\nTerminal Says “git: command not found”\nProblem: Git isn’t working in the terminal.\nSolution: Make sure you installed Git (see our GitHub setup guide). Restart VS Code after installing."
+  },
+  {
+    "objectID": "install-vscode.html#when-to-use-vs-code-vs-rstudio",
+    "href": "install-vscode.html#when-to-use-vs-code-vs-rstudio",
+    "title": "Install VS Code (Recommended)",
+    "section": "When to Use VS Code vs RStudio",
+    "text": "When to Use VS Code vs RStudio\n\n\n\nTask\nBest Tool\n\n\n\n\nWriting R code\nRStudio (better for data analysis)\n\n\nWriting Python code\nVS Code (better for scripting)\n\n\nQuick data analysis\nRStudio\n\n\nAutomated data pipelines\nVS Code\n\n\nManaging Git\nVS Code (more powerful tools)\n\n\nLearning R\nRStudio (more beginner-friendly)\n\n\n\nPro tip: Use RStudio for analysis, VS Code for automation and version control!"
+  },
+  {
+    "objectID": "install-vscode.html#next-steps",
+    "href": "install-vscode.html#next-steps",
+    "title": "Install VS Code (Recommended)",
+    "section": "Next Steps",
+    "text": "Next Steps\n\n✅ Installed VS Code\n✅ Installed extensions (Python, R, Git, Prettier)\n✅ Created a test project\n✅ Learned basic keyboard shortcuts\nNext: Start working on Phase 1 assignments!"
+  },
+  {
+    "objectID": "install-vscode.html#resources",
+    "href": "install-vscode.html#resources",
+    "title": "Install VS Code (Recommended)",
+    "section": "Resources",
+    "text": "Resources\n\nVS Code Docs: code.visualstudio.com/docs\nPython in VS Code: code.visualstudio.com/docs/languages/python\nGit in VS Code: code.visualstudio.com/docs/sourcecontrol/overview\nKeyboard Shortcuts Cheat Sheet: code.visualstudio.com/shortcuts"
+  },
+  {
+    "objectID": "install-vscode.html#questions",
+    "href": "install-vscode.html#questions",
+    "title": "Install VS Code (Recommended)",
+    "section": "Questions?",
+    "text": "Questions?\nVS Code has a steep initial learning curve, but it’s an investment that pays off for your entire programming career. If you get stuck:\n\nTry pressing F1 in VS Code (opens the command palette—search for what you need)\nCheck VS Code’s official documentation\nCome to office hours—we’ll explore VS Code together\n\nThis is optional, but worth learning! 💻"
+  },
+  {
     "objectID": "Liaison_Vault/00_START_HERE.html",
     "href": "Liaison_Vault/00_START_HERE.html",
     "title": "Welcome to your Digital Office",
@@ -946,7 +1233,7 @@
     "href": "resources/index.html#software-tools",
     "title": "Resources & Downloads",
     "section": "Software & Tools",
-    "text": "Software & Tools\nBefore starting Phase 1, ensure you have these installed:\n\nRequired\n\nObsidian - FREE - Your note-taking workspace\nGit - FREE - Version control for your projects\nVS Code - FREE - Code editor\n\n\n\nRecommended\n\nPython 3.10+ - FREE - For data analysis and automation\nR & RStudio - FREE - Statistical analysis",
+    "text": "Software & Tools\nBefore starting Phase 1, ensure you have these installed:\n\nRequired\n\nObsidian - FREE - Your note-taking workspace\nGit - FREE - Version control for your projects\nR & RStudio - FREE - Statistical analysis and data analysis\n\n📖 Full R & RStudio Setup Guide - Complete walkthrough for all operating systems\n\n\n\n\nRecommended\n\nPython 3.10+ - FREE - For data analysis and automation\nVS Code - FREE - Professional code editor\n\n📖 VS Code Setup Guide - Extensions, GitHub integration, and workflow setup",
     "crumbs": [
       "Resources & Downloads"
     ]
@@ -970,6 +1257,83 @@
     "crumbs": [
       "Resources & Downloads"
     ]
+  },
+  {
+    "objectID": "resources/install-vscode.html",
+    "href": "resources/install-vscode.html",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "VS Code is a professional code editor that makes working with data science, web development, and automation projects more efficient. This guide covers installation and recommended setup for the course.\n\n\nVisual Studio Code (VS Code) is a lightweight but powerful code editor that supports: - Multiple programming languages (Python, JavaScript, R, and more) - Git/GitHub integration for version control - Extensions for enhanced functionality - Integrated terminal for running commands\n\n\n\n\n\n\n\n\nGo to VS Code Download\nClick “Download for Windows”\nRun the installer (.exe file)\nFollow the setup wizard:\n\nAccept the license agreement\nChoose installation location (default is fine)\nImportant: Check “Add to PATH” (allows opening folders from terminal)\nCheck “Register Code as an editor…” (optional but useful)\n\nClick Install and wait for completion (2-3 minutes)\n\n\n\n\n\nSearch for “Visual Studio Code” in Windows Start menu\nOr open a terminal and type: code\n\n\n\n\n\n\n\n\n\nGo to VS Code Download\nClick “Download for Mac”\n\nChoose Intel if you have an older Mac\nChoose Apple Silicon if you have an M1/M2/M3 chip\n\nOpen the downloaded .zip file\nDrag Visual Studio Code to the Applications folder\nInstallation is instant!\n\n\n\n\n\nFind in Applications folder, or\nUse Spotlight search: Press Cmd+Space, type “Visual Studio Code”\nOr from terminal: code (see setup note below)\n\nTerminal Setup (Optional but Recommended)\nTo use code command from terminal: 1. Open VS Code 2. Press Cmd+Shift+P to open Command Palette 3. Type: code 4. Select “Shell Command: Install ‘code’ command in PATH”\n\n\n\n\n\n\n\nOption A: Using apt (recommended)\nsudo apt update\nsudo apt install software-properties-common apt-transport-https wget\nwget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -\nsudo add-apt-repository \"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main\"\nsudo apt update\nsudo apt install code\nOption B: Direct download 1. Go to VS Code Download 2. Download the .deb file for Linux 3. Install: sudo dpkg -i code_*.deb\n\n\n\ncode\n\n\n\n\n\n\nExtensions add functionality to VS Code. Install these for maximum productivity:\n\n\n\nOpen VS Code\nClick the Extensions icon (square icon on left sidebar)\nSearch for each extension below and click Install\n\n\n\n\n\n\n\n\n\n\n\n\nExtension\nPublisher\nPurpose\n\n\n\n\nPython\nMicrosoft\nPython language support, debugging, linting\n\n\nPylance\nMicrosoft\nAdvanced Python type checking and IntelliSense\n\n\nGitHub Copilot\nGitHub\nAI-powered code suggestions (requires GitHub account)\n\n\nGitLens\nGitKraken\nEnhanced Git integration and history\n\n\nGit Graph\nmhutchie\nVisual Git branch viewer\n\n\nMarkdown All in One\nYu Zhang\nBetter Markdown support\n\n\nQuarto\nQuarto\nQuarto document support\n\n\nThunder Client\nRanga Vikram\nREST API testing\n\n\nRemote - SSH\nMicrosoft\nConnect to remote servers\n\n\nError Lens\nAlexander\nShow errors inline\n\n\nPrettier\nPrettier\nCode formatter\n\n\n\n\n\n\n\n\n\n\n\n\n\nClick the Source Control icon (left sidebar) or press Ctrl+Shift+G\nClick “Initialize Repository” (if new folder) or “Open Folder” (if existing)\nVS Code will prompt for GitHub authentication\nClick “Allow” when asked to sign in with GitHub\n\n\n\n\nOpen Terminal in VS Code (`Ctrl+`` or Terminal → New Terminal) and run:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@example.com\"\n\n\n\n\n\nPress Ctrl+Shift+P (Command Palette)\nSearch: Python: Select Interpreter\nChoose your Python installation (should auto-detect)\n\n\n\n\nPress Ctrl+, to open Settings, then adjust:\n\nFont Size: Increase to 13-14 for easier reading\nFormat on Save: Search “Format On Save”, check the box\nLine Numbers: Already enabled\nTheme: Preferences → Color Theme (try “Dark+” or “Light+”)\n\n\n\n\n\n\n\n\n\nFile → Open Folder (or Ctrl+K Ctrl+O)\nNavigate to your project folder\nClick “Select Folder”\n\n\n\n\n\nRight-click in Explorer (left side)\nSelect “New File”\nEnter filename (e.g., script.py, notes.md)\n\n\n\n\n\n\n\nOpen a .py file\nRight-click and select “Run Python File in Terminal”\n\nOr press Ctrl+F5\n\n\n\n\n\n\nOpen Terminal: `Ctrl+`` (backtick)\nRun commands: python script.py, git status, etc.\n\n\n\n\n\nBasic workflow:\n\nMake changes to your files\nView changes: Click Source Control icon (left sidebar)\nStage changes: Click + next to files (or Stage All)\nCommit: Type message in the input box, press Ctrl+Enter\nPush: Click the ⋯ menu, select “Push”\n\n\n\n\n\n\n\n\n\nAction\nWindows\nMac\n\n\n\n\nCommand Palette\nCtrl+Shift+P\nCmd+Shift+P\n\n\nOpen Terminal\nCtrl+`\nCmd+`\n\n\nNew File\nCtrl+N\nCmd+N\n\n\nOpen Folder\nCtrl+K Ctrl+O\nCmd+K Cmd+O\n\n\nSave\nCtrl+S\nCmd+S\n\n\nFormat Document\nShift+Alt+F\nShift+Option+F\n\n\nFind and Replace\nCtrl+H\nCmd+H\n\n\nGit: Commit\nCtrl+K Ctrl+C\nCmd+K Cmd+C\n\n\nSplit Editor\nCtrl+\\\nCmd+\\\n\n\nFocus Terminal\nCtrl+J\nCmd+J\n\n\n\n\n\n\n\n\n\n\nTry: Python: Select Interpreter (Ctrl+Shift+P) and choose the correct Python\nReinstall: Delete the Python extension and reinstall\n\n\n\n\n\nInstall Git\nRestart VS Code\nConfigure in VS Code: Ctrl+Shift+P → Git: Configure Git\n\n\n\n\n\nCheck internet connection\nTry restarting VS Code\nCheck VS Code version: Help → About (should be latest)\n\n\n\n\n\nKill the process: lsof -ti:8000 | xargs kill -9 (Mac/Linux)\nOr use different port in code: app.run(port=8001)\n\n\n\n\n\n\n\nUse Workspaces: Save your workspace setup for easy reloading\n\nFile → Save Workspace As\n\nCommand Palette is your friend: Ctrl+Shift+P and start typing\n\n&gt; Format Document\n&gt; Git: Clone\n&gt; Python: Create Terminal\n\nMulti-cursor editing: Hold Alt and click multiple lines to edit simultaneously\nSnippets: Start typing common code patterns and press Ctrl+Space for suggestions\nView on Side-by-Side: Click and drag files to arrange windows\n\n\n\n\n\n\n✅ Install VS Code\n✅ Install Python extension\n✅ Connect to GitHub\n✅ Create a test Python file and run it\n✅ Make a test Git commit\n\nYou’re ready to code! Need help? Check the course discussion board.\n\n\n\n\n\nOfficial Documentation: https://code.visualstudio.com/docs\nKeyboard Shortcuts: https://code.visualstudio.com/docs/getstarted/keybindings\nGitHub Integration: https://code.visualstudio.com/docs/sourcecontrol/github\nPython Support: https://code.visualstudio.com/docs/languages/python"
+  },
+  {
+    "objectID": "resources/install-vscode.html#what-youre-installing",
+    "href": "resources/install-vscode.html#what-youre-installing",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "Visual Studio Code (VS Code) is a lightweight but powerful code editor that supports: - Multiple programming languages (Python, JavaScript, R, and more) - Git/GitHub integration for version control - Extensions for enhanced functionality - Integrated terminal for running commands"
+  },
+  {
+    "objectID": "resources/install-vscode.html#installation-by-operating-system",
+    "href": "resources/install-vscode.html#installation-by-operating-system",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "Go to VS Code Download\nClick “Download for Windows”\nRun the installer (.exe file)\nFollow the setup wizard:\n\nAccept the license agreement\nChoose installation location (default is fine)\nImportant: Check “Add to PATH” (allows opening folders from terminal)\nCheck “Register Code as an editor…” (optional but useful)\n\nClick Install and wait for completion (2-3 minutes)\n\n\n\n\n\nSearch for “Visual Studio Code” in Windows Start menu\nOr open a terminal and type: code\n\n\n\n\n\n\n\n\n\nGo to VS Code Download\nClick “Download for Mac”\n\nChoose Intel if you have an older Mac\nChoose Apple Silicon if you have an M1/M2/M3 chip\n\nOpen the downloaded .zip file\nDrag Visual Studio Code to the Applications folder\nInstallation is instant!\n\n\n\n\n\nFind in Applications folder, or\nUse Spotlight search: Press Cmd+Space, type “Visual Studio Code”\nOr from terminal: code (see setup note below)\n\nTerminal Setup (Optional but Recommended)\nTo use code command from terminal: 1. Open VS Code 2. Press Cmd+Shift+P to open Command Palette 3. Type: code 4. Select “Shell Command: Install ‘code’ command in PATH”\n\n\n\n\n\n\n\nOption A: Using apt (recommended)\nsudo apt update\nsudo apt install software-properties-common apt-transport-https wget\nwget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -\nsudo add-apt-repository \"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main\"\nsudo apt update\nsudo apt install code\nOption B: Direct download 1. Go to VS Code Download 2. Download the .deb file for Linux 3. Install: sudo dpkg -i code_*.deb\n\n\n\ncode"
+  },
+  {
+    "objectID": "resources/install-vscode.html#essential-extensions-for-the-course",
+    "href": "resources/install-vscode.html#essential-extensions-for-the-course",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "Extensions add functionality to VS Code. Install these for maximum productivity:\n\n\n\nOpen VS Code\nClick the Extensions icon (square icon on left sidebar)\nSearch for each extension below and click Install\n\n\n\n\n\n\n\n\n\n\n\n\nExtension\nPublisher\nPurpose\n\n\n\n\nPython\nMicrosoft\nPython language support, debugging, linting\n\n\nPylance\nMicrosoft\nAdvanced Python type checking and IntelliSense\n\n\nGitHub Copilot\nGitHub\nAI-powered code suggestions (requires GitHub account)\n\n\nGitLens\nGitKraken\nEnhanced Git integration and history\n\n\nGit Graph\nmhutchie\nVisual Git branch viewer\n\n\nMarkdown All in One\nYu Zhang\nBetter Markdown support\n\n\nQuarto\nQuarto\nQuarto document support\n\n\nThunder Client\nRanga Vikram\nREST API testing\n\n\nRemote - SSH\nMicrosoft\nConnect to remote servers\n\n\nError Lens\nAlexander\nShow errors inline\n\n\nPrettier\nPrettier\nCode formatter"
+  },
+  {
+    "objectID": "resources/install-vscode.html#essential-configuration",
+    "href": "resources/install-vscode.html#essential-configuration",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "Click the Source Control icon (left sidebar) or press Ctrl+Shift+G\nClick “Initialize Repository” (if new folder) or “Open Folder” (if existing)\nVS Code will prompt for GitHub authentication\nClick “Allow” when asked to sign in with GitHub\n\n\n\n\nOpen Terminal in VS Code (`Ctrl+`` or Terminal → New Terminal) and run:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@example.com\"\n\n\n\n\n\nPress Ctrl+Shift+P (Command Palette)\nSearch: Python: Select Interpreter\nChoose your Python installation (should auto-detect)\n\n\n\n\nPress Ctrl+, to open Settings, then adjust:\n\nFont Size: Increase to 13-14 for easier reading\nFormat on Save: Search “Format On Save”, check the box\nLine Numbers: Already enabled\nTheme: Preferences → Color Theme (try “Dark+” or “Light+”)"
+  },
+  {
+    "objectID": "resources/install-vscode.html#basic-vs-code-workflow",
+    "href": "resources/install-vscode.html#basic-vs-code-workflow",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "File → Open Folder (or Ctrl+K Ctrl+O)\nNavigate to your project folder\nClick “Select Folder”\n\n\n\n\n\nRight-click in Explorer (left side)\nSelect “New File”\nEnter filename (e.g., script.py, notes.md)\n\n\n\n\n\n\n\nOpen a .py file\nRight-click and select “Run Python File in Terminal”\n\nOr press Ctrl+F5\n\n\n\n\n\n\nOpen Terminal: `Ctrl+`` (backtick)\nRun commands: python script.py, git status, etc.\n\n\n\n\n\nBasic workflow:\n\nMake changes to your files\nView changes: Click Source Control icon (left sidebar)\nStage changes: Click + next to files (or Stage All)\nCommit: Type message in the input box, press Ctrl+Enter\nPush: Click the ⋯ menu, select “Push”"
+  },
+  {
+    "objectID": "resources/install-vscode.html#keyboard-shortcuts-essential",
+    "href": "resources/install-vscode.html#keyboard-shortcuts-essential",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "Action\nWindows\nMac\n\n\n\n\nCommand Palette\nCtrl+Shift+P\nCmd+Shift+P\n\n\nOpen Terminal\nCtrl+`\nCmd+`\n\n\nNew File\nCtrl+N\nCmd+N\n\n\nOpen Folder\nCtrl+K Ctrl+O\nCmd+K Cmd+O\n\n\nSave\nCtrl+S\nCmd+S\n\n\nFormat Document\nShift+Alt+F\nShift+Option+F\n\n\nFind and Replace\nCtrl+H\nCmd+H\n\n\nGit: Commit\nCtrl+K Ctrl+C\nCmd+K Cmd+C\n\n\nSplit Editor\nCtrl+\\\nCmd+\\\n\n\nFocus Terminal\nCtrl+J\nCmd+J"
+  },
+  {
+    "objectID": "resources/install-vscode.html#troubleshooting",
+    "href": "resources/install-vscode.html#troubleshooting",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "Try: Python: Select Interpreter (Ctrl+Shift+P) and choose the correct Python\nReinstall: Delete the Python extension and reinstall\n\n\n\n\n\nInstall Git\nRestart VS Code\nConfigure in VS Code: Ctrl+Shift+P → Git: Configure Git\n\n\n\n\n\nCheck internet connection\nTry restarting VS Code\nCheck VS Code version: Help → About (should be latest)\n\n\n\n\n\nKill the process: lsof -ti:8000 | xargs kill -9 (Mac/Linux)\nOr use different port in code: app.run(port=8001)"
+  },
+  {
+    "objectID": "resources/install-vscode.html#pro-tips",
+    "href": "resources/install-vscode.html#pro-tips",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "Use Workspaces: Save your workspace setup for easy reloading\n\nFile → Save Workspace As\n\nCommand Palette is your friend: Ctrl+Shift+P and start typing\n\n&gt; Format Document\n&gt; Git: Clone\n&gt; Python: Create Terminal\n\nMulti-cursor editing: Hold Alt and click multiple lines to edit simultaneously\nSnippets: Start typing common code patterns and press Ctrl+Space for suggestions\nView on Side-by-Side: Click and drag files to arrange windows"
+  },
+  {
+    "objectID": "resources/install-vscode.html#next-steps",
+    "href": "resources/install-vscode.html#next-steps",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "✅ Install VS Code\n✅ Install Python extension\n✅ Connect to GitHub\n✅ Create a test Python file and run it\n✅ Make a test Git commit\n\nYou’re ready to code! Need help? Check the course discussion board."
+  },
+  {
+    "objectID": "resources/install-vscode.html#resources",
+    "href": "resources/install-vscode.html#resources",
+    "title": "Setting Up VS Code",
+    "section": "",
+    "text": "Official Documentation: https://code.visualstudio.com/docs\nKeyboard Shortcuts: https://code.visualstudio.com/docs/getstarted/keybindings\nGitHub Integration: https://code.visualstudio.com/docs/sourcecontrol/github\nPython Support: https://code.visualstudio.com/docs/languages/python"
   },
   {
     "objectID": "START_HERE.html",

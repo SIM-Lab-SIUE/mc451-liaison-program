@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-01-12">
 
-<title>Resources &amp; Downloads – MC Research Methods: The Liaison Program</title>
+<title>Installing R &amp; RStudio – MC Research Methods: The Liaison Program</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -72,7 +108,7 @@ ul.task-list li input[type="checkbox"] {
 
 </head>
 
-<body class="nav-sidebar floating nav-fixed quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -88,54 +124,41 @@ ul.task-list li input[type="checkbox"] {
           <div id="quarto-search" class="" title="Search"></div>
       </div> <!-- /container-fluid -->
     </nav>
-  <nav class="quarto-secondary-nav">
-    <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-        <i class="bi bi-layout-text-sidebar-reverse"></i>
-      </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../resources/index.html">Resources &amp; Downloads</a></li></ol></nav>
-        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-        </a>
-    </div>
-  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
-    <div class="sidebar-menu-container"> 
-    <ul class="list-unstyled mt-1">
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../resources/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Resources &amp; Downloads</span></a>
-  </div>
-</li>
-    </ul>
-    </div>
-</nav>
-<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#essential-downloads" id="toc-essential-downloads" class="nav-link active" data-scroll-target="#essential-downloads">Essential Downloads</a>
+  <li><a href="#r-rstudio-setup-guide" id="toc-r-rstudio-setup-guide" class="nav-link active" data-scroll-target="#r-rstudio-setup-guide">R &amp; RStudio Setup Guide</a>
   <ul class="collapse">
-  <li><a href="#liaison-obsidian-vault" id="toc-liaison-obsidian-vault" class="nav-link" data-scroll-target="#liaison-obsidian-vault">Liaison Obsidian Vault</a></li>
-  </ul></li>
-  <li><a href="#software-tools" id="toc-software-tools" class="nav-link" data-scroll-target="#software-tools">Software &amp; Tools</a>
+  <li><a href="#what-youre-installing" id="toc-what-youre-installing" class="nav-link" data-scroll-target="#what-youre-installing">What You’re Installing</a></li>
+  <li><a href="#installation-by-operating-system" id="toc-installation-by-operating-system" class="nav-link" data-scroll-target="#installation-by-operating-system">Installation by Operating System</a>
   <ul class="collapse">
-  <li><a href="#required" id="toc-required" class="nav-link" data-scroll-target="#required">Required</a></li>
-  <li><a href="#recommended" id="toc-recommended" class="nav-link" data-scroll-target="#recommended">Recommended</a></li>
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">macOS</a></li>
+  <li><a href="#linux-ubuntudebian" id="toc-linux-ubuntudebian" class="nav-link" data-scroll-target="#linux-ubuntudebian">Linux (Ubuntu/Debian)</a></li>
   </ul></li>
-  <li><a href="#documentation-guides" id="toc-documentation-guides" class="nav-link" data-scroll-target="#documentation-guides">Documentation &amp; Guides</a>
+  <li><a href="#essential-next-steps" id="toc-essential-next-steps" class="nav-link" data-scroll-target="#essential-next-steps">Essential Next Steps</a>
   <ul class="collapse">
-  <li><a href="#quick-start" id="toc-quick-start" class="nav-link" data-scroll-target="#quick-start">Quick Start</a></li>
-  <li><a href="#templates-available-in-your-vault" id="toc-templates-available-in-your-vault" class="nav-link" data-scroll-target="#templates-available-in-your-vault">Templates Available in Your Vault</a></li>
+  <li><a href="#set-your-working-directory" id="toc-set-your-working-directory" class="nav-link" data-scroll-target="#set-your-working-directory">1. Set Your Working Directory</a></li>
+  <li><a href="#install-course-packages" id="toc-install-course-packages" class="nav-link" data-scroll-target="#install-course-packages">2. Install Course Packages</a></li>
+  <li><a href="#verify-packages-loaded" id="toc-verify-packages-loaded" class="nav-link" data-scroll-target="#verify-packages-loaded">3. Verify Packages Loaded</a></li>
   </ul></li>
-  <li><a href="#getting-help" id="toc-getting-help" class="nav-link" data-scroll-target="#getting-help">Getting Help</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#r-wont-start" id="toc-r-wont-start" class="nav-link" data-scroll-target="#r-wont-start">R won’t start</a></li>
+  <li><a href="#rstudio-cant-find-r" id="toc-rstudio-cant-find-r" class="nav-link" data-scroll-target="#rstudio-cant-find-r">RStudio can’t find R</a></li>
+  <li><a href="#package-installation-fails" id="toc-package-installation-fails" class="nav-link" data-scroll-target="#package-installation-fails">Package installation fails</a></li>
+  <li><a href="#permission-errors-especially-macos" id="toc-permission-errors-especially-macos" class="nav-link" data-scroll-target="#permission-errors-especially-macos">Permission errors (especially macOS)</a></li>
+  </ul></li>
+  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick Reference</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -144,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Resources &amp; Downloads</h1>
+<h1 class="title">Installing R &amp; RStudio</h1>
 </div>
 
 
@@ -152,6 +175,12 @@ ul.task-list li input[type="checkbox"] {
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 12, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -161,78 +190,253 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="essential-downloads" class="level2">
-<h2 class="anchored" data-anchor-id="essential-downloads">Essential Downloads</h2>
-<section id="liaison-obsidian-vault" class="level3">
-<h3 class="anchored" data-anchor-id="liaison-obsidian-vault">Liaison Obsidian Vault</h3>
-<p>Your complete knowledge management system for the Liaison Program. This vault includes:</p>
+<section id="r-rstudio-setup-guide" class="level1">
+<h1>R &amp; RStudio Setup Guide</h1>
+<p>R and RStudio are essential tools for statistical analysis and data science in this course. This guide covers installation on all major operating systems.</p>
+<section id="what-youre-installing" class="level2">
+<h2 class="anchored" data-anchor-id="what-youre-installing">What You’re Installing</h2>
 <ul>
-<li><strong>00_Inbox</strong>: Quick capture area for notes and ideas</li>
-<li><strong>01_Journal</strong>: Weekly reflection templates (Connector/Troubleshooter/Critic)</li>
-<li><strong>02_Literature</strong>: Centralized space for reading notes and citations</li>
-<li><strong>03_Project</strong>: Active research work with codebooks and data organization</li>
-<li><strong>04_Resources</strong>: Attachment storage for images, PDFs, and media</li>
-<li><strong>99_Templates</strong>: Ready-to-use templates for assignments and documentation</li>
+<li><strong>R</strong>: The core statistical programming language and environment</li>
+<li><strong>RStudio</strong>: An IDE (Integrated Development Environment) that makes R much easier to use</li>
 </ul>
-<p><strong><a href="Liaison_Vault.zip">📥 Download Liaison_Vault.zip</a></strong> - Extract this to get started immediately.</p>
+</section>
+<section id="installation-by-operating-system" class="level2">
+<h2 class="anchored" data-anchor-id="installation-by-operating-system">Installation by Operating System</h2>
+<section id="windows" class="level3">
+<h3 class="anchored" data-anchor-id="windows">Windows</h3>
+<section id="step-1-install-r" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-install-r">Step 1: Install R</h4>
+<ol type="1">
+<li>Go to <a href="https://cloud.r-project.org/">CRAN (Comprehensive R Archive Network)</a></li>
+<li>Click <strong>“Download R for Windows”</strong></li>
+<li>Click <strong>“base”</strong> (first option)</li>
+<li>Click the download link for the latest version (typically named something like <code>R-4.x.x-win.exe</code>)</li>
+<li>Run the installer
+<ul>
+<li>Accept default settings (you can leave everything as-is)</li>
+<li>Click through the installation wizard</li>
+<li>Installation typically takes 2-5 minutes</li>
+</ul></li>
+</ol>
+</section>
+<section id="step-2-install-rstudio" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-install-rstudio">Step 2: Install RStudio</h4>
+<ol type="1">
+<li>Go to <a href="https://posit.co/download/rstudio-desktop/">Posit RStudio Downloads</a></li>
+<li>Click <strong>“Download RStudio Desktop”</strong> for Windows</li>
+<li>Run the installer
+<ul>
+<li>Accept default settings</li>
+<li>The installer will detect your R installation automatically</li>
+<li>Complete the installation</li>
+</ul></li>
+</ol>
+</section>
+<section id="step-3-verify-installation" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-verify-installation">Step 3: Verify Installation</h4>
+<ol type="1">
+<li><p>Open <strong>RStudio</strong> (search for it in Windows Start menu)</p></li>
+<li><p>In the <strong>Console</strong> pane (usually bottom-left), you should see something like:</p>
+<pre><code>R version 4.x.x (20XX-XX-XX) -- "..."</code></pre></li>
+<li><p>Type: <code>print("Hello, R!")</code> and press Enter</p></li>
+<li><p>If you see <code>[1] "Hello, R!"</code>, you’re ready to go!</p></li>
+</ol>
 <hr>
 </section>
 </section>
-<section id="software-tools" class="level2">
-<h2 class="anchored" data-anchor-id="software-tools">Software &amp; Tools</h2>
-<p>Before starting Phase 1, ensure you have these installed:</p>
-<section id="required" class="level3">
-<h3 class="anchored" data-anchor-id="required">Required</h3>
+<section id="macos" class="level3">
+<h3 class="anchored" data-anchor-id="macos">macOS</h3>
+<section id="step-1-install-r-1" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-install-r-1">Step 1: Install R</h4>
+<p><strong>Option A: Using the installer (Recommended for beginners)</strong></p>
+<ol type="1">
+<li>Go to <a href="https://cloud.r-project.org/">CRAN macOS</a></li>
+<li>Click <strong>“Download R for macOS”</strong></li>
+<li>Select the appropriate version:
 <ul>
-<li><strong><a href="https://obsidian.md/">Obsidian</a></strong> - FREE - Your note-taking workspace</li>
-<li><strong><a href="https://git-scm.com/">Git</a></strong> - FREE - Version control for your projects</li>
-<li><strong><a href="https://posit.co/products/open-source/rstudio/">R &amp; RStudio</a></strong> - FREE - Statistical analysis and data analysis
+<li><strong>For Apple Silicon (M1/M2/M3 chips)</strong>: Download <code>R-x.x.x-arm64.pkg</code></li>
+<li><strong>For Intel Macs</strong>: Download <code>R-x.x.x-x86_64.pkg</code></li>
+<li>(Unsure? Check Apple menu → About This Mac → Chip)</li>
+</ul></li>
+<li>Run the <code>.pkg</code> installer and follow the prompts</li>
+<li>Installation takes 2-5 minutes</li>
+</ol>
+<p><strong>Option B: Using Homebrew (if you use Homebrew)</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install r</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-2-install-rstudio-1" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-install-rstudio-1">Step 2: Install RStudio</h4>
+<ol type="1">
+<li>Go to <a href="https://posit.co/download/rstudio-desktop/">Posit RStudio Downloads</a></li>
+<li>Click <strong>“Download RStudio Desktop”</strong> for macOS</li>
+<li>Select the appropriate version for your Mac (Apple Silicon or Intel)</li>
+<li>Open the downloaded <code>.dmg</code> file</li>
+<li>Drag RStudio to the Applications folder</li>
+<li>Launch RStudio from Applications</li>
+</ol>
+</section>
+<section id="step-3-verify-installation-1" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-verify-installation-1">Step 3: Verify Installation</h4>
+<ol type="1">
+<li>Open <strong>RStudio</strong> (find in Applications folder or Spotlight search)</li>
+<li>In the Console, type: <code>print("Hello, R!")</code> and press Enter</li>
+<li>Confirm you see: <code>[1] "Hello, R!"</code></li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="linux-ubuntudebian" class="level3">
+<h3 class="anchored" data-anchor-id="linux-ubuntudebian">Linux (Ubuntu/Debian)</h3>
+<section id="step-1-install-r-2" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-install-r-2">Step 1: Install R</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Update package lists</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install R</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install <span class="at">-y</span> r-base r-base-dev</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-2-install-rstudio-2" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-install-rstudio-2">Step 2: Install RStudio</h4>
+<ol type="1">
+<li><p>Go to <a href="https://posit.co/download/rstudio-desktop/">Posit RStudio Downloads</a></p></li>
+<li><p>Select <strong>“RStudio Desktop”</strong> → Choose Linux version (Ubuntu 20/22 or Debian)</p></li>
+<li><p>Download the <code>.deb</code> file</p></li>
+<li><p>Install it:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> rstudio-<span class="pp">[</span><span class="ss">version</span><span class="pp">]</span>.deb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+<p>Or install from terminal directly:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install <span class="at">-y</span> rstudio</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-3-verify-installation-2" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-verify-installation-2">Step 3: Verify Installation</h4>
+<ol type="1">
+<li><p>Launch RStudio from applications menu or terminal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">rstudio</span> <span class="kw">&amp;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Test in Console: <code>print("Hello, R!")</code></p></li>
+<li><p>Confirm output: <code>[1] "Hello, R!"</code></p></li>
+</ol>
+<hr>
+</section>
+</section>
+</section>
+<section id="essential-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="essential-next-steps">Essential Next Steps</h2>
+<p>Once R and RStudio are installed, you need to set up your R environment for the course:</p>
+<section id="set-your-working-directory" class="level3">
+<h3 class="anchored" data-anchor-id="set-your-working-directory">1. Set Your Working Directory</h3>
+<p>In RStudio Console, run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"~/Documents"</span>)  <span class="co"># Or your preferred workspace folder</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="install-course-packages" class="level3">
+<h3 class="anchored" data-anchor-id="install-course-packages">2. Install Course Packages</h3>
+<p>We’ll use these packages throughout the course. Install them with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Core data science packages</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>,      <span class="co"># Data wrangling and visualization</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"rmarkdown"</span>,      <span class="co"># Create documents with R code</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"quarto"</span>,         <span class="co"># Publishing system</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"shiny"</span>,          <span class="co"># Interactive web apps</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ggplot2"</span>         <span class="co"># Advanced visualization</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This may take 5-15 minutes (packages are downloading and installing).</p>
+</section>
+<section id="verify-packages-loaded" class="level3">
+<h3 class="anchored" data-anchor-id="verify-packages-loaded">3. Verify Packages Loaded</h3>
+<p>Test that the main packages work:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"All packages loaded successfully!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If no errors appear, you’re all set!</p>
+<hr>
+</section>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<section id="r-wont-start" class="level3">
+<h3 class="anchored" data-anchor-id="r-wont-start">R won’t start</h3>
 <ul>
-<li><a href="../install-r-rstudio.html">📖 Full R &amp; RStudio Setup Guide</a> - Complete walkthrough for all operating systems</li>
+<li><strong>Windows</strong>: Try reinstalling R with administrator privileges</li>
+<li><strong>Mac</strong>: Restart your computer and try again</li>
+<li><strong>Linux</strong>: Run <code>sudo apt install -y r-base</code> to ensure all dependencies are installed</li>
+</ul>
+</section>
+<section id="rstudio-cant-find-r" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-cant-find-r">RStudio can’t find R</h3>
+<ul>
+<li>RStudio should auto-detect R, but if not:
+<ul>
+<li><strong>Tools</strong> → <strong>Global Options</strong> → <strong>General</strong></li>
+<li>Look for “R version” section</li>
+<li>If blank, manually browse to your R installation</li>
 </ul></li>
 </ul>
 </section>
-<section id="recommended" class="level3">
-<h3 class="anchored" data-anchor-id="recommended">Recommended</h3>
+<section id="package-installation-fails" class="level3">
+<h3 class="anchored" data-anchor-id="package-installation-fails">Package installation fails</h3>
 <ul>
-<li><strong><a href="https://www.python.org/">Python 3.10+</a></strong> - FREE - For data analysis and automation</li>
-<li><strong><a href="https://code.visualstudio.com/">VS Code</a></strong> - FREE - Professional code editor
+<li>Make sure you have internet connection</li>
+<li>Try: <code>install.packages("package_name", repos="http://cran.r-project.org")</code></li>
+<li>Some packages require additional system libraries (ask in course chat!)</li>
+</ul>
+</section>
+<section id="permission-errors-especially-macos" class="level3">
+<h3 class="anchored" data-anchor-id="permission-errors-especially-macos">Permission errors (especially macOS)</h3>
 <ul>
-<li><a href="../install-vscode.html">📖 VS Code Setup Guide</a> - Extensions, GitHub integration, and workflow setup</li>
-</ul></li>
+<li>Try: <code>install.packages("package", type="source")</code></li>
 </ul>
 <hr>
 </section>
 </section>
-<section id="documentation-guides" class="level2">
-<h2 class="anchored" data-anchor-id="documentation-guides">Documentation &amp; Guides</h2>
-<section id="quick-start" class="level3">
-<h3 class="anchored" data-anchor-id="quick-start">Quick Start</h3>
-<ul>
-<li><a href="#setup">Setting up your Obsidian Vault</a> - 5 minutes</li>
-<li><a href="#program-structure">Understanding the Liaison Program Structure</a> - 10 minutes</li>
-</ul>
-</section>
-<section id="templates-available-in-your-vault" class="level3">
-<h3 class="anchored" data-anchor-id="templates-available-in-your-vault">Templates Available in Your Vault</h3>
-<ul>
-<li><strong>Weekly Journal Template</strong> - For reflective practice with three thinking paths</li>
-<li><strong>Data Dictionary Template</strong> - For codebook creation and variable definition</li>
-</ul>
+<section id="quick-reference" class="level2">
+<h2 class="anchored" data-anchor-id="quick-reference">Quick Reference</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>See R version</td>
+<td><code>R.version.string</code></td>
+</tr>
+<tr class="even">
+<td>List installed packages</td>
+<td><code>library()</code></td>
+</tr>
+<tr class="odd">
+<td>Load a package</td>
+<td><code>library(package_name)</code></td>
+</tr>
+<tr class="even">
+<td>Install a package</td>
+<td><code>install.packages("package_name")</code></td>
+</tr>
+<tr class="odd">
+<td>Get help</td>
+<td><code>help(function_name)</code> or <code>?function_name</code></td>
+</tr>
+<tr class="even">
+<td>Exit R</td>
+<td><code>q()</code></td>
+</tr>
+</tbody>
+</table>
 <hr>
 </section>
-</section>
-<section id="getting-help" class="level2">
-<h2 class="anchored" data-anchor-id="getting-help">Getting Help</h2>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
 <ul>
-<li><strong>Questions about the program?</strong> Check your module’s orientation page</li>
-<li><strong>Technical issues?</strong> Review the Software &amp; Tools section above</li>
-<li><strong>Need to provide feedback?</strong> Use the Inbox in your Obsidian Vault</li>
+<li><strong>Official R Documentation</strong>: https://www.r-project.org/</li>
+<li><strong>RStudio Cheat Sheets</strong>: https://posit.co/resources/cheatsheets/</li>
+<li><strong>R for Data Science (Book)</strong>: https://r4ds.hadley.nz/</li>
+<li><strong>Course Support</strong>: Check the course discussion board for questions</li>
 </ul>
-<hr>
-<p>Last updated: January 2026</p>
+<p>You’re ready to start the course! See you in Module 1.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

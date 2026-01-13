@@ -1,0 +1,272 @@
+---
+title: "Setting Up VS Code"
+date: last-modified
+---
+
+# VS Code Setup Guide
+
+VS Code is a professional code editor that makes working with data science, web development, and automation projects more efficient. This guide covers installation and recommended setup for the course.
+
+## What You're Installing
+
+**Visual Studio Code (VS Code)** is a lightweight but powerful code editor that supports:
+- Multiple programming languages (Python, JavaScript, R, and more)
+- Git/GitHub integration for version control
+- Extensions for enhanced functionality
+- Integrated terminal for running commands
+
+## Installation by Operating System
+
+### Windows
+
+#### Step 1: Download and Install
+
+1. Go to [VS Code Download](https://code.visualstudio.com/)
+2. Click **"Download for Windows"**
+3. Run the installer (`.exe` file)
+4. Follow the setup wizard:
+   - Accept the license agreement
+   - Choose installation location (default is fine)
+   - **Important**: Check **"Add to PATH"** (allows opening folders from terminal)
+   - Check **"Register Code as an editor..."** (optional but useful)
+5. Click **Install** and wait for completion (2-3 minutes)
+
+#### Step 2: Launch VS Code
+
+- Search for "Visual Studio Code" in Windows Start menu
+- Or open a terminal and type: `code`
+
+---
+
+### macOS
+
+#### Step 1: Download and Install
+
+1. Go to [VS Code Download](https://code.visualstudio.com/)
+2. Click **"Download for Mac"**
+   - Choose **Intel** if you have an older Mac
+   - Choose **Apple Silicon** if you have an M1/M2/M3 chip
+3. Open the downloaded `.zip` file
+4. Drag **Visual Studio Code** to the **Applications** folder
+5. Installation is instant!
+
+#### Step 2: Launch VS Code
+
+- Find in **Applications** folder, or
+- Use Spotlight search: Press `Cmd+Space`, type "Visual Studio Code"
+- Or from terminal: `code` (see setup note below)
+
+**Terminal Setup (Optional but Recommended)**
+
+To use `code` command from terminal:
+1. Open VS Code
+2. Press `Cmd+Shift+P` to open Command Palette
+3. Type: `code`
+4. Select **"Shell Command: Install 'code' command in PATH"**
+
+---
+
+### Linux (Ubuntu/Debian)
+
+#### Step 1: Install
+
+**Option A: Using apt (recommended)**
+```bash
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt update
+sudo apt install code
+```
+
+**Option B: Direct download**
+1. Go to [VS Code Download](https://code.visualstudio.com/)
+2. Download the `.deb` file for Linux
+3. Install: `sudo dpkg -i code_*.deb`
+
+#### Step 2: Launch
+
+```bash
+code
+```
+
+---
+
+## Essential Extensions for the Course
+
+Extensions add functionality to VS Code. Install these for maximum productivity:
+
+### Install Extensions
+
+1. Open VS Code
+2. Click the **Extensions icon** (square icon on left sidebar)
+3. Search for each extension below and click **Install**
+
+### Recommended Extensions
+
+| Extension | Publisher | Purpose |
+|-----------|-----------|---------|
+| **Python** | Microsoft | Python language support, debugging, linting |
+| **Pylance** | Microsoft | Advanced Python type checking and IntelliSense |
+| **GitHub Copilot** | GitHub | AI-powered code suggestions (requires GitHub account) |
+| **GitLens** | GitKraken | Enhanced Git integration and history |
+| **Git Graph** | mhutchie | Visual Git branch viewer |
+| **Markdown All in One** | Yu Zhang | Better Markdown support |
+| **Quarto** | Quarto | Quarto document support |
+| **Thunder Client** | Ranga Vikram | REST API testing |
+| **Remote - SSH** | Microsoft | Connect to remote servers |
+| **Error Lens** | Alexander | Show errors inline |
+| **Prettier** | Prettier | Code formatter |
+
+---
+
+## Essential Configuration
+
+### 1. Set Up Git in VS Code
+
+#### Connect to GitHub
+
+1. Click the **Source Control** icon (left sidebar) or press `Ctrl+Shift+G`
+2. Click **"Initialize Repository"** (if new folder) or **"Open Folder"** (if existing)
+3. VS Code will prompt for GitHub authentication
+4. Click **"Allow"** when asked to sign in with GitHub
+
+#### Configure Git User
+
+Open Terminal in VS Code (`Ctrl+`` or **Terminal** → **New Terminal**) and run:
+
+```bash
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+```
+
+### 2. Configure Python Interpreter
+
+1. Press `Ctrl+Shift+P` (Command Palette)
+2. Search: `Python: Select Interpreter`
+3. Choose your Python installation (should auto-detect)
+
+### 3. Customize Settings (Optional)
+
+Press `Ctrl+,` to open Settings, then adjust:
+
+- **Font Size**: Increase to 13-14 for easier reading
+- **Format on Save**: Search "Format On Save", check the box
+- **Line Numbers**: Already enabled
+- **Theme**: Preferences → **Color Theme** (try "Dark+" or "Light+")
+
+---
+
+## Basic VS Code Workflow
+
+### Opening a Folder
+
+1. **File** → **Open Folder** (or `Ctrl+K Ctrl+O`)
+2. Navigate to your project folder
+3. Click **"Select Folder"**
+
+### Creating Files
+
+1. Right-click in Explorer (left side)
+2. Select **"New File"**
+3. Enter filename (e.g., `script.py`, `notes.md`)
+
+### Running Code
+
+#### Python Files
+1. Open a `.py` file
+2. Right-click and select **"Run Python File in Terminal"**
+   - Or press `Ctrl+F5`
+
+#### Terminal Commands
+- Open Terminal: `Ctrl+`` (backtick)
+- Run commands: `python script.py`, `git status`, etc.
+
+### Using Git in VS Code
+
+**Basic workflow:**
+
+1. **Make changes** to your files
+2. **View changes**: Click Source Control icon (left sidebar)
+3. **Stage changes**: Click `+` next to files (or Stage All)
+4. **Commit**: Type message in the input box, press `Ctrl+Enter`
+5. **Push**: Click the `⋯` menu, select **"Push"**
+
+---
+
+## Keyboard Shortcuts (Essential)
+
+| Action | Windows | Mac |
+|--------|---------|-----|
+| Command Palette | `Ctrl+Shift+P` | `Cmd+Shift+P` |
+| Open Terminal | `` Ctrl+` `` | `` Cmd+` `` |
+| New File | `Ctrl+N` | `Cmd+N` |
+| Open Folder | `Ctrl+K Ctrl+O` | `Cmd+K Cmd+O` |
+| Save | `Ctrl+S` | `Cmd+S` |
+| Format Document | `Shift+Alt+F` | `Shift+Option+F` |
+| Find and Replace | `Ctrl+H` | `Cmd+H` |
+| Git: Commit | `Ctrl+K Ctrl+C` | `Cmd+K Cmd+C` |
+| Split Editor | `Ctrl+\` | `Cmd+\` |
+| Focus Terminal | `Ctrl+J` | `Cmd+J` |
+
+---
+
+## Troubleshooting
+
+### Python Extension Issues
+- Try: **Python: Select Interpreter** (Ctrl+Shift+P) and choose the correct Python
+- Reinstall: Delete the Python extension and reinstall
+
+### Git Not Found
+- Install [Git](https://git-scm.com/)
+- Restart VS Code
+- Configure in VS Code: `Ctrl+Shift+P` → `Git: Configure Git`
+
+### Extensions Won't Install
+- Check internet connection
+- Try restarting VS Code
+- Check VS Code version: **Help** → **About** (should be latest)
+
+### Port Already in Use (for web apps)
+- Kill the process: `lsof -ti:8000 | xargs kill -9` (Mac/Linux)
+- Or use different port in code: `app.run(port=8001)`
+
+---
+
+## Pro Tips
+
+1. **Use Workspaces**: Save your workspace setup for easy reloading
+   - **File** → **Save Workspace As**
+
+2. **Command Palette is your friend**: `Ctrl+Shift+P` and start typing
+   - `> Format Document`
+   - `> Git: Clone`
+   - `> Python: Create Terminal`
+
+3. **Multi-cursor editing**: Hold `Alt` and click multiple lines to edit simultaneously
+
+4. **Snippets**: Start typing common code patterns and press `Ctrl+Space` for suggestions
+
+5. **View on Side-by-Side**: Click and drag files to arrange windows
+
+---
+
+## Next Steps
+
+1. ✅ Install VS Code
+2. ✅ Install Python extension
+3. ✅ Connect to GitHub
+4. ✅ Create a test Python file and run it
+5. ✅ Make a test Git commit
+
+You're ready to code! Need help? Check the course discussion board.
+
+---
+
+## Resources
+
+- **Official Documentation**: https://code.visualstudio.com/docs
+- **Keyboard Shortcuts**: https://code.visualstudio.com/docs/getstarted/keybindings
+- **GitHub Integration**: https://code.visualstudio.com/docs/sourcecontrol/github
+- **Python Support**: https://code.visualstudio.com/docs/languages/python

@@ -1,0 +1,318 @@
+---
+title: "Install VS Code (Recommended)"
+---
+
+## Why VS Code?
+
+VS Code (Visual Studio Code) is a professional, lightweight code editor used by developers worldwide. While RStudio handles R code well, VS Code is excellent for:
+
+- Writing Python scripts for data analysis and automation
+- Managing Git repositories and GitHub
+- Working with multiple file types (R, Python, Markdown, JSON, etc.)
+- Version control and collaboration
+- Building a professional development workflow
+
+**This is optional but highly recommended** if you plan to work with Python or want to explore coding beyond this course.
+
+---
+
+## System Requirements
+
+- **Windows 10+, macOS 10.12+, or Linux** (most distributions)
+- **At least 200 MB of disk space**
+- Works on all computers that can run R and RStudio
+
+---
+
+## Step 1: Download VS Code
+
+1. Go to [code.visualstudio.com](https://code.visualstudio.com/)
+2. Click the large **"Download"** button
+3. Select your operating system:
+   - **Windows**: Choose "Windows (64-bit)" or "Windows (32-bit)"
+   - **macOS**: Choose based on your processor (Intel or Apple Silicon)
+   - **Linux**: Choose your distribution (Ubuntu, Debian, Red Hat, etc.)
+
+---
+
+## Step 2: Install VS Code
+
+### For Windows
+
+1. Run the downloaded `.exe` file
+2. Click "I accept the agreement" → **Next**
+3. Choose installation location (default is fine) → **Next**
+4. Click through all remaining options → **Install**
+5. Click **Finish**
+
+### For macOS
+
+1. Open the downloaded `.dmg` file
+2. Drag the VS Code icon to the Applications folder
+3. Wait for the copy process to complete
+4. Open Applications → Double-click **Visual Studio Code**
+
+### For Linux (Ubuntu/Debian)
+
+Open Terminal and run:
+
+```bash
+sudo apt update
+sudo apt install code
+```
+
+---
+
+## Step 3: First Launch
+
+When you open VS Code for the first time:
+
+1. You'll see a Welcome tab
+2. The interface has:
+   - **Left Sidebar**: File explorer, search, source control, extensions
+   - **Editor (center)**: Where you write code
+   - **Bottom Panel**: Terminal, debugging, problems
+   - **Top Bar**: File, Edit, View, Run menus
+
+---
+
+## Step 4: Install Recommended Extensions
+
+Extensions add functionality to VS Code. Here's what to install for this course:
+
+### 1. Python (for data analysis)
+
+1. Click the **Extensions icon** (left sidebar, looks like blocks)
+2. Search for `Python`
+3. Click the result by Microsoft
+4. Click **Install**
+
+This gives you Python code completion, debugging, and data analysis support.
+
+### 2. R Extension (for R support in VS Code)
+
+1. In Extensions, search for `R`
+2. Install **R** by REditorSupport
+3. When prompted, let it install supporting files
+
+### 3. Git Graph (for version control)
+
+1. Search for `Git Graph`
+2. Install by mhutchie
+3. This gives you a visual representation of your Git history
+
+### 4. Prettier (for code formatting)
+
+1. Search for `Prettier - Code formatter`
+2. Install by Prettier
+3. This automatically formats your code to professional standards
+
+### Optional: Markdown Preview Enhanced
+
+If you want a live preview of Markdown files:
+
+1. Search for `Markdown Preview Enhanced`
+2. Install by Yiyi Wang
+
+---
+
+## Step 5: Connect to GitHub
+
+If you created a GitHub account (from our GitHub setup guide), you can integrate it with VS Code:
+
+1. Click the **Source Control icon** (left sidebar, branch symbol)
+2. Click **Sign in with GitHub**
+3. Complete the authentication in your browser
+4. Return to VS Code (it should be authorized)
+
+Now you can:
+- Clone repositories directly into VS Code
+- View Git history visually
+- Commit and push changes
+- Manage GitHub issues and PRs
+
+---
+
+## Step 6: Create Your First Project
+
+Let's create a simple project folder:
+
+1. Click **File** → **Open Folder**
+2. Create or select a folder (e.g., `~/Documents/mc451-code`)
+3. Click **Select Folder**
+
+You now have a workspace. Let's create a file:
+
+1. Click the **New File** icon (top of the file explorer)
+2. Name it `hello.py`
+3. Type this Python code:
+
+```python
+# My first Python script
+message = "Hello, Communication Liaison!"
+print(message)
+```
+
+4. Press **Ctrl+S** (Windows/Linux) or **Cmd+S** (Mac) to save
+5. Click the **Run** button (play icon, top right) or press **Ctrl+Shift+D**
+
+You should see the output in the Terminal:
+```
+Hello, Communication Liaison!
+```
+
+---
+
+## Step 7: Set Up an Integrated Terminal
+
+VS Code has a built-in terminal (great for running Git commands):
+
+1. Press **Ctrl+`** (backtick, below Escape key) or go to **View** → **Terminal**
+2. The terminal opens at the bottom
+3. You can now run:
+   - `git status` to check your repository status
+   - `python script.py` to run Python files
+   - `R --vanilla` to start an R session
+4. Type `exit` to close the terminal
+
+---
+
+## Step 8: Keyboard Shortcuts (Essential)
+
+| Action | Windows/Linux | Mac |
+|--------|--------------|-----|
+| Open file | Ctrl+O | Cmd+O |
+| Save file | Ctrl+S | Cmd+S |
+| Find text | Ctrl+F | Cmd+F |
+| Replace | Ctrl+H | Cmd+H |
+| Open terminal | Ctrl+` | Ctrl+` |
+| Format document | Shift+Alt+F | Shift+Opt+F |
+| Add comment | Ctrl+/ | Cmd+/ |
+| Go to line | Ctrl+G | Cmd+G |
+
+---
+
+## Step 9: Clone a GitHub Repository
+
+If you created a GitHub project, you can work on it in VS Code:
+
+1. Click the **Source Control** icon (left sidebar)
+2. Click **Clone Repository**
+3. Paste your GitHub repo URL (from github.com)
+4. Choose a folder to save it
+5. Click **Open** when prompted
+
+Your entire repository is now in VS Code, and you can edit, commit, and push changes.
+
+---
+
+## Step 10: Settings & Customization
+
+### Change the Theme
+
+1. Go to **File** → **Preferences** → **Theme** → **Color Theme**
+2. Browse options (popular: Dark+, Light+, Dracula, One Dark Pro)
+3. Click to apply
+
+### Change Font Size
+
+1. Go to **File** → **Preferences** → **Settings**
+2. Search for "font size"
+3. Change the number (default is 14)
+
+### Auto-Format on Save
+
+1. Go to **File** → **Preferences** → **Settings**
+2. Search for "format on save"
+3. Check the box
+
+---
+
+## Useful Workflow: Editing Code + Git Integration
+
+### Typical workflow for an assignment:
+
+1. **Open your project folder** in VS Code
+2. **Create/edit files** in the editor
+3. **Save your changes** (Ctrl+S)
+4. **Open Terminal** (Ctrl+`)
+5. **Check status**: `git status`
+6. **Add changes**: `git add .`
+7. **Commit**: `git commit -m "Update analysis script"`
+8. **Push**: `git push`
+9. **Verify on GitHub**: Go to github.com and refresh
+
+---
+
+## Common Issues & Fixes
+
+### "Python not found"
+
+**Problem**: VS Code can't find Python.
+
+**Solution**:
+1. Make sure you installed Python (go back to your system settings)
+2. In VS Code, press Ctrl+Shift+P (Cmd+Shift+P on Mac)
+3. Type "Python: Select Interpreter"
+4. Choose your Python installation from the list
+
+### Extensions Won't Install
+
+**Problem**: You can't install an extension.
+
+**Solution**:
+1. Check your internet connection
+2. Try uninstalling and reinstalling VS Code
+3. Try installing the extension from the Extension Marketplace website instead
+
+### Terminal Says "git: command not found"
+
+**Problem**: Git isn't working in the terminal.
+
+**Solution**: Make sure you installed Git (see our GitHub setup guide). Restart VS Code after installing.
+
+---
+
+## When to Use VS Code vs RStudio
+
+| Task | Best Tool |
+|------|-----------|
+| Writing R code | RStudio (better for data analysis) |
+| Writing Python code | VS Code (better for scripting) |
+| Quick data analysis | RStudio |
+| Automated data pipelines | VS Code |
+| Managing Git | VS Code (more powerful tools) |
+| Learning R | RStudio (more beginner-friendly) |
+
+**Pro tip**: Use RStudio for analysis, VS Code for automation and version control!
+
+---
+
+## Next Steps
+
+1. ✅ Installed VS Code
+2. ✅ Installed extensions (Python, R, Git, Prettier)
+3. ✅ Created a test project
+4. ✅ Learned basic keyboard shortcuts
+5. **Next**: Start working on Phase 1 assignments!
+
+---
+
+## Resources
+
+- **VS Code Docs**: [code.visualstudio.com/docs](https://code.visualstudio.com/docs)
+- **Python in VS Code**: [code.visualstudio.com/docs/languages/python](https://code.visualstudio.com/docs/languages/python)
+- **Git in VS Code**: [code.visualstudio.com/docs/sourcecontrol/overview](https://code.visualstudio.com/docs/sourcecontrol/overview)
+- **Keyboard Shortcuts Cheat Sheet**: [code.visualstudio.com/shortcuts](https://code.visualstudio.com/shortcuts)
+
+---
+
+## Questions?
+
+VS Code has a steep initial learning curve, but it's an investment that pays off for your entire programming career. If you get stuck:
+
+1. Try pressing **F1** in VS Code (opens the command palette—search for what you need)
+2. Check VS Code's official documentation
+3. Come to office hours—we'll explore VS Code together
+
+**This is optional, but worth learning!** 💻
