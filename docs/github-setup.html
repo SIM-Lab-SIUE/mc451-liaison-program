@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Getting Started with GitHub – MC Research Methods: The Liaison Program</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">MC Research Methods: The Liaison Program</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./github-setup.html">Getting Started with GitHub</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./github-setup.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Getting Started with GitHub</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-github" id="toc-why-github" class="nav-link active" data-scroll-target="#why-github">Why GitHub?</a></li>
+  <li><a href="#step-1-create-your-github-account" id="toc-step-1-create-your-github-account" class="nav-link" data-scroll-target="#step-1-create-your-github-account">Step 1: Create Your GitHub Account</a>
+  <ul class="collapse">
+  <li><a href="#go-to-github" id="toc-go-to-github" class="nav-link" data-scroll-target="#go-to-github">1.1 Go to GitHub</a></li>
+  <li><a href="#sign-up" id="toc-sign-up" class="nav-link" data-scroll-target="#sign-up">1.2 Sign Up</a></li>
+  <li><a href="#verify-your-email" id="toc-verify-your-email" class="nav-link" data-scroll-target="#verify-your-email">1.3 Verify Your Email</a></li>
+  <li><a href="#complete-your-profile" id="toc-complete-your-profile" class="nav-link" data-scroll-target="#complete-your-profile">1.4 Complete Your Profile</a></li>
+  </ul></li>
+  <li><a href="#step-2-set-up-your-github-profile" id="toc-step-2-set-up-your-github-profile" class="nav-link" data-scroll-target="#step-2-set-up-your-github-profile">Step 2: Set Up Your GitHub Profile</a>
+  <ul class="collapse">
+  <li><a href="#add-a-profile-picture" id="toc-add-a-profile-picture" class="nav-link" data-scroll-target="#add-a-profile-picture">2.1 Add a Profile Picture</a></li>
+  <li><a href="#fill-out-your-profile" id="toc-fill-out-your-profile" class="nav-link" data-scroll-target="#fill-out-your-profile">2.2 Fill Out Your Profile</a></li>
+  <li><a href="#make-your-profile-public" id="toc-make-your-profile-public" class="nav-link" data-scroll-target="#make-your-profile-public">2.3 Make Your Profile Public</a></li>
+  </ul></li>
+  <li><a href="#step-3-understand-githubs-key-features" id="toc-step-3-understand-githubs-key-features" class="nav-link" data-scroll-target="#step-3-understand-githubs-key-features">Step 3: Understand GitHub’s Key Features</a>
+  <ul class="collapse">
+  <li><a href="#repositories-repos" id="toc-repositories-repos" class="nav-link" data-scroll-target="#repositories-repos">Repositories (Repos)</a></li>
+  <li><a href="#creating-a-test-repository" id="toc-creating-a-test-repository" class="nav-link" data-scroll-target="#creating-a-test-repository">Creating a Test Repository</a></li>
+  <li><a href="#the-readme-file" id="toc-the-readme-file" class="nav-link" data-scroll-target="#the-readme-file">The README File</a></li>
+  </ul></li>
+  <li><a href="#step-4-clone-a-repository-get-it-on-your-computer" id="toc-step-4-clone-a-repository-get-it-on-your-computer" class="nav-link" data-scroll-target="#step-4-clone-a-repository-get-it-on-your-computer">Step 4: Clone a Repository (Get It on Your Computer)</a>
+  <ul class="collapse">
+  <li><a href="#install-git" id="toc-install-git" class="nav-link" data-scroll-target="#install-git">4.1 Install Git</a></li>
+  <li><a href="#clone-your-first-repository" id="toc-clone-your-first-repository" class="nav-link" data-scroll-target="#clone-your-first-repository">4.2 Clone Your First Repository</a></li>
+  </ul></li>
+  <li><a href="#step-5-make-your-first-commit" id="toc-step-5-make-your-first-commit" class="nav-link" data-scroll-target="#step-5-make-your-first-commit">Step 5: Make Your First Commit</a>
+  <ul class="collapse">
+  <li><a href="#edit-your-readme" id="toc-edit-your-readme" class="nav-link" data-scroll-target="#edit-your-readme">5.1 Edit Your README</a></li>
+  <li><a href="#push-changes-to-github" id="toc-push-changes-to-github" class="nav-link" data-scroll-target="#push-changes-to-github">5.2 Push Changes to GitHub</a></li>
+  </ul></li>
+  <li><a href="#step-6-github-vocabulary-key-concepts" id="toc-step-6-github-vocabulary-key-concepts" class="nav-link" data-scroll-target="#step-6-github-vocabulary-key-concepts">Step 6: GitHub Vocabulary &amp; Key Concepts</a></li>
+  <li><a href="#step-7-best-practices" id="toc-step-7-best-practices" class="nav-link" data-scroll-target="#step-7-best-practices">Step 7: Best Practices</a>
+  <ul class="collapse">
+  <li><a href="#use-clear-commit-messages" id="toc-use-clear-commit-messages" class="nav-link" data-scroll-target="#use-clear-commit-messages">1. Use Clear Commit Messages</a></li>
+  <li><a href="#commit-often" id="toc-commit-often" class="nav-link" data-scroll-target="#commit-often">2. Commit Often</a></li>
+  <li><a href="#keep-your-readme-updated" id="toc-keep-your-readme-updated" class="nav-link" data-scroll-target="#keep-your-readme-updated">3. Keep Your README Updated</a></li>
+  <li><a href="#make-it-public" id="toc-make-it-public" class="nav-link" data-scroll-target="#make-it-public">4. Make It Public</a></li>
+  <li><a href="#use-meaningful-repository-names" id="toc-use-meaningful-repository-names" class="nav-link" data-scroll-target="#use-meaningful-repository-names">5. Use Meaningful Repository Names</a></li>
+  </ul></li>
+  <li><a href="#step-8-troubleshooting" id="toc-step-8-troubleshooting" class="nav-link" data-scroll-target="#step-8-troubleshooting">Step 8: Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#permission-denied-error" id="toc-permission-denied-error" class="nav-link" data-scroll-target="#permission-denied-error">“Permission denied” Error</a></li>
+  <li><a href="#changes-not-appearing-on-github" id="toc-changes-not-appearing-on-github" class="nav-link" data-scroll-target="#changes-not-appearing-on-github">Changes Not Appearing on GitHub</a></li>
+  <li><a href="#how-to-undo-a-commit" id="toc-how-to-undo-a-commit" class="nav-link" data-scroll-target="#how-to-undo-a-commit">How to Undo a Commit</a></li>
+  </ul></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Getting Started with GitHub</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="why-github" class="level2">
+<h2 class="anchored" data-anchor-id="why-github">Why GitHub?</h2>
+<p>As a Communication Liaison, you’ll work with data and research projects that require collaboration and version control. GitHub is the industry standard for managing code, sharing research, and collaborating with teams. This guide walks you through creating your GitHub account and getting comfortable with the basics.</p>
+<hr>
+</section>
+<section id="step-1-create-your-github-account" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-create-your-github-account">Step 1: Create Your GitHub Account</h2>
+<section id="go-to-github" class="level3">
+<h3 class="anchored" data-anchor-id="go-to-github">1.1 Go to GitHub</h3>
+<p>Open your web browser and navigate to <a href="https://github.com">github.com</a>. You’ll see the GitHub homepage with a signup form.</p>
+</section>
+<section id="sign-up" class="level3">
+<h3 class="anchored" data-anchor-id="sign-up">1.2 Sign Up</h3>
+<p>Click the <strong>“Sign up”</strong> button (or the email field) and enter:</p>
+<ul>
+<li><strong>Email address</strong>: Use your SIUE email or personal email (you can change this later)</li>
+<li><strong>Password</strong>: Create a strong password (mix of uppercase, lowercase, numbers, and symbols)</li>
+<li><strong>Username</strong>: Choose a professional username that you’d be comfortable using in a job application
+<ul>
+<li><strong>Tip</strong>: Avoid numbers or special characters if possible; keep it simple and memorable</li>
+<li><strong>Example</strong>: <code>alex-leith</code> or <code>apleith</code> works better than <code>leith1993</code> or <code>alex_code_master</code></li>
+</ul></li>
+</ul>
+</section>
+<section id="verify-your-email" class="level3">
+<h3 class="anchored" data-anchor-id="verify-your-email">1.3 Verify Your Email</h3>
+<p>GitHub will send you a verification email. Check your inbox, open the email from GitHub, and click the verification link. This confirms your account.</p>
+</section>
+<section id="complete-your-profile" class="level3">
+<h3 class="anchored" data-anchor-id="complete-your-profile">1.4 Complete Your Profile</h3>
+<p>After verification, GitHub will ask you setup questions:</p>
+<ul>
+<li><strong>Would you like to receive product updates and announcements via email?</strong> → Your choice</li>
+<li><strong>How many people are in your team?</strong> → Select “Just me”</li>
+<li><strong>What are you most interested in?</strong> → Select options relevant to you (data, journalism, communication, etc.)</li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="step-2-set-up-your-github-profile" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-set-up-your-github-profile">Step 2: Set Up Your GitHub Profile</h2>
+<section id="add-a-profile-picture" class="level3">
+<h3 class="anchored" data-anchor-id="add-a-profile-picture">2.1 Add a Profile Picture</h3>
+<p>Click your <strong>profile icon</strong> (top right corner) → <strong>Settings</strong> → <strong>Profile picture</strong></p>
+<p>Add a professional headshot or avatar. This helps collaborators recognize you and makes your profile more personal.</p>
+</section>
+<section id="fill-out-your-profile" class="level3">
+<h3 class="anchored" data-anchor-id="fill-out-your-profile">2.2 Fill Out Your Profile</h3>
+<p>In Settings, complete these fields:</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Field</th>
+<th>What to Enter</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Bio</strong></td>
+<td>Brief description: e.g., “Mass Communications student</td>
+</tr>
+<tr class="even">
+<td><strong>Company</strong></td>
+<td>SIUE or your workplace</td>
+</tr>
+<tr class="odd">
+<td><strong>Location</strong></td>
+<td>Your city or “Edwardsville, IL”</td>
+</tr>
+<tr class="even">
+<td><strong>Website</strong></td>
+<td>(Optional) Your personal website or portfolio</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Example Bio:</strong></p>
+<pre><code>Communication Liaison | Mass Communications @ SIUE
+Exploring research methodologies and data storytelling</code></pre>
+</section>
+<section id="make-your-profile-public" class="level3">
+<h3 class="anchored" data-anchor-id="make-your-profile-public">2.3 Make Your Profile Public</h3>
+<p>In <strong>Settings</strong> → <strong>Visibility</strong>, ensure: - ☑️ Make my profile public (this allows others to see your work and contributions) - ☑️ Include private contributions in my contribution graph (shows your activity)</p>
+<hr>
+</section>
+</section>
+<section id="step-3-understand-githubs-key-features" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-understand-githubs-key-features">Step 3: Understand GitHub’s Key Features</h2>
+<section id="repositories-repos" class="level3">
+<h3 class="anchored" data-anchor-id="repositories-repos">Repositories (Repos)</h3>
+<p>A <strong>repository</strong> is a folder that stores your project files, code, and documentation. Think of it as a project folder in the cloud that tracks all changes over time.</p>
+</section>
+<section id="creating-a-test-repository" class="level3">
+<h3 class="anchored" data-anchor-id="creating-a-test-repository">Creating a Test Repository</h3>
+<p>Let’s create your first repository to get comfortable:</p>
+<ol type="1">
+<li>Click the <strong>“+”</strong> icon (top right) → <strong>New repository</strong></li>
+<li><strong>Repository name</strong>: <code>hello-world</code> or <code>my-first-repo</code></li>
+<li><strong>Description</strong>: “My first GitHub repository”</li>
+<li><strong>Public or Private?</strong> → Select <strong>Public</strong> (this is important for sharing your work)</li>
+<li>☑️ <strong>Initialize with README</strong> (this creates a welcome file)</li>
+<li>Click <strong>Create repository</strong></li>
+</ol>
+</section>
+<section id="the-readme-file" class="level3">
+<h3 class="anchored" data-anchor-id="the-readme-file">The README File</h3>
+<p>Every repository should have a <strong>README.md</strong> file. This is like a cover page that explains: - What the project is about - How to use it - Who created it</p>
+<p>When you visit a repository on GitHub, the README appears automatically below the file list.</p>
+<hr>
+</section>
+</section>
+<section id="step-4-clone-a-repository-get-it-on-your-computer" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-clone-a-repository-get-it-on-your-computer">Step 4: Clone a Repository (Get It on Your Computer)</h2>
+<section id="install-git" class="level3">
+<h3 class="anchored" data-anchor-id="install-git">4.1 Install Git</h3>
+<p>To work with repositories on your computer, you need <strong>Git</strong> (the tool GitHub uses).</p>
+<p><strong>Windows:</strong> 1. Download Git from <a href="https://git-scm.com">git-scm.com</a> 2. Run the installer and follow default options 3. Restart your computer</p>
+<p><strong>Mac:</strong> 1. Download Git from <a href="https://git-scm.com">git-scm.com</a> or use Homebrew 2. Open Terminal and run: <code>brew install git</code></p>
+<p><strong>Linux:</strong> Open Terminal and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt-get install git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="clone-your-first-repository" class="level3">
+<h3 class="anchored" data-anchor-id="clone-your-first-repository">4.2 Clone Your First Repository</h3>
+<ol type="1">
+<li><p>Go to your <code>hello-world</code> repository on GitHub</p></li>
+<li><p>Click the green <strong>“Code”</strong> button</p></li>
+<li><p>Copy the HTTPS URL (should look like <code>https://github.com/yourusername/hello-world.git</code>)</p></li>
+<li><p>Open <strong>Terminal</strong> (Mac/Linux) or <strong>PowerShell</strong> (Windows)</p></li>
+<li><p>Navigate to where you want to store your repository:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> Documents</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Clone the repository:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/yourusername/hello-world.git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Enter the repository folder:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> hello-world</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+<p>Congratulations! You now have a copy of your repository on your computer.</p>
+<hr>
+</section>
+</section>
+<section id="step-5-make-your-first-commit" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-make-your-first-commit">Step 5: Make Your First Commit</h2>
+<section id="edit-your-readme" class="level3">
+<h3 class="anchored" data-anchor-id="edit-your-readme">5.1 Edit Your README</h3>
+<ol type="1">
+<li>Open the folder <code>hello-world</code> on your computer</li>
+<li>Find the file <code>README.md</code> and open it in a text editor (Notepad, VS Code, etc.)</li>
+<li>Add some content:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu"># Hello World</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>This is my first GitHub repository.</span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="fu">## About Me</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>I'm a Communication Liaison</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>I'm learning research methods</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>I'm excited to collaborate</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="fu">## Goals</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Master data analysis</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Tell stories with data</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="ss">- </span>Connect technical and creative teams</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="4" type="1">
+<li>Save the file</li>
+</ol>
+</section>
+<section id="push-changes-to-github" class="level3">
+<h3 class="anchored" data-anchor-id="push-changes-to-github">5.2 Push Changes to GitHub</h3>
+<p>Back in Terminal/PowerShell, run these commands:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Stage your changes (tell Git which files to save)</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add README.md</span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Commit your changes (save them locally with a message)</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Update README with introduction"</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Push changes to GitHub (send them to the website)</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Go back to GitHub.com, refresh your <code>hello-world</code> repository page, and you’ll see your updated README!</p>
+<hr>
+</section>
+</section>
+<section id="step-6-github-vocabulary-key-concepts" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-github-vocabulary-key-concepts">Step 6: GitHub Vocabulary &amp; Key Concepts</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Term</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Repository (Repo)</strong></td>
+<td>A folder that stores your project and its history</td>
+</tr>
+<tr class="even">
+<td><strong>Commit</strong></td>
+<td>A saved version of your work with a message describing what changed</td>
+</tr>
+<tr class="odd">
+<td><strong>Push</strong></td>
+<td>Send your local changes to GitHub</td>
+</tr>
+<tr class="even">
+<td><strong>Pull</strong></td>
+<td>Download changes from GitHub to your computer</td>
+</tr>
+<tr class="odd">
+<td><strong>Branch</strong></td>
+<td>A separate version of your project (useful for testing new ideas)</td>
+</tr>
+<tr class="even">
+<td><strong>Issue</strong></td>
+<td>A task, bug, or discussion for a project</td>
+</tr>
+<tr class="odd">
+<td><strong>Pull Request (PR)</strong></td>
+<td>A proposal to add changes from one branch to another</td>
+</tr>
+<tr class="even">
+<td><strong>Fork</strong></td>
+<td>Create your own copy of someone else’s repository</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="step-7-best-practices" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-best-practices">Step 7: Best Practices</h2>
+<section id="use-clear-commit-messages" class="level3">
+<h3 class="anchored" data-anchor-id="use-clear-commit-messages">1. Use Clear Commit Messages</h3>
+<p><strong>Bad:</strong> “Update stuff” or “Fix”<br>
+<strong>Good:</strong> “Add data analysis section to README” or “Fix typo in methods section”</p>
+</section>
+<section id="commit-often" class="level3">
+<h3 class="anchored" data-anchor-id="commit-often">2. Commit Often</h3>
+<p>Make commits when you complete a logical task, not just once per day.</p>
+</section>
+<section id="keep-your-readme-updated" class="level3">
+<h3 class="anchored" data-anchor-id="keep-your-readme-updated">3. Keep Your README Updated</h3>
+<p>Your README is the first impression. Keep it current and clear.</p>
+</section>
+<section id="make-it-public" class="level3">
+<h3 class="anchored" data-anchor-id="make-it-public">4. Make It Public</h3>
+<p>For this course, make your repository <strong>public</strong> so I can see your work. You can always make it private later for sensitive projects.</p>
+</section>
+<section id="use-meaningful-repository-names" class="level3">
+<h3 class="anchored" data-anchor-id="use-meaningful-repository-names">5. Use Meaningful Repository Names</h3>
+<p><strong>Bad:</strong> <code>project</code> or <code>stuff</code><br>
+<strong>Good:</strong> <code>mc451-research-analysis</code> or <code>data-storytelling-project</code></p>
+<hr>
+</section>
+</section>
+<section id="step-8-troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="step-8-troubleshooting">Step 8: Troubleshooting</h2>
+<section id="permission-denied-error" class="level3">
+<h3 class="anchored" data-anchor-id="permission-denied-error">“Permission denied” Error</h3>
+<p>If you see <code>Permission denied (publickey)</code>, you need to set up SSH authentication. For now, use HTTPS (which you’re already doing). Later, GitHub has tutorials to set up SSH if needed.</p>
+</section>
+<section id="changes-not-appearing-on-github" class="level3">
+<h3 class="anchored" data-anchor-id="changes-not-appearing-on-github">Changes Not Appearing on GitHub</h3>
+<p>Make sure you: 1. ✅ Used <code>git add</code> to stage files 2. ✅ Used <code>git commit -m "message"</code> to commit 3. ✅ Used <code>git push</code> to push to GitHub</p>
+<p>All three steps are necessary!</p>
+</section>
+<section id="how-to-undo-a-commit" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-undo-a-commit">How to Undo a Commit</h3>
+<p>If you made a mistake, run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> log  <span class="co"># See your commit history</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> revert HEAD  <span class="co"># Undo the last commit</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<ol type="1">
+<li><strong>Create your GitHub account</strong> using this guide</li>
+<li><strong>Create your <code>hello-world</code> repository</strong></li>
+<li><strong>Edit the README and push changes</strong></li>
+<li><strong>Share your GitHub profile URL</strong> (format: <code>github.com/yourusername</code>) with me</li>
+<li><strong>Explore other repositories</strong> and see how others organize their work</li>
+</ol>
+<hr>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><strong>GitHub Docs</strong>: <a href="https://docs.github.com">docs.github.com</a></li>
+<li><strong>Git Basics</strong>: <a href="https://git-scm.com/book">git-scm.com/book</a> (Pro Git book, free online)</li>
+<li><strong>GitHub Learning Lab</strong>: <a href="https://lab.github.com">lab.github.com</a> (interactive tutorials)</li>
+<li><strong>Markdown Guide</strong>: <a href="https://www.markdownguide.org">markdownguide.org</a> (learn to format your README)</li>
+</ul>
+<hr>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions?</h2>
+<p>If you get stuck, check the <a href="https://docs.github.com">GitHub Docs</a>, try a Google search with your specific error message, or come to office hours. We’ll work through it together!</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

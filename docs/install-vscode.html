@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Install VS Code (Recommended) – MC Research Methods: The Liaison Program</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">MC Research Methods: The Liaison Program</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-vs-code" id="toc-why-vs-code" class="nav-link active" data-scroll-target="#why-vs-code">Why VS Code?</a></li>
+  <li><a href="#system-requirements" id="toc-system-requirements" class="nav-link" data-scroll-target="#system-requirements">System Requirements</a></li>
+  <li><a href="#step-1-download-vs-code" id="toc-step-1-download-vs-code" class="nav-link" data-scroll-target="#step-1-download-vs-code">Step 1: Download VS Code</a></li>
+  <li><a href="#step-2-install-vs-code" id="toc-step-2-install-vs-code" class="nav-link" data-scroll-target="#step-2-install-vs-code">Step 2: Install VS Code</a>
+  <ul class="collapse">
+  <li><a href="#for-windows" id="toc-for-windows" class="nav-link" data-scroll-target="#for-windows">For Windows</a></li>
+  <li><a href="#for-macos" id="toc-for-macos" class="nav-link" data-scroll-target="#for-macos">For macOS</a></li>
+  <li><a href="#for-linux-ubuntudebian" id="toc-for-linux-ubuntudebian" class="nav-link" data-scroll-target="#for-linux-ubuntudebian">For Linux (Ubuntu/Debian)</a></li>
+  </ul></li>
+  <li><a href="#step-3-first-launch" id="toc-step-3-first-launch" class="nav-link" data-scroll-target="#step-3-first-launch">Step 3: First Launch</a></li>
+  <li><a href="#step-4-install-recommended-extensions" id="toc-step-4-install-recommended-extensions" class="nav-link" data-scroll-target="#step-4-install-recommended-extensions">Step 4: Install Recommended Extensions</a>
+  <ul class="collapse">
+  <li><a href="#python-for-data-analysis" id="toc-python-for-data-analysis" class="nav-link" data-scroll-target="#python-for-data-analysis">1. Python (for data analysis)</a></li>
+  <li><a href="#r-extension-for-r-support-in-vs-code" id="toc-r-extension-for-r-support-in-vs-code" class="nav-link" data-scroll-target="#r-extension-for-r-support-in-vs-code">2. R Extension (for R support in VS Code)</a></li>
+  <li><a href="#git-graph-for-version-control" id="toc-git-graph-for-version-control" class="nav-link" data-scroll-target="#git-graph-for-version-control">3. Git Graph (for version control)</a></li>
+  <li><a href="#prettier-for-code-formatting" id="toc-prettier-for-code-formatting" class="nav-link" data-scroll-target="#prettier-for-code-formatting">4. Prettier (for code formatting)</a></li>
+  <li><a href="#optional-markdown-preview-enhanced" id="toc-optional-markdown-preview-enhanced" class="nav-link" data-scroll-target="#optional-markdown-preview-enhanced">Optional: Markdown Preview Enhanced</a></li>
+  </ul></li>
+  <li><a href="#step-5-connect-to-github" id="toc-step-5-connect-to-github" class="nav-link" data-scroll-target="#step-5-connect-to-github">Step 5: Connect to GitHub</a></li>
+  <li><a href="#step-6-create-your-first-project" id="toc-step-6-create-your-first-project" class="nav-link" data-scroll-target="#step-6-create-your-first-project">Step 6: Create Your First Project</a></li>
+  <li><a href="#step-7-set-up-an-integrated-terminal" id="toc-step-7-set-up-an-integrated-terminal" class="nav-link" data-scroll-target="#step-7-set-up-an-integrated-terminal">Step 7: Set Up an Integrated Terminal</a></li>
+  <li><a href="#step-8-keyboard-shortcuts-essential" id="toc-step-8-keyboard-shortcuts-essential" class="nav-link" data-scroll-target="#step-8-keyboard-shortcuts-essential">Step 8: Keyboard Shortcuts (Essential)</a></li>
+  <li><a href="#step-9-clone-a-github-repository" id="toc-step-9-clone-a-github-repository" class="nav-link" data-scroll-target="#step-9-clone-a-github-repository">Step 9: Clone a GitHub Repository</a></li>
+  <li><a href="#step-10-settings-customization" id="toc-step-10-settings-customization" class="nav-link" data-scroll-target="#step-10-settings-customization">Step 10: Settings &amp; Customization</a>
+  <ul class="collapse">
+  <li><a href="#change-the-theme" id="toc-change-the-theme" class="nav-link" data-scroll-target="#change-the-theme">Change the Theme</a></li>
+  <li><a href="#change-font-size" id="toc-change-font-size" class="nav-link" data-scroll-target="#change-font-size">Change Font Size</a></li>
+  <li><a href="#auto-format-on-save" id="toc-auto-format-on-save" class="nav-link" data-scroll-target="#auto-format-on-save">Auto-Format on Save</a></li>
+  </ul></li>
+  <li><a href="#useful-workflow-editing-code-git-integration" id="toc-useful-workflow-editing-code-git-integration" class="nav-link" data-scroll-target="#useful-workflow-editing-code-git-integration">Useful Workflow: Editing Code + Git Integration</a>
+  <ul class="collapse">
+  <li><a href="#typical-workflow-for-an-assignment" id="toc-typical-workflow-for-an-assignment" class="nav-link" data-scroll-target="#typical-workflow-for-an-assignment">Typical workflow for an assignment:</a></li>
+  </ul></li>
+  <li><a href="#common-issues-fixes" id="toc-common-issues-fixes" class="nav-link" data-scroll-target="#common-issues-fixes">Common Issues &amp; Fixes</a>
+  <ul class="collapse">
+  <li><a href="#python-not-found" id="toc-python-not-found" class="nav-link" data-scroll-target="#python-not-found">“Python not found”</a></li>
+  <li><a href="#extensions-wont-install" id="toc-extensions-wont-install" class="nav-link" data-scroll-target="#extensions-wont-install">Extensions Won’t Install</a></li>
+  <li><a href="#terminal-says-git-command-not-found" id="toc-terminal-says-git-command-not-found" class="nav-link" data-scroll-target="#terminal-says-git-command-not-found">Terminal Says “git: command not found”</a></li>
+  </ul></li>
+  <li><a href="#when-to-use-vs-code-vs-rstudio" id="toc-when-to-use-vs-code-vs-rstudio" class="nav-link" data-scroll-target="#when-to-use-vs-code-vs-rstudio">When to Use VS Code vs RStudio</a></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Install VS Code (Recommended)</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="why-vs-code" class="level2">
+<h2 class="anchored" data-anchor-id="why-vs-code">Why VS Code?</h2>
+<p>VS Code (Visual Studio Code) is a professional, lightweight code editor used by developers worldwide. While RStudio handles R code well, VS Code is excellent for:</p>
+<ul>
+<li>Writing Python scripts for data analysis and automation</li>
+<li>Managing Git repositories and GitHub</li>
+<li>Working with multiple file types (R, Python, Markdown, JSON, etc.)</li>
+<li>Version control and collaboration</li>
+<li>Building a professional development workflow</li>
+</ul>
+<p><strong>This is optional but highly recommended</strong> if you plan to work with Python or want to explore coding beyond this course.</p>
+<hr>
+</section>
+<section id="system-requirements" class="level2">
+<h2 class="anchored" data-anchor-id="system-requirements">System Requirements</h2>
+<ul>
+<li><strong>Windows 10+, macOS 10.12+, or Linux</strong> (most distributions)</li>
+<li><strong>At least 200 MB of disk space</strong></li>
+<li>Works on all computers that can run R and RStudio</li>
+</ul>
+<hr>
+</section>
+<section id="step-1-download-vs-code" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-download-vs-code">Step 1: Download VS Code</h2>
+<ol type="1">
+<li>Go to <a href="https://code.visualstudio.com/">code.visualstudio.com</a></li>
+<li>Click the large <strong>“Download”</strong> button</li>
+<li>Select your operating system:
+<ul>
+<li><strong>Windows</strong>: Choose “Windows (64-bit)” or “Windows (32-bit)”</li>
+<li><strong>macOS</strong>: Choose based on your processor (Intel or Apple Silicon)</li>
+<li><strong>Linux</strong>: Choose your distribution (Ubuntu, Debian, Red Hat, etc.)</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="step-2-install-vs-code" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-install-vs-code">Step 2: Install VS Code</h2>
+<section id="for-windows" class="level3">
+<h3 class="anchored" data-anchor-id="for-windows">For Windows</h3>
+<ol type="1">
+<li>Run the downloaded <code>.exe</code> file</li>
+<li>Click “I accept the agreement” → <strong>Next</strong></li>
+<li>Choose installation location (default is fine) → <strong>Next</strong></li>
+<li>Click through all remaining options → <strong>Install</strong></li>
+<li>Click <strong>Finish</strong></li>
+</ol>
+</section>
+<section id="for-macos" class="level3">
+<h3 class="anchored" data-anchor-id="for-macos">For macOS</h3>
+<ol type="1">
+<li>Open the downloaded <code>.dmg</code> file</li>
+<li>Drag the VS Code icon to the Applications folder</li>
+<li>Wait for the copy process to complete</li>
+<li>Open Applications → Double-click <strong>Visual Studio Code</strong></li>
+</ol>
+</section>
+<section id="for-linux-ubuntudebian" class="level3">
+<h3 class="anchored" data-anchor-id="for-linux-ubuntudebian">For Linux (Ubuntu/Debian)</h3>
+<p>Open Terminal and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install code</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="step-3-first-launch" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-first-launch">Step 3: First Launch</h2>
+<p>When you open VS Code for the first time:</p>
+<ol type="1">
+<li>You’ll see a Welcome tab</li>
+<li>The interface has:
+<ul>
+<li><strong>Left Sidebar</strong>: File explorer, search, source control, extensions</li>
+<li><strong>Editor (center)</strong>: Where you write code</li>
+<li><strong>Bottom Panel</strong>: Terminal, debugging, problems</li>
+<li><strong>Top Bar</strong>: File, Edit, View, Run menus</li>
+</ul></li>
+</ol>
+<hr>
+</section>
+<section id="step-4-install-recommended-extensions" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-install-recommended-extensions">Step 4: Install Recommended Extensions</h2>
+<p>Extensions add functionality to VS Code. Here’s what to install for this course:</p>
+<section id="python-for-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="python-for-data-analysis">1. Python (for data analysis)</h3>
+<ol type="1">
+<li>Click the <strong>Extensions icon</strong> (left sidebar, looks like blocks)</li>
+<li>Search for <code>Python</code></li>
+<li>Click the result by Microsoft</li>
+<li>Click <strong>Install</strong></li>
+</ol>
+<p>This gives you Python code completion, debugging, and data analysis support.</p>
+</section>
+<section id="r-extension-for-r-support-in-vs-code" class="level3">
+<h3 class="anchored" data-anchor-id="r-extension-for-r-support-in-vs-code">2. R Extension (for R support in VS Code)</h3>
+<ol type="1">
+<li>In Extensions, search for <code>R</code></li>
+<li>Install <strong>R</strong> by REditorSupport</li>
+<li>When prompted, let it install supporting files</li>
+</ol>
+</section>
+<section id="git-graph-for-version-control" class="level3">
+<h3 class="anchored" data-anchor-id="git-graph-for-version-control">3. Git Graph (for version control)</h3>
+<ol type="1">
+<li>Search for <code>Git Graph</code></li>
+<li>Install by mhutchie</li>
+<li>This gives you a visual representation of your Git history</li>
+</ol>
+</section>
+<section id="prettier-for-code-formatting" class="level3">
+<h3 class="anchored" data-anchor-id="prettier-for-code-formatting">4. Prettier (for code formatting)</h3>
+<ol type="1">
+<li>Search for <code>Prettier - Code formatter</code></li>
+<li>Install by Prettier</li>
+<li>This automatically formats your code to professional standards</li>
+</ol>
+</section>
+<section id="optional-markdown-preview-enhanced" class="level3">
+<h3 class="anchored" data-anchor-id="optional-markdown-preview-enhanced">Optional: Markdown Preview Enhanced</h3>
+<p>If you want a live preview of Markdown files:</p>
+<ol type="1">
+<li>Search for <code>Markdown Preview Enhanced</code></li>
+<li>Install by Yiyi Wang</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="step-5-connect-to-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-connect-to-github">Step 5: Connect to GitHub</h2>
+<p>If you created a GitHub account (from our GitHub setup guide), you can integrate it with VS Code:</p>
+<ol type="1">
+<li>Click the <strong>Source Control icon</strong> (left sidebar, branch symbol)</li>
+<li>Click <strong>Sign in with GitHub</strong></li>
+<li>Complete the authentication in your browser</li>
+<li>Return to VS Code (it should be authorized)</li>
+</ol>
+<p>Now you can: - Clone repositories directly into VS Code - View Git history visually - Commit and push changes - Manage GitHub issues and PRs</p>
+<hr>
+</section>
+<section id="step-6-create-your-first-project" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-create-your-first-project">Step 6: Create Your First Project</h2>
+<p>Let’s create a simple project folder:</p>
+<ol type="1">
+<li>Click <strong>File</strong> → <strong>Open Folder</strong></li>
+<li>Create or select a folder (e.g., <code>~/Documents/mc451-code</code>)</li>
+<li>Click <strong>Select Folder</strong></li>
+</ol>
+<p>You now have a workspace. Let’s create a file:</p>
+<ol type="1">
+<li>Click the <strong>New File</strong> icon (top of the file explorer)</li>
+<li>Name it <code>hello.py</code></li>
+<li>Type this Python code:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># My first Python script</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>message <span class="op">=</span> <span class="st">"Hello, Communication Liaison!"</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(message)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="4" type="1">
+<li>Press <strong>Ctrl+S</strong> (Windows/Linux) or <strong>Cmd+S</strong> (Mac) to save</li>
+<li>Click the <strong>Run</strong> button (play icon, top right) or press <strong>Ctrl+Shift+D</strong></li>
+</ol>
+<p>You should see the output in the Terminal:</p>
+<pre><code>Hello, Communication Liaison!</code></pre>
+<hr>
+</section>
+<section id="step-7-set-up-an-integrated-terminal" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-set-up-an-integrated-terminal">Step 7: Set Up an Integrated Terminal</h2>
+<p>VS Code has a built-in terminal (great for running Git commands):</p>
+<ol type="1">
+<li>Press <strong>Ctrl+`</strong> (backtick, below Escape key) or go to <strong>View</strong> → <strong>Terminal</strong></li>
+<li>The terminal opens at the bottom</li>
+<li>You can now run:
+<ul>
+<li><code>git status</code> to check your repository status</li>
+<li><code>python script.py</code> to run Python files</li>
+<li><code>R --vanilla</code> to start an R session</li>
+</ul></li>
+<li>Type <code>exit</code> to close the terminal</li>
+</ol>
+<hr>
+</section>
+<section id="step-8-keyboard-shortcuts-essential" class="level2">
+<h2 class="anchored" data-anchor-id="step-8-keyboard-shortcuts-essential">Step 8: Keyboard Shortcuts (Essential)</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Action</th>
+<th>Windows/Linux</th>
+<th>Mac</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Open file</td>
+<td>Ctrl+O</td>
+<td>Cmd+O</td>
+</tr>
+<tr class="even">
+<td>Save file</td>
+<td>Ctrl+S</td>
+<td>Cmd+S</td>
+</tr>
+<tr class="odd">
+<td>Find text</td>
+<td>Ctrl+F</td>
+<td>Cmd+F</td>
+</tr>
+<tr class="even">
+<td>Replace</td>
+<td>Ctrl+H</td>
+<td>Cmd+H</td>
+</tr>
+<tr class="odd">
+<td>Open terminal</td>
+<td>Ctrl+<code>| Ctrl+</code></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Format document</td>
+<td>Shift+Alt+F</td>
+<td>Shift+Opt+F</td>
+</tr>
+<tr class="odd">
+<td>Add comment</td>
+<td>Ctrl+/</td>
+<td>Cmd+/</td>
+</tr>
+<tr class="even">
+<td>Go to line</td>
+<td>Ctrl+G</td>
+<td>Cmd+G</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="step-9-clone-a-github-repository" class="level2">
+<h2 class="anchored" data-anchor-id="step-9-clone-a-github-repository">Step 9: Clone a GitHub Repository</h2>
+<p>If you created a GitHub project, you can work on it in VS Code:</p>
+<ol type="1">
+<li>Click the <strong>Source Control</strong> icon (left sidebar)</li>
+<li>Click <strong>Clone Repository</strong></li>
+<li>Paste your GitHub repo URL (from github.com)</li>
+<li>Choose a folder to save it</li>
+<li>Click <strong>Open</strong> when prompted</li>
+</ol>
+<p>Your entire repository is now in VS Code, and you can edit, commit, and push changes.</p>
+<hr>
+</section>
+<section id="step-10-settings-customization" class="level2">
+<h2 class="anchored" data-anchor-id="step-10-settings-customization">Step 10: Settings &amp; Customization</h2>
+<section id="change-the-theme" class="level3">
+<h3 class="anchored" data-anchor-id="change-the-theme">Change the Theme</h3>
+<ol type="1">
+<li>Go to <strong>File</strong> → <strong>Preferences</strong> → <strong>Theme</strong> → <strong>Color Theme</strong></li>
+<li>Browse options (popular: Dark+, Light+, Dracula, One Dark Pro)</li>
+<li>Click to apply</li>
+</ol>
+</section>
+<section id="change-font-size" class="level3">
+<h3 class="anchored" data-anchor-id="change-font-size">Change Font Size</h3>
+<ol type="1">
+<li>Go to <strong>File</strong> → <strong>Preferences</strong> → <strong>Settings</strong></li>
+<li>Search for “font size”</li>
+<li>Change the number (default is 14)</li>
+</ol>
+</section>
+<section id="auto-format-on-save" class="level3">
+<h3 class="anchored" data-anchor-id="auto-format-on-save">Auto-Format on Save</h3>
+<ol type="1">
+<li>Go to <strong>File</strong> → <strong>Preferences</strong> → <strong>Settings</strong></li>
+<li>Search for “format on save”</li>
+<li>Check the box</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="useful-workflow-editing-code-git-integration" class="level2">
+<h2 class="anchored" data-anchor-id="useful-workflow-editing-code-git-integration">Useful Workflow: Editing Code + Git Integration</h2>
+<section id="typical-workflow-for-an-assignment" class="level3">
+<h3 class="anchored" data-anchor-id="typical-workflow-for-an-assignment">Typical workflow for an assignment:</h3>
+<ol type="1">
+<li><strong>Open your project folder</strong> in VS Code</li>
+<li><strong>Create/edit files</strong> in the editor</li>
+<li><strong>Save your changes</strong> (Ctrl+S)</li>
+<li><strong>Open Terminal</strong> (Ctrl+`)</li>
+<li><strong>Check status</strong>: <code>git status</code></li>
+<li><strong>Add changes</strong>: <code>git add .</code></li>
+<li><strong>Commit</strong>: <code>git commit -m "Update analysis script"</code></li>
+<li><strong>Push</strong>: <code>git push</code></li>
+<li><strong>Verify on GitHub</strong>: Go to github.com and refresh</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="common-issues-fixes" class="level2">
+<h2 class="anchored" data-anchor-id="common-issues-fixes">Common Issues &amp; Fixes</h2>
+<section id="python-not-found" class="level3">
+<h3 class="anchored" data-anchor-id="python-not-found">“Python not found”</h3>
+<p><strong>Problem</strong>: VS Code can’t find Python.</p>
+<p><strong>Solution</strong>: 1. Make sure you installed Python (go back to your system settings) 2. In VS Code, press Ctrl+Shift+P (Cmd+Shift+P on Mac) 3. Type “Python: Select Interpreter” 4. Choose your Python installation from the list</p>
+</section>
+<section id="extensions-wont-install" class="level3">
+<h3 class="anchored" data-anchor-id="extensions-wont-install">Extensions Won’t Install</h3>
+<p><strong>Problem</strong>: You can’t install an extension.</p>
+<p><strong>Solution</strong>: 1. Check your internet connection 2. Try uninstalling and reinstalling VS Code 3. Try installing the extension from the Extension Marketplace website instead</p>
+</section>
+<section id="terminal-says-git-command-not-found" class="level3">
+<h3 class="anchored" data-anchor-id="terminal-says-git-command-not-found">Terminal Says “git: command not found”</h3>
+<p><strong>Problem</strong>: Git isn’t working in the terminal.</p>
+<p><strong>Solution</strong>: Make sure you installed Git (see our GitHub setup guide). Restart VS Code after installing.</p>
+<hr>
+</section>
+</section>
+<section id="when-to-use-vs-code-vs-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="when-to-use-vs-code-vs-rstudio">When to Use VS Code vs RStudio</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Task</th>
+<th>Best Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Writing R code</td>
+<td>RStudio (better for data analysis)</td>
+</tr>
+<tr class="even">
+<td>Writing Python code</td>
+<td>VS Code (better for scripting)</td>
+</tr>
+<tr class="odd">
+<td>Quick data analysis</td>
+<td>RStudio</td>
+</tr>
+<tr class="even">
+<td>Automated data pipelines</td>
+<td>VS Code</td>
+</tr>
+<tr class="odd">
+<td>Managing Git</td>
+<td>VS Code (more powerful tools)</td>
+</tr>
+<tr class="even">
+<td>Learning R</td>
+<td>RStudio (more beginner-friendly)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Pro tip</strong>: Use RStudio for analysis, VS Code for automation and version control!</p>
+<hr>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<ol type="1">
+<li>✅ Installed VS Code</li>
+<li>✅ Installed extensions (Python, R, Git, Prettier)</li>
+<li>✅ Created a test project</li>
+<li>✅ Learned basic keyboard shortcuts</li>
+<li><strong>Next</strong>: Start working on Phase 1 assignments!</li>
+</ol>
+<hr>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><strong>VS Code Docs</strong>: <a href="https://code.visualstudio.com/docs">code.visualstudio.com/docs</a></li>
+<li><strong>Python in VS Code</strong>: <a href="https://code.visualstudio.com/docs/languages/python">code.visualstudio.com/docs/languages/python</a></li>
+<li><strong>Git in VS Code</strong>: <a href="https://code.visualstudio.com/docs/sourcecontrol/overview">code.visualstudio.com/docs/sourcecontrol/overview</a></li>
+<li><strong>Keyboard Shortcuts Cheat Sheet</strong>: <a href="https://code.visualstudio.com/shortcuts">code.visualstudio.com/shortcuts</a></li>
+</ul>
+<hr>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions?</h2>
+<p>VS Code has a steep initial learning curve, but it’s an investment that pays off for your entire programming career. If you get stuck:</p>
+<ol type="1">
+<li>Try pressing <strong>F1</strong> in VS Code (opens the command palette—search for what you need)</li>
+<li>Check VS Code’s official documentation</li>
+<li>Come to office hours—we’ll explore VS Code together</li>
+</ol>
+<p><strong>This is optional, but worth learning!</strong> 💻</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

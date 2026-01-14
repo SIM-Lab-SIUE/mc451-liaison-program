@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="dcterms.date" content="2026-01-12">
 
-<title>Deployment Guide – MC Research Methods: The Liaison Program</title>
+<title>Installing R &amp; RStudio – MC Research Methods: The Liaison Program</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -58,24 +59,24 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -114,7 +115,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">MC Research Methods: The Liaison Program</span>
     </a>
   </div>
@@ -133,29 +134,31 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#your-quarto-website-is-ready" id="toc-your-quarto-website-is-ready" class="nav-link active" data-scroll-target="#your-quarto-website-is-ready">Your Quarto Website is Ready!</a></li>
-  <li><a href="#what-you-have" id="toc-what-you-have" class="nav-link" data-scroll-target="#what-you-have">What You Have</a></li>
-  <li><a href="#deployment-options" id="toc-deployment-options" class="nav-link" data-scroll-target="#deployment-options">Deployment Options</a>
+  <li><a href="#r-rstudio-setup-guide" id="toc-r-rstudio-setup-guide" class="nav-link active" data-scroll-target="#r-rstudio-setup-guide">R &amp; RStudio Setup Guide</a>
   <ul class="collapse">
-  <li><a href="#option-1-github-pages-recommended---free" id="toc-option-1-github-pages-recommended---free" class="nav-link" data-scroll-target="#option-1-github-pages-recommended---free">Option 1: GitHub Pages (Recommended - FREE)</a></li>
-  <li><a href="#option-2-netlify-free-easier-setup" id="toc-option-2-netlify-free-easier-setup" class="nav-link" data-scroll-target="#option-2-netlify-free-easier-setup">Option 2: Netlify (FREE, Easier Setup)</a></li>
-  <li><a href="#option-3-university-serverportal" id="toc-option-3-university-serverportal" class="nav-link" data-scroll-target="#option-3-university-serverportal">Option 3: University Server/Portal</a></li>
-  </ul></li>
-  <li><a href="#what-students-see" id="toc-what-students-see" class="nav-link" data-scroll-target="#what-students-see">What Students See</a></li>
-  <li><a href="#after-deployment" id="toc-after-deployment" class="nav-link" data-scroll-target="#after-deployment">After Deployment</a>
+  <li><a href="#what-youre-installing" id="toc-what-youre-installing" class="nav-link" data-scroll-target="#what-youre-installing">What You’re Installing</a></li>
+  <li><a href="#installation-by-operating-system" id="toc-installation-by-operating-system" class="nav-link" data-scroll-target="#installation-by-operating-system">Installation by Operating System</a>
   <ul class="collapse">
-  <li><a href="#share-with-students" id="toc-share-with-students" class="nav-link" data-scroll-target="#share-with-students">Share with Students</a></li>
-  <li><a href="#keep-it-updated" id="toc-keep-it-updated" class="nav-link" data-scroll-target="#keep-it-updated">Keep It Updated</a></li>
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
+  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">macOS</a></li>
+  <li><a href="#linux-ubuntudebian" id="toc-linux-ubuntudebian" class="nav-link" data-scroll-target="#linux-ubuntudebian">Linux (Ubuntu/Debian)</a></li>
   </ul></li>
-  <li><a href="#customization-tips" id="toc-customization-tips" class="nav-link" data-scroll-target="#customization-tips">Customization Tips</a>
+  <li><a href="#essential-next-steps" id="toc-essential-next-steps" class="nav-link" data-scroll-target="#essential-next-steps">Essential Next Steps</a>
   <ul class="collapse">
-  <li><a href="#update-your-course-info" id="toc-update-your-course-info" class="nav-link" data-scroll-target="#update-your-course-info">Update Your Course Info</a></li>
-  <li><a href="#add-more-content" id="toc-add-more-content" class="nav-link" data-scroll-target="#add-more-content">Add More Content</a></li>
-  <li><a href="#change-the-theme" id="toc-change-the-theme" class="nav-link" data-scroll-target="#change-the-theme">Change the Theme</a></li>
-  <li><a href="#add-syllabus" id="toc-add-syllabus" class="nav-link" data-scroll-target="#add-syllabus">Add Syllabus</a></li>
+  <li><a href="#set-your-working-directory" id="toc-set-your-working-directory" class="nav-link" data-scroll-target="#set-your-working-directory">1. Set Your Working Directory</a></li>
+  <li><a href="#install-course-packages" id="toc-install-course-packages" class="nav-link" data-scroll-target="#install-course-packages">2. Install Course Packages</a></li>
+  <li><a href="#verify-packages-loaded" id="toc-verify-packages-loaded" class="nav-link" data-scroll-target="#verify-packages-loaded">3. Verify Packages Loaded</a></li>
   </ul></li>
-  <li><a href="#file-structure" id="toc-file-structure" class="nav-link" data-scroll-target="#file-structure">File Structure</a></li>
-  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
+  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <ul class="collapse">
+  <li><a href="#r-wont-start" id="toc-r-wont-start" class="nav-link" data-scroll-target="#r-wont-start">R won’t start</a></li>
+  <li><a href="#rstudio-cant-find-r" id="toc-rstudio-cant-find-r" class="nav-link" data-scroll-target="#rstudio-cant-find-r">RStudio can’t find R</a></li>
+  <li><a href="#package-installation-fails" id="toc-package-installation-fails" class="nav-link" data-scroll-target="#package-installation-fails">Package installation fails</a></li>
+  <li><a href="#permission-errors-especially-macos" id="toc-permission-errors-especially-macos" class="nav-link" data-scroll-target="#permission-errors-especially-macos">Permission errors (especially macOS)</a></li>
+  </ul></li>
+  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick Reference</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -164,7 +167,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Deployment Guide</h1>
+<h1 class="title">Installing R &amp; RStudio</h1>
 </div>
 
 
@@ -172,6 +175,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="quarto-title-meta">
 
     
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">January 12, 2026</p>
+    </div>
+  </div>
   
     
   </div>
@@ -181,158 +190,253 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="your-quarto-website-is-ready" class="level2">
-<h2 class="anchored" data-anchor-id="your-quarto-website-is-ready">Your Quarto Website is Ready!</h2>
-<p>Congratulations! Your student resource website has been successfully built. Here’s how to deploy it for your students.</p>
-<hr>
+<section id="r-rstudio-setup-guide" class="level1">
+<h1>R &amp; RStudio Setup Guide</h1>
+<p>R and RStudio are essential tools for statistical analysis and data science in this course. This guide covers installation on all major operating systems.</p>
+<section id="what-youre-installing" class="level2">
+<h2 class="anchored" data-anchor-id="what-youre-installing">What You’re Installing</h2>
+<ul>
+<li><strong>R</strong>: The core statistical programming language and environment</li>
+<li><strong>RStudio</strong>: An IDE (Integrated Development Environment) that makes R much easier to use</li>
+</ul>
 </section>
-<section id="what-you-have" class="level2">
-<h2 class="anchored" data-anchor-id="what-you-have">What You Have</h2>
-<p>✅ <strong>Quarto Website</strong> - A fully functional, professional resource site<br>
-✅ <strong>Liaison Vault</strong> - Pre-configured Obsidian vault for students<br>
-✅ <strong>Setup Instructions</strong> - Step-by-step guide for students<br>
-✅ <strong>Built HTML</strong> - Ready to deploy (in the <code>_site/</code> folder)</p>
-<hr>
-</section>
-<section id="deployment-options" class="level2">
-<h2 class="anchored" data-anchor-id="deployment-options">Deployment Options</h2>
-<section id="option-1-github-pages-recommended---free" class="level3">
-<h3 class="anchored" data-anchor-id="option-1-github-pages-recommended---free">Option 1: GitHub Pages (Recommended - FREE)</h3>
+<section id="installation-by-operating-system" class="level2">
+<h2 class="anchored" data-anchor-id="installation-by-operating-system">Installation by Operating System</h2>
+<section id="windows" class="level3">
+<h3 class="anchored" data-anchor-id="windows">Windows</h3>
+<section id="step-1-install-r" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-install-r">Step 1: Install R</h4>
 <ol type="1">
-<li><p><strong>Create a GitHub repository</strong></p>
+<li>Go to <a href="https://cloud.r-project.org/">CRAN (Comprehensive R Archive Network)</a></li>
+<li>Click <strong>“Download R for Windows”</strong></li>
+<li>Click <strong>“base”</strong> (first option)</li>
+<li>Click the download link for the latest version (typically named something like <code>R-4.x.x-win.exe</code>)</li>
+<li>Run the installer
 <ul>
-<li>Go to <a href="https://github.com">github.com</a> and create a new public repo named <code>quarto_website</code></li>
-</ul></li>
-<li><p><strong>Push your site</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> C:<span class="dt">\m</span>c451-sp26<span class="dt">\q</span>uarto_website</span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> init</span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Initial commit: Liaison Program website"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> branch <span class="at">-M</span> main</span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> remote add origin https://github.com/YOUR_USERNAME/quarto_website.git</span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push <span class="at">-u</span> origin main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p><strong>Enable GitHub Pages</strong></p>
-<ul>
-<li>Go to your repo Settings → Pages</li>
-<li>Set Source to “Deploy from a branch”</li>
-<li>Set Branch to <code>main</code> and folder to <code>_site</code></li>
-<li>Your site will be live at: <code>https://YOUR_USERNAME.github.io/quarto_website</code></li>
-</ul></li>
-<li><p><strong>Share the link in Blackboard</strong></p>
-<ul>
-<li>Copy the GitHub Pages URL</li>
-<li>Add it to your Blackboard course as a web link or announcement</li>
+<li>Accept default settings (you can leave everything as-is)</li>
+<li>Click through the installation wizard</li>
+<li>Installation typically takes 2-5 minutes</li>
 </ul></li>
 </ol>
 </section>
-<section id="option-2-netlify-free-easier-setup" class="level3">
-<h3 class="anchored" data-anchor-id="option-2-netlify-free-easier-setup">Option 2: Netlify (FREE, Easier Setup)</h3>
+<section id="step-2-install-rstudio" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-install-rstudio">Step 2: Install RStudio</h4>
 <ol type="1">
-<li>Go to <a href="https://netlify.com">netlify.com</a> and sign up</li>
-<li>Click “New site from Git” and connect your GitHub repo</li>
-<li>Set Build Command to: <code>quarto render</code></li>
-<li>Set Publish Directory to: <code>_site</code></li>
-<li>Deploy automatically on every push</li>
+<li>Go to <a href="https://posit.co/download/rstudio-desktop/">Posit RStudio Downloads</a></li>
+<li>Click <strong>“Download RStudio Desktop”</strong> for Windows</li>
+<li>Run the installer
+<ul>
+<li>Accept default settings</li>
+<li>The installer will detect your R installation automatically</li>
+<li>Complete the installation</li>
+</ul></li>
 </ol>
 </section>
-<section id="option-3-university-serverportal" class="level3">
-<h3 class="anchored" data-anchor-id="option-3-university-serverportal">Option 3: University Server/Portal</h3>
-<p>Contact your IT department about hosting the <code>_site/</code> folder on your institution’s server.</p>
-<hr>
-</section>
-</section>
-<section id="what-students-see" class="level2">
-<h2 class="anchored" data-anchor-id="what-students-see">What Students See</h2>
-<p>When students visit your site, they’ll find:</p>
+<section id="step-3-verify-installation" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-verify-installation">Step 3: Verify Installation</h4>
 <ol type="1">
-<li><strong>Home page</strong> - Welcome and quick-start buttons</li>
-<li><strong>Setup instructions</strong> - How to install and configure Obsidian</li>
-<li><strong>Resources page</strong> - Downloads (Liaison_Vault.zip and tools)</li>
-<li><strong>Five phase modules</strong> - Course content (01_orientation through 05_delivery)</li>
-<li><strong>Sidebar navigation</strong> - Easy access to all sections</li>
-</ol>
-<hr>
-</section>
-<section id="after-deployment" class="level2">
-<h2 class="anchored" data-anchor-id="after-deployment">After Deployment</h2>
-<section id="share-with-students" class="level3">
-<h3 class="anchored" data-anchor-id="share-with-students">Share with Students</h3>
-<p>Add this to your <strong>Blackboard Course</strong>:</p>
-<pre><code>📚 Course Resources
-Welcome! Access all course materials here: [YOUR_WEBSITE_URL]
-
-On this site you'll find:
-✓ Your Liaison Obsidian Vault (download &amp; setup)
-✓ Step-by-step getting started guide
-✓ All course modules and materials
-✓ Weekly templates and tools
-
-Start with the Setup page if this is your first time!</code></pre>
-</section>
-<section id="keep-it-updated" class="level3">
-<h3 class="anchored" data-anchor-id="keep-it-updated">Keep It Updated</h3>
-<p>After deployment, whenever you update content:</p>
-<ol type="1">
-<li><p>Edit your <code>.qmd</code> files in VS Code</p></li>
-<li><p>Run <code>quarto render</code> to rebuild</p></li>
-<li><p>Git commit and push to update the live site</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> add .</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"Update course materials"</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> push</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Open <strong>RStudio</strong> (search for it in Windows Start menu)</p></li>
+<li><p>In the <strong>Console</strong> pane (usually bottom-left), you should see something like:</p>
+<pre><code>R version 4.x.x (20XX-XX-XX) -- "..."</code></pre></li>
+<li><p>Type: <code>print("Hello, R!")</code> and press Enter</p></li>
+<li><p>If you see <code>[1] "Hello, R!"</code>, you’re ready to go!</p></li>
 </ol>
 <hr>
 </section>
 </section>
-<section id="customization-tips" class="level2">
-<h2 class="anchored" data-anchor-id="customization-tips">Customization Tips</h2>
-<section id="update-your-course-info" class="level3">
-<h3 class="anchored" data-anchor-id="update-your-course-info">Update Your Course Info</h3>
-<p>Edit <code>index.qmd</code> to add: - Instructor name and contact info - Meeting times and location - Office hours</p>
-</section>
-<section id="add-more-content" class="level3">
-<h3 class="anchored" data-anchor-id="add-more-content">Add More Content</h3>
-<p>Create new <code>.qmd</code> files in the <code>modules/</code> folder and add them to <code>_quarto.yml</code> sidebar</p>
-</section>
-<section id="change-the-theme" class="level3">
-<h3 class="anchored" data-anchor-id="change-the-theme">Change the Theme</h3>
-<p>In <code>_quarto.yml</code>, change the theme from <code>cosmo</code> to: - <code>darkly</code> - Dark theme - <code>readable</code> - High contrast - <code>lumen</code> - Light and clean - <code>spacelab</code> - Modern</p>
-</section>
-<section id="add-syllabus" class="level3">
-<h3 class="anchored" data-anchor-id="add-syllabus">Add Syllabus</h3>
-<p>Create <code>syllabus.qmd</code> (it’s already referenced in the sidebar!)</p>
-<hr>
-</section>
-</section>
-<section id="file-structure" class="level2">
-<h2 class="anchored" data-anchor-id="file-structure">File Structure</h2>
-<pre><code>quarto_website/
-├── _quarto.yml          # Site config &amp; navigation
-├── index.qmd            # Home page
-├── setup.qmd            # Getting started guide
-├── syllabus.qmd         # Add your course syllabus here
-├── build_vault.py       # Script that created your vault
-├── resources/
-│   ├── index.qmd        # Resources page
-│   └── Liaison_Vault.zip # Student download
-├── modules/             # Course content (5 phases)
-├── slides/              # Presentation slides (optional)
-├── assignments/         # Assignment details (optional)
-└── _site/               # Built website (don't edit directly)</code></pre>
-<hr>
-</section>
-<section id="next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<section id="macos" class="level3">
+<h3 class="anchored" data-anchor-id="macos">macOS</h3>
+<section id="step-1-install-r-1" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-install-r-1">Step 1: Install R</h4>
+<p><strong>Option A: Using the installer (Recommended for beginners)</strong></p>
 <ol type="1">
-<li><strong>Add your syllabus</strong> - Create/edit <code>syllabus.qmd</code></li>
-<li><strong>Customize home page</strong> - Edit <code>index.qmd</code> with your details</li>
-<li><strong>Add module content</strong> - Fill in each phase (01-05) modules</li>
-<li><strong>Deploy</strong> - Choose Option 1, 2, or 3 above</li>
-<li><strong>Share link</strong> - Post in Blackboard for your students</li>
+<li>Go to <a href="https://cloud.r-project.org/">CRAN macOS</a></li>
+<li>Click <strong>“Download R for macOS”</strong></li>
+<li>Select the appropriate version:
+<ul>
+<li><strong>For Apple Silicon (M1/M2/M3 chips)</strong>: Download <code>R-x.x.x-arm64.pkg</code></li>
+<li><strong>For Intel Macs</strong>: Download <code>R-x.x.x-x86_64.pkg</code></li>
+<li>(Unsure? Check Apple menu → About This Mac → Chip)</li>
+</ul></li>
+<li>Run the <code>.pkg</code> installer and follow the prompts</li>
+<li>Installation takes 2-5 minutes</li>
+</ol>
+<p><strong>Option B: Using Homebrew (if you use Homebrew)</strong></p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install r</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-2-install-rstudio-1" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-install-rstudio-1">Step 2: Install RStudio</h4>
+<ol type="1">
+<li>Go to <a href="https://posit.co/download/rstudio-desktop/">Posit RStudio Downloads</a></li>
+<li>Click <strong>“Download RStudio Desktop”</strong> for macOS</li>
+<li>Select the appropriate version for your Mac (Apple Silicon or Intel)</li>
+<li>Open the downloaded <code>.dmg</code> file</li>
+<li>Drag RStudio to the Applications folder</li>
+<li>Launch RStudio from Applications</li>
+</ol>
+</section>
+<section id="step-3-verify-installation-1" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-verify-installation-1">Step 3: Verify Installation</h4>
+<ol type="1">
+<li>Open <strong>RStudio</strong> (find in Applications folder or Spotlight search)</li>
+<li>In the Console, type: <code>print("Hello, R!")</code> and press Enter</li>
+<li>Confirm you see: <code>[1] "Hello, R!"</code></li>
 </ol>
 <hr>
-<p><strong>Questions or need help?</strong> Let me know - I can help you customize this further!</p>
+</section>
+</section>
+<section id="linux-ubuntudebian" class="level3">
+<h3 class="anchored" data-anchor-id="linux-ubuntudebian">Linux (Ubuntu/Debian)</h3>
+<section id="step-1-install-r-2" class="level4">
+<h4 class="anchored" data-anchor-id="step-1-install-r-2">Step 1: Install R</h4>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Update package lists</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install R</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install <span class="at">-y</span> r-base r-base-dev</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-2-install-rstudio-2" class="level4">
+<h4 class="anchored" data-anchor-id="step-2-install-rstudio-2">Step 2: Install RStudio</h4>
+<ol type="1">
+<li><p>Go to <a href="https://posit.co/download/rstudio-desktop/">Posit RStudio Downloads</a></p></li>
+<li><p>Select <strong>“RStudio Desktop”</strong> → Choose Linux version (Ubuntu 20/22 or Debian)</p></li>
+<li><p>Download the <code>.deb</code> file</p></li>
+<li><p>Install it:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> rstudio-<span class="pp">[</span><span class="ss">version</span><span class="pp">]</span>.deb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+<p>Or install from terminal directly:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install <span class="at">-y</span> rstudio</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="step-3-verify-installation-2" class="level4">
+<h4 class="anchored" data-anchor-id="step-3-verify-installation-2">Step 3: Verify Installation</h4>
+<ol type="1">
+<li><p>Launch RStudio from applications menu or terminal:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">rstudio</span> <span class="kw">&amp;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Test in Console: <code>print("Hello, R!")</code></p></li>
+<li><p>Confirm output: <code>[1] "Hello, R!"</code></p></li>
+</ol>
+<hr>
+</section>
+</section>
+</section>
+<section id="essential-next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="essential-next-steps">Essential Next Steps</h2>
+<p>Once R and RStudio are installed, you need to set up your R environment for the course:</p>
+<section id="set-your-working-directory" class="level3">
+<h3 class="anchored" data-anchor-id="set-your-working-directory">1. Set Your Working Directory</h3>
+<p>In RStudio Console, run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"~/Documents"</span>)  <span class="co"># Or your preferred workspace folder</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="install-course-packages" class="level3">
+<h3 class="anchored" data-anchor-id="install-course-packages">2. Install Course Packages</h3>
+<p>We’ll use these packages throughout the course. Install them with:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Core data science packages</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>,      <span class="co"># Data wrangling and visualization</span></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"rmarkdown"</span>,      <span class="co"># Create documents with R code</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"quarto"</span>,         <span class="co"># Publishing system</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"shiny"</span>,          <span class="co"># Interactive web apps</span></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ggplot2"</span>         <span class="co"># Advanced visualization</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This may take 5-15 minutes (packages are downloading and installing).</p>
+</section>
+<section id="verify-packages-loaded" class="level3">
+<h3 class="anchored" data-anchor-id="verify-packages-loaded">3. Verify Packages Loaded</h3>
+<p>Test that the main packages work:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"All packages loaded successfully!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If no errors appear, you’re all set!</p>
+<hr>
+</section>
+</section>
+<section id="troubleshooting" class="level2">
+<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
+<section id="r-wont-start" class="level3">
+<h3 class="anchored" data-anchor-id="r-wont-start">R won’t start</h3>
+<ul>
+<li><strong>Windows</strong>: Try reinstalling R with administrator privileges</li>
+<li><strong>Mac</strong>: Restart your computer and try again</li>
+<li><strong>Linux</strong>: Run <code>sudo apt install -y r-base</code> to ensure all dependencies are installed</li>
+</ul>
+</section>
+<section id="rstudio-cant-find-r" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-cant-find-r">RStudio can’t find R</h3>
+<ul>
+<li>RStudio should auto-detect R, but if not:
+<ul>
+<li><strong>Tools</strong> → <strong>Global Options</strong> → <strong>General</strong></li>
+<li>Look for “R version” section</li>
+<li>If blank, manually browse to your R installation</li>
+</ul></li>
+</ul>
+</section>
+<section id="package-installation-fails" class="level3">
+<h3 class="anchored" data-anchor-id="package-installation-fails">Package installation fails</h3>
+<ul>
+<li>Make sure you have internet connection</li>
+<li>Try: <code>install.packages("package_name", repos="http://cran.r-project.org")</code></li>
+<li>Some packages require additional system libraries (ask in course chat!)</li>
+</ul>
+</section>
+<section id="permission-errors-especially-macos" class="level3">
+<h3 class="anchored" data-anchor-id="permission-errors-especially-macos">Permission errors (especially macOS)</h3>
+<ul>
+<li>Try: <code>install.packages("package", type="source")</code></li>
+</ul>
+<hr>
+</section>
+</section>
+<section id="quick-reference" class="level2">
+<h2 class="anchored" data-anchor-id="quick-reference">Quick Reference</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Action</th>
+<th>Command</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>See R version</td>
+<td><code>R.version.string</code></td>
+</tr>
+<tr class="even">
+<td>List installed packages</td>
+<td><code>library()</code></td>
+</tr>
+<tr class="odd">
+<td>Load a package</td>
+<td><code>library(package_name)</code></td>
+</tr>
+<tr class="even">
+<td>Install a package</td>
+<td><code>install.packages("package_name")</code></td>
+</tr>
+<tr class="odd">
+<td>Get help</td>
+<td><code>help(function_name)</code> or <code>?function_name</code></td>
+</tr>
+<tr class="even">
+<td>Exit R</td>
+<td><code>q()</code></td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><strong>Official R Documentation</strong>: https://www.r-project.org/</li>
+<li><strong>RStudio Cheat Sheets</strong>: https://posit.co/resources/cheatsheets/</li>
+<li><strong>R for Data Science (Book)</strong>: https://r4ds.hadley.nz/</li>
+<li><strong>Course Support</strong>: Check the course discussion board for questions</li>
+</ul>
+<p>You’re ready to start the course! See you in Module 1.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

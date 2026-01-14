@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.26">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Install R &amp; RStudio – MC Research Methods: The Liaison Program</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">MC Research Methods: The Liaison Program</span>
+    </a>
+  </div>
+        <div class="quarto-navbar-tools tools-end">
+</div>
+          <div id="quarto-search" class="" title="Search"></div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#why-r-rstudio" id="toc-why-r-rstudio" class="nav-link active" data-scroll-target="#why-r-rstudio">Why R &amp; RStudio?</a></li>
+  <li><a href="#what-youll-install" id="toc-what-youll-install" class="nav-link" data-scroll-target="#what-youll-install">What You’ll Install</a></li>
+  <li><a href="#step-1-install-r" id="toc-step-1-install-r" class="nav-link" data-scroll-target="#step-1-install-r">Step 1: Install R</a>
+  <ul class="collapse">
+  <li><a href="#for-windows" id="toc-for-windows" class="nav-link" data-scroll-target="#for-windows">For Windows</a></li>
+  <li><a href="#for-macos" id="toc-for-macos" class="nav-link" data-scroll-target="#for-macos">For macOS</a></li>
+  <li><a href="#for-linux-ubuntudebian" id="toc-for-linux-ubuntudebian" class="nav-link" data-scroll-target="#for-linux-ubuntudebian">For Linux (Ubuntu/Debian)</a></li>
+  </ul></li>
+  <li><a href="#step-2-install-rstudio" id="toc-step-2-install-rstudio" class="nav-link" data-scroll-target="#step-2-install-rstudio">Step 2: Install RStudio</a>
+  <ul class="collapse">
+  <li><a href="#for-windows-macos-or-linux" id="toc-for-windows-macos-or-linux" class="nav-link" data-scroll-target="#for-windows-macos-or-linux">For Windows, macOS, or Linux</a></li>
+  </ul></li>
+  <li><a href="#step-3-verify-rstudio-works" id="toc-step-3-verify-rstudio-works" class="nav-link" data-scroll-target="#step-3-verify-rstudio-works">Step 3: Verify RStudio Works</a></li>
+  <li><a href="#step-4-install-key-packages" id="toc-step-4-install-key-packages" class="nav-link" data-scroll-target="#step-4-install-key-packages">Step 4: Install Key Packages</a>
+  <ul class="collapse">
+  <li><a href="#for-data-analysis-visualization" id="toc-for-data-analysis-visualization" class="nav-link" data-scroll-target="#for-data-analysis-visualization">For Data Analysis &amp; Visualization</a></li>
+  <li><a href="#for-survey-analysis" id="toc-for-survey-analysis" class="nav-link" data-scroll-target="#for-survey-analysis">For Survey Analysis</a></li>
+  <li><a href="#for-reporting" id="toc-for-reporting" class="nav-link" data-scroll-target="#for-reporting">For Reporting</a></li>
+  <li><a href="#optional-statistics-packages" id="toc-optional-statistics-packages" class="nav-link" data-scroll-target="#optional-statistics-packages">Optional: Statistics Packages</a></li>
+  </ul></li>
+  <li><a href="#step-5-create-your-first-r-project" id="toc-step-5-create-your-first-r-project" class="nav-link" data-scroll-target="#step-5-create-your-first-r-project">Step 5: Create Your First R Project</a></li>
+  <li><a href="#step-6-test-your-setup-with-data" id="toc-step-6-test-your-setup-with-data" class="nav-link" data-scroll-target="#step-6-test-your-setup-with-data">Step 6: Test Your Setup with Data</a></li>
+  <li><a href="#understanding-the-rstudio-interface" id="toc-understanding-the-rstudio-interface" class="nav-link" data-scroll-target="#understanding-the-rstudio-interface">Understanding the RStudio Interface</a></li>
+  <li><a href="#basic-rstudio-workflow" id="toc-basic-rstudio-workflow" class="nav-link" data-scroll-target="#basic-rstudio-workflow">Basic RStudio Workflow</a></li>
+  <li><a href="#common-first-time-issues" id="toc-common-first-time-issues" class="nav-link" data-scroll-target="#common-first-time-issues">Common First-Time Issues</a>
+  <ul class="collapse">
+  <li><a href="#command-not-found-r" id="toc-command-not-found-r" class="nav-link" data-scroll-target="#command-not-found-r">“Command not found: R”</a></li>
+  <li><a href="#rstudio-opens-but-doesnt-find-r" id="toc-rstudio-opens-but-doesnt-find-r" class="nav-link" data-scroll-target="#rstudio-opens-but-doesnt-find-r">RStudio Opens But Doesn’t Find R</a></li>
+  <li><a href="#error-could-not-find-function" id="toc-error-could-not-find-function" class="nav-link" data-scroll-target="#error-could-not-find-function">“Error: Could not find function”</a></li>
+  <li><a href="#installation-stuck-or-takes-forever" id="toc-installation-stuck-or-takes-forever" class="nav-link" data-scroll-target="#installation-stuck-or-takes-forever">Installation Stuck or Takes Forever</a></li>
+  <li><a href="#permission-denied-error-maclinux" id="toc-permission-denied-error-maclinux" class="nav-link" data-scroll-target="#permission-denied-error-maclinux">“Permission denied” Error (Mac/Linux)</a></li>
+  </ul></li>
+  <li><a href="#next-steps" id="toc-next-steps" class="nav-link" data-scroll-target="#next-steps">Next Steps</a></li>
+  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions?</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Install R &amp; RStudio</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="why-r-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="why-r-rstudio">Why R &amp; RStudio?</h2>
+<p>R is the industry standard for statistical analysis, data visualization, and reproducible research in mass communications. RStudio is the professional interface that makes R accessible and powerful. Together, they’re essential tools for any Communication Liaison who works with data.</p>
+<p>In this course, you’ll use R to: - Clean and analyze data from surveys and content analysis - Create publication-ready visualizations and reports - Build reproducible workflows for your research - Collaborate on data analysis projects</p>
+<hr>
+</section>
+<section id="what-youll-install" class="level2">
+<h2 class="anchored" data-anchor-id="what-youll-install">What You’ll Install</h2>
+<ol type="1">
+<li><strong>R</strong> — The programming language (free, open-source)</li>
+<li><strong>RStudio</strong> — The professional development environment (free, open-source)</li>
+</ol>
+<p>This is a two-step process: install R first, then RStudio.</p>
+<hr>
+</section>
+<section id="step-1-install-r" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-install-r">Step 1: Install R</h2>
+<section id="for-windows" class="level3">
+<h3 class="anchored" data-anchor-id="for-windows">For Windows</h3>
+<ol type="1">
+<li>Go to <a href="https://www.r-project.org/">r-project.org</a></li>
+<li>Click <strong>“Download R”</strong> in the left menu</li>
+<li>Click the <strong>“Download R for Windows”</strong> link</li>
+<li>Click <strong>“base”</strong></li>
+<li>Click <strong>“Download R X.X.X for Windows”</strong> (where X.X.X is the latest version number)</li>
+<li>Run the installer (<code>.exe</code> file)
+<ul>
+<li>Click “Next” through all screens</li>
+<li>Accept the default installation location</li>
+<li>Accept all default components</li>
+</ul></li>
+<li>Click “Finish”</li>
+</ol>
+<p><strong>To verify installation:</strong> - Open PowerShell or Command Prompt - Type <code>R --version</code> - You should see R’s version information</p>
+</section>
+<section id="for-macos" class="level3">
+<h3 class="anchored" data-anchor-id="for-macos">For macOS</h3>
+<ol type="1">
+<li>Go to <a href="https://www.r-project.org/">r-project.org</a></li>
+<li>Click <strong>“Download R”</strong> in the left menu</li>
+<li>Click <strong>“Download R for macOS”</strong></li>
+<li>Download the appropriate <code>.pkg</code> file for your Mac:
+<ul>
+<li><strong>Apple Silicon (M1/M2/M3 chips)</strong>: Download the “ARM64” version</li>
+<li><strong>Intel Macs</strong>: Download the “Intel 64” version</li>
+<li>Not sure? Click the Apple icon (top left) → <strong>“About This Mac”</strong> → check under “Processor”</li>
+</ul></li>
+<li>Run the installer (<code>.pkg</code> file)
+<ul>
+<li>Click through all prompts</li>
+<li>Accept the default installation location</li>
+</ul></li>
+<li>Restart your Mac</li>
+</ol>
+<p><strong>To verify installation:</strong> - Open Terminal - Type <code>R --version</code> - You should see R’s version information</p>
+</section>
+<section id="for-linux-ubuntudebian" class="level3">
+<h3 class="anchored" data-anchor-id="for-linux-ubuntudebian">For Linux (Ubuntu/Debian)</h3>
+<p>Open Terminal and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install r-base</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>To verify: Type <code>R --version</code> in Terminal.</p>
+<hr>
+</section>
+</section>
+<section id="step-2-install-rstudio" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-install-rstudio">Step 2: Install RStudio</h2>
+<section id="for-windows-macos-or-linux" class="level3">
+<h3 class="anchored" data-anchor-id="for-windows-macos-or-linux">For Windows, macOS, or Linux</h3>
+<ol type="1">
+<li>Go to <a href="https://posit.co/download/rstudio-desktop/">posit.co/download/rstudio-desktop/</a></li>
+<li>Scroll down to <strong>“All Installers”</strong> or <strong>“Download RStudio Desktop”</strong></li>
+<li>Select your operating system:
+<ul>
+<li><strong>Windows</strong>: Download the <code>.exe</code> file</li>
+<li><strong>macOS</strong>: Download the <code>.dmg</code> file</li>
+<li><strong>Linux</strong>: Download the appropriate <code>.deb</code> or <code>.rpm</code> file</li>
+</ul></li>
+<li>Run the installer
+<ul>
+<li>Windows: Click through all default options</li>
+<li>Mac: Drag RStudio to Applications folder</li>
+<li>Linux: Follow the package manager prompts</li>
+</ul></li>
+<li>Open RStudio (you should see R is installed when you open it)</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="step-3-verify-rstudio-works" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-verify-rstudio-works">Step 3: Verify RStudio Works</h2>
+<ol type="1">
+<li><strong>Open RStudio</strong> (should be in your Applications/Programs menu)</li>
+<li>You should see four panes:
+<ul>
+<li><strong>Top left</strong>: Script editor (blank)</li>
+<li><strong>Bottom left</strong>: Console (shows <code>&gt;</code> prompt)</li>
+<li><strong>Top right</strong>: Environment &amp; History</li>
+<li><strong>Bottom right</strong>: Files, Plots, Packages, Help</li>
+</ul></li>
+<li>In the <strong>Console</strong> (bottom left), type this command and press Enter:</li>
+</ol>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"Hello, Communication Liaison!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ol start="4" type="1">
+<li>You should see the output:</li>
+</ol>
+<pre><code>[1] "Hello, Communication Liaison!"</code></pre>
+<p>If you see this output, <strong>you’re ready to go!</strong></p>
+<hr>
+</section>
+<section id="step-4-install-key-packages" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-install-key-packages">Step 4: Install Key Packages</h2>
+<p>RStudio comes with base R, but you’ll need additional packages for data analysis. Open RStudio and copy these commands into the Console one at a time:</p>
+<section id="for-data-analysis-visualization" class="level3">
+<h3 class="anchored" data-anchor-id="for-data-analysis-visualization">For Data Analysis &amp; Visualization</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This installs a collection of packages including: - <strong>ggplot2</strong> — Create professional visualizations - <strong>dplyr</strong> — Clean and transform data - <strong>readr</strong> — Import data from CSV, Excel, etc. - <strong>tidyr</strong> — Reshape data</p>
+<p><strong>Wait for it to finish</strong> (you’ll see a blank <code>&gt;</code> prompt when done)</p>
+</section>
+<section id="for-survey-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="for-survey-analysis">For Survey Analysis</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"likert"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Used for analyzing Likert-scale survey responses.</p>
+</section>
+<section id="for-reporting" class="level3">
+<h3 class="anchored" data-anchor-id="for-reporting">For Reporting</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rmarkdown"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Creates professional PDF and HTML reports from your analysis.</p>
+</section>
+<section id="optional-statistics-packages" class="level3">
+<h3 class="anchored" data-anchor-id="optional-statistics-packages">Optional: Statistics Packages</h3>
+<p>For later phases, you might want these too:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"lm.beta"</span>)  <span class="co"># Standardized regression coefficients</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"car"</span>)       <span class="co"># Post-hoc tests and diagnostics</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggstatsplot"</span>)  <span class="co"># Statistical plots with test results</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+<section id="step-5-create-your-first-r-project" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-create-your-first-r-project">Step 5: Create Your First R Project</h2>
+<p>RStudio projects help you organize your work. Let’s create one:</p>
+<ol type="1">
+<li>In RStudio, click <strong>File</strong> → <strong>New Project</strong></li>
+<li>Select <strong>New Directory</strong> → <strong>New Project</strong></li>
+<li>Name your project <code>mc451-research</code> or similar</li>
+<li>Choose where to save it (suggest <code>Documents</code>)</li>
+<li>Click <strong>Create Project</strong></li>
+</ol>
+<p>You should now see your project name in the top-right corner of RStudio.</p>
+<hr>
+</section>
+<section id="step-6-test-your-setup-with-data" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-test-your-setup-with-data">Step 6: Test Your Setup with Data</h2>
+<p>Let’s make sure everything works by loading a dataset:</p>
+<p>In the Console, type:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Load the tidyverse library</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Load a built-in dataset</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="fu">data</span>(mtcars)</span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="co"># View the first few rows</span></span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(mtcars)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You should see a table with car data. If this works, your R setup is complete!</p>
+<hr>
+</section>
+<section id="understanding-the-rstudio-interface" class="level2">
+<h2 class="anchored" data-anchor-id="understanding-the-rstudio-interface">Understanding the RStudio Interface</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 40%">
+<col style="width: 60%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Area</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Top Left (Script Editor)</strong></td>
+<td>Write R code here and save as <code>.R</code> files</td>
+</tr>
+<tr class="even">
+<td><strong>Bottom Left (Console)</strong></td>
+<td>Results appear here; you can type commands directly</td>
+</tr>
+<tr class="odd">
+<td><strong>Top Right (Environment)</strong></td>
+<td>Shows all variables and data you’ve loaded</td>
+</tr>
+<tr class="even">
+<td><strong>Bottom Right (Files/Plots/Help)</strong></td>
+<td>Navigate files, view plots, access documentation</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="basic-rstudio-workflow" class="level2">
+<h2 class="anchored" data-anchor-id="basic-rstudio-workflow">Basic RStudio Workflow</h2>
+<ol type="1">
+<li><strong>Create a new script</strong>: File → New File → R Script</li>
+<li><strong>Write code</strong>: Type your commands in the script</li>
+<li><strong>Run code</strong>: Select lines and press <strong>Ctrl+Enter</strong> (Windows/Linux) or <strong>Cmd+Enter</strong> (Mac)</li>
+<li><strong>See results</strong>: Output appears in the Console or Plots pane</li>
+<li><strong>Save your work</strong>: <strong>Ctrl+S</strong> or File → Save</li>
+</ol>
+<hr>
+</section>
+<section id="common-first-time-issues" class="level2">
+<h2 class="anchored" data-anchor-id="common-first-time-issues">Common First-Time Issues</h2>
+<section id="command-not-found-r" class="level3">
+<h3 class="anchored" data-anchor-id="command-not-found-r">“Command not found: R”</h3>
+<p><strong>Problem</strong>: Your computer doesn’t recognize the R command.</p>
+<p><strong>Solution</strong>: - Try restarting your computer after installation - Check that R installed correctly (reinstall if needed) - On Mac/Linux, you may need to use <code>/usr/bin/R</code> instead</p>
+</section>
+<section id="rstudio-opens-but-doesnt-find-r" class="level3">
+<h3 class="anchored" data-anchor-id="rstudio-opens-but-doesnt-find-r">RStudio Opens But Doesn’t Find R</h3>
+<p><strong>Problem</strong>: RStudio says “R not found” when you open it.</p>
+<p><strong>Solution</strong>: 1. Make sure you installed R first (before RStudio) 2. In RStudio, go to <strong>Tools</strong> → <strong>Global Options</strong> → <strong>General</strong> 3. Under “R sessions”, check the “R home directory” 4. If empty, browse to your R installation folder and select it 5. Click “OK”</p>
+</section>
+<section id="error-could-not-find-function" class="level3">
+<h3 class="anchored" data-anchor-id="error-could-not-find-function">“Error: Could not find function”</h3>
+<p><strong>Problem</strong>: You get an error like <code>could not find function "ggplot"</code></p>
+<p><strong>Solution</strong>: You need to load the package first. Run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)  <span class="co"># or whichever package you need</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="installation-stuck-or-takes-forever" class="level3">
+<h3 class="anchored" data-anchor-id="installation-stuck-or-takes-forever">Installation Stuck or Takes Forever</h3>
+<p><strong>Problem</strong>: <code>install.packages()</code> command seems frozen.</p>
+<p><strong>Solution</strong>: 1. Press <strong>Escape</strong> to stop it 2. Try installing from a different CRAN mirror:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>, <span class="at">repos=</span><span class="st">"https://cloud.r-project.org"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="permission-denied-error-maclinux" class="level3">
+<h3 class="anchored" data-anchor-id="permission-denied-error-maclinux">“Permission denied” Error (Mac/Linux)</h3>
+<p><strong>Problem</strong>: Error when installing packages.</p>
+<p><strong>Solution</strong>: Try:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">Sys.which</span>(<span class="st">"R"</span>)  <span class="co"># Check where R is installed</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If you’re still stuck, reach out during office hours.</p>
+<hr>
+</section>
+</section>
+<section id="next-steps" class="level2">
+<h2 class="anchored" data-anchor-id="next-steps">Next Steps</h2>
+<ol type="1">
+<li>✅ Installed R</li>
+<li>✅ Installed RStudio</li>
+<li>✅ Verified it works</li>
+<li>✅ Installed key packages</li>
+<li><strong>Next</strong>: Learn R basics with your first assignment in Phase 2</li>
+</ol>
+<hr>
+</section>
+<section id="resources" class="level2">
+<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<ul>
+<li><strong>Official R Website</strong>: <a href="https://www.r-project.org/">r-project.org</a></li>
+<li><strong>RStudio Documentation</strong>: <a href="https://posit.co/support/">posit.co/support/</a></li>
+<li><strong>Bookdown R for Data Science</strong>: <a href="https://r4ds.had.co.nz/">r4ds.had.co.nz</a> (free online book)</li>
+<li><strong>My Open-Source R Course</strong>: <a href="https://bookdown.org/alex_leith/mc451/">bookdown.org/alex_leith/mc451/</a> (free, written for this class!)</li>
+</ul>
+<hr>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions?</h2>
+<p>R and RStudio have a learning curve, but the payoff is huge. If you run into issues:</p>
+<ol type="1">
+<li>Check the troubleshooting section above</li>
+<li>Search <a href="https://stackoverflow.com">stackoverflow.com</a> for your error (others have likely encountered it)</li>
+<li>Visit office hours—we’ll debug together</li>
+<li>Email with your specific error message</li>
+</ol>
+<p>You’ve got this! 💪</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

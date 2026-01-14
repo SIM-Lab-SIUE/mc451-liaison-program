@@ -1,0 +1,211 @@
+---
+title: "Installing R & RStudio"
+date: last-modified
+---
+
+# R & RStudio Setup Guide
+
+R and RStudio are essential tools for statistical analysis and data science in this course. This guide covers installation on all major operating systems.
+
+## What You're Installing
+
+- **R**: The core statistical programming language and environment
+- **RStudio**: An IDE (Integrated Development Environment) that makes R much easier to use
+
+## Installation by Operating System
+
+### Windows
+
+#### Step 1: Install R
+
+1. Go to [CRAN (Comprehensive R Archive Network)](https://cloud.r-project.org/)
+2. Click **"Download R for Windows"**
+3. Click **"base"** (first option)
+4. Click the download link for the latest version (typically named something like `R-4.x.x-win.exe`)
+5. Run the installer
+   - Accept default settings (you can leave everything as-is)
+   - Click through the installation wizard
+   - Installation typically takes 2-5 minutes
+
+#### Step 2: Install RStudio
+
+1. Go to [Posit RStudio Downloads](https://posit.co/download/rstudio-desktop/)
+2. Click **"Download RStudio Desktop"** for Windows
+3. Run the installer
+   - Accept default settings
+   - The installer will detect your R installation automatically
+   - Complete the installation
+
+#### Step 3: Verify Installation
+
+1. Open **RStudio** (search for it in Windows Start menu)
+2. In the **Console** pane (usually bottom-left), you should see something like:
+   ```
+   R version 4.x.x (20XX-XX-XX) -- "..."
+   ```
+3. Type: `print("Hello, R!")` and press Enter
+4. If you see `[1] "Hello, R!"`, you're ready to go!
+
+---
+
+### macOS
+
+#### Step 1: Install R
+
+**Option A: Using the installer (Recommended for beginners)**
+
+1. Go to [CRAN macOS](https://cloud.r-project.org/)
+2. Click **"Download R for macOS"**
+3. Select the appropriate version:
+   - **For Apple Silicon (M1/M2/M3 chips)**: Download `R-x.x.x-arm64.pkg`
+   - **For Intel Macs**: Download `R-x.x.x-x86_64.pkg`
+   - (Unsure? Check Apple menu → About This Mac → Chip)
+4. Run the `.pkg` installer and follow the prompts
+5. Installation takes 2-5 minutes
+
+**Option B: Using Homebrew (if you use Homebrew)**
+
+```bash
+brew install r
+```
+
+#### Step 2: Install RStudio
+
+1. Go to [Posit RStudio Downloads](https://posit.co/download/rstudio-desktop/)
+2. Click **"Download RStudio Desktop"** for macOS
+3. Select the appropriate version for your Mac (Apple Silicon or Intel)
+4. Open the downloaded `.dmg` file
+5. Drag RStudio to the Applications folder
+6. Launch RStudio from Applications
+
+#### Step 3: Verify Installation
+
+1. Open **RStudio** (find in Applications folder or Spotlight search)
+2. In the Console, type: `print("Hello, R!")` and press Enter
+3. Confirm you see: `[1] "Hello, R!"`
+
+---
+
+### Linux (Ubuntu/Debian)
+
+#### Step 1: Install R
+
+```bash
+# Update package lists
+sudo apt update
+
+# Install R
+sudo apt install -y r-base r-base-dev
+```
+
+#### Step 2: Install RStudio
+
+1. Go to [Posit RStudio Downloads](https://posit.co/download/rstudio-desktop/)
+2. Select **"RStudio Desktop"** → Choose Linux version (Ubuntu 20/22 or Debian)
+3. Download the `.deb` file
+4. Install it:
+   ```bash
+   sudo dpkg -i rstudio-[version].deb
+   ```
+
+Or install from terminal directly:
+```bash
+sudo apt install -y rstudio
+```
+
+#### Step 3: Verify Installation
+
+1. Launch RStudio from applications menu or terminal:
+   ```bash
+   rstudio &
+   ```
+2. Test in Console: `print("Hello, R!")`
+3. Confirm output: `[1] "Hello, R!"`
+
+---
+
+## Essential Next Steps
+
+Once R and RStudio are installed, you need to set up your R environment for the course:
+
+### 1. Set Your Working Directory
+
+In RStudio Console, run:
+```r
+setwd("~/Documents")  # Or your preferred workspace folder
+```
+
+### 2. Install Course Packages
+
+We'll use these packages throughout the course. Install them with:
+
+```r
+# Core data science packages
+install.packages(c(
+  "tidyverse",      # Data wrangling and visualization
+  "rmarkdown",      # Create documents with R code
+  "quarto",         # Publishing system
+  "shiny",          # Interactive web apps
+  "ggplot2"         # Advanced visualization
+))
+```
+
+This may take 5-15 minutes (packages are downloading and installing).
+
+### 3. Verify Packages Loaded
+
+Test that the main packages work:
+```r
+library(tidyverse)
+library(ggplot2)
+print("All packages loaded successfully!")
+```
+
+If no errors appear, you're all set!
+
+---
+
+## Troubleshooting
+
+### R won't start
+- **Windows**: Try reinstalling R with administrator privileges
+- **Mac**: Restart your computer and try again
+- **Linux**: Run `sudo apt install -y r-base` to ensure all dependencies are installed
+
+### RStudio can't find R
+- RStudio should auto-detect R, but if not:
+  - **Tools** → **Global Options** → **General**
+  - Look for "R version" section
+  - If blank, manually browse to your R installation
+
+### Package installation fails
+- Make sure you have internet connection
+- Try: `install.packages("package_name", repos="http://cran.r-project.org")`
+- Some packages require additional system libraries (ask in course chat!)
+
+### Permission errors (especially macOS)
+- Try: `install.packages("package", type="source")`
+
+---
+
+## Quick Reference
+
+| Action | Command |
+|--------|---------|
+| See R version | `R.version.string` |
+| List installed packages | `library()` |
+| Load a package | `library(package_name)` |
+| Install a package | `install.packages("package_name")` |
+| Get help | `help(function_name)` or `?function_name` |
+| Exit R | `q()` |
+
+---
+
+## Resources
+
+- **Official R Documentation**: https://www.r-project.org/
+- **RStudio Cheat Sheets**: https://posit.co/resources/cheatsheets/
+- **R for Data Science (Book)**: https://r4ds.hadley.nz/
+- **Course Support**: Check the course discussion board for questions
+
+You're ready to start the course! See you in Module 1.

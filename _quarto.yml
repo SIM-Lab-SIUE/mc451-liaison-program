@@ -13,6 +13,9 @@ website:
         - index.qmd
         - about.qmd
         - syllabus.qmd
+    - title: "Getting Started"
+      contents:
+        - github-setup.qmd
     - title: "Phase 1: Orientation"
       contents:
         - modules/01_orientation/index.qmd
