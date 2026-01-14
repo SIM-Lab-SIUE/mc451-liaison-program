@@ -40,6 +40,18 @@ Before starting Phase 1, ensure you have these installed:
 - [Setting up your Obsidian Vault](#setup) - 5 minutes
 - [Understanding the Liaison Program Structure](#program-structure) - 10 minutes
 
+### Setup {#setup}
+- Download the vault from [Liaison_Vault.zip](Liaison_Vault.zip) and extract it.
+- Install [Obsidian](https://obsidian.md/) and open the extracted vault folder.
+- Review the course-specific setup steps in [Setup Guide](../setup.qmd) to connect your workspace and enable recommended plugins.
+- Confirm your vault sync/backup preference (local, cloud, or git) before adding content.
+
+### Program Structure {#program-structure}
+- The program runs through five phases: Orientation, Discovery, Dictionary, Execution, and Delivery.
+- Each phase has a dedicated module page (see the sidebar) with objectives, tasks, and turn-in expectations.
+- Start with [Phase 1: Orientation](../modules/01_orientation/index.qmd) to configure your tools and complete the initial journal entry.
+- The [START_HERE](../START_HERE.md) page gives a bird's-eye view plus links to key checklists and timelines.
+
 ### Templates Available in Your Vault
 - **Weekly Journal Template** - For reflective practice with three thinking paths
 - **Data Dictionary Template** - For codebook creation and variable definition
