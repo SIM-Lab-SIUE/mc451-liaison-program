@@ -794,6 +794,16 @@
     ]
   },
   {
+    "objectID": "github-setup.html#step-2.5-create-your-profile-readme-optional-but-recommended",
+    "href": "github-setup.html#step-2.5-create-your-profile-readme-optional-but-recommended",
+    "title": "Getting Started with GitHub",
+    "section": "Step 2.5: Create Your Profile README (Optional but Recommended)",
+    "text": "Step 2.5: Create Your Profile README (Optional but Recommended)\nYour GitHub profile can have its own README that appears when people visit your profile page. This is a great way to showcase who you are and what you work on.\n\n2.5.1 Create a Special Repository\n\nClick the “+” icon (top right) → New repository\nRepository name: Enter your exact GitHub username (e.g., if your username is alex-leith, name it alex-leith)\nDescription: “My GitHub profile”\nPublic: ☑️ Yes\n☑️ Initialize with README\nClick Create repository\n\n\n\n2.5.2 Edit Your Profile README\n\nOpen the README.md file in the repository you just created\nClick the pencil icon to edit\nAdd content like this example:\n\n# Hi, I'm Alex 👋\n\nI'm a Communication Liaison at SIUE exploring research methodologies and data storytelling.\n\n## About Me\n- 📚 Studying Mass Communications at Southern Illinois University Edwardsville\n- 🔍 Passionate about data analysis and research\n- 💻 Learning Git and GitHub for collaborative projects\n- 📊 Interested in data visualization and storytelling\n\n## My Current Projects\n- MC 451: Liaison Program (Research Methods)\n- Learning Git and GitHub\n- Building data analysis skills\n\n## Let's Connect\n- 📧 Email: your.email@siue.edu\n- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)\n- 🌐 Website: [Your Portfolio](https://yourwebsite.com) (if you have one)\n\n## Languages & Tools\n- Python\n- R & RStudio\n- Git & GitHub\n- Obsidian (Knowledge Management)\n- VS Code\n\n---\n_Last updated: January 2026_\n\nClick Commit changes at the bottom\nVisit your GitHub profile (github.com/yourusername) and see your new README displayed!",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
+  },
+  {
     "objectID": "github-setup.html#step-3-understand-githubs-key-features",
     "href": "github-setup.html#step-3-understand-githubs-key-features",
     "title": "Getting Started with GitHub",
@@ -854,11 +864,21 @@
     ]
   },
   {
+    "objectID": "github-setup.html#step-9-get-github-education-benefits-recommended",
+    "href": "github-setup.html#step-9-get-github-education-benefits-recommended",
+    "title": "Getting Started with GitHub",
+    "section": "Step 9: Get GitHub Education Benefits (Recommended)",
+    "text": "Step 9: Get GitHub Education Benefits (Recommended)\nAs a student, GitHub offers free premium features and tools through their Student Developer Pack.\n\n9.1 Apply for Student Benefits\n\nGo to education.github.com\nClick “Sign up for Student Developer Pack” (or “Get benefits”)\nSign in with your GitHub account\nEnter your school: Southern Illinois University Edwardsville\nUpload proof of enrollment:\n\nStudent ID card\nClass schedule screenshot\nAcceptance letter or tuition bill\n\nVerify your SIUE email address (check your inbox for verification)\nSubmit your application\n\nGitHub typically approves student applications within a few days.\n\n\n9.2 What You Get (Free!)\nOnce approved, you’ll have access to: - GitHub Copilot - AI-powered code assistant - Microsoft Azure - Cloud computing credits - JetBrains IDE Suite - Professional development tools - Datadog - Application monitoring - Plus 50+ other tools and services\nThis is especially useful for data analysis, coding projects, and learning advanced tools!",
+    "crumbs": [
+      "Getting Started with GitHub"
+    ]
+  },
+  {
     "objectID": "github-setup.html#next-steps",
     "href": "github-setup.html#next-steps",
     "title": "Getting Started with GitHub",
     "section": "Next Steps",
-    "text": "Next Steps\n\nCreate your GitHub account using this guide\nCreate your hello-world repository\nEdit the README and push changes\nShare your GitHub profile URL (format: github.com/yourusername) with me\nExplore other repositories and see how others organize their work",
+    "text": "Next Steps\n\nCreate your GitHub account using this guide\nApply for GitHub Student Benefits (Step 9)\nCreate your profile README (Step 2.5)\nCreate your hello-world repository\nEdit the README and push changes\nShare your GitHub profile URL (format: github.com/yourusername) with me\nExplore other repositories and see how others organize their work",
     "crumbs": [
       "Getting Started with GitHub"
     ]

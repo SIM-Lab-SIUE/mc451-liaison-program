@@ -26,7 +26,7 @@ Before starting Phase 1, ensure you have these installed:
 ### Required
 - **[Obsidian](https://obsidian.md/)** - FREE - Your note-taking workspace
 - **[Git](https://git-scm.com/)** - FREE - Version control for your projects
-- **[R & RStudio](https://posit.co/products/open-source/rstudio/)** - FREE - Statistical analysis and data analysis
+- **[R & RStudio](https://posit.co/download/rstudio-desktop/)** - FREE - Statistical analysis and data analysis
   - [📖 Full R & RStudio Setup Guide](../install-r-rstudio.qmd) - Complete walkthrough for all operating systems
 
 ### Recommended
