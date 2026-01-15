@@ -164,4 +164,10 @@ Questions? Refer to DEPLOYMENT.md for detailed instructions on any deployment op
 
 ---
 
+## Textbook Website
+
+For more information, visit the textbook's official website: [Vibes to Variables](https://sim-lab-siue.github.io/vibes-to-variables/)
+
+---
+
 **Built with Quarto + GitHub Copilot** ✨

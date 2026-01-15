@@ -204,4 +204,8 @@ See README.md and DEPLOYMENT.md for detailed guidance.
 
 ---
 
-**Questions?** Check the detailed guides or customize to fit your needs!
+**Questions?** Check the detailed guides or customize to fit your needs.
+
+## Textbook Website
+
+For more information, visit the textbook's official website: [Vibes to Variables](https://sim-lab-siue.github.io/vibes-to-variables/)

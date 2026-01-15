@@ -78,6 +78,62 @@ In **Settings** → **Visibility**, ensure:
 
 ---
 
+## Step 2.5: Create Your Profile README (Optional but Recommended)
+
+Your GitHub profile can have its own README that appears when people visit your profile page. This is a great way to showcase who you are and what you work on.
+
+### 2.5.1 Create a Special Repository
+
+1. Click the **"+"** icon (top right) → **New repository**
+2. **Repository name**: Enter your exact GitHub username (e.g., if your username is `alex-leith`, name it `alex-leith`)
+3. **Description**: "My GitHub profile"
+4. **Public**: ☑️ Yes
+5. ☑️ **Initialize with README**
+6. Click **Create repository**
+
+### 2.5.2 Edit Your Profile README
+
+1. Open the `README.md` file in the repository you just created
+2. Click the pencil icon to edit
+3. Add content like this example:
+
+```markdown
+# Hi, I'm Alex 👋
+
+I'm a Communication Liaison at SIUE exploring research methodologies and data storytelling.
+
+## About Me
+- 📚 Studying Mass Communications at Southern Illinois University Edwardsville
+- 🔍 Passionate about data analysis and research
+- 💻 Learning Git and GitHub for collaborative projects
+- 📊 Interested in data visualization and storytelling
+
+## My Current Projects
+- MC 451: Liaison Program (Research Methods)
+- Learning Git and GitHub
+- Building data analysis skills
+
+## Let's Connect
+- 📧 Email: your.email@siue.edu
+- 💼 LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- 🌐 Website: [Your Portfolio](https://yourwebsite.com) (if you have one)
+
+## Languages & Tools
+- Python
+- R & RStudio
+- Git & GitHub
+- Obsidian (Knowledge Management)
+- VS Code
+
+---
+_Last updated: January 2026_
+```
+
+4. Click **Commit changes** at the bottom
+5. Visit your GitHub profile (`github.com/yourusername`) and see your new README displayed!
+
+---
+
 ## Step 3: Understand GitHub's Key Features
 
 ### Repositories (Repos)
@@ -261,13 +317,47 @@ git revert HEAD  # Undo the last commit
 
 ---
 
+## Step 9: Get GitHub Education Benefits (Recommended)
+
+As a student, GitHub offers free premium features and tools through their [Student Developer Pack](https://education.github.com/pack).
+
+### 9.1 Apply for Student Benefits
+
+1. Go to [education.github.com](https://education.github.com)
+2. Click **"Sign up for Student Developer Pack"** (or **"Get benefits"**)
+3. Sign in with your GitHub account
+4. Enter your school: **Southern Illinois University Edwardsville**
+5. Upload proof of enrollment:
+   - Student ID card
+   - Class schedule screenshot
+   - Acceptance letter or tuition bill
+6. Verify your SIUE email address (check your inbox for verification)
+7. Submit your application
+
+GitHub typically approves student applications within a few days.
+
+### 9.2 What You Get (Free!)
+
+Once approved, you'll have access to:
+- **GitHub Copilot** - AI-powered code assistant
+- **Microsoft Azure** - Cloud computing credits
+- **JetBrains IDE Suite** - Professional development tools
+- **Datadog** - Application monitoring
+- Plus 50+ other tools and services
+
+This is especially useful for data analysis, coding projects, and learning advanced tools!
+
+---
+
 ## Next Steps
 
 1. **Create your GitHub account** using this guide
-2. **Create your `hello-world` repository**
-3. **Edit the README and push changes**
-4. **Share your GitHub profile URL** (format: `github.com/yourusername`) with me
-5. **Explore other repositories** and see how others organize their work
+2. **Apply for GitHub Student Benefits** (Step 9)
+3. **Create your profile README** (Step 2.5)
+4. **Create your `hello-world` repository**
+5. **Edit the README and push changes**
+6. **Share your GitHub profile URL** (format: `github.com/yourusername`) with me
+7. **Explore other repositories** and see how others organize their work
 
 ---
 
