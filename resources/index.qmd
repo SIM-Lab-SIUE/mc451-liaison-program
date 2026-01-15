@@ -17,6 +17,11 @@ Your complete knowledge management system for the Liaison Program. This vault in
 
 **[📥 Download Liaison_Vault.zip](Liaison_Vault.zip)** - Extract this to get started immediately.
 
+### Quick Links
+- [Weekly Journal Template](../Liaison_Vault/99_Templates/Weekly_Journal_Template.md)
+- [Data Dictionary Template](../Liaison_Vault/99_Templates/Data_Dictionary_Template.md)
+- [Vault orientation file](../Liaison_Vault/00_START_HERE.md)
+
 ---
 
 ## Software & Tools
@@ -27,12 +32,12 @@ Before starting Phase 1, ensure you have these installed:
 - **[Obsidian](https://obsidian.md/)** - FREE - Your note-taking workspace
 - **[Git](https://git-scm.com/)** - FREE - Version control for your projects
 - **[R & RStudio](https://posit.co/products/open-source/rstudio/)** - FREE - Statistical analysis and data analysis
-  - [📖 Full R & RStudio Setup Guide](../install-r-rstudio.qmd) - Complete walkthrough for all operating systems
+  - [📖 Full R & RStudio Setup Guide](install-r-rstudio.qmd) - Complete walkthrough for all operating systems
 
 ### Recommended
 - **[Python 3.10+](https://www.python.org/)** - FREE - For data analysis and automation
 - **[VS Code](https://code.visualstudio.com/)** - FREE - Professional code editor
-  - [📖 VS Code Setup Guide](../install-vscode.qmd) - Extensions, GitHub integration, and workflow setup
+  - [📖 VS Code Setup Guide](install-vscode.qmd) - Extensions, GitHub integration, and workflow setup
 
 ---
 

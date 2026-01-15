@@ -6,6 +6,13 @@ title: "Getting Started with GitHub"
 
 As a Communication Liaison, you'll work with data and research projects that require collaboration and version control. GitHub is the industry standard for managing code, sharing research, and collaborating with teams. This guide walks you through creating your GitHub account and getting comfortable with the basics.
 
+**5-step fast path (10–15 minutes):**
+1. Create your GitHub account at github.com and verify email
+2. Set a clear username + add a profile photo and short bio
+3. Create a public repo initialized with a README (e.g., `hello-world`)
+4. Install Git and clone the repo to your computer
+5. Edit README, commit, and push back to GitHub
+
 ---
 
 ## Step 1: Create Your GitHub Account

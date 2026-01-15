@@ -1,0 +1,33 @@
+---
+title: "Phase 2: Discovery"
+---
+
+## What You Will Do
+- Frame research questions and hypotheses
+- Map stakeholders and data sources
+- Plan data collection with ethics in mind
+
+## Deliverables
+- Problem statement + research questions draft
+- Stakeholder/data source map (one page)
+- Mini proposal outlining methods and timeline
+
+## Milestones
+- **Week 3:** Submit problem statement for feedback
+- **Week 4:** Share stakeholder map in class
+- **Week 5:** Turn in mini proposal
+
+## Activities
+- Compare 2–3 example research questions; rewrite them with clearer variables
+- Sketch a data collection plan (surveys, scraping, observations)
+- Identify risks and mitigations (privacy, sampling, bias)
+
+## Templates & Links
+- Use the Weekly Journal Template in `99_Templates/Weekly_Journal_Template.md` for reflections
+- Start your data source notes in `02_Literature/`
+- Capture meeting notes in `00_Inbox/` then file them into `03_Project/`
+
+## Next Steps
+- → Move to **Phase 3: The Dictionary** after your mini proposal is accepted
+
+**Navigation:** ← Back to [Phase 1: Orientation](../01_orientation/index.qmd) · → Forward to [Phase 3: The Dictionary](../03_dictionary/index.qmd)

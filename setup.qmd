@@ -6,6 +6,8 @@ title: "Getting Started"
 
 This page will guide you through your initial setup. Complete these steps before Phase 1.
 
+**Time needed:** ~20–25 minutes total. Follow the steps in order.
+
 ---
 
 ## Step 1: Download Your Workspace (5 minutes)
@@ -59,12 +61,14 @@ Your vault contains:
 
 ## Step 5: Review the Weekly Journal Template (5 minutes)
 
-Open **99_Templates** → **Weekly_Journal_Template.md**
+Open **99_Templates** → **Weekly_Journal_Template.md** (or preview it [here](Liaison_Vault/99_Templates/Weekly_Journal_Template.md))
 
 This template guides you to reflect using one of three thinking paths:
 - **The Connector**: How does this apply to my project?
 - **The Troubleshooter**: What broke and how did I fix it?
 - **The Critic**: Does this hold true in my experience?
+
+Want a head start on later phases? Preview the Data Dictionary Template [here](Liaison_Vault/99_Templates/Data_Dictionary_Template.md) so you know how variables will be documented.
 
 ---
 

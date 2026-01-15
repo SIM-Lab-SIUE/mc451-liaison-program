@@ -1,0 +1,32 @@
+---
+title: "Phase 5: Delivery"
+---
+
+## What You Will Do
+- Turn analysis into stories, decks, or reports for stakeholders
+- Tailor insights to non-technical audiences
+- Reflect on impact and next iterations
+
+## Deliverables
+- Slide deck or one-page brief with key findings
+- Visuals packaged for sharing (PNG/PDF)
+- Reflection on lessons learned and future work
+
+## Milestones
+- **Week 12:** Draft narrative outline
+- **Week 13:** Slide/brief draft with visuals
+- **Week 14:** Final presentation + retrospective
+
+## Activities
+- Translate stats into plain language takeaways
+- Add a "So what?" section for each finding
+- Rehearse with a peer and capture feedback in your journal
+
+## Templates & Links
+- Journal reflections: `99_Templates/Weekly_Journal_Template.md`
+- Store decks/briefs in `03_Project/04_Drafts/`
+
+## Next Steps
+- Celebrate, then archive your project materials in the vault for future reference
+
+**Navigation:** ← Back to [Phase 4: Execution](../04_execution/index.qmd)

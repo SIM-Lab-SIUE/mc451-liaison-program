@@ -1,0 +1,33 @@
+---
+title: "Phase 3: The Dictionary"
+---
+
+## What You Will Do
+- Define variables, constructs, and coding rules
+- Build a data dictionary/codebook for your project
+- Pilot-test definitions with a small sample
+
+## Deliverables
+- Data dictionary v1 with variable names, types, allowed values, and examples
+- Coding decision log (edge cases, clarifications)
+- Pilot results summary + changes you made
+
+## Milestones
+- **Week 6:** Draft variable list
+- **Week 7:** Pilot coding on 10–20 items
+- **Week 8:** Submit revised data dictionary
+
+## Activities
+- Copy the Data Dictionary Template from `99_Templates/Data_Dictionary_Template.md`
+- Run a short inter-coder reliability check (pair with a peer if possible)
+- Record ambiguities and resolve them in the decision log
+
+## Templates & Links
+- Data Dictionary Template: `99_Templates/Data_Dictionary_Template.md`
+- Journal reflections: `99_Templates/Weekly_Journal_Template.md`
+- Store drafts in `03_Project/02_Codebook/`
+
+## Next Steps
+- → Move to **Phase 4: Execution** once your dictionary is stable
+
+**Navigation:** ← Back to [Phase 2: Discovery](../02_discovery/index.qmd) · → Forward to [Phase 4: Execution](../04_execution/index.qmd)

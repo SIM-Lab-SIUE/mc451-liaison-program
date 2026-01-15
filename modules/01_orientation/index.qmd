@@ -39,10 +39,10 @@ Each phase builds skills you'll use throughout your career.
 ## Activities for Phase 1
 
 ### Activity 1: Complete Your Setup (Homework)
-1. Go to the Resources page and download Liaison_Vault.zip
-2. Follow the Setup Guide step-by-step
-3. Configure your Obsidian vault
-4. Open your 00_START_HERE.md file
+1. Go to the Resources page and download Liaison_Vault.zip (5 minutes)
+2. Follow the Setup Guide step-by-step (10–15 minutes)
+3. Configure your Obsidian vault (3 minutes)
+4. Open your 00_START_HERE.md file (2 minutes)
 
 **Due**: Before our next meeting
 
@@ -56,6 +56,8 @@ Navigate through each folder and understand:
 - What goes in each folder
 - How folders connect to each other
 - Why the structure matters for your thinking
+
+**Navigation:** ← Back to [Setup Guide](../../setup.qmd) · → Forward to [Phase 2: Discovery](../02_discovery/index.qmd)
 
 ---
 

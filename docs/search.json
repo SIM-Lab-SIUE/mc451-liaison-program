@@ -6,6 +6,7 @@
     "section": "Course Overview",
     "text": "Course Overview\nThis course equips you with research methodologies, tools, and frameworks to excel as a Communication Liaison—bridging data scientists and creative teams. Over 17 weeks across five phases, you’ll develop skills to navigate data-driven projects while maintaining clear communication with all stakeholders.",
     "crumbs": [
+      "Start Here",
       "Course Syllabus"
     ]
   },
@@ -16,6 +17,7 @@
     "section": "Essential Information",
     "text": "Essential Information\n\n\n\n\n\n\n\nItem\nDetails\n\n\n\n\nInstructor\nAlex P. Leith, PhD\n\n\nMeeting Time\nMonday & Wednesday, 3:00–4:15 PM\n\n\nOffice Hours\nMW 10:00–11:30 AM and 1:30–3:00 PM (or by appointment)\n\n\nEmail\naleith@siue.edu\n\n\nCourse Website\nhttps://sim-lab-siue.github.io/mc451-liaison-program/",
     "crumbs": [
+      "Start Here",
       "Course Syllabus"
     ]
   },
@@ -26,6 +28,18 @@
     "section": "Complete Syllabus",
     "text": "Complete Syllabus\nFor full course details including learning objectives, grading policies, assignments, course schedule, and university policies, download the complete syllabus:\n📄 Download Full Syllabus (PDF)",
     "crumbs": [
+      "Start Here",
+      "Course Syllabus"
+    ]
+  },
+  {
+    "objectID": "syllabus.html#at-a-glance",
+    "href": "syllabus.html#at-a-glance",
+    "title": "Course Syllabus",
+    "section": "At a Glance",
+    "text": "At a Glance\n\nGrading Breakdown (summary)\n\nParticipation and weekly journal reflections\nPhase deliverables (Discovery, Dictionary, Execution)\nFinal presentation/brief in Phase 5\n\n\n\nWeekly Rhythm\n\nMon/Wed class: activities, demos, peer feedback\nWeekly journal: use 01_Journal with the Weekly Journal Template\nCheck-ins: office hours or email; bring blockers early\n\n\n\nKey Policies\n\nCome prepared with vault set up by Week 2\nLate work: see full PDF for details and extensions\nAcademic integrity: cite data sources and collaborators",
+    "crumbs": [
+      "Start Here",
       "Course Syllabus"
     ]
   },
@@ -36,6 +50,7 @@
     "section": "Quick Reference",
     "text": "Quick Reference\n\nCourse Structure: Five Phases\n\nPhase 1: Orientation — Understand your role and set up your workspace\nPhase 2: Discovery — Learn research methodologies and ask the right questions\nPhase 3: The Dictionary — Master codebook creation and variable definition\nPhase 4: Execution — Apply what you’ve learned to real projects\nPhase 5: Delivery — Present findings and communicate impact\n\n\n\nKey Resources\n\nLiaison Obsidian Vault — Download on the Resources page\nWeekly Journal Template — Included in vault; guidance on the Resources page\nData Dictionary Template — Included in vault for Week 8–10 projects\n\n\n\nGetting Help\n\nOffice hours: Stop by anytime during posted hours or schedule an appointment\nEmail: Send questions to aleith@siue.edu\nCourse site: Check the sidebar for Phase-specific materials and guidance",
     "crumbs": [
+      "Start Here",
       "Course Syllabus"
     ]
   },
@@ -44,112 +59,169 @@
     "href": "setup.html",
     "title": "Getting Started",
     "section": "",
-    "text": "This page will guide you through your initial setup. Complete these steps before Phase 1."
+    "text": "This page will guide you through your initial setup. Complete these steps before Phase 1.\nTime needed: ~20–25 minutes total. Follow the steps in order.",
+    "crumbs": [
+      "Start Here",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "setup.html#welcome-to-the-liaison-program",
     "href": "setup.html#welcome-to-the-liaison-program",
     "title": "Getting Started",
     "section": "",
-    "text": "This page will guide you through your initial setup. Complete these steps before Phase 1."
+    "text": "This page will guide you through your initial setup. Complete these steps before Phase 1.\nTime needed: ~20–25 minutes total. Follow the steps in order.",
+    "crumbs": [
+      "Start Here",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "setup.html#step-1-download-your-workspace-5-minutes",
     "href": "setup.html#step-1-download-your-workspace-5-minutes",
     "title": "Getting Started",
     "section": "Step 1: Download Your Workspace (5 minutes)",
-    "text": "Step 1: Download Your Workspace (5 minutes)\nVisit the Resources page and download the Liaison_Vault.zip file.\nExtract it to a location like: - Mac/Linux: ~/Documents/Liaison_Vault - Windows: C:\\Users\\YourName\\Documents\\Liaison_Vault"
+    "text": "Step 1: Download Your Workspace (5 minutes)\nVisit the Resources page and download the Liaison_Vault.zip file.\nExtract it to a location like: - Mac/Linux: ~/Documents/Liaison_Vault - Windows: C:\\Users\\YourName\\Documents\\Liaison_Vault",
+    "crumbs": [
+      "Start Here",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "setup.html#step-2-install-obsidian-5-minutes",
     "href": "setup.html#step-2-install-obsidian-5-minutes",
     "title": "Getting Started",
     "section": "Step 2: Install Obsidian (5 minutes)",
-    "text": "Step 2: Install Obsidian (5 minutes)\n\nGo to obsidian.md and download Obsidian\nInstall it on your computer\nOpen Obsidian and select “Open folder as vault”\nNavigate to your Liaison_Vault folder and open it\n\nFirst time in Obsidian? - Click the folder icon on the left sidebar to see your vault structure - Open 00_START_HERE.md to read your orientation guide"
+    "text": "Step 2: Install Obsidian (5 minutes)\n\nGo to obsidian.md and download Obsidian\nInstall it on your computer\nOpen Obsidian and select “Open folder as vault”\nNavigate to your Liaison_Vault folder and open it\n\nFirst time in Obsidian? - Click the folder icon on the left sidebar to see your vault structure - Open 00_START_HERE.md to read your orientation guide",
+    "crumbs": [
+      "Start Here",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "setup.html#step-3-configure-obsidian-settings-3-minutes",
     "href": "setup.html#step-3-configure-obsidian-settings-3-minutes",
     "title": "Getting Started",
     "section": "Step 3: Configure Obsidian Settings (3 minutes)",
-    "text": "Step 3: Configure Obsidian Settings (3 minutes)\nOnce your vault is open in Obsidian:\n\nGo to Settings (gear icon, bottom left)\nClick Files & Links in the sidebar\nUnder “Default location for new attachments”, select 04_Resources\nThis ensures all images, PDFs, and media files go to the right place"
+    "text": "Step 3: Configure Obsidian Settings (3 minutes)\nOnce your vault is open in Obsidian:\n\nGo to Settings (gear icon, bottom left)\nClick Files & Links in the sidebar\nUnder “Default location for new attachments”, select 04_Resources\nThis ensures all images, PDFs, and media files go to the right place",
+    "crumbs": [
+      "Start Here",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "setup.html#step-4-explore-your-vault-structure",
     "href": "setup.html#step-4-explore-your-vault-structure",
     "title": "Getting Started",
     "section": "Step 4: Explore Your Vault Structure",
-    "text": "Step 4: Explore Your Vault Structure\nYour vault contains:\n\n\n\n\n\n\n\n\nFolder\nPurpose\nAction\n\n\n\n\n00_Inbox\nQuick notes & ideas\nCapture thoughts here first\n\n\n01_Journal\nWeekly reflections\nUse the template to reflect each week\n\n\n02_Literature\nReading notes\nStore all your research notes here\n\n\n03_Project\nActive research work\nOrganize by prospectus, codebook, data, drafts\n\n\n04_Resources\nMedia & attachments\nImages, PDFs, external files\n\n\n99_Templates\nReusable templates\nCopy these to start assignments"
+    "text": "Step 4: Explore Your Vault Structure\nYour vault contains:\n\n\n\n\n\n\n\n\nFolder\nPurpose\nAction\n\n\n\n\n00_Inbox\nQuick notes & ideas\nCapture thoughts here first\n\n\n01_Journal\nWeekly reflections\nUse the template to reflect each week\n\n\n02_Literature\nReading notes\nStore all your research notes here\n\n\n03_Project\nActive research work\nOrganize by prospectus, codebook, data, drafts\n\n\n04_Resources\nMedia & attachments\nImages, PDFs, external files\n\n\n99_Templates\nReusable templates\nCopy these to start assignments",
+    "crumbs": [
+      "Start Here",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "setup.html#step-5-review-the-weekly-journal-template-5-minutes",
     "href": "setup.html#step-5-review-the-weekly-journal-template-5-minutes",
     "title": "Getting Started",
     "section": "Step 5: Review the Weekly Journal Template (5 minutes)",
-    "text": "Step 5: Review the Weekly Journal Template (5 minutes)\nOpen 99_Templates → Weekly_Journal_Template.md\nThis template guides you to reflect using one of three thinking paths: - The Connector: How does this apply to my project? - The Troubleshooter: What broke and how did I fix it? - The Critic: Does this hold true in my experience?"
+    "text": "Step 5: Review the Weekly Journal Template (5 minutes)\nOpen 99_Templates → Weekly_Journal_Template.md (or preview it here)\nThis template guides you to reflect using one of three thinking paths: - The Connector: How does this apply to my project? - The Troubleshooter: What broke and how did I fix it? - The Critic: Does this hold true in my experience?\nWant a head start on later phases? Preview the Data Dictionary Template here so you know how variables will be documented.",
+    "crumbs": [
+      "Start Here",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "setup.html#step-6-youre-ready",
     "href": "setup.html#step-6-youre-ready",
     "title": "Getting Started",
     "section": "Step 6: You’re Ready!",
-    "text": "Step 6: You’re Ready!\nOnce you complete these steps, move to Phase 1: Orientation in the sidebar to begin."
+    "text": "Step 6: You’re Ready!\nOnce you complete these steps, move to Phase 1: Orientation in the sidebar to begin.",
+    "crumbs": [
+      "Start Here",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "setup.html#troubleshooting",
     "href": "setup.html#troubleshooting",
     "title": "Getting Started",
     "section": "Troubleshooting",
-    "text": "Troubleshooting\nQ: I extracted the ZIP file but Obsidian won’t open it as a vault - Make sure you’re opening the folder that contains the .obsidian hidden folder - Try right-clicking the folder and checking “Show hidden files” if needed\nQ: Where do I put my weekly journal entries? - Create a new file in 01_Journal named something like Week_01_MyName.md - Copy the template from 99_Templates/Weekly_Journal_Template.md and fill it out\nQ: Can I share my vault with classmates? - Yes! You can email them the ZIP file, or sync it via Git/GitHub for collaborative projects\n\nQuestions? Reach out via your course management system or check your course syllabus for contact information."
+    "text": "Troubleshooting\nQ: I extracted the ZIP file but Obsidian won’t open it as a vault - Make sure you’re opening the folder that contains the .obsidian hidden folder - Try right-clicking the folder and checking “Show hidden files” if needed\nQ: Where do I put my weekly journal entries? - Create a new file in 01_Journal named something like Week_01_MyName.md - Copy the template from 99_Templates/Weekly_Journal_Template.md and fill it out\nQ: Can I share my vault with classmates? - Yes! You can email them the ZIP file, or sync it via Git/GitHub for collaborative projects\n\nQuestions? Reach out via your course management system or check your course syllabus for contact information.",
+    "crumbs": [
+      "Start Here",
+      "Getting Started"
+    ]
   },
   {
     "objectID": "resources/install-r-rstudio.html",
     "href": "resources/install-r-rstudio.html",
     "title": "Installing R & RStudio",
     "section": "",
-    "text": "R and RStudio are essential tools for statistical analysis and data science in this course. This guide covers installation on all major operating systems.\n\n\n\nR: The core statistical programming language and environment\nRStudio: An IDE (Integrated Development Environment) that makes R much easier to use\n\n\n\n\n\n\n\n\n\nGo to CRAN (Comprehensive R Archive Network)\nClick “Download R for Windows”\nClick “base” (first option)\nClick the download link for the latest version (typically named something like R-4.x.x-win.exe)\nRun the installer\n\nAccept default settings (you can leave everything as-is)\nClick through the installation wizard\nInstallation typically takes 2-5 minutes\n\n\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for Windows\nRun the installer\n\nAccept default settings\nThe installer will detect your R installation automatically\nComplete the installation\n\n\n\n\n\n\nOpen RStudio (search for it in Windows Start menu)\nIn the Console pane (usually bottom-left), you should see something like:\nR version 4.x.x (20XX-XX-XX) -- \"...\"\nType: print(\"Hello, R!\") and press Enter\nIf you see [1] \"Hello, R!\", you’re ready to go!\n\n\n\n\n\n\n\n\nOption A: Using the installer (Recommended for beginners)\n\nGo to CRAN macOS\nClick “Download R for macOS”\nSelect the appropriate version:\n\nFor Apple Silicon (M1/M2/M3 chips): Download R-x.x.x-arm64.pkg\nFor Intel Macs: Download R-x.x.x-x86_64.pkg\n(Unsure? Check Apple menu → About This Mac → Chip)\n\nRun the .pkg installer and follow the prompts\nInstallation takes 2-5 minutes\n\nOption B: Using Homebrew (if you use Homebrew)\nbrew install r\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for macOS\nSelect the appropriate version for your Mac (Apple Silicon or Intel)\nOpen the downloaded .dmg file\nDrag RStudio to the Applications folder\nLaunch RStudio from Applications\n\n\n\n\n\nOpen RStudio (find in Applications folder or Spotlight search)\nIn the Console, type: print(\"Hello, R!\") and press Enter\nConfirm you see: [1] \"Hello, R!\"\n\n\n\n\n\n\n\n\n# Update package lists\nsudo apt update\n\n# Install R\nsudo apt install -y r-base r-base-dev\n\n\n\n\nGo to Posit RStudio Downloads\nSelect “RStudio Desktop” → Choose Linux version (Ubuntu 20/22 or Debian)\nDownload the .deb file\nInstall it:\nsudo dpkg -i rstudio-[version].deb\n\nOr install from terminal directly:\nsudo apt install -y rstudio\n\n\n\n\nLaunch RStudio from applications menu or terminal:\nrstudio &\nTest in Console: print(\"Hello, R!\")\nConfirm output: [1] \"Hello, R!\"\n\n\n\n\n\n\n\nOnce R and RStudio are installed, you need to set up your R environment for the course:\n\n\nIn RStudio Console, run:\nsetwd(\"~/Documents\")  # Or your preferred workspace folder\n\n\n\nWe’ll use these packages throughout the course. Install them with:\n# Core data science packages\ninstall.packages(c(\n  \"tidyverse\",      # Data wrangling and visualization\n  \"rmarkdown\",      # Create documents with R code\n  \"quarto\",         # Publishing system\n  \"shiny\",          # Interactive web apps\n  \"ggplot2\"         # Advanced visualization\n))\nThis may take 5-15 minutes (packages are downloading and installing).\n\n\n\nTest that the main packages work:\nlibrary(tidyverse)\nlibrary(ggplot2)\nprint(\"All packages loaded successfully!\")\nIf no errors appear, you’re all set!\n\n\n\n\n\n\n\n\nWindows: Try reinstalling R with administrator privileges\nMac: Restart your computer and try again\nLinux: Run sudo apt install -y r-base to ensure all dependencies are installed\n\n\n\n\n\nRStudio should auto-detect R, but if not:\n\nTools → Global Options → General\nLook for “R version” section\nIf blank, manually browse to your R installation\n\n\n\n\n\n\nMake sure you have internet connection\nTry: install.packages(\"package_name\", repos=\"http://cran.r-project.org\")\nSome packages require additional system libraries (ask in course chat!)\n\n\n\n\n\nTry: install.packages(\"package\", type=\"source\")\n\n\n\n\n\n\n\n\n\nAction\nCommand\n\n\n\n\nSee R version\nR.version.string\n\n\nList installed packages\nlibrary()\n\n\nLoad a package\nlibrary(package_name)\n\n\nInstall a package\ninstall.packages(\"package_name\")\n\n\nGet help\nhelp(function_name) or ?function_name\n\n\nExit R\nq()\n\n\n\n\n\n\n\n\nOfficial R Documentation: https://www.r-project.org/\nRStudio Cheat Sheets: https://posit.co/resources/cheatsheets/\nR for Data Science (Book): https://r4ds.hadley.nz/\nCourse Support: Check the course discussion board for questions\n\nYou’re ready to start the course! See you in Module 1."
+    "text": "R and RStudio are essential tools for statistical analysis and data science in this course. This guide covers installation on all major operating systems.\n\n\n\nR: The core statistical programming language and environment\nRStudio: An IDE (Integrated Development Environment) that makes R much easier to use\n\n\n\n\n\n\n\n\n\nGo to CRAN (Comprehensive R Archive Network)\nClick “Download R for Windows”\nClick “base” (first option)\nClick the download link for the latest version (typically named something like R-4.x.x-win.exe)\nRun the installer\n\nAccept default settings (you can leave everything as-is)\nClick through the installation wizard\nInstallation typically takes 2-5 minutes\n\n\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for Windows\nRun the installer\n\nAccept default settings\nThe installer will detect your R installation automatically\nComplete the installation\n\n\n\n\n\n\nOpen RStudio (search for it in Windows Start menu)\nIn the Console pane (usually bottom-left), you should see something like:\nR version 4.x.x (20XX-XX-XX) -- \"...\"\nType: print(\"Hello, R!\") and press Enter\nIf you see [1] \"Hello, R!\", you’re ready to go!\n\n\n\n\n\n\n\n\nOption A: Using the installer (Recommended for beginners)\n\nGo to CRAN macOS\nClick “Download R for macOS”\nSelect the appropriate version:\n\nFor Apple Silicon (M1/M2/M3 chips): Download R-x.x.x-arm64.pkg\nFor Intel Macs: Download R-x.x.x-x86_64.pkg\n(Unsure? Check Apple menu → About This Mac → Chip)\n\nRun the .pkg installer and follow the prompts\nInstallation takes 2-5 minutes\n\nOption B: Using Homebrew (if you use Homebrew)\nbrew install r\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for macOS\nSelect the appropriate version for your Mac (Apple Silicon or Intel)\nOpen the downloaded .dmg file\nDrag RStudio to the Applications folder\nLaunch RStudio from Applications\n\n\n\n\n\nOpen RStudio (find in Applications folder or Spotlight search)\nIn the Console, type: print(\"Hello, R!\") and press Enter\nConfirm you see: [1] \"Hello, R!\"\n\n\n\n\n\n\n\n\n# Update package lists\nsudo apt update\n\n# Install R\nsudo apt install -y r-base r-base-dev\n\n\n\n\nGo to Posit RStudio Downloads\nSelect “RStudio Desktop” → Choose Linux version (Ubuntu 20/22 or Debian)\nDownload the .deb file\nInstall it:\nsudo dpkg -i rstudio-[version].deb\n\nOr install from terminal directly:\nsudo apt install -y rstudio\n\n\n\n\nLaunch RStudio from applications menu or terminal:\nrstudio &\nTest in Console: print(\"Hello, R!\")\nConfirm output: [1] \"Hello, R!\"\n\n\n\n\n\n\n\nOnce R and RStudio are installed, you need to set up your R environment for the course:\n\n\nIn RStudio Console, run:\nsetwd(\"~/Documents\")  # Or your preferred workspace folder\n\n\n\nWe’ll use these packages throughout the course. Install them with:\n# Core data science packages\ninstall.packages(c(\n  \"tidyverse\",      # Data wrangling and visualization\n  \"rmarkdown\",      # Create documents with R code\n  \"quarto\",         # Publishing system\n  \"shiny\",          # Interactive web apps\n  \"ggplot2\"         # Advanced visualization\n))\nThis may take 5-15 minutes (packages are downloading and installing).\n\n\n\nTest that the main packages work:\nlibrary(tidyverse)\nlibrary(ggplot2)\nprint(\"All packages loaded successfully!\")\nIf no errors appear, you’re all set!\n\n\n\n\n\n\n\n\nWindows: Try reinstalling R with administrator privileges\nMac: Restart your computer and try again\nLinux: Run sudo apt install -y r-base to ensure all dependencies are installed\n\n\n\n\n\nRStudio should auto-detect R, but if not:\n\nTools → Global Options → General\nLook for “R version” section\nIf blank, manually browse to your R installation\n\n\n\n\n\n\nMake sure you have internet connection\nTry: install.packages(\"package_name\", repos=\"http://cran.r-project.org\")\nSome packages require additional system libraries (ask in course chat!)\n\n\n\n\n\nTry: install.packages(\"package\", type=\"source\")\n\n\n\n\n\n\n\n\n\nAction\nCommand\n\n\n\n\nSee R version\nR.version.string\n\n\nList installed packages\nlibrary()\n\n\nLoad a package\nlibrary(package_name)\n\n\nInstall a package\ninstall.packages(\"package_name\")\n\n\nGet help\nhelp(function_name) or ?function_name\n\n\nExit R\nq()\n\n\n\n\n\n\n\n\nOfficial R Documentation: https://www.r-project.org/\nRStudio Cheat Sheets: https://posit.co/resources/cheatsheets/\nR for Data Science (Book): https://r4ds.hadley.nz/\nCourse Support: Check the course discussion board for questions\n\nYou’re ready to start the course! See you in Module 1.",
+    "crumbs": [
+      "Installing R & RStudio"
+    ]
   },
   {
     "objectID": "resources/install-r-rstudio.html#what-youre-installing",
     "href": "resources/install-r-rstudio.html#what-youre-installing",
     "title": "Installing R & RStudio",
     "section": "",
-    "text": "R: The core statistical programming language and environment\nRStudio: An IDE (Integrated Development Environment) that makes R much easier to use"
+    "text": "R: The core statistical programming language and environment\nRStudio: An IDE (Integrated Development Environment) that makes R much easier to use",
+    "crumbs": [
+      "Installing R & RStudio"
+    ]
   },
   {
     "objectID": "resources/install-r-rstudio.html#installation-by-operating-system",
     "href": "resources/install-r-rstudio.html#installation-by-operating-system",
     "title": "Installing R & RStudio",
     "section": "",
-    "text": "Go to CRAN (Comprehensive R Archive Network)\nClick “Download R for Windows”\nClick “base” (first option)\nClick the download link for the latest version (typically named something like R-4.x.x-win.exe)\nRun the installer\n\nAccept default settings (you can leave everything as-is)\nClick through the installation wizard\nInstallation typically takes 2-5 minutes\n\n\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for Windows\nRun the installer\n\nAccept default settings\nThe installer will detect your R installation automatically\nComplete the installation\n\n\n\n\n\n\nOpen RStudio (search for it in Windows Start menu)\nIn the Console pane (usually bottom-left), you should see something like:\nR version 4.x.x (20XX-XX-XX) -- \"...\"\nType: print(\"Hello, R!\") and press Enter\nIf you see [1] \"Hello, R!\", you’re ready to go!\n\n\n\n\n\n\n\n\nOption A: Using the installer (Recommended for beginners)\n\nGo to CRAN macOS\nClick “Download R for macOS”\nSelect the appropriate version:\n\nFor Apple Silicon (M1/M2/M3 chips): Download R-x.x.x-arm64.pkg\nFor Intel Macs: Download R-x.x.x-x86_64.pkg\n(Unsure? Check Apple menu → About This Mac → Chip)\n\nRun the .pkg installer and follow the prompts\nInstallation takes 2-5 minutes\n\nOption B: Using Homebrew (if you use Homebrew)\nbrew install r\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for macOS\nSelect the appropriate version for your Mac (Apple Silicon or Intel)\nOpen the downloaded .dmg file\nDrag RStudio to the Applications folder\nLaunch RStudio from Applications\n\n\n\n\n\nOpen RStudio (find in Applications folder or Spotlight search)\nIn the Console, type: print(\"Hello, R!\") and press Enter\nConfirm you see: [1] \"Hello, R!\"\n\n\n\n\n\n\n\n\n# Update package lists\nsudo apt update\n\n# Install R\nsudo apt install -y r-base r-base-dev\n\n\n\n\nGo to Posit RStudio Downloads\nSelect “RStudio Desktop” → Choose Linux version (Ubuntu 20/22 or Debian)\nDownload the .deb file\nInstall it:\nsudo dpkg -i rstudio-[version].deb\n\nOr install from terminal directly:\nsudo apt install -y rstudio\n\n\n\n\nLaunch RStudio from applications menu or terminal:\nrstudio &\nTest in Console: print(\"Hello, R!\")\nConfirm output: [1] \"Hello, R!\""
+    "text": "Go to CRAN (Comprehensive R Archive Network)\nClick “Download R for Windows”\nClick “base” (first option)\nClick the download link for the latest version (typically named something like R-4.x.x-win.exe)\nRun the installer\n\nAccept default settings (you can leave everything as-is)\nClick through the installation wizard\nInstallation typically takes 2-5 minutes\n\n\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for Windows\nRun the installer\n\nAccept default settings\nThe installer will detect your R installation automatically\nComplete the installation\n\n\n\n\n\n\nOpen RStudio (search for it in Windows Start menu)\nIn the Console pane (usually bottom-left), you should see something like:\nR version 4.x.x (20XX-XX-XX) -- \"...\"\nType: print(\"Hello, R!\") and press Enter\nIf you see [1] \"Hello, R!\", you’re ready to go!\n\n\n\n\n\n\n\n\nOption A: Using the installer (Recommended for beginners)\n\nGo to CRAN macOS\nClick “Download R for macOS”\nSelect the appropriate version:\n\nFor Apple Silicon (M1/M2/M3 chips): Download R-x.x.x-arm64.pkg\nFor Intel Macs: Download R-x.x.x-x86_64.pkg\n(Unsure? Check Apple menu → About This Mac → Chip)\n\nRun the .pkg installer and follow the prompts\nInstallation takes 2-5 minutes\n\nOption B: Using Homebrew (if you use Homebrew)\nbrew install r\n\n\n\n\nGo to Posit RStudio Downloads\nClick “Download RStudio Desktop” for macOS\nSelect the appropriate version for your Mac (Apple Silicon or Intel)\nOpen the downloaded .dmg file\nDrag RStudio to the Applications folder\nLaunch RStudio from Applications\n\n\n\n\n\nOpen RStudio (find in Applications folder or Spotlight search)\nIn the Console, type: print(\"Hello, R!\") and press Enter\nConfirm you see: [1] \"Hello, R!\"\n\n\n\n\n\n\n\n\n# Update package lists\nsudo apt update\n\n# Install R\nsudo apt install -y r-base r-base-dev\n\n\n\n\nGo to Posit RStudio Downloads\nSelect “RStudio Desktop” → Choose Linux version (Ubuntu 20/22 or Debian)\nDownload the .deb file\nInstall it:\nsudo dpkg -i rstudio-[version].deb\n\nOr install from terminal directly:\nsudo apt install -y rstudio\n\n\n\n\nLaunch RStudio from applications menu or terminal:\nrstudio &\nTest in Console: print(\"Hello, R!\")\nConfirm output: [1] \"Hello, R!\"",
+    "crumbs": [
+      "Installing R & RStudio"
+    ]
   },
   {
     "objectID": "resources/install-r-rstudio.html#essential-next-steps",
     "href": "resources/install-r-rstudio.html#essential-next-steps",
     "title": "Installing R & RStudio",
     "section": "",
-    "text": "Once R and RStudio are installed, you need to set up your R environment for the course:\n\n\nIn RStudio Console, run:\nsetwd(\"~/Documents\")  # Or your preferred workspace folder\n\n\n\nWe’ll use these packages throughout the course. Install them with:\n# Core data science packages\ninstall.packages(c(\n  \"tidyverse\",      # Data wrangling and visualization\n  \"rmarkdown\",      # Create documents with R code\n  \"quarto\",         # Publishing system\n  \"shiny\",          # Interactive web apps\n  \"ggplot2\"         # Advanced visualization\n))\nThis may take 5-15 minutes (packages are downloading and installing).\n\n\n\nTest that the main packages work:\nlibrary(tidyverse)\nlibrary(ggplot2)\nprint(\"All packages loaded successfully!\")\nIf no errors appear, you’re all set!"
+    "text": "Once R and RStudio are installed, you need to set up your R environment for the course:\n\n\nIn RStudio Console, run:\nsetwd(\"~/Documents\")  # Or your preferred workspace folder\n\n\n\nWe’ll use these packages throughout the course. Install them with:\n# Core data science packages\ninstall.packages(c(\n  \"tidyverse\",      # Data wrangling and visualization\n  \"rmarkdown\",      # Create documents with R code\n  \"quarto\",         # Publishing system\n  \"shiny\",          # Interactive web apps\n  \"ggplot2\"         # Advanced visualization\n))\nThis may take 5-15 minutes (packages are downloading and installing).\n\n\n\nTest that the main packages work:\nlibrary(tidyverse)\nlibrary(ggplot2)\nprint(\"All packages loaded successfully!\")\nIf no errors appear, you’re all set!",
+    "crumbs": [
+      "Installing R & RStudio"
+    ]
   },
   {
     "objectID": "resources/install-r-rstudio.html#troubleshooting",
     "href": "resources/install-r-rstudio.html#troubleshooting",
     "title": "Installing R & RStudio",
     "section": "",
-    "text": "Windows: Try reinstalling R with administrator privileges\nMac: Restart your computer and try again\nLinux: Run sudo apt install -y r-base to ensure all dependencies are installed\n\n\n\n\n\nRStudio should auto-detect R, but if not:\n\nTools → Global Options → General\nLook for “R version” section\nIf blank, manually browse to your R installation\n\n\n\n\n\n\nMake sure you have internet connection\nTry: install.packages(\"package_name\", repos=\"http://cran.r-project.org\")\nSome packages require additional system libraries (ask in course chat!)\n\n\n\n\n\nTry: install.packages(\"package\", type=\"source\")"
+    "text": "Windows: Try reinstalling R with administrator privileges\nMac: Restart your computer and try again\nLinux: Run sudo apt install -y r-base to ensure all dependencies are installed\n\n\n\n\n\nRStudio should auto-detect R, but if not:\n\nTools → Global Options → General\nLook for “R version” section\nIf blank, manually browse to your R installation\n\n\n\n\n\n\nMake sure you have internet connection\nTry: install.packages(\"package_name\", repos=\"http://cran.r-project.org\")\nSome packages require additional system libraries (ask in course chat!)\n\n\n\n\n\nTry: install.packages(\"package\", type=\"source\")",
+    "crumbs": [
+      "Installing R & RStudio"
+    ]
   },
   {
     "objectID": "resources/install-r-rstudio.html#quick-reference",
     "href": "resources/install-r-rstudio.html#quick-reference",
     "title": "Installing R & RStudio",
     "section": "",
-    "text": "Action\nCommand\n\n\n\n\nSee R version\nR.version.string\n\n\nList installed packages\nlibrary()\n\n\nLoad a package\nlibrary(package_name)\n\n\nInstall a package\ninstall.packages(\"package_name\")\n\n\nGet help\nhelp(function_name) or ?function_name\n\n\nExit R\nq()"
+    "text": "Action\nCommand\n\n\n\n\nSee R version\nR.version.string\n\n\nList installed packages\nlibrary()\n\n\nLoad a package\nlibrary(package_name)\n\n\nInstall a package\ninstall.packages(\"package_name\")\n\n\nGet help\nhelp(function_name) or ?function_name\n\n\nExit R\nq()",
+    "crumbs": [
+      "Installing R & RStudio"
+    ]
   },
   {
     "objectID": "resources/install-r-rstudio.html#resources",
     "href": "resources/install-r-rstudio.html#resources",
     "title": "Installing R & RStudio",
     "section": "",
-    "text": "Official R Documentation: https://www.r-project.org/\nRStudio Cheat Sheets: https://posit.co/resources/cheatsheets/\nR for Data Science (Book): https://r4ds.hadley.nz/\nCourse Support: Check the course discussion board for questions\n\nYou’re ready to start the course! See you in Module 1."
+    "text": "Official R Documentation: https://www.r-project.org/\nRStudio Cheat Sheets: https://posit.co/resources/cheatsheets/\nR for Data Science (Book): https://r4ds.hadley.nz/\nCourse Support: Check the course discussion board for questions\n\nYou’re ready to start the course! See you in Module 1.",
+    "crumbs": [
+      "Installing R & RStudio"
+    ]
   },
   {
     "objectID": "QUICK_START.html",
@@ -234,6 +306,146 @@
     "title": "Quick Reference Guide",
     "section": "",
     "text": "Your professional student resource website is built, tested, and ready to deploy.\nNext step: Pick your deployment option and share with your students.\nSee README.md and DEPLOYMENT.md for detailed guidance.\n\nQuestions? Check the detailed guides or customize to fit your needs!"
+  },
+  {
+    "objectID": "modules/04_execution/index.html",
+    "href": "modules/04_execution/index.html",
+    "title": "Phase 4: Execution",
+    "section": "",
+    "text": "Collect, clean, and analyze data using your approved plan\nTrack versions of datasets and scripts\nGenerate figures/tables that answer your research questions",
+    "crumbs": [
+      "Phase 4: Execution"
+    ]
+  },
+  {
+    "objectID": "modules/04_execution/index.html#what-you-will-do",
+    "href": "modules/04_execution/index.html#what-you-will-do",
+    "title": "Phase 4: Execution",
+    "section": "",
+    "text": "Collect, clean, and analyze data using your approved plan\nTrack versions of datasets and scripts\nGenerate figures/tables that answer your research questions",
+    "crumbs": [
+      "Phase 4: Execution"
+    ]
+  },
+  {
+    "objectID": "modules/04_execution/index.html#deliverables",
+    "href": "modules/04_execution/index.html#deliverables",
+    "title": "Phase 4: Execution",
+    "section": "Deliverables",
+    "text": "Deliverables\n\nClean dataset (documented) + analysis notes\n2–3 core visualizations/tables with captions\nBrief memo linking results to questions and caveats",
+    "crumbs": [
+      "Phase 4: Execution"
+    ]
+  },
+  {
+    "objectID": "modules/04_execution/index.html#milestones",
+    "href": "modules/04_execution/index.html#milestones",
+    "title": "Phase 4: Execution",
+    "section": "Milestones",
+    "text": "Milestones\n\nWeek 9: Data collection complete\nWeek 10: Cleaning script + documented decisions\nWeek 11: First-pass results shared for feedback",
+    "crumbs": [
+      "Phase 4: Execution"
+    ]
+  },
+  {
+    "objectID": "modules/04_execution/index.html#activities",
+    "href": "modules/04_execution/index.html#activities",
+    "title": "Phase 4: Execution",
+    "section": "Activities",
+    "text": "Activities\n\nUse 03_Project/03_Data/ for raw vs. clean data; keep a README of steps\nSave analysis scripts in 03_Project/04_Drafts/ (R, Python, or Excel log)\nNote any surprises or limitations in your journal",
+    "crumbs": [
+      "Phase 4: Execution"
+    ]
+  },
+  {
+    "objectID": "modules/04_execution/index.html#templates-links",
+    "href": "modules/04_execution/index.html#templates-links",
+    "title": "Phase 4: Execution",
+    "section": "Templates & Links",
+    "text": "Templates & Links\n\nJournal reflections: 99_Templates/Weekly_Journal_Template.md\nData Dictionary stays your single source of truth—update if definitions shift",
+    "crumbs": [
+      "Phase 4: Execution"
+    ]
+  },
+  {
+    "objectID": "modules/04_execution/index.html#next-steps",
+    "href": "modules/04_execution/index.html#next-steps",
+    "title": "Phase 4: Execution",
+    "section": "Next Steps",
+    "text": "Next Steps\n\n→ Move to Phase 5: Delivery once you have stable findings and visuals\n\nNavigation: ← Back to Phase 3: The Dictionary · → Forward to Phase 5: Delivery",
+    "crumbs": [
+      "Phase 4: Execution"
+    ]
+  },
+  {
+    "objectID": "modules/02_discovery/index.html",
+    "href": "modules/02_discovery/index.html",
+    "title": "Phase 2: Discovery",
+    "section": "",
+    "text": "Frame research questions and hypotheses\nMap stakeholders and data sources\nPlan data collection with ethics in mind",
+    "crumbs": [
+      "Phase 2: Discovery"
+    ]
+  },
+  {
+    "objectID": "modules/02_discovery/index.html#what-you-will-do",
+    "href": "modules/02_discovery/index.html#what-you-will-do",
+    "title": "Phase 2: Discovery",
+    "section": "",
+    "text": "Frame research questions and hypotheses\nMap stakeholders and data sources\nPlan data collection with ethics in mind",
+    "crumbs": [
+      "Phase 2: Discovery"
+    ]
+  },
+  {
+    "objectID": "modules/02_discovery/index.html#deliverables",
+    "href": "modules/02_discovery/index.html#deliverables",
+    "title": "Phase 2: Discovery",
+    "section": "Deliverables",
+    "text": "Deliverables\n\nProblem statement + research questions draft\nStakeholder/data source map (one page)\nMini proposal outlining methods and timeline",
+    "crumbs": [
+      "Phase 2: Discovery"
+    ]
+  },
+  {
+    "objectID": "modules/02_discovery/index.html#milestones",
+    "href": "modules/02_discovery/index.html#milestones",
+    "title": "Phase 2: Discovery",
+    "section": "Milestones",
+    "text": "Milestones\n\nWeek 3: Submit problem statement for feedback\nWeek 4: Share stakeholder map in class\nWeek 5: Turn in mini proposal",
+    "crumbs": [
+      "Phase 2: Discovery"
+    ]
+  },
+  {
+    "objectID": "modules/02_discovery/index.html#activities",
+    "href": "modules/02_discovery/index.html#activities",
+    "title": "Phase 2: Discovery",
+    "section": "Activities",
+    "text": "Activities\n\nCompare 2–3 example research questions; rewrite them with clearer variables\nSketch a data collection plan (surveys, scraping, observations)\nIdentify risks and mitigations (privacy, sampling, bias)",
+    "crumbs": [
+      "Phase 2: Discovery"
+    ]
+  },
+  {
+    "objectID": "modules/02_discovery/index.html#templates-links",
+    "href": "modules/02_discovery/index.html#templates-links",
+    "title": "Phase 2: Discovery",
+    "section": "Templates & Links",
+    "text": "Templates & Links\n\nUse the Weekly Journal Template in 99_Templates/Weekly_Journal_Template.md for reflections\nStart your data source notes in 02_Literature/\nCapture meeting notes in 00_Inbox/ then file them into 03_Project/",
+    "crumbs": [
+      "Phase 2: Discovery"
+    ]
+  },
+  {
+    "objectID": "modules/02_discovery/index.html#next-steps",
+    "href": "modules/02_discovery/index.html#next-steps",
+    "title": "Phase 2: Discovery",
+    "section": "Next Steps",
+    "text": "Next Steps\n\n→ Move to Phase 3: The Dictionary after your mini proposal is accepted\n\nNavigation: ← Back to Phase 1: Orientation · → Forward to Phase 3: The Dictionary",
+    "crumbs": [
+      "Phase 2: Discovery"
+    ]
   },
   {
     "objectID": "modules/01_orientation/chapter_01.html",
@@ -681,77 +893,56 @@
     "href": "about.html",
     "title": "About Dr. Leith",
     "section": "",
-    "text": "Associate Professor & Director, SIM Lab\nDepartment of Mass Communications\nSouthern Illinois University Edwardsville",
-    "crumbs": [
-      "About Dr. Leith"
-    ]
+    "text": "Associate Professor & Director, SIM Lab\nDepartment of Mass Communications\nSouthern Illinois University Edwardsville"
   },
   {
     "objectID": "about.html#alex-p.-leith-phd",
     "href": "about.html#alex-p.-leith-phd",
     "title": "About Dr. Leith",
     "section": "",
-    "text": "Associate Professor & Director, SIM Lab\nDepartment of Mass Communications\nSouthern Illinois University Edwardsville",
-    "crumbs": [
-      "About Dr. Leith"
-    ]
+    "text": "Associate Professor & Director, SIM Lab\nDepartment of Mass Communications\nSouthern Illinois University Edwardsville"
   },
   {
     "objectID": "about.html#background",
     "href": "about.html#background",
     "title": "About Dr. Leith",
     "section": "Background",
-    "text": "Background\nI’m an Associate Professor of Mass Communications at SIUE, where I direct the Social Interaction & Media Lab (SIM Lab). My research focuses on how people communicate, connect, and collaborate through digital platforms—from video games and streaming to virtual reality and remote work environments.\nBefore joining SIUE, I completed my PhD in Information and Media at Michigan State University, where I studied gameplay livestreaming and how audiences build relationships with streamers. My master’s degree in Speech Communication from SIUE examined parasocial relationships on social media platforms like Facebook.",
-    "crumbs": [
-      "About Dr. Leith"
-    ]
+    "text": "Background\nI’m an Associate Professor of Mass Communications at SIUE, where I direct the Social Interaction & Media Lab (SIM Lab). My research focuses on how people communicate, connect, and collaborate through digital platforms—from video games and streaming to virtual reality and remote work environments.\nBefore joining SIUE, I completed my PhD in Information and Media at Michigan State University, where I studied gameplay livestreaming and how audiences build relationships with streamers. My master’s degree in Speech Communication from SIUE examined parasocial relationships on social media platforms like Facebook."
   },
   {
     "objectID": "about.html#research-interests",
     "href": "about.html#research-interests",
     "title": "About Dr. Leith",
     "section": "Research Interests",
-    "text": "Research Interests\nMy current work explores:\n\nVirtual Communication: How people interact, experience fatigue, and find authentic connection in virtual meetings and VR spaces\nGaming & Media: The psychology of gameplay, streaming, and how games shape communication and identity\nRemote Work & Education: Supporting wellbeing and equity in virtual classrooms and distributed teams\nData & Communication: Using computational methods to understand media consumption and online behavior",
-    "crumbs": [
-      "About Dr. Leith"
-    ]
+    "text": "Research Interests\nMy current work explores:\n\nVirtual Communication: How people interact, experience fatigue, and find authentic connection in virtual meetings and VR spaces\nGaming & Media: The psychology of gameplay, streaming, and how games shape communication and identity\nRemote Work & Education: Supporting wellbeing and equity in virtual classrooms and distributed teams\nData & Communication: Using computational methods to understand media consumption and online behavior"
   },
   {
     "objectID": "about.html#teaching-philosophy",
     "href": "about.html#teaching-philosophy",
     "title": "About Dr. Leith",
     "section": "Teaching Philosophy",
-    "text": "Teaching Philosophy\nI believe the best research methods courses empower students to ask good questions before worrying about technical answers. This course is structured around the idea that you’re a Communication Liaison—someone who bridges data science and creative thinking.\nI’m committed to: - Making research methods accessible (not just for math people) - Using real data and meaningful projects - Supporting diverse learning styles and backgrounds - Building a collaborative, judgment-free classroom",
-    "crumbs": [
-      "About Dr. Leith"
-    ]
+    "text": "Teaching Philosophy\nI believe the best research methods courses empower students to ask good questions before worrying about technical answers. This course is structured around the idea that you’re a Communication Liaison—someone who bridges data science and creative thinking.\nI’m committed to: - Making research methods accessible (not just for math people) - Using real data and meaningful projects - Supporting diverse learning styles and backgrounds - Building a collaborative, judgment-free classroom"
   },
   {
     "objectID": "about.html#current-projects",
     "href": "about.html#current-projects",
     "title": "About Dr. Leith",
     "section": "Current Projects",
-    "text": "Current Projects\nSIM Lab focuses on: - Improving equity and wellbeing in virtual classrooms - Understanding play and professionalism in remote environments\n- Designing AI-enhanced tools for better virtual interaction - Building open-source resources for communication research\nYou can find more at: - Web: apleith.github.io - GitHub: github.com/apleith - ORCID: 0000-0003-1310-6763",
-    "crumbs": [
-      "About Dr. Leith"
-    ]
+    "text": "Current Projects\nSIM Lab focuses on: - Improving equity and wellbeing in virtual classrooms - Understanding play and professionalism in remote environments\n- Designing AI-enhanced tools for better virtual interaction - Building open-source resources for communication research\nYou can find more at: - Web: apleith.github.io - GitHub: github.com/apleith - ORCID: 0000-0003-1310-6763"
   },
   {
     "objectID": "about.html#connect",
     "href": "about.html#connect",
     "title": "About Dr. Leith",
     "section": "Connect",
-    "text": "Connect\nEmail: aleith@siue.edu\nOffice Hours: MW 10:00-11:30 AM and 1:30-3:00 PM (or by appointment)\nFeel free to stop by or email questions about the course, research methods, media and communication, or anything else on your mind!",
-    "crumbs": [
-      "About Dr. Leith"
-    ]
+    "text": "Connect\nEmail: aleith@siue.edu\nOffice Hours: MW 10:00-11:30 AM and 1:30-3:00 PM (or by appointment)\nFeel free to stop by or email questions about the course, research methods, media and communication, or anything else on your mind!"
   },
   {
     "objectID": "github-setup.html",
     "href": "github-setup.html",
     "title": "Getting Started with GitHub",
     "section": "",
-    "text": "As a Communication Liaison, you’ll work with data and research projects that require collaboration and version control. GitHub is the industry standard for managing code, sharing research, and collaborating with teams. This guide walks you through creating your GitHub account and getting comfortable with the basics.",
+    "text": "As a Communication Liaison, you’ll work with data and research projects that require collaboration and version control. GitHub is the industry standard for managing code, sharing research, and collaborating with teams. This guide walks you through creating your GitHub account and getting comfortable with the basics.\n5-step fast path (10–15 minutes): 1. Create your GitHub account at github.com and verify email 2. Set a clear username + add a profile photo and short bio 3. Create a public repo initialized with a README (e.g., hello-world) 4. Install Git and clone the repo to your computer 5. Edit README, commit, and push back to GitHub",
     "crumbs": [
       "Getting Started with GitHub"
     ]
@@ -761,7 +952,7 @@
     "href": "github-setup.html#why-github",
     "title": "Getting Started with GitHub",
     "section": "",
-    "text": "As a Communication Liaison, you’ll work with data and research projects that require collaboration and version control. GitHub is the industry standard for managing code, sharing research, and collaborating with teams. This guide walks you through creating your GitHub account and getting comfortable with the basics.",
+    "text": "As a Communication Liaison, you’ll work with data and research projects that require collaboration and version control. GitHub is the industry standard for managing code, sharing research, and collaborating with teams. This guide walks you through creating your GitHub account and getting comfortable with the basics.\n5-step fast path (10–15 minutes): 1. Create your GitHub account at github.com and verify email 2. Set a clear username + add a profile photo and short bio 3. Create a public repo initialized with a README (e.g., hello-world) 4. Install Git and clone the repo to your computer 5. Edit README, commit, and push back to GitHub",
     "crumbs": [
       "Getting Started with GitHub"
     ]
@@ -883,6 +1074,7 @@
     "section": "",
     "text": "Welcome! As a Communication Liaison, you are the vital bridge between our data scientists and creative teams. Your role is to:\n\nTranslate complex data concepts into clear, actionable insights\nFacilitate collaboration between technical and creative professionals\nDocument findings and processes for team understanding\nGuide projects from discovery through delivery\n\nThis program is designed to equip you with the research methodologies, tools, and frameworks you need to excel in this unique position. Over five phases, you’ll develop the skills to navigate data-driven projects while maintaining clear communication across all stakeholders.",
     "crumbs": [
+      "Start Here",
       "Welcome to the Data Team"
     ]
   },
@@ -893,6 +1085,7 @@
     "section": "",
     "text": "Welcome! As a Communication Liaison, you are the vital bridge between our data scientists and creative teams. Your role is to:\n\nTranslate complex data concepts into clear, actionable insights\nFacilitate collaboration between technical and creative professionals\nDocument findings and processes for team understanding\nGuide projects from discovery through delivery\n\nThis program is designed to equip you with the research methodologies, tools, and frameworks you need to excel in this unique position. Over five phases, you’ll develop the skills to navigate data-driven projects while maintaining clear communication across all stakeholders.",
     "crumbs": [
+      "Start Here",
       "Welcome to the Data Team"
     ]
   },
@@ -901,18 +1094,9 @@
     "href": "index.html#quick-start",
     "title": "Welcome to the Data Team",
     "section": "Quick Start",
-    "text": "Quick Start\nReady to begin your journey? Start with our setup guide to configure your workspace and understand the program structure.\n→ Get Started",
+    "text": "Quick Start\nStep 1 — Configure your workspace (10–15 minutes) Start Here: Setup Guide\nStep 2 — Grab your vault (2 minutes) Download Liaison_Vault.zip\nWant the full menu? Visit the Resources page for all downloads and guides.",
     "crumbs": [
-      "Welcome to the Data Team"
-    ]
-  },
-  {
-    "objectID": "index.html#essential-resources",
-    "href": "index.html#essential-resources",
-    "title": "Welcome to the Data Team",
-    "section": "Essential Resources",
-    "text": "Essential Resources\nDownload the Liaison Obsidian Vault — your complete knowledge management system with templates, structure, and documentation to succeed in this program.\n→ Download Liaison_Vault.zip\nOr visit the Resources page to see what’s included and other helpful downloads.",
-    "crumbs": [
+      "Start Here",
       "Welcome to the Data Team"
     ]
   },
@@ -923,6 +1107,7 @@
     "section": "The Five Phases",
     "text": "The Five Phases\nThis program is structured in five interconnected phases:\n\nPhase 1: Orientation - Understand your role, the program structure, and set up your workspace\nPhase 2: Discovery - Learn research methodologies and how to ask the right questions\nPhase 3: The Dictionary - Master codebook creation and variable definition\nPhase 4: Execution - Apply what you’ve learned to real projects\nPhase 5: Delivery - Present findings and communicate impact\n\nEach phase builds on the previous one. Start with Phase 1 in the sidebar.",
     "crumbs": [
+      "Start Here",
       "Welcome to the Data Team"
     ]
   },
@@ -933,6 +1118,7 @@
     "section": "Course Information",
     "text": "Course Information\n\nInstructor: Alex P. Leith, PhD\nMeeting Time: MW 15:00-16:15\nOffice Hours: MW 10:00-11:30 and 13:30-15:00\nCourse Syllabus: Download PDF\nQuestions? See the syllabus for contact information and course details\n\n\nLet’s get to work and build something great together!",
     "crumbs": [
+      "Start Here",
       "Welcome to the Data Team"
     ]
   },
@@ -1163,7 +1349,7 @@
     "href": "modules/01_orientation/index.html#activities-for-phase-1",
     "title": "Phase 1: Orientation",
     "section": "Activities for Phase 1",
-    "text": "Activities for Phase 1\n\nActivity 1: Complete Your Setup (Homework)\n\nGo to the Resources page and download Liaison_Vault.zip\nFollow the Setup Guide step-by-step\nConfigure your Obsidian vault\nOpen your 00_START_HERE.md file\n\nDue: Before our next meeting\n\n\nActivity 2: Explore Your Vault (In Class)\n\nOpen your Liaison_Vault in Obsidian\nCreate a file in 00_Inbox named First_Reflection.md\nWrite 3-5 sentences about what you hope to learn this semester\n\n\n\nActivity 3: Vault Navigation Tour (Self-Paced)\nNavigate through each folder and understand: - What goes in each folder - How folders connect to each other - Why the structure matters for your thinking",
+    "text": "Activities for Phase 1\n\nActivity 1: Complete Your Setup (Homework)\n\nGo to the Resources page and download Liaison_Vault.zip (5 minutes)\nFollow the Setup Guide step-by-step (10–15 minutes)\nConfigure your Obsidian vault (3 minutes)\nOpen your 00_START_HERE.md file (2 minutes)\n\nDue: Before our next meeting\n\n\nActivity 2: Explore Your Vault (In Class)\n\nOpen your Liaison_Vault in Obsidian\nCreate a file in 00_Inbox named First_Reflection.md\nWrite 3-5 sentences about what you hope to learn this semester\n\n\n\nActivity 3: Vault Navigation Tour (Self-Paced)\nNavigate through each folder and understand: - What goes in each folder - How folders connect to each other - Why the structure matters for your thinking\nNavigation: ← Back to Setup Guide · → Forward to Phase 2: Discovery",
     "crumbs": [
       "Phase 1: Orientation"
     ]
@@ -1209,12 +1395,153 @@
     ]
   },
   {
+    "objectID": "modules/03_dictionary/index.html",
+    "href": "modules/03_dictionary/index.html",
+    "title": "Phase 3: The Dictionary",
+    "section": "",
+    "text": "Define variables, constructs, and coding rules\nBuild a data dictionary/codebook for your project\nPilot-test definitions with a small sample",
+    "crumbs": [
+      "Phase 3: The Dictionary"
+    ]
+  },
+  {
+    "objectID": "modules/03_dictionary/index.html#what-you-will-do",
+    "href": "modules/03_dictionary/index.html#what-you-will-do",
+    "title": "Phase 3: The Dictionary",
+    "section": "",
+    "text": "Define variables, constructs, and coding rules\nBuild a data dictionary/codebook for your project\nPilot-test definitions with a small sample",
+    "crumbs": [
+      "Phase 3: The Dictionary"
+    ]
+  },
+  {
+    "objectID": "modules/03_dictionary/index.html#deliverables",
+    "href": "modules/03_dictionary/index.html#deliverables",
+    "title": "Phase 3: The Dictionary",
+    "section": "Deliverables",
+    "text": "Deliverables\n\nData dictionary v1 with variable names, types, allowed values, and examples\nCoding decision log (edge cases, clarifications)\nPilot results summary + changes you made",
+    "crumbs": [
+      "Phase 3: The Dictionary"
+    ]
+  },
+  {
+    "objectID": "modules/03_dictionary/index.html#milestones",
+    "href": "modules/03_dictionary/index.html#milestones",
+    "title": "Phase 3: The Dictionary",
+    "section": "Milestones",
+    "text": "Milestones\n\nWeek 6: Draft variable list\nWeek 7: Pilot coding on 10–20 items\nWeek 8: Submit revised data dictionary",
+    "crumbs": [
+      "Phase 3: The Dictionary"
+    ]
+  },
+  {
+    "objectID": "modules/03_dictionary/index.html#activities",
+    "href": "modules/03_dictionary/index.html#activities",
+    "title": "Phase 3: The Dictionary",
+    "section": "Activities",
+    "text": "Activities\n\nCopy the Data Dictionary Template from 99_Templates/Data_Dictionary_Template.md\nRun a short inter-coder reliability check (pair with a peer if possible)\nRecord ambiguities and resolve them in the decision log",
+    "crumbs": [
+      "Phase 3: The Dictionary"
+    ]
+  },
+  {
+    "objectID": "modules/03_dictionary/index.html#templates-links",
+    "href": "modules/03_dictionary/index.html#templates-links",
+    "title": "Phase 3: The Dictionary",
+    "section": "Templates & Links",
+    "text": "Templates & Links\n\nData Dictionary Template: 99_Templates/Data_Dictionary_Template.md\nJournal reflections: 99_Templates/Weekly_Journal_Template.md\nStore drafts in 03_Project/02_Codebook/",
+    "crumbs": [
+      "Phase 3: The Dictionary"
+    ]
+  },
+  {
+    "objectID": "modules/03_dictionary/index.html#next-steps",
+    "href": "modules/03_dictionary/index.html#next-steps",
+    "title": "Phase 3: The Dictionary",
+    "section": "Next Steps",
+    "text": "Next Steps\n\n→ Move to Phase 4: Execution once your dictionary is stable\n\nNavigation: ← Back to Phase 2: Discovery · → Forward to Phase 4: Execution",
+    "crumbs": [
+      "Phase 3: The Dictionary"
+    ]
+  },
+  {
+    "objectID": "modules/05_delivery/index.html",
+    "href": "modules/05_delivery/index.html",
+    "title": "Phase 5: Delivery",
+    "section": "",
+    "text": "Turn analysis into stories, decks, or reports for stakeholders\nTailor insights to non-technical audiences\nReflect on impact and next iterations",
+    "crumbs": [
+      "Phase 5: Delivery"
+    ]
+  },
+  {
+    "objectID": "modules/05_delivery/index.html#what-you-will-do",
+    "href": "modules/05_delivery/index.html#what-you-will-do",
+    "title": "Phase 5: Delivery",
+    "section": "",
+    "text": "Turn analysis into stories, decks, or reports for stakeholders\nTailor insights to non-technical audiences\nReflect on impact and next iterations",
+    "crumbs": [
+      "Phase 5: Delivery"
+    ]
+  },
+  {
+    "objectID": "modules/05_delivery/index.html#deliverables",
+    "href": "modules/05_delivery/index.html#deliverables",
+    "title": "Phase 5: Delivery",
+    "section": "Deliverables",
+    "text": "Deliverables\n\nSlide deck or one-page brief with key findings\nVisuals packaged for sharing (PNG/PDF)\nReflection on lessons learned and future work",
+    "crumbs": [
+      "Phase 5: Delivery"
+    ]
+  },
+  {
+    "objectID": "modules/05_delivery/index.html#milestones",
+    "href": "modules/05_delivery/index.html#milestones",
+    "title": "Phase 5: Delivery",
+    "section": "Milestones",
+    "text": "Milestones\n\nWeek 12: Draft narrative outline\nWeek 13: Slide/brief draft with visuals\nWeek 14: Final presentation + retrospective",
+    "crumbs": [
+      "Phase 5: Delivery"
+    ]
+  },
+  {
+    "objectID": "modules/05_delivery/index.html#activities",
+    "href": "modules/05_delivery/index.html#activities",
+    "title": "Phase 5: Delivery",
+    "section": "Activities",
+    "text": "Activities\n\nTranslate stats into plain language takeaways\nAdd a “So what?” section for each finding\nRehearse with a peer and capture feedback in your journal",
+    "crumbs": [
+      "Phase 5: Delivery"
+    ]
+  },
+  {
+    "objectID": "modules/05_delivery/index.html#templates-links",
+    "href": "modules/05_delivery/index.html#templates-links",
+    "title": "Phase 5: Delivery",
+    "section": "Templates & Links",
+    "text": "Templates & Links\n\nJournal reflections: 99_Templates/Weekly_Journal_Template.md\nStore decks/briefs in 03_Project/04_Drafts/",
+    "crumbs": [
+      "Phase 5: Delivery"
+    ]
+  },
+  {
+    "objectID": "modules/05_delivery/index.html#next-steps",
+    "href": "modules/05_delivery/index.html#next-steps",
+    "title": "Phase 5: Delivery",
+    "section": "Next Steps",
+    "text": "Next Steps\n\nCelebrate, then archive your project materials in the vault for future reference\n\nNavigation: ← Back to Phase 4: Execution",
+    "crumbs": [
+      "Phase 5: Delivery"
+    ]
+  },
+  {
     "objectID": "resources/index.html",
     "href": "resources/index.html",
     "title": "Resources & Downloads",
     "section": "",
-    "text": "Your complete knowledge management system for the Liaison Program. This vault includes:\n\n00_Inbox: Quick capture area for notes and ideas\n01_Journal: Weekly reflection templates (Connector/Troubleshooter/Critic)\n02_Literature: Centralized space for reading notes and citations\n03_Project: Active research work with codebooks and data organization\n04_Resources: Attachment storage for images, PDFs, and media\n99_Templates: Ready-to-use templates for assignments and documentation\n\n📥 Download Liaison_Vault.zip - Extract this to get started immediately.",
+    "text": "Your complete knowledge management system for the Liaison Program. This vault includes:\n\n00_Inbox: Quick capture area for notes and ideas\n01_Journal: Weekly reflection templates (Connector/Troubleshooter/Critic)\n02_Literature: Centralized space for reading notes and citations\n03_Project: Active research work with codebooks and data organization\n04_Resources: Attachment storage for images, PDFs, and media\n99_Templates: Ready-to-use templates for assignments and documentation\n\n📥 Download Liaison_Vault.zip - Extract this to get started immediately.\n\n\n\n\nWeekly Journal Template\nData Dictionary Template\nVault orientation file",
     "crumbs": [
+      "Resources",
       "Resources & Downloads"
     ]
   },
@@ -1223,8 +1550,9 @@
     "href": "resources/index.html#essential-downloads",
     "title": "Resources & Downloads",
     "section": "",
-    "text": "Your complete knowledge management system for the Liaison Program. This vault includes:\n\n00_Inbox: Quick capture area for notes and ideas\n01_Journal: Weekly reflection templates (Connector/Troubleshooter/Critic)\n02_Literature: Centralized space for reading notes and citations\n03_Project: Active research work with codebooks and data organization\n04_Resources: Attachment storage for images, PDFs, and media\n99_Templates: Ready-to-use templates for assignments and documentation\n\n📥 Download Liaison_Vault.zip - Extract this to get started immediately.",
+    "text": "Your complete knowledge management system for the Liaison Program. This vault includes:\n\n00_Inbox: Quick capture area for notes and ideas\n01_Journal: Weekly reflection templates (Connector/Troubleshooter/Critic)\n02_Literature: Centralized space for reading notes and citations\n03_Project: Active research work with codebooks and data organization\n04_Resources: Attachment storage for images, PDFs, and media\n99_Templates: Ready-to-use templates for assignments and documentation\n\n📥 Download Liaison_Vault.zip - Extract this to get started immediately.\n\n\n\n\nWeekly Journal Template\nData Dictionary Template\nVault orientation file",
     "crumbs": [
+      "Resources",
       "Resources & Downloads"
     ]
   },
@@ -1235,6 +1563,7 @@
     "section": "Software & Tools",
     "text": "Software & Tools\nBefore starting Phase 1, ensure you have these installed:\n\nRequired\n\nObsidian - FREE - Your note-taking workspace\nGit - FREE - Version control for your projects\nR & RStudio - FREE - Statistical analysis and data analysis\n\n📖 Full R & RStudio Setup Guide - Complete walkthrough for all operating systems\n\n\n\n\nRecommended\n\nPython 3.10+ - FREE - For data analysis and automation\nVS Code - FREE - Professional code editor\n\n📖 VS Code Setup Guide - Extensions, GitHub integration, and workflow setup",
     "crumbs": [
+      "Resources",
       "Resources & Downloads"
     ]
   },
@@ -1245,6 +1574,7 @@
     "section": "Documentation & Guides",
     "text": "Documentation & Guides\n\nQuick Start\n\nSetting up your Obsidian Vault - 5 minutes\nUnderstanding the Liaison Program Structure - 10 minutes\n\n\n\nTemplates Available in Your Vault\n\nWeekly Journal Template - For reflective practice with three thinking paths\nData Dictionary Template - For codebook creation and variable definition",
     "crumbs": [
+      "Resources",
       "Resources & Downloads"
     ]
   },
@@ -1255,6 +1585,7 @@
     "section": "Getting Help",
     "text": "Getting Help\n\nQuestions about the program? Check your module’s orientation page\nTechnical issues? Review the Software & Tools section above\nNeed to provide feedback? Use the Inbox in your Obsidian Vault\n\n\nLast updated: January 2026",
     "crumbs": [
+      "Resources",
       "Resources & Downloads"
     ]
   },
@@ -1263,77 +1594,110 @@
     "href": "resources/install-vscode.html",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "VS Code is a professional code editor that makes working with data science, web development, and automation projects more efficient. This guide covers installation and recommended setup for the course.\n\n\nVisual Studio Code (VS Code) is a lightweight but powerful code editor that supports: - Multiple programming languages (Python, JavaScript, R, and more) - Git/GitHub integration for version control - Extensions for enhanced functionality - Integrated terminal for running commands\n\n\n\n\n\n\n\n\nGo to VS Code Download\nClick “Download for Windows”\nRun the installer (.exe file)\nFollow the setup wizard:\n\nAccept the license agreement\nChoose installation location (default is fine)\nImportant: Check “Add to PATH” (allows opening folders from terminal)\nCheck “Register Code as an editor…” (optional but useful)\n\nClick Install and wait for completion (2-3 minutes)\n\n\n\n\n\nSearch for “Visual Studio Code” in Windows Start menu\nOr open a terminal and type: code\n\n\n\n\n\n\n\n\n\nGo to VS Code Download\nClick “Download for Mac”\n\nChoose Intel if you have an older Mac\nChoose Apple Silicon if you have an M1/M2/M3 chip\n\nOpen the downloaded .zip file\nDrag Visual Studio Code to the Applications folder\nInstallation is instant!\n\n\n\n\n\nFind in Applications folder, or\nUse Spotlight search: Press Cmd+Space, type “Visual Studio Code”\nOr from terminal: code (see setup note below)\n\nTerminal Setup (Optional but Recommended)\nTo use code command from terminal: 1. Open VS Code 2. Press Cmd+Shift+P to open Command Palette 3. Type: code 4. Select “Shell Command: Install ‘code’ command in PATH”\n\n\n\n\n\n\n\nOption A: Using apt (recommended)\nsudo apt update\nsudo apt install software-properties-common apt-transport-https wget\nwget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -\nsudo add-apt-repository \"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main\"\nsudo apt update\nsudo apt install code\nOption B: Direct download 1. Go to VS Code Download 2. Download the .deb file for Linux 3. Install: sudo dpkg -i code_*.deb\n\n\n\ncode\n\n\n\n\n\n\nExtensions add functionality to VS Code. Install these for maximum productivity:\n\n\n\nOpen VS Code\nClick the Extensions icon (square icon on left sidebar)\nSearch for each extension below and click Install\n\n\n\n\n\n\n\n\n\n\n\n\nExtension\nPublisher\nPurpose\n\n\n\n\nPython\nMicrosoft\nPython language support, debugging, linting\n\n\nPylance\nMicrosoft\nAdvanced Python type checking and IntelliSense\n\n\nGitHub Copilot\nGitHub\nAI-powered code suggestions (requires GitHub account)\n\n\nGitLens\nGitKraken\nEnhanced Git integration and history\n\n\nGit Graph\nmhutchie\nVisual Git branch viewer\n\n\nMarkdown All in One\nYu Zhang\nBetter Markdown support\n\n\nQuarto\nQuarto\nQuarto document support\n\n\nThunder Client\nRanga Vikram\nREST API testing\n\n\nRemote - SSH\nMicrosoft\nConnect to remote servers\n\n\nError Lens\nAlexander\nShow errors inline\n\n\nPrettier\nPrettier\nCode formatter\n\n\n\n\n\n\n\n\n\n\n\n\n\nClick the Source Control icon (left sidebar) or press Ctrl+Shift+G\nClick “Initialize Repository” (if new folder) or “Open Folder” (if existing)\nVS Code will prompt for GitHub authentication\nClick “Allow” when asked to sign in with GitHub\n\n\n\n\nOpen Terminal in VS Code (`Ctrl+`` or Terminal → New Terminal) and run:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@example.com\"\n\n\n\n\n\nPress Ctrl+Shift+P (Command Palette)\nSearch: Python: Select Interpreter\nChoose your Python installation (should auto-detect)\n\n\n\n\nPress Ctrl+, to open Settings, then adjust:\n\nFont Size: Increase to 13-14 for easier reading\nFormat on Save: Search “Format On Save”, check the box\nLine Numbers: Already enabled\nTheme: Preferences → Color Theme (try “Dark+” or “Light+”)\n\n\n\n\n\n\n\n\n\nFile → Open Folder (or Ctrl+K Ctrl+O)\nNavigate to your project folder\nClick “Select Folder”\n\n\n\n\n\nRight-click in Explorer (left side)\nSelect “New File”\nEnter filename (e.g., script.py, notes.md)\n\n\n\n\n\n\n\nOpen a .py file\nRight-click and select “Run Python File in Terminal”\n\nOr press Ctrl+F5\n\n\n\n\n\n\nOpen Terminal: `Ctrl+`` (backtick)\nRun commands: python script.py, git status, etc.\n\n\n\n\n\nBasic workflow:\n\nMake changes to your files\nView changes: Click Source Control icon (left sidebar)\nStage changes: Click + next to files (or Stage All)\nCommit: Type message in the input box, press Ctrl+Enter\nPush: Click the ⋯ menu, select “Push”\n\n\n\n\n\n\n\n\n\nAction\nWindows\nMac\n\n\n\n\nCommand Palette\nCtrl+Shift+P\nCmd+Shift+P\n\n\nOpen Terminal\nCtrl+`\nCmd+`\n\n\nNew File\nCtrl+N\nCmd+N\n\n\nOpen Folder\nCtrl+K Ctrl+O\nCmd+K Cmd+O\n\n\nSave\nCtrl+S\nCmd+S\n\n\nFormat Document\nShift+Alt+F\nShift+Option+F\n\n\nFind and Replace\nCtrl+H\nCmd+H\n\n\nGit: Commit\nCtrl+K Ctrl+C\nCmd+K Cmd+C\n\n\nSplit Editor\nCtrl+\\\nCmd+\\\n\n\nFocus Terminal\nCtrl+J\nCmd+J\n\n\n\n\n\n\n\n\n\n\nTry: Python: Select Interpreter (Ctrl+Shift+P) and choose the correct Python\nReinstall: Delete the Python extension and reinstall\n\n\n\n\n\nInstall Git\nRestart VS Code\nConfigure in VS Code: Ctrl+Shift+P → Git: Configure Git\n\n\n\n\n\nCheck internet connection\nTry restarting VS Code\nCheck VS Code version: Help → About (should be latest)\n\n\n\n\n\nKill the process: lsof -ti:8000 | xargs kill -9 (Mac/Linux)\nOr use different port in code: app.run(port=8001)\n\n\n\n\n\n\n\nUse Workspaces: Save your workspace setup for easy reloading\n\nFile → Save Workspace As\n\nCommand Palette is your friend: Ctrl+Shift+P and start typing\n\n&gt; Format Document\n&gt; Git: Clone\n&gt; Python: Create Terminal\n\nMulti-cursor editing: Hold Alt and click multiple lines to edit simultaneously\nSnippets: Start typing common code patterns and press Ctrl+Space for suggestions\nView on Side-by-Side: Click and drag files to arrange windows\n\n\n\n\n\n\n✅ Install VS Code\n✅ Install Python extension\n✅ Connect to GitHub\n✅ Create a test Python file and run it\n✅ Make a test Git commit\n\nYou’re ready to code! Need help? Check the course discussion board.\n\n\n\n\n\nOfficial Documentation: https://code.visualstudio.com/docs\nKeyboard Shortcuts: https://code.visualstudio.com/docs/getstarted/keybindings\nGitHub Integration: https://code.visualstudio.com/docs/sourcecontrol/github\nPython Support: https://code.visualstudio.com/docs/languages/python"
+    "text": "VS Code is a professional code editor that makes working with data science, web development, and automation projects more efficient. This guide covers installation and recommended setup for the course.\n\n\nVisual Studio Code (VS Code) is a lightweight but powerful code editor that supports: - Multiple programming languages (Python, JavaScript, R, and more) - Git/GitHub integration for version control - Extensions for enhanced functionality - Integrated terminal for running commands\n\n\n\n\n\n\n\n\nGo to VS Code Download\nClick “Download for Windows”\nRun the installer (.exe file)\nFollow the setup wizard:\n\nAccept the license agreement\nChoose installation location (default is fine)\nImportant: Check “Add to PATH” (allows opening folders from terminal)\nCheck “Register Code as an editor…” (optional but useful)\n\nClick Install and wait for completion (2-3 minutes)\n\n\n\n\n\nSearch for “Visual Studio Code” in Windows Start menu\nOr open a terminal and type: code\n\n\n\n\n\n\n\n\n\nGo to VS Code Download\nClick “Download for Mac”\n\nChoose Intel if you have an older Mac\nChoose Apple Silicon if you have an M1/M2/M3 chip\n\nOpen the downloaded .zip file\nDrag Visual Studio Code to the Applications folder\nInstallation is instant!\n\n\n\n\n\nFind in Applications folder, or\nUse Spotlight search: Press Cmd+Space, type “Visual Studio Code”\nOr from terminal: code (see setup note below)\n\nTerminal Setup (Optional but Recommended)\nTo use code command from terminal: 1. Open VS Code 2. Press Cmd+Shift+P to open Command Palette 3. Type: code 4. Select “Shell Command: Install ‘code’ command in PATH”\n\n\n\n\n\n\n\nOption A: Using apt (recommended)\nsudo apt update\nsudo apt install software-properties-common apt-transport-https wget\nwget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -\nsudo add-apt-repository \"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main\"\nsudo apt update\nsudo apt install code\nOption B: Direct download 1. Go to VS Code Download 2. Download the .deb file for Linux 3. Install: sudo dpkg -i code_*.deb\n\n\n\ncode\n\n\n\n\n\n\nExtensions add functionality to VS Code. Install these for maximum productivity:\n\n\n\nOpen VS Code\nClick the Extensions icon (square icon on left sidebar)\nSearch for each extension below and click Install\n\n\n\n\n\n\n\n\n\n\n\n\nExtension\nPublisher\nPurpose\n\n\n\n\nPython\nMicrosoft\nPython language support, debugging, linting\n\n\nPylance\nMicrosoft\nAdvanced Python type checking and IntelliSense\n\n\nGitHub Copilot\nGitHub\nAI-powered code suggestions (requires GitHub account)\n\n\nGitLens\nGitKraken\nEnhanced Git integration and history\n\n\nGit Graph\nmhutchie\nVisual Git branch viewer\n\n\nMarkdown All in One\nYu Zhang\nBetter Markdown support\n\n\nQuarto\nQuarto\nQuarto document support\n\n\nThunder Client\nRanga Vikram\nREST API testing\n\n\nRemote - SSH\nMicrosoft\nConnect to remote servers\n\n\nError Lens\nAlexander\nShow errors inline\n\n\nPrettier\nPrettier\nCode formatter\n\n\n\n\n\n\n\n\n\n\n\n\n\nClick the Source Control icon (left sidebar) or press Ctrl+Shift+G\nClick “Initialize Repository” (if new folder) or “Open Folder” (if existing)\nVS Code will prompt for GitHub authentication\nClick “Allow” when asked to sign in with GitHub\n\n\n\n\nOpen Terminal in VS Code (`Ctrl+`` or Terminal → New Terminal) and run:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@example.com\"\n\n\n\n\n\nPress Ctrl+Shift+P (Command Palette)\nSearch: Python: Select Interpreter\nChoose your Python installation (should auto-detect)\n\n\n\n\nPress Ctrl+, to open Settings, then adjust:\n\nFont Size: Increase to 13-14 for easier reading\nFormat on Save: Search “Format On Save”, check the box\nLine Numbers: Already enabled\nTheme: Preferences → Color Theme (try “Dark+” or “Light+”)\n\n\n\n\n\n\n\n\n\nFile → Open Folder (or Ctrl+K Ctrl+O)\nNavigate to your project folder\nClick “Select Folder”\n\n\n\n\n\nRight-click in Explorer (left side)\nSelect “New File”\nEnter filename (e.g., script.py, notes.md)\n\n\n\n\n\n\n\nOpen a .py file\nRight-click and select “Run Python File in Terminal”\n\nOr press Ctrl+F5\n\n\n\n\n\n\nOpen Terminal: `Ctrl+`` (backtick)\nRun commands: python script.py, git status, etc.\n\n\n\n\n\nBasic workflow:\n\nMake changes to your files\nView changes: Click Source Control icon (left sidebar)\nStage changes: Click + next to files (or Stage All)\nCommit: Type message in the input box, press Ctrl+Enter\nPush: Click the ⋯ menu, select “Push”\n\n\n\n\n\n\n\n\n\nAction\nWindows\nMac\n\n\n\n\nCommand Palette\nCtrl+Shift+P\nCmd+Shift+P\n\n\nOpen Terminal\nCtrl+`\nCmd+`\n\n\nNew File\nCtrl+N\nCmd+N\n\n\nOpen Folder\nCtrl+K Ctrl+O\nCmd+K Cmd+O\n\n\nSave\nCtrl+S\nCmd+S\n\n\nFormat Document\nShift+Alt+F\nShift+Option+F\n\n\nFind and Replace\nCtrl+H\nCmd+H\n\n\nGit: Commit\nCtrl+K Ctrl+C\nCmd+K Cmd+C\n\n\nSplit Editor\nCtrl+\\\nCmd+\\\n\n\nFocus Terminal\nCtrl+J\nCmd+J\n\n\n\n\n\n\n\n\n\n\nTry: Python: Select Interpreter (Ctrl+Shift+P) and choose the correct Python\nReinstall: Delete the Python extension and reinstall\n\n\n\n\n\nInstall Git\nRestart VS Code\nConfigure in VS Code: Ctrl+Shift+P → Git: Configure Git\n\n\n\n\n\nCheck internet connection\nTry restarting VS Code\nCheck VS Code version: Help → About (should be latest)\n\n\n\n\n\nKill the process: lsof -ti:8000 | xargs kill -9 (Mac/Linux)\nOr use different port in code: app.run(port=8001)\n\n\n\n\n\n\n\nUse Workspaces: Save your workspace setup for easy reloading\n\nFile → Save Workspace As\n\nCommand Palette is your friend: Ctrl+Shift+P and start typing\n\n&gt; Format Document\n&gt; Git: Clone\n&gt; Python: Create Terminal\n\nMulti-cursor editing: Hold Alt and click multiple lines to edit simultaneously\nSnippets: Start typing common code patterns and press Ctrl+Space for suggestions\nView on Side-by-Side: Click and drag files to arrange windows\n\n\n\n\n\n\n✅ Install VS Code\n✅ Install Python extension\n✅ Connect to GitHub\n✅ Create a test Python file and run it\n✅ Make a test Git commit\n\nYou’re ready to code! Need help? Check the course discussion board.\n\n\n\n\n\nOfficial Documentation: https://code.visualstudio.com/docs\nKeyboard Shortcuts: https://code.visualstudio.com/docs/getstarted/keybindings\nGitHub Integration: https://code.visualstudio.com/docs/sourcecontrol/github\nPython Support: https://code.visualstudio.com/docs/languages/python",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#what-youre-installing",
     "href": "resources/install-vscode.html#what-youre-installing",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "Visual Studio Code (VS Code) is a lightweight but powerful code editor that supports: - Multiple programming languages (Python, JavaScript, R, and more) - Git/GitHub integration for version control - Extensions for enhanced functionality - Integrated terminal for running commands"
+    "text": "Visual Studio Code (VS Code) is a lightweight but powerful code editor that supports: - Multiple programming languages (Python, JavaScript, R, and more) - Git/GitHub integration for version control - Extensions for enhanced functionality - Integrated terminal for running commands",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#installation-by-operating-system",
     "href": "resources/install-vscode.html#installation-by-operating-system",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "Go to VS Code Download\nClick “Download for Windows”\nRun the installer (.exe file)\nFollow the setup wizard:\n\nAccept the license agreement\nChoose installation location (default is fine)\nImportant: Check “Add to PATH” (allows opening folders from terminal)\nCheck “Register Code as an editor…” (optional but useful)\n\nClick Install and wait for completion (2-3 minutes)\n\n\n\n\n\nSearch for “Visual Studio Code” in Windows Start menu\nOr open a terminal and type: code\n\n\n\n\n\n\n\n\n\nGo to VS Code Download\nClick “Download for Mac”\n\nChoose Intel if you have an older Mac\nChoose Apple Silicon if you have an M1/M2/M3 chip\n\nOpen the downloaded .zip file\nDrag Visual Studio Code to the Applications folder\nInstallation is instant!\n\n\n\n\n\nFind in Applications folder, or\nUse Spotlight search: Press Cmd+Space, type “Visual Studio Code”\nOr from terminal: code (see setup note below)\n\nTerminal Setup (Optional but Recommended)\nTo use code command from terminal: 1. Open VS Code 2. Press Cmd+Shift+P to open Command Palette 3. Type: code 4. Select “Shell Command: Install ‘code’ command in PATH”\n\n\n\n\n\n\n\nOption A: Using apt (recommended)\nsudo apt update\nsudo apt install software-properties-common apt-transport-https wget\nwget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -\nsudo add-apt-repository \"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main\"\nsudo apt update\nsudo apt install code\nOption B: Direct download 1. Go to VS Code Download 2. Download the .deb file for Linux 3. Install: sudo dpkg -i code_*.deb\n\n\n\ncode"
+    "text": "Go to VS Code Download\nClick “Download for Windows”\nRun the installer (.exe file)\nFollow the setup wizard:\n\nAccept the license agreement\nChoose installation location (default is fine)\nImportant: Check “Add to PATH” (allows opening folders from terminal)\nCheck “Register Code as an editor…” (optional but useful)\n\nClick Install and wait for completion (2-3 minutes)\n\n\n\n\n\nSearch for “Visual Studio Code” in Windows Start menu\nOr open a terminal and type: code\n\n\n\n\n\n\n\n\n\nGo to VS Code Download\nClick “Download for Mac”\n\nChoose Intel if you have an older Mac\nChoose Apple Silicon if you have an M1/M2/M3 chip\n\nOpen the downloaded .zip file\nDrag Visual Studio Code to the Applications folder\nInstallation is instant!\n\n\n\n\n\nFind in Applications folder, or\nUse Spotlight search: Press Cmd+Space, type “Visual Studio Code”\nOr from terminal: code (see setup note below)\n\nTerminal Setup (Optional but Recommended)\nTo use code command from terminal: 1. Open VS Code 2. Press Cmd+Shift+P to open Command Palette 3. Type: code 4. Select “Shell Command: Install ‘code’ command in PATH”\n\n\n\n\n\n\n\nOption A: Using apt (recommended)\nsudo apt update\nsudo apt install software-properties-common apt-transport-https wget\nwget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -\nsudo add-apt-repository \"deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main\"\nsudo apt update\nsudo apt install code\nOption B: Direct download 1. Go to VS Code Download 2. Download the .deb file for Linux 3. Install: sudo dpkg -i code_*.deb\n\n\n\ncode",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#essential-extensions-for-the-course",
     "href": "resources/install-vscode.html#essential-extensions-for-the-course",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "Extensions add functionality to VS Code. Install these for maximum productivity:\n\n\n\nOpen VS Code\nClick the Extensions icon (square icon on left sidebar)\nSearch for each extension below and click Install\n\n\n\n\n\n\n\n\n\n\n\n\nExtension\nPublisher\nPurpose\n\n\n\n\nPython\nMicrosoft\nPython language support, debugging, linting\n\n\nPylance\nMicrosoft\nAdvanced Python type checking and IntelliSense\n\n\nGitHub Copilot\nGitHub\nAI-powered code suggestions (requires GitHub account)\n\n\nGitLens\nGitKraken\nEnhanced Git integration and history\n\n\nGit Graph\nmhutchie\nVisual Git branch viewer\n\n\nMarkdown All in One\nYu Zhang\nBetter Markdown support\n\n\nQuarto\nQuarto\nQuarto document support\n\n\nThunder Client\nRanga Vikram\nREST API testing\n\n\nRemote - SSH\nMicrosoft\nConnect to remote servers\n\n\nError Lens\nAlexander\nShow errors inline\n\n\nPrettier\nPrettier\nCode formatter"
+    "text": "Extensions add functionality to VS Code. Install these for maximum productivity:\n\n\n\nOpen VS Code\nClick the Extensions icon (square icon on left sidebar)\nSearch for each extension below and click Install\n\n\n\n\n\n\n\n\n\n\n\n\nExtension\nPublisher\nPurpose\n\n\n\n\nPython\nMicrosoft\nPython language support, debugging, linting\n\n\nPylance\nMicrosoft\nAdvanced Python type checking and IntelliSense\n\n\nGitHub Copilot\nGitHub\nAI-powered code suggestions (requires GitHub account)\n\n\nGitLens\nGitKraken\nEnhanced Git integration and history\n\n\nGit Graph\nmhutchie\nVisual Git branch viewer\n\n\nMarkdown All in One\nYu Zhang\nBetter Markdown support\n\n\nQuarto\nQuarto\nQuarto document support\n\n\nThunder Client\nRanga Vikram\nREST API testing\n\n\nRemote - SSH\nMicrosoft\nConnect to remote servers\n\n\nError Lens\nAlexander\nShow errors inline\n\n\nPrettier\nPrettier\nCode formatter",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#essential-configuration",
     "href": "resources/install-vscode.html#essential-configuration",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "Click the Source Control icon (left sidebar) or press Ctrl+Shift+G\nClick “Initialize Repository” (if new folder) or “Open Folder” (if existing)\nVS Code will prompt for GitHub authentication\nClick “Allow” when asked to sign in with GitHub\n\n\n\n\nOpen Terminal in VS Code (`Ctrl+`` or Terminal → New Terminal) and run:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@example.com\"\n\n\n\n\n\nPress Ctrl+Shift+P (Command Palette)\nSearch: Python: Select Interpreter\nChoose your Python installation (should auto-detect)\n\n\n\n\nPress Ctrl+, to open Settings, then adjust:\n\nFont Size: Increase to 13-14 for easier reading\nFormat on Save: Search “Format On Save”, check the box\nLine Numbers: Already enabled\nTheme: Preferences → Color Theme (try “Dark+” or “Light+”)"
+    "text": "Click the Source Control icon (left sidebar) or press Ctrl+Shift+G\nClick “Initialize Repository” (if new folder) or “Open Folder” (if existing)\nVS Code will prompt for GitHub authentication\nClick “Allow” when asked to sign in with GitHub\n\n\n\n\nOpen Terminal in VS Code (`Ctrl+`` or Terminal → New Terminal) and run:\ngit config --global user.name \"Your Name\"\ngit config --global user.email \"your.email@example.com\"\n\n\n\n\n\nPress Ctrl+Shift+P (Command Palette)\nSearch: Python: Select Interpreter\nChoose your Python installation (should auto-detect)\n\n\n\n\nPress Ctrl+, to open Settings, then adjust:\n\nFont Size: Increase to 13-14 for easier reading\nFormat on Save: Search “Format On Save”, check the box\nLine Numbers: Already enabled\nTheme: Preferences → Color Theme (try “Dark+” or “Light+”)",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#basic-vs-code-workflow",
     "href": "resources/install-vscode.html#basic-vs-code-workflow",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "File → Open Folder (or Ctrl+K Ctrl+O)\nNavigate to your project folder\nClick “Select Folder”\n\n\n\n\n\nRight-click in Explorer (left side)\nSelect “New File”\nEnter filename (e.g., script.py, notes.md)\n\n\n\n\n\n\n\nOpen a .py file\nRight-click and select “Run Python File in Terminal”\n\nOr press Ctrl+F5\n\n\n\n\n\n\nOpen Terminal: `Ctrl+`` (backtick)\nRun commands: python script.py, git status, etc.\n\n\n\n\n\nBasic workflow:\n\nMake changes to your files\nView changes: Click Source Control icon (left sidebar)\nStage changes: Click + next to files (or Stage All)\nCommit: Type message in the input box, press Ctrl+Enter\nPush: Click the ⋯ menu, select “Push”"
+    "text": "File → Open Folder (or Ctrl+K Ctrl+O)\nNavigate to your project folder\nClick “Select Folder”\n\n\n\n\n\nRight-click in Explorer (left side)\nSelect “New File”\nEnter filename (e.g., script.py, notes.md)\n\n\n\n\n\n\n\nOpen a .py file\nRight-click and select “Run Python File in Terminal”\n\nOr press Ctrl+F5\n\n\n\n\n\n\nOpen Terminal: `Ctrl+`` (backtick)\nRun commands: python script.py, git status, etc.\n\n\n\n\n\nBasic workflow:\n\nMake changes to your files\nView changes: Click Source Control icon (left sidebar)\nStage changes: Click + next to files (or Stage All)\nCommit: Type message in the input box, press Ctrl+Enter\nPush: Click the ⋯ menu, select “Push”",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#keyboard-shortcuts-essential",
     "href": "resources/install-vscode.html#keyboard-shortcuts-essential",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "Action\nWindows\nMac\n\n\n\n\nCommand Palette\nCtrl+Shift+P\nCmd+Shift+P\n\n\nOpen Terminal\nCtrl+`\nCmd+`\n\n\nNew File\nCtrl+N\nCmd+N\n\n\nOpen Folder\nCtrl+K Ctrl+O\nCmd+K Cmd+O\n\n\nSave\nCtrl+S\nCmd+S\n\n\nFormat Document\nShift+Alt+F\nShift+Option+F\n\n\nFind and Replace\nCtrl+H\nCmd+H\n\n\nGit: Commit\nCtrl+K Ctrl+C\nCmd+K Cmd+C\n\n\nSplit Editor\nCtrl+\\\nCmd+\\\n\n\nFocus Terminal\nCtrl+J\nCmd+J"
+    "text": "Action\nWindows\nMac\n\n\n\n\nCommand Palette\nCtrl+Shift+P\nCmd+Shift+P\n\n\nOpen Terminal\nCtrl+`\nCmd+`\n\n\nNew File\nCtrl+N\nCmd+N\n\n\nOpen Folder\nCtrl+K Ctrl+O\nCmd+K Cmd+O\n\n\nSave\nCtrl+S\nCmd+S\n\n\nFormat Document\nShift+Alt+F\nShift+Option+F\n\n\nFind and Replace\nCtrl+H\nCmd+H\n\n\nGit: Commit\nCtrl+K Ctrl+C\nCmd+K Cmd+C\n\n\nSplit Editor\nCtrl+\\\nCmd+\\\n\n\nFocus Terminal\nCtrl+J\nCmd+J",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#troubleshooting",
     "href": "resources/install-vscode.html#troubleshooting",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "Try: Python: Select Interpreter (Ctrl+Shift+P) and choose the correct Python\nReinstall: Delete the Python extension and reinstall\n\n\n\n\n\nInstall Git\nRestart VS Code\nConfigure in VS Code: Ctrl+Shift+P → Git: Configure Git\n\n\n\n\n\nCheck internet connection\nTry restarting VS Code\nCheck VS Code version: Help → About (should be latest)\n\n\n\n\n\nKill the process: lsof -ti:8000 | xargs kill -9 (Mac/Linux)\nOr use different port in code: app.run(port=8001)"
+    "text": "Try: Python: Select Interpreter (Ctrl+Shift+P) and choose the correct Python\nReinstall: Delete the Python extension and reinstall\n\n\n\n\n\nInstall Git\nRestart VS Code\nConfigure in VS Code: Ctrl+Shift+P → Git: Configure Git\n\n\n\n\n\nCheck internet connection\nTry restarting VS Code\nCheck VS Code version: Help → About (should be latest)\n\n\n\n\n\nKill the process: lsof -ti:8000 | xargs kill -9 (Mac/Linux)\nOr use different port in code: app.run(port=8001)",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#pro-tips",
     "href": "resources/install-vscode.html#pro-tips",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "Use Workspaces: Save your workspace setup for easy reloading\n\nFile → Save Workspace As\n\nCommand Palette is your friend: Ctrl+Shift+P and start typing\n\n&gt; Format Document\n&gt; Git: Clone\n&gt; Python: Create Terminal\n\nMulti-cursor editing: Hold Alt and click multiple lines to edit simultaneously\nSnippets: Start typing common code patterns and press Ctrl+Space for suggestions\nView on Side-by-Side: Click and drag files to arrange windows"
+    "text": "Use Workspaces: Save your workspace setup for easy reloading\n\nFile → Save Workspace As\n\nCommand Palette is your friend: Ctrl+Shift+P and start typing\n\n&gt; Format Document\n&gt; Git: Clone\n&gt; Python: Create Terminal\n\nMulti-cursor editing: Hold Alt and click multiple lines to edit simultaneously\nSnippets: Start typing common code patterns and press Ctrl+Space for suggestions\nView on Side-by-Side: Click and drag files to arrange windows",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#next-steps",
     "href": "resources/install-vscode.html#next-steps",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "✅ Install VS Code\n✅ Install Python extension\n✅ Connect to GitHub\n✅ Create a test Python file and run it\n✅ Make a test Git commit\n\nYou’re ready to code! Need help? Check the course discussion board."
+    "text": "✅ Install VS Code\n✅ Install Python extension\n✅ Connect to GitHub\n✅ Create a test Python file and run it\n✅ Make a test Git commit\n\nYou’re ready to code! Need help? Check the course discussion board.",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "resources/install-vscode.html#resources",
     "href": "resources/install-vscode.html#resources",
     "title": "Setting Up VS Code",
     "section": "",
-    "text": "Official Documentation: https://code.visualstudio.com/docs\nKeyboard Shortcuts: https://code.visualstudio.com/docs/getstarted/keybindings\nGitHub Integration: https://code.visualstudio.com/docs/sourcecontrol/github\nPython Support: https://code.visualstudio.com/docs/languages/python"
+    "text": "Official Documentation: https://code.visualstudio.com/docs\nKeyboard Shortcuts: https://code.visualstudio.com/docs/getstarted/keybindings\nGitHub Integration: https://code.visualstudio.com/docs/sourcecontrol/github\nPython Support: https://code.visualstudio.com/docs/languages/python",
+    "crumbs": [
+      "Setting Up VS Code"
+    ]
   },
   {
     "objectID": "START_HERE.html",

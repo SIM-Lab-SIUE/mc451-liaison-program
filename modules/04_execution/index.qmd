@@ -1,0 +1,32 @@
+---
+title: "Phase 4: Execution"
+---
+
+## What You Will Do
+- Collect, clean, and analyze data using your approved plan
+- Track versions of datasets and scripts
+- Generate figures/tables that answer your research questions
+
+## Deliverables
+- Clean dataset (documented) + analysis notes
+- 2–3 core visualizations/tables with captions
+- Brief memo linking results to questions and caveats
+
+## Milestones
+- **Week 9:** Data collection complete
+- **Week 10:** Cleaning script + documented decisions
+- **Week 11:** First-pass results shared for feedback
+
+## Activities
+- Use `03_Project/03_Data/` for raw vs. clean data; keep a `README` of steps
+- Save analysis scripts in `03_Project/04_Drafts/` (R, Python, or Excel log)
+- Note any surprises or limitations in your journal
+
+## Templates & Links
+- Journal reflections: `99_Templates/Weekly_Journal_Template.md`
+- Data Dictionary stays your single source of truth—update if definitions shift
+
+## Next Steps
+- → Move to **Phase 5: Delivery** once you have stable findings and visuals
+
+**Navigation:** ← Back to [Phase 3: The Dictionary](../03_dictionary/index.qmd) · → Forward to [Phase 5: Delivery](../05_delivery/index.qmd)

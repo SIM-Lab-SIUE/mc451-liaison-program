@@ -33,6 +33,25 @@ For full course details including learning objectives, grading policies, assignm
 
 ---
 
+## At a Glance
+
+### Grading Breakdown (summary)
+- Participation and weekly journal reflections
+- Phase deliverables (Discovery, Dictionary, Execution)
+- Final presentation/brief in Phase 5
+
+### Weekly Rhythm
+- **Mon/Wed class:** activities, demos, peer feedback
+- **Weekly journal:** use `01_Journal` with the Weekly Journal Template
+- **Check-ins:** office hours or email; bring blockers early
+
+### Key Policies
+- Come prepared with vault set up by Week 2
+- Late work: see full PDF for details and extensions
+- Academic integrity: cite data sources and collaborators
+
+---
+
 ## Quick Reference
 
 ### Course Structure: Five Phases

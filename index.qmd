@@ -17,19 +17,13 @@ This program is designed to equip you with the research methodologies, tools, an
 
 ## Quick Start
 
-Ready to begin your journey? Start with our setup guide to configure your workspace and understand the program structure.
+Step 1 — Configure your workspace (10–15 minutes)
+[Start Here: Setup Guide](setup.qmd){.btn .btn-primary .btn-lg}
 
-[**→ Get Started**](setup.qmd){.btn .btn-primary .btn-lg}
+Step 2 — Grab your vault (2 minutes)
+[Download Liaison_Vault.zip](resources/Liaison_Vault.zip){.btn .btn-secondary .btn-lg}
 
----
-
-## Essential Resources
-
-Download the **Liaison Obsidian Vault** — your complete knowledge management system with templates, structure, and documentation to succeed in this program.
-
-[**→ Download Liaison_Vault.zip**](resources/Liaison_Vault.zip){.btn .btn-secondary .btn-lg}
-
-Or visit the [Resources page](resources/) to see what's included and other helpful downloads.
+Want the full menu? Visit the [Resources page](resources/) for all downloads and guides.
 
 ---
 

@@ -7,15 +7,40 @@ website:
   title: "MC Research Methods: The Liaison Program"
   navbar:
     background: primary
+    left:
+      - text: "Start Here"
+        href: setup.qmd
+      - text: "Syllabus"
+        href: syllabus.qmd
+      - text: "Phases"
+        menu:
+          - text: "Phase 1: Orientation"
+            href: modules/01_orientation/index.qmd
+          - text: "Phase 2: Discovery"
+            href: modules/02_discovery/index.qmd
+          - text: "Phase 3: The Dictionary"
+            href: modules/03_dictionary/index.qmd
+          - text: "Phase 4: Execution"
+            href: modules/04_execution/index.qmd
+          - text: "Phase 5: Delivery"
+            href: modules/05_delivery/index.qmd
+      - text: "Resources"
+        href: resources/index.qmd
+      - text: "Vault Download"
+        href: resources/Liaison_Vault.zip
+      - text: "Contact"
+        href: about.qmd
   sidebar:
-    - title: "The Mission"
+    - title: "Start Here"
       contents:
         - index.qmd
-        - about.qmd
+        - setup.qmd
         - syllabus.qmd
-    - title: "Getting Started"
+    - title: "Tools & Accounts"
       contents:
         - github-setup.qmd
+        - resources/install-r-rstudio.qmd
+        - resources/install-vscode.qmd
     - title: "Phase 1: Orientation"
       contents:
         - modules/01_orientation/index.qmd
