@@ -8,27 +8,25 @@ website:
   navbar:
     background: primary
     left:
-      - text: "Start Here"
-        href: setup.qmd
+      - text: "Home"
+        href: index.qmd
       - text: "Syllabus"
         href: syllabus.qmd
       - text: "Phases"
         menu:
-          - text: "Phase 1: Orientation"
+          - text: "🧭 Phase 1: Orientation"
             href: modules/01_orientation/index.qmd
-          - text: "Phase 2: Discovery"
+          - text: "🔍 Phase 2: Discovery"
             href: modules/02_discovery/index.qmd
-          - text: "Phase 3: The Dictionary"
+          - text: "📖 Phase 3: The Dictionary"
             href: modules/03_dictionary/index.qmd
-          - text: "Phase 4: Execution"
+          - text: "⚙️ Phase 4: Execution"
             href: modules/04_execution/index.qmd
-          - text: "Phase 5: Delivery"
+          - text: "🎯 Phase 5: Delivery"
             href: modules/05_delivery/index.qmd
       - text: "Resources"
         href: resources/index.qmd
-      - text: "Vault Download"
-        href: resources/Liaison_Vault.zip
-      - text: "Contact"
+      - text: "About"
         href: about.qmd
   sidebar:
     - title: "Start Here"
@@ -67,3 +65,4 @@ format:
     theme: cosmo
     toc: true
     code-fold: false
+    css: custom-styling.scss

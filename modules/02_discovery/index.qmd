@@ -1,33 +1,187 @@
 ---
-title: "Phase 2: Discovery"
+title: "🔍 Phase 2: Discovery"
 ---
 
-## What You Will Do
-- Frame research questions and hypotheses
-- Map stakeholders and data sources
-- Plan data collection with ethics in mind
+:::{.phase-header}
+# Phase 2: Discovery
 
-## Deliverables
-- Problem statement + research questions draft
-- Stakeholder/data source map (one page)
-- Mini proposal outlining methods and timeline
+**Duration:** Weeks 3-4 | **Time Commitment:** ~6 hours  
+Learn research methodologies and frame your research questions
+:::
 
-## Milestones
-- **Week 3:** Submit problem statement for feedback
-- **Week 4:** Share stakeholder map in class
-- **Week 5:** Turn in mini proposal
+---
 
-## Activities
-- Compare 2–3 example research questions; rewrite them with clearer variables
-- Sketch a data collection plan (surveys, scraping, observations)
-- Identify risks and mitigations (privacy, sampling, bias)
+## Learning Objectives
 
-## Templates & Links
-- Use the Weekly Journal Template in `99_Templates/Weekly_Journal_Template.md` for reflections
-- Start your data source notes in `02_Literature/`
-- Capture meeting notes in `00_Inbox/` then file them into `03_Project/`
+By the end of Phase 2, you will:
 
-## Next Steps
-- → Move to **Phase 3: The Dictionary** after your mini proposal is accepted
+:::{.learning-objectives}
+- ✅ Frame clear research questions and hypotheses
+- ✅ Map stakeholders and identify data sources
+- ✅ Plan ethical data collection approaches
+- ✅ Evaluate existing research and prior work
+- ✅ Identify potential risks and mitigations
+- ✅ Present a mini research proposal
+:::
 
-**Navigation:** ← Back to [Phase 1: Orientation](../01_orientation/index.qmd) · → Forward to [Phase 3: The Dictionary](../03_dictionary/index.qmd)
+---
+
+## What You'll Do
+
+In Phase 2, you'll move from understanding the liaison role to asking **good questions**:
+
+**Frame Research Questions** — Move from vague ideas to clear, testable questions with defined variables
+
+**Map Stakeholders & Sources** — Understand who needs what information and where data lives
+
+**Plan Data Collection** — Design ethical approaches (surveys, interviews, data scraping, observations)
+
+**Identify Risks** — Consider privacy, bias, sampling, and other potential challenges
+
+---
+
+## Phase 2 Content & Activities
+
+### Activity 1: Understanding Good Research Questions (Week 3)
+
+Work through these steps:
+
+1. **Read & Compare** - Review 2-3 example research questions from your field
+2. **Critique** - What makes them clear or vague? What variables are defined?
+3. **Rewrite** - Take a vague question and rewrite it with clear variables
+
+**Example:**
+- ❌ *Vague:* "How do people use social media?"
+- ✅ *Clear:* "What communication patterns distinguish active vs. passive users on TikTok among ages 18-25?"
+
+**Submit:** Your rewritten research questions (2-3 examples) in `03_Project/01_Prospectus/`
+
+### Activity 2: Stakeholder & Data Source Mapping (Week 4)
+
+Create a one-page visual map showing:
+
+- **Who cares?** - Primary stakeholders (who needs your findings?)
+- **What's available?** - Existing data sources (surveys, databases, interviews, archives)
+- **What's missing?** - Gaps in current data
+- **How will you collect?** - Your planned methods
+
+**Submit:** A visual map (diagram, table, or infographic) in `03_Project/01_Prospectus/`
+
+### Activity 3: Mini Research Proposal (Week 5)
+
+Write a 2-3 page mini proposal including:
+
+1. **Problem Statement** - Why does this question matter?
+2. **Research Questions** - What specifically will you investigate?
+3. **Methods Overview** - How will you collect data?
+4. **Timeline** - When will each step happen?
+5. **Risks & Mitigations** - What could go wrong and how will you address it?
+
+**Submit:** `03_Project/01_Prospectus/Mini_Proposal.md`
+
+---
+
+## Key Concepts: The Research Mindset
+
+### Variables (The Building Blocks)
+
+**Independent Variable** - What you *control* or *predict from*  
+**Dependent Variable** - What you *measure* or *predict to*  
+**Control Variables** - What you *hold constant*
+
+### Research Designs
+
+- **Exploratory** - What's happening? (descriptive)
+- **Explanatory** - Why is it happening? (causal)
+- **Evaluative** - Is it working? (assessment)
+
+### Ethical Considerations
+
+- **Informed Consent** - Did people agree to participate?
+- **Privacy & Confidentiality** - How will you protect personal data?
+- **Fairness & Bias** - Are your methods equitable?
+- **Harm Reduction** - Could participation cause distress?
+
+---
+
+## Resources for Phase 2
+
+:::{.resource-card}
+
+#### 📋 Weekly Journal Template
+<span class="resource-badge time">5 min</span>
+
+Reflect on your research questions and process using one of three thinking paths: Connector, Troubleshooter, or Critic.
+
+[View Template](../../Liaison_Vault/99_Templates/Weekly_Journal_Template.md){.btn .btn-sm .btn-secondary}
+:::
+
+:::{.resource-card}
+
+#### 📚 Reading & Literature Review Tips
+<span class="resource-badge time">10-15 min</span>
+
+How to take effective research notes and organize them in your vault.
+
+*[Content to be added]*
+:::
+
+:::{.resource-card}
+
+#### 🔧 Research Methods Glossary
+<span class="resource-badge difficulty">Beginner</span>
+
+Quick definitions of common research terms (variables, sampling, validity, etc.)
+
+*[Content to be added]*
+:::
+
+---
+
+## What Success Looks Like
+
+By the end of Phase 2, you should have:
+
+:::{.deliverables}
+✅ **2-3 Clear Research Questions** - With defined independent/dependent variables  
+✅ **Stakeholder & Data Source Map** - One-page visual showing who cares and what data exists  
+✅ **Mini Research Proposal** - 2-3 pages outlining problem, methods, timeline, risks  
+✅ **Week 3-5 Journal Entries** - Reflections on your research process  
+✅ **Ready for Phase 3** - Understanding your data landscape  
+:::
+
+---
+
+## Milestone Timeline
+
+| Week | Deliverable | Status |
+|------|---|---|
+| Week 3 | Research questions draft | Submit in prospectus folder |
+| Week 4 | Stakeholder/data map | One-page visual |
+| Week 5 | Mini proposal | 2-3 pages + class discussion |
+
+---
+
+## Next Phase
+
+Once you complete Phase 2:
+
+→ **[Phase 3: The Dictionary](../03_dictionary/index.qmd)** - Define your variables and create your codebook
+
+---
+
+## Need Help?
+
+- **Stuck on research questions?** Visit office hours or check the research methods glossary
+- **Data collection questions?** Talk to Dr. Leith about ethics and feasibility
+- **Proposal feedback?** Share a draft in `00_Inbox/` or email for comments
+
+---
+
+:::{.phase-navigation}
+← [Phase 1: Orientation](../01_orientation/index.qmd){.phase-nav-prev}
+
+<span class="phase-progress">Phase 2 of 5</span>
+
+[Phase 3: The Dictionary →](../03_dictionary/index.qmd){.phase-nav-next}
+:::
