@@ -38,6 +38,7 @@ website:
         - syllabus.qmd
     - title: "Tools & Accounts"
       contents:
+        - obsidian-setup.qmd
         - github-setup.qmd
         - resources/install-r-rstudio.qmd
         - resources/install-vscode.qmd
