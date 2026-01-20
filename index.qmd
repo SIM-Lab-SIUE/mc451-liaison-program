@@ -23,6 +23,9 @@ Step 1 — Configure your workspace (10–15 minutes)
 Step 2 — Grab your vault (2 minutes)
 [Download Liaison_Vault.zip](resources/Liaison_Vault.zip){.btn .btn-secondary .btn-lg}
 
+Optional — Textbook bundle (nice to have)
+[Download 05_Textbook.zip](05_Textbook.zip){.btn .btn-outline-secondary}
+
 Want the full menu? Visit the [Resources page](resources/) for all downloads and guides.
 
 ---

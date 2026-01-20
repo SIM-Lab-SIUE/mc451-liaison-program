@@ -17,6 +17,10 @@ Your complete knowledge management system for the Liaison Program. This vault in
 
 **[📥 Download Liaison_Vault.zip](Liaison_Vault.zip)** - Extract this to get started immediately.
 
+### Optional Textbook Package
+- **[📥 Download 05_Textbook.zip](../05_Textbook.zip)** - Supplemental textbook bundle; optional but handy for reference.
+- If you want it inside your vault, unzip and place the folder under `Liaison_Vault/05_Textbook/` (or keep it adjacent to the vault for quick access).
+
 ### Quick Links
 - [Weekly Journal Template](../Liaison_Vault/99_Templates/Weekly_Journal_Template.md)
 - [Data Dictionary Template](../Liaison_Vault/99_Templates/Data_Dictionary_Template.md)
