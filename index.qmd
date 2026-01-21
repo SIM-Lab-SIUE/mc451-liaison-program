@@ -62,6 +62,40 @@ Learn about your instructor, the SIM Lab, and course philosophy.
 
 ---
 
+## Tools & Setup Guides
+
+Get your essential tools configured:
+
+:::{.grid}
+
+::: {.g-col-12 .g-col-md-6}
+**📖 Obsidian Setup**  
+Complete guide to installing Obsidian and configuring your Liaison Vault.  
+[View Obsidian Guide](obsidian-setup.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-6}
+**🐙 GitHub Setup**  
+Create your account, set up Git, and learn version control basics.  
+[View GitHub Guide](github-setup.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-6}
+**📊 R & RStudio**  
+Install R and RStudio for statistical analysis and data visualization.  
+[View R/RStudio Guide](resources/install-r-rstudio.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-6}
+**💻 VS Code**  
+Set up Visual Studio Code for coding, markdown editing, and Git integration.  
+[View VS Code Guide](resources/install-vscode.qmd)
+:::
+
+:::
+
+---
+
 ## Your Role as a Communication Liaison
 
 As a **Communication Liaison**, you bridge the gap between:
@@ -95,6 +129,8 @@ Each phase builds on the previous one. **Start with Phase 1** in the sidebar or 
 **Instructor:** Dr. Alex P. Leith  
 **Meeting Times:** MW 15:00–16:15  
 **Office Hours:** MW 10:00–11:30 and 13:30–15:00 (or by appointment)
+
+[📄 View Full Syllabus](syllabus.qmd){.btn .btn-primary}
 
 :::{.callout-info}
 **Ready to dive in?** Start with the [Setup Guide](setup.qmd) — it only takes 15 minutes to configure your workspace and download your Liaison Vault.

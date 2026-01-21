@@ -98,8 +98,7 @@ Personal knowledge management system for your vault.
 <span class="resource-badge">Free</span>
 
 [Download Obsidian](https://obsidian.md/){.btn .btn-sm .btn-secondary}
-
-[Setup Guide](../obsidian-setup.qmd){.btn .btn-sm .btn-outline-secondary}
+[Setup Guide](../obsidian-setup.qmd){.btn .btn-sm .btn-primary}
 :::
 
 ::: {.card}
@@ -112,8 +111,7 @@ Version control for your projects and collaboration.
 <span class="resource-badge">Free</span>
 
 [Download Git](https://git-scm.com/){.btn .btn-sm .btn-secondary}
-
-[Setup Guide](../github-setup.qmd){.btn .btn-sm .btn-outline-secondary}
+[Setup Guide](../github-setup.qmd){.btn .btn-sm .btn-primary}
 :::
 
 ::: {.card}
@@ -126,8 +124,7 @@ Statistical computing and data analysis.
 <span class="resource-badge">Free</span>
 
 [Download RStudio](https://posit.co/download/rstudio-desktop/){.btn .btn-sm .btn-secondary}
-
-[Setup Guide](install-r-rstudio.qmd){.btn .btn-sm .btn-outline-secondary}
+[Setup Guide](install-r-rstudio.qmd){.btn .btn-sm .btn-primary}
 :::
 
 ::: {.card}
@@ -140,8 +137,7 @@ Professional code editor for Python, R, and more.
 <span class="resource-badge">Free</span>
 
 [Download VS Code](https://code.visualstudio.com/){.btn .btn-sm .btn-secondary}
-
-[Setup Guide](install-vscode.qmd){.btn .btn-sm .btn-outline-secondary}
+[Setup Guide](install-vscode.qmd){.btn .btn-sm .btn-primary}
 :::
 
 :::
