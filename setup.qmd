@@ -48,14 +48,14 @@ Once your vault is open in Obsidian:
 
 Your vault contains:
 
-| Folder | Purpose | Action |
-|--------|---------|--------|
-| **00_Inbox** | Quick notes & ideas | Capture thoughts here first |
-| **01_Journal** | Weekly reflections | Use the template to reflect each week |
-| **02_Literature** | Reading notes | Store all your research notes here |
-| **03_Project** | Active research work | Organize by prospectus, codebook, data, drafts |
-| **04_Resources** | Media & attachments | Images, PDFs, external files |
-| **99_Templates** | Reusable templates | Copy these to start assignments |
+| Folder | Purpose | What's Inside |
+|--------|---------|---|
+| **00_Inbox** | Quick notes & ideas | Capture rough thoughts and discussion notes here |
+| **01_Journal** | Weekly reflections | Sample journal entries showing the three thinking paths (Connector, Troubleshooter, Critic) |
+| **02_Literature** | Reading notes & course materials | Includes textbook chapters and citation templates |
+| **03_Project** | Active research work | Organized by prospectus, codebook, data, and drafts folders |
+| **04_Resources** | Media & attachments | Images, PDFs, external files, and course materials |
+| **99_Templates** | Reusable templates | Weekly journal template and data dictionary template to copy and customize |
 
 ---
 

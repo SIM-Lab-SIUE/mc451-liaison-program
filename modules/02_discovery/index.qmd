@@ -40,9 +40,21 @@ In Phase 2, you'll move from understanding the liaison role to asking **good que
 
 ---
 
+## Phase 2 Assignments & Activities
+
+### ⭐ FIRST: Complete the Week 03 Project Setup Assignment
+
+Before diving into research activities, ensure your vault is organized and ready for data.
+
+[→ Go to Week 03: Project Setup Assignment](week-03-project-setup.qmd){.btn .btn-primary}
+
+This assignment takes **10-15 minutes** and is worth **25 points**.
+
+---
+
 ## Phase 2 Content & Activities
 
-### Activity 1: Understanding Good Research Questions (Week 3)
+### Activity 1: Understanding Good Research Questions (Week 3-4)
 
 Work through these steps:
 
