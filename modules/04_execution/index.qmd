@@ -1,32 +1,292 @@
 ---
-title: "Phase 4: Execution"
+title: "⚙️ Phase 4: Execution"
 ---
 
-## What You Will Do
-- Collect, clean, and analyze data using your approved plan
-- Track versions of datasets and scripts
-- Generate figures/tables that answer your research questions
+:::{.phase-header}
+# Phase 4: Execution
 
-## Deliverables
-- Clean dataset (documented) + analysis notes
-- 2–3 core visualizations/tables with captions
-- Brief memo linking results to questions and caveats
+**Duration:** Weeks 8-10 | **Time Commitment:** ~10 hours  
+Collect, clean, and analyze your data
+:::
 
-## Milestones
-- **Week 9:** Data collection complete
-- **Week 10:** Cleaning script + documented decisions
-- **Week 11:** First-pass results shared for feedback
+---
 
-## Activities
-- Use `03_Project/03_Data/` for raw vs. clean data; keep a `README` of steps
-- Save analysis scripts in `03_Project/04_Drafts/` (R, Python, or Excel log)
-- Note any surprises or limitations in your journal
+## Learning Objectives
 
-## Templates & Links
-- Journal reflections: `99_Templates/Weekly_Journal_Template.md`
-- Data Dictionary stays your single source of truth—update if definitions shift
+By the end of Phase 4, you will:
+
+:::{.learning-objectives}
+- ✅ Collect data according to your research plan
+- ✅ Clean and verify data quality
+- ✅ Document all data transformation steps
+- ✅ Perform preliminary analysis
+- ✅ Generate visualizations and summary tables
+- ✅ Communicate findings and limitations
+:::
+
+---
+
+## What You'll Do
+
+Phase 4 is where you **execute your plan**:
+
+**Collect** - Gather data using your approved methods (surveys, interviews, scraping, etc.)  
+**Clean** - Verify quality, handle missing values, fix formatting  
+**Analyze** - Apply statistical or qualitative methods to answer your questions  
+**Visualize** - Create tables, charts, and figures that show your findings  
+**Document** - Track every decision you make so others (and you, later!) understand what you did
+
+---
+
+## Phase 4 Content & Activities
+
+### Activity 1: Data Collection (Week 8)
+
+Follow your approved data collection plan:
+
+1. **Collect data** - Surveys, interviews, archival data, API scraping, etc.
+2. **Track what's happening** - Keep notes in `00_Inbox/` of collection date, sample size, issues
+3. **Store raw data** - Save exactly as received in `03_Project/03_Data/raw/`
+4. **Document sources** - Who, when, where did this data come from?
+
+**Organize your data folder:**
+```
+03_Project/03_Data/
+├── raw/              # Exactly as received (don't modify!)
+├── clean/            # After cleaning + transformation
+├── README.md         # Overview of datasets + versions
+└── data_log.txt      # Timeline of what was collected when
+```
+
+### Activity 2: Data Cleaning (Week 9)
+
+Transform raw data into analysis-ready data:
+
+1. **Check quality** - Are there missing values? Duplicates? Odd formatting?
+2. **Fix issues** - Use R, Python, Excel, or whatever tool fits your data
+3. **Document every step** - Save cleaning script showing exactly what you changed
+4. **Create a log** - List decisions: "Removed 3 duplicate responses", "Standardized date format", etc.
+
+**Create:** `03_Project/03_Data/cleaning_script.[R|py|xlsx]` + `cleaning_log.md`
+
+**Cleaning Log Example:**
+```markdown
+## Data Cleaning Log
+
+**Raw Data:** survey_responses_raw.csv (127 rows)
+
+### Steps Taken:
+1. Removed 2 duplicate response IDs (#45, #103)
+2. Converted date_submitted from text to date format
+3. Filled missing age_group values (n=5) using median imputation
+4. Standardized text responses to lowercase
+5. Removed 1 response with >50% missing values
+
+**Result:** clean_data.csv (124 rows, 0 missing values)
+**Date:** 2024-01-15 | **Tool:** R 4.3.2 | **Done by:** [Your Name]
+```
+
+### Activity 3: Preliminary Analysis (Week 9-10)
+
+Apply your research methods:
+
+1. **Descriptive stats** - How many? What's the range? What's typical?
+2. **Inferential stats** (if applicable) - Test your hypotheses
+3. **Qualitative coding** (if applicable) - Find themes and patterns
+4. **Create visualizations** - 2-3 core figures/tables that directly answer your research questions
+
+**Save:** Analysis scripts in `03_Project/04_Drafts/`
+
+### Activity 4: Share First Results (Week 10)
+
+Get feedback before finalizing:
+
+1. **Create a short memo** - What you found, what it means, what's uncertain
+2. **Include visuals** - Share 2-3 key tables/charts
+3. **List limitations** - What could be affecting your results?
+4. **Share with Dr. Leith** - Email or submit for feedback
+
+**Template:**
+```markdown
+# Data Analysis Memo
+
+## Overview
+**Research Question:** [Your question]  
+**Sample Size:** [N]  
+**Analysis Date:** [Date]
+
+## Key Findings
+1. [Finding 1 with figure/table reference]
+2. [Finding 2 with figure/table reference]
+3. [Finding 3 with figure/table reference]
+
+## Interpretation
+[What do these findings mean? How do they answer your research question?]
+
+## Limitations
+- [Limitation 1]
+- [Limitation 2]
+- [How might these affect your conclusions?]
 
 ## Next Steps
-- → Move to **Phase 5: Delivery** once you have stable findings and visuals
+[What still needs clarification or additional analysis?]
+```
 
-**Navigation:** ← Back to [Phase 3: The Dictionary](../03_dictionary/index.qmd) · → Forward to [Phase 5: Delivery](../05_delivery/index.qmd)
+---
+
+## Tools & Approaches
+
+### Data Analysis Tools
+
+:::{.card-grid}
+
+::: {.card}
+<span class="card-icon">📊</span>
+
+### R & RStudio
+Statistical computing, reproducible scripts
+
+[Setup Guide](../../resources/install-r-rstudio.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+::: {.card}
+<span class="card-icon">🐍</span>
+
+### Python
+Data wrangling with pandas, visualization with matplotlib
+
+[Setup Guide](../../resources/install-vscode.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+::: {.card}
+<span class="card-icon">📈</span>
+
+### Excel/Sheets
+Quick descriptive stats, pivot tables, charts
+
+[Beginner Tips](../../resources/index.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+::: {.card}
+<span class="card-icon">💾</span>
+
+### Git & GitHub
+Version control for data + scripts
+
+[Setup Guide](../../github-setup.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+:::
+
+### Analytical Methods
+
+**Quantitative:**
+- Descriptive statistics (mean, median, range, distribution)
+- Hypothesis testing (t-tests, chi-square, ANOVA)
+- Correlation & regression
+- Visualization (histograms, scatter plots, bar charts)
+
+**Qualitative:**
+- Thematic coding
+- Pattern analysis
+- Narrative summaries
+- Qualitative comparison matrices
+
+---
+
+## Resources for Phase 4
+
+:::{.resource-card}
+
+#### 📊 Data Cleaning Checklist
+<span class="resource-badge time">15 min</span>
+
+Step-by-step checklist for preparing data for analysis.
+
+*[Content to be added]*
+:::
+
+:::{.resource-card}
+
+#### 📈 Data Visualization Best Practices
+<span class="resource-badge difficulty">Intermediate</span>
+
+Guidelines for creating clear, honest visualizations that support your story.
+
+*[Content to be added]*
+:::
+
+:::{.resource-card}
+
+#### 🔧 Analysis Scripts Template
+<span class="resource-badge difficulty">Intermediate</span>
+
+Sample R and Python scripts for common analyses (descriptive stats, plotting, testing).
+
+*[Content to be added]*
+:::
+
+---
+
+## What Success Looks Like
+
+By the end of Phase 4, you should have:
+
+:::{.deliverables}
+✅ **Raw Data** - Stored unchanged in `03_Project/03_Data/raw/`  
+✅ **Clean Data** - Documented cleaning process  
+✅ **Cleaning Log** - Every step explained  
+✅ **Analysis Scripts** - Reproducible code showing your work  
+✅ **2-3 Key Visualizations** - Tables/figures directly answering your questions  
+✅ **Data Memo** - Summary of findings, limitations, next steps  
+✅ **Week 8-10 Journal Entries** - Reflections on your analysis journey  
+✅ **Ready for Phase 5** - Findings ready to present  
+:::
+
+---
+
+## Milestone Timeline
+
+| Week | Activity | Deliverable |
+|------|----------|---|
+| Week 8 | Data collection | Raw data file + collection log |
+| Week 9 | Data cleaning | Clean data + cleaning script/log |
+| Week 10 | Analysis & memo | 2-3 visualizations + analysis memo |
+
+---
+
+## Common Data Issues & Solutions
+
+| Problem | Solution |
+|---|---|
+| Missing values | Document why they're missing, decide: remove, impute, or keep |
+| Duplicates | Identify (check IDs), document, remove if not intentional |
+| Formatting inconsistencies | Standardize dates, text case, number format |
+| Outliers | Document, investigate cause, decide whether to keep/remove |
+| Encoding issues | Check file format (UTF-8), re-import if needed |
+
+---
+
+## Next Phase
+
+Once you complete Phase 4:
+
+→ **[Phase 5: Delivery](../05_delivery/index.qmd)** - Present your findings to stakeholders
+
+---
+
+## Questions & Support
+
+- **Tool help?** Check the software setup guides in Resources
+- **Statistical question?** Visit office hours or check analysis templates
+- **Stuck on something?** Email Dr. Leith with your memo draft
+
+---
+
+:::{.phase-navigation}
+← [Phase 3: The Dictionary](../03_dictionary/index.qmd){.phase-nav-prev}
+
+<span class="phase-progress">Phase 4 of 5</span>
+
+[Phase 5: Delivery →](../05_delivery/index.qmd){.phase-nav-next}
+:::

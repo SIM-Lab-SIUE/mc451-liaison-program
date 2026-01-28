@@ -1,54 +1,143 @@
 ---
-title: "Welcome to the Data Team"
+title: "Home"
+---
+
+:::{.hero-section}
+# MC Research Methods: The Liaison Program
+
+**Bridging Data Science and Creative Communication**
+
+The skills to translate complex research, facilitate collaboration, and guide projects from discovery to impact.
+:::
+
+---
+
+## Your Path Forward
+
+Choose where to start:
+
+:::{.card-grid}
+
+::: {.card}
+<span class="card-icon">📋</span>
+
+### Get Started
+
+Complete your workspace setup in 15 minutes and download your Liaison Vault.
+
+[Setup Guide](setup.qmd){.btn .btn-primary}
+:::
+
+::: {.card}
+<span class="card-icon">🎯</span>
+
+### The 5 Phases
+
+Explore the five-phase research methods program designed to build your skills progressively.
+
+[View Phases](modules/01_orientation/index.qmd){.btn .btn-primary}
+:::
+
+::: {.card}
+<span class="card-icon">📚</span>
+
+### Resources & Downloads
+
+Access software guides, templates, the Liaison Vault, and all course materials in one place.
+
+[View Resources](resources/index.qmd){.btn .btn-primary}
+:::
+
+::: {.card}
+<span class="card-icon">👤</span>
+
+### About Dr. Leith
+
+Learn about your instructor, the SIM Lab, and course philosophy.
+
+[About](about.qmd){.btn .btn-primary}
+:::
+
+:::
+
+---
+
+## Tools & Setup Guides
+
+Get your essential tools configured:
+
+:::{.grid}
+
+::: {.g-col-12 .g-col-md-6}
+**📖 Obsidian Setup**  
+Complete guide to installing Obsidian and configuring your Liaison Vault.  
+[View Obsidian Guide](obsidian-setup.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-6}
+**🐙 GitHub Setup**  
+Create your account, set up Git, and learn version control basics.  
+[View GitHub Guide](github-setup.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-6}
+**📊 R & RStudio**  
+Install R and RStudio for statistical analysis and data visualization.  
+[View R/RStudio Guide](resources/install-r-rstudio.qmd)
+:::
+
+::: {.g-col-12 .g-col-md-6}
+**💻 VS Code**  
+Set up Visual Studio Code for coding, markdown editing, and Git integration.  
+[View VS Code Guide](resources/install-vscode.qmd)
+:::
+
+:::
+
 ---
 
 ## Your Role as a Communication Liaison
 
-Welcome! As a **Communication Liaison**, you are the vital bridge between our data scientists and creative teams. Your role is to:
+As a **Communication Liaison**, you bridge the gap between:
 
-- **Translate** complex data concepts into clear, actionable insights
-- **Facilitate** collaboration between technical and creative professionals
-- **Document** findings and processes for team understanding
-- **Guide** projects from discovery through delivery
+- **Data Scientists** who understand the numbers
+- **Creative Teams** who understand the audience  
+- **Project Stakeholders** who understand the goals
 
-This program is designed to equip you with the research methodologies, tools, and frameworks you need to excel in this unique position. Over five phases, you'll develop the skills to navigate data-driven projects while maintaining clear communication across all stakeholders.
-
----
-
-## Quick Start
-
-Step 1 — Configure your workspace (10–15 minutes)
-[Start Here: Setup Guide](setup.qmd){.btn .btn-primary .btn-lg}
-
-Step 2 — Grab your vault (2 minutes)
-[Download Liaison_Vault.zip](resources/Liaison_Vault.zip){.btn .btn-secondary .btn-lg}
-
-Want the full menu? Visit the [Resources page](resources/) for all downloads and guides.
+Your job is to **translate**, **facilitate**, and **document**—turning complex insights into clear action.
 
 ---
 
-## The Five Phases
+## The Five-Phase Journey
 
-This program is structured in five interconnected phases:
+This program is structured as a progressive learning experience:
 
-1. **Phase 1: Orientation** - Understand your role, the program structure, and set up your workspace
-2. **Phase 2: Discovery** - Learn research methodologies and how to ask the right questions
-3. **Phase 3: The Dictionary** - Master codebook creation and variable definition
-4. **Phase 4: Execution** - Apply what you've learned to real projects
-5. **Phase 5: Delivery** - Present findings and communicate impact
+| Phase | Title | Focus | Duration |
+|-------|-------|-------|----------|
+| **🧭 1** | **Orientation** | Your role, program structure, workspace setup | Week 1-2 |
+| **🔍 2** | **Discovery** | Research methodologies & asking good questions | Week 3-4 |
+| **📖 3** | **The Dictionary** | Codebook creation & variable definition | Week 5-7 |
+| **⚙️ 4** | **Execution** | Apply methods to real projects | Week 8-10 |
+| **🎯 5** | **Delivery** | Present findings & communicate impact | Week 11-13 |
 
-Each phase builds on the previous one. Start with Phase 1 in the sidebar.
-
----
-
-## Course Information
-
-- **Instructor**: Alex P. Leith, PhD
-- **Meeting Time**: MW 15:00-16:15
-- **Office Hours**: MW 10:00-11:30 and 13:30-15:00
-- **Course Syllabus**: [Download PDF](MC451-Syllabus-2026Spring.pdf){.btn .btn-sm .btn-outline-secondary}
-- **Questions?** See the syllabus for contact information and course details
+Each phase builds on the previous one. **Start with Phase 1** in the sidebar or use the buttons above.
 
 ---
 
-Let's get to work and build something great together!
+## Course Information at a Glance
+
+**Instructor:** Dr. Alex P. Leith  
+**Meeting Times:** MW 15:00–16:15  
+**Office Hours:** MW 10:00–11:30 and 13:30–15:00 (or by appointment)
+
+[📄 View Full Syllabus](syllabus.qmd){.btn .btn-primary}
+
+:::{.callout-info}
+**Ready to dive in?** Start with the [Setup Guide](setup.qmd) — it only takes 15 minutes to configure your workspace and download your Liaison Vault.
+
+Need the full syllabus? [Download the Course Syllabus (PDF)](MC451-Syllabus-2026Spring.pdf)
+:::
+
+---
+
+**Let's build something great together.** Welcome to the Liaison Program! 🚀

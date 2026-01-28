@@ -1,67 +1,40 @@
 ---
-title: "Phase 1: Orientation"
+title: "🧭 Phase 1: Orientation"
 ---
 
-## Welcome to Phase 1: Orientation
+:::{.phase-header}
+# Phase 1: Orientation
 
-In this phase, you'll:
-- Understand your role as a Communication Liaison
-- Set up your digital workspace
-- Learn the program structure
-- Get familiar with Obsidian and your vault
+**Duration:** Weeks 1-2 | **Time Commitment:** ~5 hours  
+Get your workspace ready and understand your role as a Communication Liaison
+:::
 
 ---
 
-## What is a Communication Liaison?
+## Learning Objectives
 
-*Edit this section with your course context and examples.*
+By the end of Phase 1, you will:
+
+:::{.learning-objectives}
+- ✅ Understand the Communication Liaison role and mindset
+- ✅ Set up your Obsidian vault and digital workspace
+- ✅ Navigate the Liaison Vault folder structure
+- ✅ Configure all required software and tools
+- ✅ Write your first journal reflection
+- ✅ Know how to access help and resources
+:::
+
+---
+
+## Your Role as a Communication Liaison
 
 A Communication Liaison bridges the gap between:
-- **Data scientists** who understand the numbers
-- **Creative teams** who understand the audience
-- **Project stakeholders** who understand the goals
 
-Your job is to translate, facilitate, and document.
+- **Data Scientists** who understand the numbers
+- **Creative Teams** who understand the audience
+- **Project Stakeholders** who understand the goals
 
----
-
-## The Five-Phase Journey
-
-```
-Phase 1 → Phase 2 → Phase 3 → Phase 4 → Phase 5
-Orientation Discovery Dictionary Execution Delivery
-```
-
-Each phase builds skills you'll use throughout your career.
-
----
-
-## Activities for Phase 1
-
-### Activity 1: Complete Your Setup (Homework)
-1. Go to the Resources page and download Liaison_Vault.zip (5 minutes)
-2. Follow the Setup Guide step-by-step (10–15 minutes)
-3. Configure your Obsidian vault (3 minutes)
-4. Open your 00_START_HERE.md file (2 minutes)
-
-**Due**: Before our next meeting
-
-### Activity 2: Explore Your Vault (In Class)
-1. Open your Liaison_Vault in Obsidian
-2. Create a file in `00_Inbox` named `First_Reflection.md`
-3. Write 3-5 sentences about what you hope to learn this semester
-
-### Activity 3: Vault Navigation Tour (Self-Paced)
-Navigate through each folder and understand:
-- What goes in each folder
-- How folders connect to each other
-- Why the structure matters for your thinking
-
-**Navigation:** ← Back to [Setup Guide](../../setup.qmd) · → Forward to [Phase 2: Discovery](../02_discovery/index.qmd)
-
----
-
-## Key Concepts
+Your job is to **translate**, **facilitate**, and **document**—turning complex insights into clear action.
 
 ### The Liaison Mindset
 - **Translate**: Turn jargon into clarity
@@ -69,44 +42,141 @@ Navigate through each folder and understand:
 - **Document**: Create records for future reference
 - **Guide**: Lead projects toward success
 
-### Tools You'll Use
-- **Obsidian** - Your personal knowledge system
-- **GitHub** - Version control and collaboration
-- **Quarto** - Documentation and reporting
-- **Data tools** - R, Python, Excel (in later phases)
-
 ---
 
-## Reflection Prompt
+## Phase 1 Content & Activities
 
-Before moving to Phase 2, write a journal entry in `01_Journal/` answering:
+### Activity 1: Complete Your Setup (5-10 minutes)
 
-*"What does it mean to be a Communication Liaison in my field? Who do I need to bridge gaps between?"*
+Follow the [Setup Guide](../../setup.qmd) to:
+1. Download your `Liaison_Vault.zip` from the [Resources page](../../resources/index.qmd)
+2. Extract it to your Documents folder
+3. Install and configure Obsidian
+4. Connect your vault to Obsidian
+5. Configure attachment settings
+
+**Due:** Before your first class meeting
+
+### Activity 2: Explore Your Vault Structure (15 minutes)
+
+Open your Liaison_Vault and review each folder:
+
+| Folder | Purpose | What You'll Do |
+|--------|---------|---|
+| **00_Inbox** | Quick capture | Write daily thoughts & ideas here first |
+| **01_Journal** | Weekly reflections | Use templates to reflect each week |
+| **02_Literature** | Research notes | Organize all your reading notes |
+| **03_Project** | Active research | Organize by prospectus, codebook, data, drafts |
+| **04_Resources** | Media & attachments | Store images, PDFs, external files |
+| **99_Templates** | Reusable templates | Copy templates to start new work |
+
+### Activity 3: Your First Journal Entry (10-15 minutes)
+
+Create a new file in `01_Journal/` named `Week_01_Reflection.md`
 
 Use one of the three thinking paths:
-1. **The Connector** - How does this relate to what I already know?
-2. **The Troubleshooter** - What challenges might I face?
-3. **The Critic** - Does this resonate with my experience?
+
+1. **The Connector** - How does being a liaison relate to things you already know?
+2. **The Troubleshooter** - What challenges might you face in this role?
+3. **The Critic** - Does the liaison role resonate with your experience?
+
+Write 3-5 sentences. No pressure—just think on paper. 📝
 
 ---
 
-## Resources for This Phase
+## Tools You'll Use
 
-- 📖 [Your course readings - add links here]
-- 🎥 [Your video tutorials - add links here]
-- 📝 [Your lecture slides - add links here]
-- 🔗 [External resources - add links here]
+This course uses five key tools. Get familiar with each:
+
+:::{.card-grid}
+
+::: {.card}
+<span class="card-icon">🗂️</span>
+
+### Obsidian
+
+Your personal knowledge management system
+
+[Setup Guide](../../resources/install-vscode.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+::: {.card}
+<span class="card-icon">💾</span>
+
+### Git & GitHub
+
+Version control for your projects
+
+[Setup Guide](../../github-setup.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+::: {.card}
+<span class="card-icon">📊</span>
+
+### R & RStudio
+
+Statistical analysis and data work
+
+[Setup Guide](../../resources/install-r-rstudio.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+::: {.card}
+<span class="card-icon">💻</span>
+
+### VS Code
+
+Professional code editor
+
+[Setup Guide](../../resources/install-vscode.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+:::
 
 ---
 
-## Next Steps
+## Key Resources for Phase 1
+
+- 📋 [Weekly Journal Template](../../Liaison_Vault/99_Templates/Weekly_Journal_Template.md) - Use this each week
+- 📖 [Data Dictionary Template](../../Liaison_Vault/99_Templates/Data_Dictionary_Template.md) - Preview for Phase 3
+- 🔗 [Vault Orientation File](../../Liaison_Vault/00_START_HERE.md) - Start here for more details
+- 📥 [All Downloads](../../resources/index.qmd) - Software, templates, guides
+
+---
+
+## What Success Looks Like
+
+By the end of Phase 1, you should have:
+
+:::{.deliverables}
+✅ **Vault Configured** - Your Liaison_Vault is set up and synced  
+✅ **Folder Structure Explored** - You understand what goes where  
+✅ **First Journal Entry** - One reflection using one of the three thinking paths  
+✅ **Software Installed** - Obsidian, Git, R/RStudio, VS Code (if using)  
+✅ **Ready for Phase 2** - You know where to find help and resources  
+:::
+
+---
+
+## Next Phase
 
 Once you complete Phase 1:
-1. ✅ Vault is set up and configured
-2. ✅ You've explored all folders
-3. ✅ You've written your first journal reflection
-4. → Move to **Phase 2: Discovery**
+
+→ **[Phase 2: Discovery](../02_discovery/index.qmd)** - Learn research methodologies and how to ask good questions
 
 ---
 
-**Questions?** Use your Inbox in Obsidian or reach out during office hours.
+## Questions?
+
+- **Setup issues?** Review the [Setup Guide](../../setup.qmd)
+- **Tool problems?** Check the [Resources page](../../resources/index.qmd) for detailed installation guides
+- **General questions?** Email Dr. Leith or visit during office hours (MW 10:00–11:30 AM or 1:30–3:00 PM)
+
+---
+
+:::{.phase-navigation}
+← [Home](../../index.qmd){.phase-nav-prev}
+
+<span class="phase-progress">Phase 1 of 5</span>
+
+[Phase 2: Discovery →](../02_discovery/index.qmd){.phase-nav-next}
+:::

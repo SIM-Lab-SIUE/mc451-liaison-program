@@ -1,9 +1,38 @@
+"""
+Liaison Program Vault Builder
+
+This script generates the Liaison_Vault folder structure and templates for students.
+The vault is a pre-configured Obsidian workspace for organizing research.
+
+Functions:
+    create_vault_structure() - Creates folders and .gitkeep files
+    create_readme_file() - Creates vault orientation file
+    create_journal_template() - Creates weekly reflection template
+    create_data_dictionary_template() - Creates data definition template
+    zip_vault() - Zips vault for student distribution
+
+Usage:
+    python build_vault.py
+
+Output:
+    - Liaison_Vault/ folder (student workspace)
+    - Liaison_Vault.zip (for download distribution)
+    - resources/Liaison_Vault.zip (for website deployment)
+"""
+
 import os
 import shutil
 from pathlib import Path
 
 def create_readme_file():
-    """Create the 00_START_HERE.md file in the vault root."""
+    """
+    Create the 00_START_HERE.md file in the vault root.
+    
+    This file is the first thing students see when opening their vault.
+    It explains the folder structure and provides initial setup instructions.
+    
+    Location: Liaison_Vault/00_START_HERE.md
+    """
     
     vault_path = Path("Liaison_Vault")
     readme_path = vault_path / "00_START_HERE.md"
@@ -25,7 +54,21 @@ Go to Settings > Files & Links > Default location for new attachments → set to
 
 
 def create_vault_structure():
-    """Create the Liaison_Vault directory structure."""
+    """
+    Create the Liaison_Vault directory structure.
+    
+    This creates the folder hierarchy that students will use for organizing their research:
+    - 00_Inbox: Quick capture for daily thoughts
+    - 01_Journal: Weekly reflection entries
+    - 02_Literature: Research notes from readings
+    - 03_Project: Active research work (with 4 subfolders)
+    - 04_Resources: Attachments, images, PDFs
+    - 99_Templates: Reusable templates for assignments
+    
+    Each folder includes a .gitkeep file so empty folders are tracked by Git.
+    
+    Location: Creates Liaison_Vault/ at project root
+    """
     
     # Define the base vault path
     vault_path = Path("Liaison_Vault")
@@ -71,7 +114,19 @@ def create_vault_structure():
 
 
 def create_journal_template():
-    """Create the Weekly_Journal_Template.md file in the 99_Templates folder."""
+    """
+    Create the Weekly_Journal_Template.md file in the 99_Templates folder.
+    
+    This template guides students in weekly reflection using three thinking paths:
+    1. The Connector - Relating theory to their project
+    2. The Troubleshooter - Problem-solving and fixes
+    3. The Critic - Evaluating claims against experience
+    
+    Students copy this template to 01_Journal/ and fill it in each week.
+    
+    Location: Liaison_Vault/99_Templates/Weekly_Journal_Template.md
+    Note: Only creates if file doesn't exist (doesn't overwrite custom versions)
+    """
     
     vault_path = Path("Liaison_Vault")
     template_path = vault_path / "99_Templates" / "Weekly_Journal_Template.md"
@@ -108,7 +163,20 @@ def create_journal_template():
 
 
 def create_data_dictionary_template():
-    """Create the Data_Dictionary_Template.md file in the 99_Templates folder."""
+    """
+    Create the Data_Dictionary_Template.md file in the 99_Templates folder.
+    
+    This template helps students document their data codebook with:
+    - Variable names (database column names)
+    - Conceptual definitions (what the variable means theoretically)
+    - Operational definitions (how it's measured/coded)
+    - Measurement levels (nominal, ordinal, interval, ratio)
+    
+    Students use this when analyzing datasets and creating their codebook.
+    
+    Location: Liaison_Vault/99_Templates/Data_Dictionary_Template.md
+    Note: Only creates if file doesn't exist (doesn't overwrite custom versions)
+    """
     
     vault_path = Path("Liaison_Vault")
     template_path = vault_path / "99_Templates" / "Data_Dictionary_Template.md"
@@ -127,7 +195,22 @@ def create_data_dictionary_template():
 
 
 def zip_vault():
-    """Zip the entire Liaison_Vault folder into Liaison_Vault.zip."""
+    """
+    Zip the entire Liaison_Vault folder into Liaison_Vault.zip.
+    
+    This creates a compressed archive that students can easily download from the
+    Resources page of the website. When they extract it, they get the full vault
+    structure ready to configure in Obsidian.
+    
+    The zip is created at the project root and then copied to:
+    - resources/Liaison_Vault.zip (for website deployment)
+    
+    This allows GitHub Pages to serve the download to students.
+    
+    Outputs:
+    - Liaison_Vault.zip (15-25 KB compressed)
+    - resources/Liaison_Vault.zip (copy for website deployment)
+    """
     
     vault_path = Path("Liaison_Vault")
     output_path = "Liaison_Vault"

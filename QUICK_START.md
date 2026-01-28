@@ -13,7 +13,8 @@ Built with Quarto, featuring the Liaison Obsidian Vault for student success.
 Home Page (index.qmd)
 ├── Getting Started (setup.qmd)
 ├── Resources & Downloads (resources/index.qmd)
-│   └── Liaison_Vault.zip ⬇️
+│   ├── Liaison_Vault.zip ⬇️
+│   └── 05_Textbook.zip (optional) ⬇️
 ├── Phase 1: Orientation (modules/01_orientation/)
 ├── Phase 2: Discovery (modules/02_discovery/)
 ├── Phase 3: Dictionary (modules/03_dictionary/)

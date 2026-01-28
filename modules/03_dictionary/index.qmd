@@ -1,33 +1,225 @@
 ---
-title: "Phase 3: The Dictionary"
+title: "📖 Phase 3: The Dictionary"
 ---
 
-## What You Will Do
-- Define variables, constructs, and coding rules
-- Build a data dictionary/codebook for your project
-- Pilot-test definitions with a small sample
+:::{.phase-header}
+# Phase 3: The Dictionary
 
-## Deliverables
-- Data dictionary v1 with variable names, types, allowed values, and examples
-- Coding decision log (edge cases, clarifications)
-- Pilot results summary + changes you made
+**Duration:** Weeks 5-7 | **Time Commitment:** ~8 hours  
+Create a data dictionary and codebook for your project
+:::
 
-## Milestones
-- **Week 6:** Draft variable list
-- **Week 7:** Pilot coding on 10–20 items
-- **Week 8:** Submit revised data dictionary
+---
 
-## Activities
-- Copy the Data Dictionary Template from `99_Templates/Data_Dictionary_Template.md`
-- Run a short inter-coder reliability check (pair with a peer if possible)
-- Record ambiguities and resolve them in the decision log
+## Learning Objectives
 
-## Templates & Links
-- Data Dictionary Template: `99_Templates/Data_Dictionary_Template.md`
-- Journal reflections: `99_Templates/Weekly_Journal_Template.md`
-- Store drafts in `03_Project/02_Codebook/`
+By the end of Phase 3, you will:
 
-## Next Steps
-- → Move to **Phase 4: Execution** once your dictionary is stable
+:::{.learning-objectives}
+- ✅ Define variables, constructs, and measurement rules
+- ✅ Build a comprehensive data dictionary/codebook
+- ✅ Test definitions with pilot data
+- ✅ Document coding decisions and edge cases
+- ✅ Assess inter-coder reliability
+- ✅ Iterate on definitions based on pilot testing
+:::
 
-**Navigation:** ← Back to [Phase 2: Discovery](../02_discovery/index.qmd) · → Forward to [Phase 4: Execution](../04_execution/index.qmd)
+---
+
+## What You'll Do
+
+A **data dictionary** is like a translation guide for your data. It tells anyone (including future you!) exactly what each variable means:
+
+- **Variable names** - How is this stored in your data?
+- **Definitions** - What does this variable measure?
+- **Types** - Is it text, number, date, category?
+- **Allowed values** - What answers are valid?
+- **Examples** - Real samples of how to code things
+- **Special rules** - Edge cases and how to handle them
+
+---
+
+## Phase 3 Content & Activities
+
+### Activity 1: Start Your Data Dictionary (Week 5)
+
+1. **Copy the Template** - Get the Data Dictionary Template from your vault
+2. **List Your Variables** - From your research questions, what will you measure?
+3. **Define Each One** - Write clear definitions for every variable
+4. **Specify Types** - Is each variable numeric, text, categorical, etc.?
+
+**Example:**
+
+| Variable | Definition | Type | Values | Example |
+|---|---|---|---|---|
+| `age_group` | Age category of respondent | Categorical | 18-25, 26-35, 36-45, 45+ | "26-35" |
+| `engagement_score` | 1-10 scale of user interaction frequency | Numeric | 1-10 (whole numbers) | 7 |
+| `content_type` | Primary content category shared | Text | Any string ≤100 chars | "news_article" |
+
+**Submit:** First draft in `03_Project/02_Codebook/Data_Dictionary_v1.md`
+
+### Activity 2: Pilot Code Your Data (Week 6)
+
+Test your definitions on a small sample:
+
+1. **Select 10-20 items** - Sample from your actual data
+2. **Code them** - Use your definitions to code each item
+3. **Track problems** - What was ambiguous or unclear?
+4. **Document decisions** - How did you resolve edge cases?
+
+**Create:** `03_Project/02_Codebook/Pilot_Decisions_Log.md`
+
+**Example entry:**
+```
+VARIABLE: content_type
+PROBLEM: Item #5 is a news article shared as a screenshot
+DECISION: Code as "news_article" (focus on content, not format)
+APPLIED: Items #5, #12, #18
+```
+
+### Activity 3: Get Feedback (Week 7)
+
+**Optional: Inter-Coder Reliability Check**
+
+If possible, have a peer code the same 10-20 items independently:
+
+- Compare your coding - How often did you agree?
+- Discuss disagreements - Why did you code differently?
+- Update your definitions - Make them clearer if needed
+
+**Measure:** Calculate % agreement or Cohen's Kappa (your instructor will guide this)
+
+### Activity 4: Finalize & Iterate (Week 7)
+
+Based on your pilot testing:
+
+1. **Clarify definitions** - Rewrite anything that was confusing
+2. **Add more examples** - Include edge cases you found
+3. **Update allowed values** - Add any new categories you discovered
+4. **Document assumptions** - What did you decide to do and why?
+
+**Submit:** `03_Project/02_Codebook/Data_Dictionary_v2_Final.md` + Pilot Summary
+
+---
+
+## Key Concepts
+
+### Variable Types
+
+**Numeric** - Numbers you can do math with (age, score, count)  
+**Categorical** - Limited set of categories (gender, region, type)  
+**Text/String** - Free-form text (name, comment, description)  
+**Date** - Time-based (2024-01-15)  
+**Boolean** - True/False or Yes/No  
+
+### Measurement Scales
+
+**Nominal** - Categories with no order (blue, red, green)  
+**Ordinal** - Ranked categories (low, medium, high)  
+**Interval** - Numbers with equal spacing (temperature in°C)  
+**Ratio** - Numbers with true zero (height, weight, age)  
+
+---
+
+## Resources for Phase 3
+
+:::{.resource-card}
+
+#### 📋 Data Dictionary Template
+<span class="resource-badge time">5 min</span>
+
+Ready-to-use template in your vault. Copy and customize for your project.
+
+[View Template](../../Liaison_Vault/99_Templates/Data_Dictionary_Template.md){.btn .btn-sm .btn-secondary}
+:::
+
+:::{.resource-card}
+
+#### 📚 Codebook Best Practices
+<span class="resource-badge difficulty">Beginner</span>
+
+Tips for writing clear variable definitions that others can follow.
+
+*[Content to be added]*
+:::
+
+:::{.resource-card}
+
+#### 🔍 Inter-Coder Reliability Guide
+<span class="resource-badge difficulty">Intermediate</span>
+
+How to test agreement between multiple coders and calculate kappa statistics.
+
+*[Content to be added]*
+:::
+
+---
+
+## What Success Looks Like
+
+By the end of Phase 3, you should have:
+
+:::{.deliverables}
+✅ **Complete Data Dictionary** - All variables defined with types, values, examples  
+✅ **Pilot Testing Results** - Coded 10-20 sample items  
+✅ **Decisions Log** - Edge cases documented and resolved  
+✅ **Updated Dictionary v2** - Refined based on pilot feedback  
+✅ **Week 5-7 Journal Entries** - Reflections on your coding process  
+✅ **Ready for Phase 4** - Your definitions are clear and tested  
+:::
+
+---
+
+## Milestone Timeline
+
+| Week | Activity | Deliverable |
+|------|----------|---|
+| Week 5 | Start data dictionary | Draft with variable list |
+| Week 6 | Pilot code 10-20 items | Decisions log + coded samples |
+| Week 7 | Refine & finalize | Data Dictionary v2 + summary |
+
+---
+
+## Example: Simple Data Dictionary
+
+**Project:** Analyzing tweet sentiment about climate change
+
+| Variable | Definition | Type | Values | Example |
+|---|---|---|---|---|
+| `tweet_id` | Unique identifier | Text | Any string | "1234567890" |
+| `date_posted` | When tweet was published | Date | YYYY-MM-DD | "2024-01-15" |
+| `text` | Full text of tweet | Text | Free-form ≤280 chars | "Climate action is..." |
+| `sentiment` | Overall emotional tone | Categorical | positive, neutral, negative | "positive" |
+| `has_action_call` | Does tweet ask readers to do something? | Boolean | yes, no | "yes" |
+| `reach` | Number of impressions | Numeric | 0-9,999,999 | 1250 |
+
+---
+
+## Next Phase
+
+Once you complete Phase 3:
+
+→ **[Phase 4: Execution](../04_execution/index.qmd)** - Apply your definitions and code all your data
+
+---
+
+## Common Questions
+
+**Q: What if I don't know all variables yet?**  
+A: Start with what you know. You can add more in Phase 4.
+
+**Q: How detailed should my definitions be?**  
+A: Detailed enough that someone else could code the same way.
+
+**Q: What's a "good" inter-coder agreement score?**  
+A: 80%+ agreement is typical; 90%+ is excellent.
+
+---
+
+:::{.phase-navigation}
+← [Phase 2: Discovery](../02_discovery/index.qmd){.phase-nav-prev}
+
+<span class="phase-progress">Phase 3 of 5</span>
+
+[Phase 4: Execution →](../04_execution/index.qmd){.phase-nav-next}
+:::

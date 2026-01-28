@@ -1,32 +1,343 @@
 ---
-title: "Phase 5: Delivery"
+title: "🎯 Phase 5: Delivery"
 ---
 
-## What You Will Do
-- Turn analysis into stories, decks, or reports for stakeholders
-- Tailor insights to non-technical audiences
-- Reflect on impact and next iterations
+:::{.phase-header}
+# Phase 5: Delivery
 
-## Deliverables
-- Slide deck or one-page brief with key findings
-- Visuals packaged for sharing (PNG/PDF)
-- Reflection on lessons learned and future work
+**Duration:** Weeks 11-13 | **Time Commitment:** ~8 hours  
+Present your findings and communicate impact to stakeholders
+:::
 
-## Milestones
-- **Week 12:** Draft narrative outline
-- **Week 13:** Slide/brief draft with visuals
-- **Week 14:** Final presentation + retrospective
+---
 
-## Activities
-- Translate stats into plain language takeaways
-- Add a "So what?" section for each finding
-- Rehearse with a peer and capture feedback in your journal
+## Learning Objectives
 
-## Templates & Links
-- Journal reflections: `99_Templates/Weekly_Journal_Template.md`
-- Store decks/briefs in `03_Project/04_Drafts/`
+By the end of Phase 5, you will:
 
-## Next Steps
-- Celebrate, then archive your project materials in the vault for future reference
+:::{.learning-objectives}
+- ✅ Transform data findings into compelling narratives
+- ✅ Create visualizations tailored for different audiences
+- ✅ Write executive summaries and briefs
+- ✅ Present findings with confidence and clarity
+- ✅ Translate statistics into actionable insights
+- ✅ Reflect on your research journey and next steps
+:::
 
-**Navigation:** ← Back to [Phase 4: Execution](../04_execution/index.qmd)
+---
+
+## What You'll Do
+
+This is your moment to **tell the story** your data reveals:
+
+**Narrative Development** - Translate numbers into meaning: "What did we learn?"  
+**Visual Communication** - Design slides/infographics that guide your audience through the story  
+**Executive Briefing** - One-page summary for decision makers  
+**Presentation** - Present findings in a clear, engaging way  
+**Reflection** - Capture lessons learned for next time
+
+---
+
+## Phase 5 Content & Activities
+
+### Activity 1: Craft Your Story (Week 11)
+
+Before making slides, nail your narrative:
+
+1. **Identify your key insights** - Which 2-3 findings matter most?
+2. **Create an outline** - How do you guide your audience through the data?
+3. **Add "So what?"** - For each finding, explain why it matters
+
+**Outline Template:**
+```markdown
+# Research Story Outline
+
+## Hook (30 seconds)
+[What question were we answering? Why does it matter?]
+
+## Context (1-2 minutes)
+[Brief background: who cares, what was the challenge?]
+
+## The Findings (3-4 minutes)
+### Finding 1: [Headline]
+- Data point 1
+- Data point 2
+- **So what?** [Why does this matter? What should we do?]
+
+### Finding 2: [Headline]
+- Data point 1
+- Data point 2
+- **So what?** [Implications]
+
+### Finding 3: [Headline]
+- Data point 1
+- Data point 2
+- **So what?** [Action items]
+
+## Limitations (1 minute)
+[What are we uncertain about?]
+
+## Next Steps (1-2 minutes)
+[What should happen next?]
+```
+
+**Create:** `03_Project/04_Drafts/Story_Outline.md`
+
+### Activity 2: Create a Slide Deck or Brief (Week 12)
+
+**Option A: Slide Deck** (for live presentation)
+- Title slide with question
+- 1 context slide
+- 2-3 finding slides with visualizations
+- 1 limitations slide
+- 1 next steps/call-to-action slide
+- **Total: 7-8 slides** (aim for 1-2 minutes per slide)
+
+**Option B: One-Page Brief** (for email/sharing)
+- Header with research question
+- 3-4 key findings with visual
+- Brief interpretation
+- Limitations (small print)
+- Contact + next steps
+
+**Design Tips:**
+- ✅ One major idea per slide
+- ✅ Large, readable fonts (18pt minimum)
+- ✅ Colors that support understanding (not decoration)
+- ✅ Real data visuals (your actual charts/tables)
+- ✅ Simple, clean layouts
+- ❌ Avoid: dense text, clip art, too many colors
+
+**Tools:**
+- Google Slides (free, easy sharing)
+- PowerPoint (familiar, flexible)
+- Keynote (Apple, polished)
+- Canva (beautiful templates)
+- Quarto (reproducible, code-based)
+
+**Create:** `03_Project/04_Drafts/Presentation_Deck.pdf` or `Brief.pdf`
+
+### Activity 3: Translate for Your Audience (Week 12)
+
+**Different audiences, different messages:**
+
+**For Executives:**
+- Bottom line: What's the recommendation?
+- Impact: What does this mean for our goals?
+- Minimize jargon; focus on action
+
+**For Data Scientists:**
+- Methodology: How did you approach this?
+- Limitations: What aren't we capturing?
+- Code & details available if needed
+
+**For General Audience:**
+- Story: What happened and why does it matter?
+- Visuals: Show don't tell
+- Plain language: Avoid stats jargon
+
+**Create:** Brief version (1-2 sentences) of each finding for different audiences in your outline.
+
+### Activity 4: Presentation & Reflection (Week 13)
+
+**Presentation Options:**
+- In-class presentation (5-10 minutes)
+- Recorded video (3-5 minutes)
+- Written report with visuals
+- Poster presentation (if poster session)
+
+**Before presenting:**
+1. **Rehearse with a peer** - Get feedback
+2. **Time yourself** - Stay within limits
+3. **Check visuals** - Do all graphs display correctly?
+4. **Practice Q&A** - What might people ask?
+
+**After presenting:**
+1. **Capture feedback** - What questions did people ask?
+2. **Note surprises** - What did people react to most?
+3. **Reflect in journal** - What would you do differently next time?
+
+---
+
+## Communication Templates
+
+### Plain Language Translation Guide
+
+| Technical | Plain Language |
+|---|---|
+| "Statistically significant difference (p < 0.05)" | "This difference is very unlikely to have happened by chance" |
+| "Negative correlation (r = -0.72)" | "As X increases, Y tends to decrease" |
+| "Thematic coding revealed 5 emergent categories" | "When we looked for patterns, we found 5 main themes" |
+| "Inter-rater reliability was 0.84" | "Two coders agreed 84% of the time" |
+
+### "So What?" Template for Each Finding
+
+```
+DATA: [State what you found]
+MEANING: [What does it mean?]
+ACTION: [What should we do about it?]
+
+EXAMPLE:
+DATA: 78% of respondents prefer format A over format B
+MEANING: Most users find format A easier/better
+ACTION: Recommend switching to format A; monitor user satisfaction
+```
+
+---
+
+## Resources for Phase 5
+
+:::{.resource-card}
+
+#### 🎨 Data Visualization for Presentations
+<span class="resource-badge difficulty">Beginner</span>
+
+Tips for creating effective slides that tell your story without overwhelming viewers.
+
+*[Content to be added]*
+:::
+
+:::{.resource-card}
+
+#### 📝 Executive Summary Template
+<span class="resource-badge time">10 min</span>
+
+One-page brief template for decision makers.
+
+*[Content to be added]*
+:::
+
+:::{.resource-card}
+
+#### 🎤 Presentation Skills Checklist
+<span class="resource-badge difficulty">Beginner</span>
+
+Guidelines for confident delivery, handling Q&A, and managing presentation anxiety.
+
+*[Content to be added]*
+:::
+
+---
+
+## What Success Looks Like
+
+By the end of Phase 5, you should have:
+
+:::{.deliverables}
+✅ **Story Outline** - Clear narrative with findings + "so what?" for each  
+✅ **Slide Deck or Brief** - Professional, audience-appropriate presentation  
+✅ **Plain Language Translations** - Key findings explained for non-technical audience  
+✅ **Presentation Delivery** - Presented findings (live, recorded, or written)  
+✅ **Reflection Piece** - Journal entry on lessons learned + future improvements  
+✅ **Week 11-13 Journal Entries** - Reflections throughout delivery phase  
+✅ **Archived Project** - All materials organized for future reference  
+:::
+
+---
+
+## Milestone Timeline
+
+| Week | Activity | Deliverable |
+|------|----------|---|
+| Week 11 | Story outline + narrative | Research story outline |
+| Week 12 | Create deck/brief | Slide deck or one-page brief |
+| Week 13 | Present + reflect | Presentation + reflection journal |
+
+---
+
+## Sample Presentation Structure (7-minute version)
+
+**Slide 1: Title (30 sec)**
+- Research question
+- Your name
+- Date
+
+**Slide 2: Why This Matters (1 min)**
+- Context
+- Why we're investigating this
+
+**Slides 3-4: The Findings (2.5 min)**
+- Finding 1 + visual
+- Finding 2 + visual
+- Finding 3 + visual (if time)
+
+**Slide 5: What It Means (1.5 min)**
+- Key takeaways
+- Answers to your research questions
+- So what?
+
+**Slide 6: Limitations (1 min)**
+- What we're uncertain about
+- Caveats on conclusions
+
+**Slide 7: Next Steps (0.5 min)**
+- What comes next?
+- How should findings be used?
+
+**Total: ~7 minutes + Q&A**
+
+---
+
+## Celebrating Your Work
+
+You've completed a full research cycle! Take time to:
+
+✅ **Reflect** - What did you learn about research? About yourself?  
+✅ **Archive** - Save your project materials in `03_Project/` for future reference  
+✅ **Share** - Consider sharing your process/findings with peers or on social media  
+✅ **Celebrate** - You did real, meaningful work!  
+
+---
+
+## Looking Forward
+
+### Skills You've Developed
+
+- **Research Design** - Asking good questions
+- **Data Management** - Organizing and documenting
+- **Analysis** - Finding patterns and meaning
+- **Communication** - Translating for different audiences
+- **Reflection** - Learning from your process
+
+### These Skills Transfer To:
+
+- Graduate research
+- Professional data analysis
+- Project management
+- Team communication
+- Any field requiring evidence-based thinking
+
+---
+
+## Final Reflection Prompts
+
+Write a final journal entry answering:
+
+1. **What surprised you most about this research process?**
+2. **What was hardest? How did you overcome it?**
+3. **If you did this project again, what would you do differently?**
+4. **How will you use these skills in the future?**
+5. **Who helped you succeed? How can you pay it forward?**
+
+---
+
+## Congratulations! 🎉
+
+You've moved through all five phases:
+- 🧭 Phase 1: Understood your role
+- 🔍 Phase 2: Asked good questions
+- 📖 Phase 3: Defined your variables
+- ⚙️ Phase 4: Collected & analyzed data
+- 🎯 Phase 5: Communicated impact
+
+**You are now a Communication Liaison. Go build something great.** ✨
+
+---
+
+:::{.phase-navigation}
+← [Phase 4: Execution](../04_execution/index.qmd){.phase-nav-prev}
+
+<span class="phase-progress">Phase 5 of 5 — Complete!</span>
+
+[Back to Home](../../index.qmd){.phase-nav-next}
+:::
