@@ -7,92 +7,61 @@ title: "Home"
 
 **Bridging Data Science and Creative Communication**
 
-The skills to translate complex research, facilitate collaboration, and guide projects from discovery to impact.
+Learn to translate complex research, facilitate collaboration, and guide projects from discovery to impact.
 :::
 
 ---
 
-## Your Path Forward
+## Welcome to the Course
 
-Choose where to start:
+This program teaches you to be a **Communication Liaison**—bridging data scientists and creative teams. Over five phases, you'll develop research skills and learn to navigate data-driven projects while maintaining clear communication with all stakeholders.
+
+### 📖 Reference Textbook
+
+For deeper exploration of research methods, refer to the companion textbook:  
+[Vibes to Variables](https://sim-lab-siue.github.io/vibes-to-variables/)
+
+---
+
+## Quick Start
 
 :::{.card-grid}
 
 ::: {.card}
+<span class="card-icon">🚀</span>
+
+### New Student? Start Here
+
+Complete your workspace setup and download your Liaison Vault (15 minutes).
+
+[Get Started →](setup.qmd){.btn .btn-primary .btn-lg}
+:::
+
+::: {.card}
 <span class="card-icon">📋</span>
 
-### Get Started
+### View Syllabus
 
-Complete your workspace setup in 15 minutes and download your Liaison Vault.
+Review course policies, schedule, and grading information.
 
-[Setup Guide](setup.qmd){.btn .btn-primary}
-:::
-
-::: {.card}
-<span class="card-icon">🎯</span>
-
-### The 5 Phases
-
-Explore the five-phase research methods program designed to build your skills progressively.
-
-[View Phases](modules/01_orientation/index.qmd){.btn .btn-primary}
-:::
-
-::: {.card}
-<span class="card-icon">📚</span>
-
-### Resources & Downloads
-
-Access software guides, templates, the Liaison Vault, and all course materials in one place.
-
-[View Resources](resources/index.qmd){.btn .btn-primary}
-:::
-
-::: {.card}
-<span class="card-icon">👤</span>
-
-### About Dr. Leith
-
-Learn about your instructor, the SIM Lab, and course philosophy.
-
-[About](about.qmd){.btn .btn-primary}
+[Read Syllabus →](syllabus.qmd){.btn .btn-secondary}
 :::
 
 :::
 
 ---
 
-## Tools & Setup Guides
+## The Five Phases
 
-Get your essential tools configured:
+Our research methods curriculum follows a structured path:
 
-:::{.grid}
+1. **📰 Phase I: The Journalist** (Weeks 1-4) - Weekly reading journals and GitHub setup
+2. **🏗️ Phase II: The Architect** (Weeks 2-4) - Project setup, GitHub profile, and archive research
+3. **🔨 Phase III: The Builder** (Weeks 5-12) - Develop research questions, codebook, and sampling plan
+4. **📊 Phase IV: The Analyst** (Weeks 13-15) - Data wrangling, visualization, and statistical inference
+5. **🎯 Phase V: The Publisher** (Weeks 16-17) - Create final web portfolio and professional report
 
-::: {.g-col-12 .g-col-md-6}
-**📖 Obsidian Setup**  
-Complete guide to installing Obsidian and configuring your Liaison Vault.  
-[View Obsidian Guide](obsidian-setup.qmd)
-:::
-
-::: {.g-col-12 .g-col-md-6}
-**🐙 GitHub Setup**  
-Create your account, set up Git, and learn version control basics.  
-[View GitHub Guide](github-setup.qmd)
-:::
-
-::: {.g-col-12 .g-col-md-6}
-**📊 R & RStudio**  
-Install R and RStudio for statistical analysis and data visualization.  
-[View R/RStudio Guide](resources/install-r-rstudio.qmd)
-:::
-
-::: {.g-col-12 .g-col-md-6}
-**💻 VS Code**  
-Set up Visual Studio Code for coding, markdown editing, and Git integration.  
-[View VS Code Guide](resources/install-vscode.qmd)
-:::
-
-:::
+[Start Phase I →](modules/01_journalist/index.qmd){.btn .btn-primary}
 
 ---
 

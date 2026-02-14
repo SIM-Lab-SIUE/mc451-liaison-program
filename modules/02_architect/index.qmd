@@ -1,0 +1,283 @@
+---
+title: "🏗️ Phase II: The Architect"
+---
+
+:::{.phase-header}
+# Phase II: The Architect
+
+**Duration:** Weeks 2-4 (Jan 19 - Feb 02) | **Points:** 125  
+Design your digital workspace and research foundation
+:::
+
+---
+
+## Learning Objectives
+
+By the end of Phase II, you will:
+
+:::{.learning-objectives}
+- ✅ Build a professional GitHub profile
+- ✅ Confirm software installation (R, RStudio, Obsidian, Quarto)
+- ✅ Structure your digital office for research
+- ✅ Identify and evaluate media archives
+- ✅ Understand data source feasibility
+:::
+
+---
+
+## Phase II Overview
+
+As an architect designs blueprints before construction, you'll design your research infrastructure. This phase ensures your digital workspace is properly configured and you understand where to find data for your research.
+
+### The Architect Mindset
+- **Plan ahead**: Set up systems before you need them
+- **Build foundations**: Establish reliable workflows
+- **Choose materials**: Select appropriate data sources
+- **Document structure**: Create clear organizational systems
+
+---
+
+## Assignments
+
+### GitHub Profile (25 points)
+**Due:** Week 1 (Jan 12)
+
+Create a public GitHub profile with:
+- Professional photo
+- README.md introducing yourself
+- Research interests overview
+
+[GitHub Setup Guide](../../github-setup.qmd){.btn .btn-secondary}
+
+---
+
+### Syllabus Contract (25 points)
+**Due:** Week 2 (Jan 19)
+
+1. Open the provided Quarto template in RStudio
+2. Sign your name (handwritten image or typed)
+3. Click **"Render"** to generate PDF
+4. This confirms your software is correctly installed
+
+---
+
+### Project Setup (25 points)
+**Due:** Week 3 (Jan 26)
+
+Submit screenshot showing your "Digital Office" structure:
+- Obsidian Vault folders
+- RStudio Project files
+- Organized according to course guide
+
+[Setup Guide](../../setup.qmd){.btn .btn-secondary}
+
+---
+
+### Archivist Report (25 points)
+**Due:** Week 4 (Feb 02)
+
+Identify a media archive (e.g., Nexis Uni, Social Media Data):
+1. Draft brief report in Obsidian summarizing:
+   - Source name and type
+   - Date range available
+   - Feasibility for your research
+2. Render to PDF using RStudio
+
+---
+
+## Weekly Schedule
+
+| Week | Chapter | Focus |
+|------|---------|-------|
+| **Week 2** | Ch 2: The Publishing Engine | Understanding research workflows |
+| **Week 3** | Ch 3: The Scientific Approach | Research fundamentals |
+| **Week 4** | Ch 4: Intelligence Gathering | Finding data sources |
+
+---
+
+## Tools & Resources
+
+### Required Software
+- [Obsidian](https://obsidian.md/) - Knowledge management
+- [R & RStudio](../../resources/install-r-rstudio.qmd) - Statistical analysis
+- [VS Code](../../resources/install-vscode.qmd) - Code editing
+- [Git/GitHub](../../github-setup.qmd) - Version control
+
+### Textbook
+[Vibes to Variables](https://sim-lab-siue.github.io/vibes-to-variables/)
+
+---
+
+## Tips for Success
+
+- Complete software installations early
+- Test your Quarto rendering before the syllabus contract is due
+- Explore multiple media archives before committing
+- Keep screenshots and documentation of your setup process
+- ✅ Plan ethical data collection approaches
+- ✅ Evaluate existing research and prior work
+- ✅ Identify potential risks and mitigations
+- ✅ Present a mini research proposal
+:::
+
+---
+
+## What You'll Do
+
+In Phase 2, you'll move from understanding the liaison role to asking **good questions**:
+
+**Frame Research Questions** — Move from vague ideas to clear, testable questions with defined variables
+
+**Map Stakeholders & Sources** — Understand who needs what information and where data lives
+
+**Plan Data Collection** — Design ethical approaches (surveys, interviews, data scraping, observations)
+
+**Identify Risks** — Consider privacy, bias, sampling, and other potential challenges
+
+---
+
+## Phase 2 Content & Activities
+
+### Activity 1: Understanding Good Research Questions (Week 3)
+
+Work through these steps:
+
+1. **Read & Compare** - Review 2-3 example research questions from your field
+2. **Critique** - What makes them clear or vague? What variables are defined?
+3. **Rewrite** - Take a vague question and rewrite it with clear variables
+
+**Example:**
+- ❌ *Vague:* "How do people use social media?"
+- ✅ *Clear:* "What communication patterns distinguish active vs. passive users on TikTok among ages 18-25?"
+
+**Submit:** Your rewritten research questions (2-3 examples) in `03_Project/01_Prospectus/`
+
+### Activity 2: Stakeholder & Data Source Mapping (Week 4)
+
+Create a one-page visual map showing:
+
+- **Who cares?** - Primary stakeholders (who needs your findings?)
+- **What's available?** - Existing data sources (surveys, databases, interviews, archives)
+- **What's missing?** - Gaps in current data
+- **How will you collect?** - Your planned methods
+
+**Submit:** A visual map (diagram, table, or infographic) in `03_Project/01_Prospectus/`
+
+### Activity 3: Mini Research Proposal (Week 5)
+
+Write a 2-3 page mini proposal including:
+
+1. **Problem Statement** - Why does this question matter?
+2. **Research Questions** - What specifically will you investigate?
+3. **Methods Overview** - How will you collect data?
+4. **Timeline** - When will each step happen?
+5. **Risks & Mitigations** - What could go wrong and how will you address it?
+
+**Submit:** `03_Project/01_Prospectus/Mini_Proposal.md`
+
+---
+
+## Key Concepts: The Research Mindset
+
+### Variables (The Building Blocks)
+
+**Independent Variable** - What you *control* or *predict from*  
+**Dependent Variable** - What you *measure* or *predict to*  
+**Control Variables** - What you *hold constant*
+
+### Research Designs
+
+- **Exploratory** - What's happening? (descriptive)
+- **Explanatory** - Why is it happening? (causal)
+- **Evaluative** - Is it working? (assessment)
+
+### Ethical Considerations
+
+- **Informed Consent** - Did people agree to participate?
+- **Privacy & Confidentiality** - How will you protect personal data?
+- **Fairness & Bias** - Are your methods equitable?
+- **Harm Reduction** - Could participation cause distress?
+
+---
+
+## Resources for Phase 2
+
+:::{.resource-card}
+
+#### 📋 Weekly Journal Template
+<span class="resource-badge time">5 min</span>
+
+Reflect on your research questions and process using one of three thinking paths: Connector, Troubleshooter, or Critic.
+
+[View Template](../../Liaison_Vault/99_Templates/Weekly_Journal_Template.md){.btn .btn-sm .btn-secondary}
+:::
+
+:::{.resource-card}
+
+#### 📚 Reading & Literature Review Tips
+<span class="resource-badge time">10-15 min</span>
+
+How to take effective research notes and organize them in your vault.
+
+*[Content to be added]*
+:::
+
+:::{.resource-card}
+
+#### 🔧 Research Methods Glossary
+<span class="resource-badge difficulty">Beginner</span>
+
+Quick definitions of common research terms (variables, sampling, validity, etc.)
+
+*[Content to be added]*
+:::
+
+---
+
+## What Success Looks Like
+
+By the end of Phase 2, you should have:
+
+:::{.deliverables}
+✅ **2-3 Clear Research Questions** - With defined independent/dependent variables  
+✅ **Stakeholder & Data Source Map** - One-page visual showing who cares and what data exists  
+✅ **Mini Research Proposal** - 2-3 pages outlining problem, methods, timeline, risks  
+✅ **Week 3-5 Journal Entries** - Reflections on your research process  
+✅ **Ready for Phase 3** - Understanding your data landscape  
+:::
+
+---
+
+## Milestone Timeline
+
+| Week | Deliverable | Status |
+|------|---|---|
+| Week 3 | Research questions draft | Submit in prospectus folder |
+| Week 4 | Stakeholder/data map | One-page visual |
+| Week 5 | Mini proposal | 2-3 pages + class discussion |
+
+---
+
+## Next Phase
+
+Once you complete Phase 2:
+
+→ **[Phase III: The Builder](../03_builder/index.qmd)** - Develop research questions and build your codebook
+
+---
+
+## Need Help?
+
+- **Stuck on research questions?** Visit office hours or check the research methods glossary
+- **Data collection questions?** Talk to Dr. Leith about ethics and feasibility
+- **Proposal feedback?** Share a draft in `00_Inbox/` or email for comments
+
+---
+
+:::{.phase-navigation}
+← [Phase I: The Journalist](../01_journalist/index.qmd){.phase-nav-prev}
+
+<span class="phase-progress">Phase 2 of 5</span>
+
+[Phase III: The Builder →](../03_builder/index.qmd){.phase-nav-next}
+:::

@@ -1,6 +1,6 @@
 # \ud83d\udcd3 Journal - Your Weekly Field Notes
 
-This folder contains your **structured reflections** using the Connector/Troubleshooter/Critic framework.
+This folder contains your **structured reflections** using the Connector/Troubleshooter/Critic framework. These are your weekly reading journals (150 points total) - 250-300 word reflections on assigned readings.
 
 ## What Goes Here
 
@@ -12,11 +12,12 @@ Every week, you'll create a new journal entry reflecting on:
 
 ## Journal Entry Checklist
 
-\u2705 **Use the template** - Copy from `99_Templates/Weekly_Journal_Template.md`
-\u2705 **Name it clearly** - Format: `Week_01_YourName.md`
-\u2705 **Choose one path** - Connector, Troubleshooter, or Critic (delete the others)
-\u2705 **Write 300-500 words** - Substantive reflection, not surface-level summary
-\u2705 **Due Monday** - Submit link via Blackboard
+✅ **Use the template** - Copy from `99_Templates/Weekly_Journal_Template.md`
+✅ **Name it clearly** - Format: `Week_01_YourName.md`
+✅ **Choose one path** - Connector, Troubleshooter, or Critic (delete the others)
+✅ **Write 250-300 words** - Substantive reflection, not surface-level summary
+✅ **Due Monday** - Submit link via Blackboard
+✅ **Post to GitHub** - Copy reflection to your GitHub repository for submission
 
 ---
 

@@ -571,3 +571,4 @@ Based on academic/research lab aesthetic:
 **Need help implementing? This plan is detailed enough to hand to a developer or work through yourself. Each section has specific, actionable items with time estimates.**
 
 Last updated: January 20, 2026
+e

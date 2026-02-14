@@ -1,0 +1,210 @@
+---
+title: "📰 Phase I: The Journalist"
+---
+
+:::{.phase-header}
+# Phase I: The Journalist
+
+**Duration:** Weeks 1-4 (Jan 12 - Feb 02) | **Points:** 150  
+Develop your voice through weekly reading reflections
+:::
+
+---
+
+## Learning Objectives
+
+By the end of Phase I, you will:
+
+:::{.learning-objectives}
+- ✅ Read and comprehend foundational research methods concepts
+- ✅ Reflect critically on assigned readings
+- ✅ Build a personal knowledge archive in Obsidian
+- ✅ Practice translating academic concepts into your own words
+- ✅ Establish a weekly writing routine
+- ✅ Create a professional GitHub profile
+:::
+
+---
+
+## Phase I Overview
+
+In this phase, you'll develop the habits of a research journalist: reading critically, reflecting thoughtfully, and documenting consistently. Each week, you'll engage with a chapter from the [Vibes to Variables textbook](https://sim-lab-siue.github.io/vibes-to-variables/) and write a 250-300 word reflection.
+
+### The Journalist Mindset
+- **Read actively**: Engage with the text, ask questions, make connections
+- **Reflect deeply**: Consider how concepts apply to your interests
+- **Document consistently**: Build your personal knowledge archive
+- **Share openly**: Contribute to collaborative learning through GitHub
+
+---
+
+## Assignments
+
+### Weekly Reading Journal (150 points)
+
+**Due:** Every Friday by 11:59 PM (Weeks 1-4)
+
+Post a weekly 250-300-word reflection on the assigned reading:
+1. Draft your entry in Obsidian (folder: `01_Journal`)
+2. Copy to your GitHub repository for submission
+3. Submit link via Blackboard
+
+**Reflection prompts:**
+- How does this chapter connect to mass communication?
+- What surprised you or challenged your assumptions?
+- How might you apply these concepts in your research?
+
+### GitHub Profile (25 points)
+
+**Due:** Week 1 (Jan 12)
+
+Create a professional public GitHub profile:
+- Professional photo
+- README.md introducing yourself
+- Outline your research interests
+
+[GitHub Setup Guide](../../github-setup.qmd){.btn .btn-secondary}
+
+---
+
+## Weekly Schedule
+
+| Week | Chapter | Key Topics |
+|------|---------|------------|
+| **Week 1** | Ch 1: The Science of Storytelling | Introduction to research methods |
+| **Week 2** | Ch 2: The Publishing Engine | Research publication process |
+| **Week 3** | Ch 3: The Scientific Approach | Scientific method fundamentals |
+| **Week 4** | Ch 4: Intelligence Gathering | Literature review and sources |
+
+Follow the [Setup Guide](../../setup.qmd) to:
+1. Download your `Liaison_Vault.zip` from the [Resources page](../../resources/index.qmd)
+2. Extract it to your Documents folder
+3. Install and configure Obsidian
+4. Connect your vault to Obsidian
+5. Configure attachment settings
+
+**Due:** Before your first class meeting
+
+### Activity 2: Explore Your Vault Structure (15 minutes)
+
+Open your Liaison_Vault and review each folder:
+
+| Folder | Purpose | What You'll Do |
+|--------|---------|---|
+| **00_Inbox** | Quick capture | Write daily thoughts & ideas here first |
+| **01_Journal** | Weekly reflections | Use templates to reflect each week |
+| **02_Literature** | Research notes | Organize all your reading notes |
+| **03_Project** | Active research | Organize by prospectus, codebook, data, drafts |
+| **04_Resources** | Media & attachments | Store images, PDFs, external files |
+| **99_Templates** | Reusable templates | Copy templates to start new work |
+
+### Activity 3: Your First Journal Entry (10-15 minutes)
+
+Create a new file in `01_Journal/` named `Week_01_Reflection.md`
+
+Use one of the three thinking paths:
+
+1. **The Connector** - How does being a liaison relate to things you already know?
+2. **The Troubleshooter** - What challenges might you face in this role?
+3. **The Critic** - Does the liaison role resonate with your experience?
+
+Write 3-5 sentences. No pressure—just think on paper. 📝
+
+---
+
+## Tools You'll Use
+
+This course uses five key tools. Get familiar with each:
+
+:::{.card-grid}
+
+::: {.card}
+<span class="card-icon">🗂️</span>
+
+### Obsidian
+
+Your personal knowledge management system
+
+[Setup Guide](../../resources/install-vscode.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+::: {.card}
+<span class="card-icon">💾</span>
+
+### Git & GitHub
+
+Version control for your projects
+
+[Setup Guide](../../github-setup.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+::: {.card}
+<span class="card-icon">📊</span>
+
+### R & RStudio
+
+Statistical analysis and data work
+
+[Setup Guide](../../resources/install-r-rstudio.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+::: {.card}
+<span class="card-icon">💻</span>
+
+### VS Code
+
+Professional code editor
+
+[Setup Guide](../../resources/install-vscode.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+:::
+
+---
+
+## Key Resources for Phase 1
+
+- 📋 [Weekly Journal Template](../../Liaison_Vault/99_Templates/Weekly_Journal_Template.md) - Use this each week
+- 📖 [Data Dictionary Template](../../Liaison_Vault/99_Templates/Data_Dictionary_Template.md) - Preview for Phase 3
+- 🔗 [Vault Orientation File](../../Liaison_Vault/00_START_HERE.md) - Start here for more details
+- 📥 [All Downloads](../../resources/index.qmd) - Software, templates, guides
+
+---
+
+## What Success Looks Like
+
+By the end of Phase 1, you should have:
+
+:::{.deliverables}
+✅ **Vault Configured** - Your Liaison_Vault is set up and synced  
+✅ **Folder Structure Explored** - You understand what goes where  
+✅ **First Journal Entry** - One reflection using one of the three thinking paths  
+✅ **Software Installed** - Obsidian, Git, R/RStudio, VS Code (if using)  
+✅ **Ready for Phase 2** - You know where to find help and resources  
+:::
+
+---
+
+## Next Phase
+
+Once you complete Phase 1:
+
+→ **[Phase II: The Architect](../02_architect/index.qmd)** - Set up your digital workspace and research infrastructure
+
+---
+
+## Questions?
+
+- **Setup issues?** Review the [Setup Guide](../../setup.qmd)
+- **Tool problems?** Check the [Resources page](../../resources/index.qmd) for detailed installation guides
+- **General questions?** Email Dr. Leith or visit during office hours (MW 10:00–11:30 AM or 1:30–3:00 PM)
+
+---
+
+:::{.phase-navigation}
+← [Home](../../index.qmd){.phase-nav-prev}
+
+<span class="phase-progress">Phase 1 of 5</span>
+
+[Phase II: The Architect →](../02_architect/index.qmd){.phase-nav-next}
+:::

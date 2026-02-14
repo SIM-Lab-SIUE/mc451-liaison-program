@@ -2,6 +2,28 @@ project:
   type: website
   title: "MC Research Methods: The Liaison Program"
   output-dir: docs
+  render:
+    - "*.qmd"
+    - "modules/**/*.qmd"
+    - "resources/*.qmd"
+    - "!README.md"
+    - "!**/README.md"
+    - "!DEVELOPER_GUIDE.md"
+    - "!ARCHITECTURE.md"
+    - "!DEPLOYMENT.md"
+    - "!GIT_WORKFLOW.md"
+    - "!GITHUB_SETUP.md"
+    - "!CUSTOMIZATION_GUIDE.md"
+    - "!ROADMAP.md"
+    - "!TESTING_CHECKLIST.md"
+    - "!CONTENT_PLAN.md"
+    - "!DOCUMENTATION_*.md"
+    - "!PROJECT_HANDOFF_SUMMARY.md"
+    - "!HANDOFF_COMPLETION_REPORT.md"
+    - "!QUICK_START.md"
+    - "!START_HERE.md"
+    - "!LAUNCH_CHECKLIST.md"
+    - "!UX_IMPROVEMENT_PLAN.md"
 
 website:
   title: "MC Research Methods: The Liaison Program"
@@ -10,55 +32,24 @@ website:
     left:
       - text: "Home"
         href: index.qmd
+      - text: "Get Started"
+        href: setup.qmd
       - text: "Syllabus"
         href: syllabus.qmd
       - text: "Phases"
         menu:
-          - text: "🧭 Phase 1: Orientation"
-            href: modules/01_orientation/index.qmd
-          - text: "🔍 Phase 2: Discovery"
-            href: modules/02_discovery/index.qmd
-          - text: "📖 Phase 3: The Dictionary"
-            href: modules/03_dictionary/index.qmd
-          - text: "⚙️ Phase 4: Execution"
-            href: modules/04_execution/index.qmd
-          - text: "🎯 Phase 5: Delivery"
-            href: modules/05_delivery/index.qmd
+          - text: "📰 Phase I: The Journalist"
+            href: modules/01_journalist/index.qmd
+          - text: "🏗️ Phase II: The Architect"
+            href: modules/02_architect/index.qmd
+          - text: "🔨 Phase III: The Builder"
+            href: modules/03_builder/index.qmd
+          - text: "📊 Phase IV: The Analyst"
+            href: modules/04_analyst/index.qmd
+          - text: "🎯 Phase V: The Publisher"
+            href: modules/05_publisher/index.qmd
       - text: "Resources"
         href: resources/index.qmd
-      - text: "About"
-        href: about.qmd
-  sidebar:
-    - title: "Start Here"
-      contents:
-        - index.qmd
-        - setup.qmd
-        - syllabus.qmd
-    - title: "Tools & Accounts"
-      contents:
-        - obsidian-setup.qmd
-        - github-setup.qmd
-        - resources/install-r-rstudio.qmd
-        - resources/install-vscode.qmd
-    - title: "Phase 1: Orientation"
-      contents:
-        - modules/01_orientation/index.qmd
-        - modules/01_orientation/chapter_01.qmd
-    - title: "Phase 2: Discovery"
-      contents:
-        - modules/02_discovery/index.qmd
-    - title: "Phase 3: The Dictionary"
-      contents:
-        - modules/03_dictionary/index.qmd
-    - title: "Phase 4: Execution"
-      contents:
-        - modules/04_execution/index.qmd
-    - title: "Phase 5: Delivery"
-      contents:
-        - modules/05_delivery/index.qmd
-    - title: "Resources"
-      contents:
-        - resources/index.qmd
 
 format:
   html:

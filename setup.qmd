@@ -4,49 +4,54 @@ title: "Getting Started"
 
 ## Welcome to the Liaison Program
 
-This page will guide you through your initial setup. Complete these steps before Phase 1.
+Complete these four steps to set up your workspace. **Time needed:** 15-20 minutes.
 
-**Time needed:** ~20–25 minutes total. Follow the steps in order.
-
----
-
-## Step 1: Download Your Workspace (5 minutes)
-
-Visit the **[Resources page](resources/)** and download the `Liaison_Vault.zip` file.
-
-Extract it to a location like:
-- **Mac/Linux**: `~/Documents/Liaison_Vault`
-- **Windows**: `C:\Users\YourName\Documents\Liaison_Vault`
+:::{.callout-important}
+## Before You Begin
+Make sure you have a reliable internet connection and about 500 MB of free disk space.
+:::
 
 ---
 
-## Step 2: Install Obsidian (5 minutes)
+## Step 1: Download Your Workspace
 
-1. Go to [obsidian.md](https://obsidian.md/) and download Obsidian
-2. Install it on your computer
-3. Open Obsidian and select **"Open folder as vault"**
-4. Navigate to your `Liaison_Vault` folder and open it
-
-**First time in Obsidian?**
-- Click the folder icon on the left sidebar to see your vault structure
-- Open `00_START_HERE.md` to read your orientation guide
+1. Visit the [Resources page](resources/index.qmd)
+2. Click **Download Liaison_Vault.zip**
+3. Extract the ZIP file to:
+   - **Windows**: `C:\Users\YourName\Documents\Liaison_Vault`
+   - **Mac**: `~/Documents/Liaison_Vault`
+   - **Linux**: `~/Documents/Liaison_Vault`
 
 ---
 
-## Step 3: Configure Obsidian Settings (3 minutes)
+## Step 2: Install Obsidian
 
-Once your vault is open in Obsidian:
+1. Visit [obsidian.md](https://obsidian.md/)
+2. Download Obsidian for your operating system
+3. Install and open Obsidian
+4. Click **"Open folder as vault"**
+5. Navigate to your `Liaison_Vault` folder and select it
 
-1. Go to **Settings** (gear icon, bottom left)
-2. Click **Files & Links** in the sidebar
-3. Under "Default location for new attachments", select **04_Resources**
-4. This ensures all images, PDFs, and media files go to the right place
+**Your vault will open with folders, templates, and a start guide ready to go.**
 
 ---
 
-## Step 4: Explore Your Vault Structure
+## Step 3: Configure Obsidian
 
-Your vault contains:
+Once your vault is open:
+
+1. Click the **Settings** icon (gear, bottom left)
+2. Navigate to **Files & Links**
+3. Set **Default location for new attachments** to `04_Resources`
+4. Close settings
+
+This ensures images and PDFs are stored in the correct folder.
+
+---
+
+## Step 4: Explore Your Workspace
+
+Your vault is organized into six folders:
 
 | Folder | Purpose | Action |
 |--------|---------|--------|
@@ -59,22 +64,11 @@ Your vault contains:
 
 ---
 
-## Step 5: Review the Weekly Journal Template (5 minutes)
+## Step 5: You're Ready!
 
-Open **99_Templates** → **Weekly_Journal_Template.md** (or preview it [here](Liaison_Vault/99_Templates/Weekly_Journal_Template.md))
+Once you complete these steps, move to **[Phase I: The Journalist](modules/01_journalist/index.qmd)** to begin.
 
-This template guides you to reflect using one of three thinking paths:
-- **The Connector**: How does this apply to my project?
-- **The Troubleshooter**: What broke and how did I fix it?
-- **The Critic**: Does this hold true in my experience?
-
-Want a head start on later phases? Preview the Data Dictionary Template [here](Liaison_Vault/99_Templates/Data_Dictionary_Template.md) so you know how variables will be documented.
-
----
-
-## Step 6: You're Ready!
-
-Once you complete these steps, move to **Phase 1: Orientation** in the sidebar to begin.
+[Start Phase I →](modules/01_journalist/index.qmd){.btn .btn-primary .btn-lg}
 
 ---
 

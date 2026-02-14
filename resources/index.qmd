@@ -1,103 +1,105 @@
 ---
-title: "📚 Resources & Downloads"
----
-
-## Quick Start
-
-Get your workspace running in 15-20 minutes:
-
-:::{.card-grid}
-
-::: {.card}
-<span class="card-icon">📥</span>
-
-### 1. Download Your Vault
-
-Get the complete Liaison_Vault with templates and folder structure.
-
-[Download Vault (ZIP)](Liaison_Vault.zip){.btn .btn-primary}
-:::
-
-::: {.card}
-<span class="card-icon">📖</span>
-
-### 2. Follow Setup Guide
-
-Step-by-step instructions to configure Obsidian and your tools.
-
-[Setup Guide](../setup.qmd){.btn .btn-primary}
-:::
-
-::: {.card}
-<span class="card-icon">🎯</span>
-
-### 3. Start Phase 1
-
-Begin the five-phase research methods program.
-
-[Go to Phase 1](../modules/01_orientation/index.qmd){.btn .btn-primary}
-:::
-
-::: {.card}
-<span class="card-icon">❓</span>
-
-### 4. Get Help
-
-Questions? Check our guides or email Dr. Leith.
-
-[View FAQ](#faq){.btn .btn-primary}
-:::
-
-:::
-
+title: "Resources"
 ---
 
 ## Essential Downloads
 
 ### Liaison Obsidian Vault
 
-Your complete knowledge management system for the Liaison Program.
+Your complete workspace for the Liaison Program.
+
+**[📥 Download Liaison_Vault.zip](Liaison_Vault.zip){.btn .btn-primary .btn-lg}**
 
 **What's Included:**
-- 📁 **00_Inbox** - Quick capture area for notes and ideas
-- 📔 **01_Journal** - Weekly reflection templates (Connector/Troubleshooter/Critic)
-- 📚 **02_Literature** - Centralized space for reading notes and citations
-- 🔬 **03_Project** - Active research with prospectus, codebook, data, drafts
-- 🖼️ **04_Resources** - Attachment storage for images, PDFs, media
-- 📋 **99_Templates** - Ready-to-use templates for assignments
+- 📁 **00_Inbox** - Quick capture area
+- 📔 **01_Journal** - Weekly reflection templates
+- 📚 **02_Literature** - Reading notes
+- 🔬 **03_Project** - Research workspace (prospectus, codebook, data, drafts)
+- 🖼️ **04_Resources** - Attachments and media
+- 📋 **99_Templates** - Assignment templates
 
-**[📥 Download Liaison_Vault.zip](Liaison_Vault.zip)** <span class="resource-badge time">2 min download</span>
-
-**Size:** ~15 MB | **Format:** ZIP | **Includes:** 6 folders + 12 template files
+**Size:** ~15 MB | **Format:** ZIP
 
 ---
 
 ### Optional: Textbook Package
 
-Supplemental textbook bundle for reference throughout the course.
+Supplemental textbook bundle for reference.
 
 **[📥 Download 05_Textbook.zip](../05_Textbook.zip)** <span class="resource-badge">Optional</span>
 
-**Note:** Extract into your vault's `04_Resources/` folder or keep adjacent for quick access.
+Extract into your vault's `04_Resources/` folder or keep adjacent for quick access.
 
 ---
 
-## Required Software & Tools
+## Required Software
 
-Install these before starting Phase 1:
+Install these tools before starting Phase 1:
 
 :::{.card-grid}
 
 ::: {.card}
-<span class="card-icon">🗂️</span>
+### 🗂️ Obsidian
 
-### Obsidian
-
-Personal knowledge management system for your vault.
+Personal knowledge management system
 
 <span class="resource-badge">Free</span>
 
-[Download Obsidian](https://obsidian.md/){.btn .btn-sm .btn-secondary}
+[Download](https://obsidian.md/){.btn .btn-secondary}  
+[Setup Guide](../setup.qmd){.btn .btn-sm}
+:::
+
+::: {.card}
+### 🐙 GitHub
+
+Version control and collaboration
+
+<span class="resource-badge">Free</span>
+
+[Sign Up](https://github.com/signup){.btn .btn-secondary}  
+[Setup Guide](../github-setup.qmd){.btn .btn-sm}
+:::
+
+::: {.card}
+### 📊 R & RStudio
+
+Statistical analysis and visualization
+
+<span class="resource-badge">Free</span>
+
+[Download R](https://cran.r-project.org/){.btn .btn-secondary}  
+[Download RStudio](https://posit.co/download/rstudio-desktop/){.btn .btn-secondary}  
+[Install Guide](install-r-rstudio.qmd){.btn .btn-sm}
+:::
+
+::: {.card}
+### 💻 VS Code
+
+Code editor with Git integration
+
+<span class="resource-badge">Free</span>
+
+[Download](https://code.visualstudio.com/){.btn .btn-secondary}  
+[Install Guide](install-vscode.qmd){.btn .btn-sm}
+:::
+
+:::
+
+---
+
+## Quick Links
+
+- [Setup Guide](../setup.qmd) - Complete your workspace in 15 minutes
+- [Phase I: The Journalist](../modules/01_journalist/index.qmd) - Start the program
+- [Syllabus](../syllabus.qmd) - Course policies and schedule
+- [Vibes to Variables Textbook](https://sim-lab-siue.github.io/vibes-to-variables/) - Companion textbook
+
+---
+
+## Need Help?
+
+**Email:** aleith@siue.edu  
+**Office Hours:** MW 10:00–11:30 AM and 1:30–3:00 PM
 [Setup Guide](../obsidian-setup.qmd){.btn .btn-sm .btn-primary}
 :::
 
@@ -239,10 +241,9 @@ Learn version control basics and how to sync your projects.
 - Git not working? [See GitHub guide](../github-setup.qmd)
 - R installation stuck? [See R guide](install-r-rstudio.qmd)
 
-**Course Content:**
-- What's a Communication Liaison? [Read Phase 1](../modules/01_orientation/index.qmd)
-- How do I frame research questions? [Read Phase 2](../modules/02_discovery/index.qmd)
-- What's a data dictionary? [Read Phase 3](../modules/03_dictionary/index.qmd)
+- What is The Journalist phase? [Read Phase I](../modules/01_journalist/index.qmd)
+- What is The Architect phase? [Read Phase II](../modules/02_architect/index.qmd)
+- What is The Builder phase? [Read Phase III](../modules/03_builder/index.qmd)
 
 **General Questions:**
 - Email Dr. Leith: **aleith@siue.edu**

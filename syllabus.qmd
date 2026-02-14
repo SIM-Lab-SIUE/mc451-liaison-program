@@ -7,47 +7,179 @@ title: "Course Syllabus"
 
 ---
 
-## Course Overview
-
-This course equips you with research methodologies, tools, and frameworks to excel as a **Communication Liaison**—bridging data scientists and creative teams. Over 17 weeks across five phases, you'll develop skills to navigate data-driven projects while maintaining clear communication with all stakeholders.
-
----
-
 ## Essential Information
 
 | Item | Details |
 |------|---------|
 | **Instructor** | Alex P. Leith, PhD |
-| **Meeting Time** | Monday & Wednesday, 3:00–4:15 PM |
-| **Office Hours** | MW 10:00–11:30 AM and 1:30–3:00 PM (or by appointment) |
 | **Email** | aleith@siue.edu |
+| **Office** | Dunham Hall 1017 |
+| **Office Hours** | MW 10:00–11:30 AM and 1:30–3:00 PM |
+| **Class Time** | MW 3:00–4:15 PM |
+| **Classroom** | Dunham Hall 2039 |
+| **Duration** | Jan 12 – May 08, 2026 |
 | **Course Website** | https://sim-lab-siue.github.io/mc451-liaison-program/ |
+| **Textbook** | [Vibes to Variables](https://sim-lab-siue.github.io/vibes-to-variables/) (OER - Free) |
 
 ---
 
-## Complete Syllabus
+## Contact Methods
 
-For full course details including learning objectives, grading policies, assignments, course schedule, and university policies, download the complete syllabus:
-
-[📄 Download Full Syllabus (PDF)](MC451-Syllabus-2026Spring.pdf){.btn .btn-primary}
+- **Email:** aleith@siue.edu (preferred for time-insensitive and confidential communication)
+- **Discord:** APLeith (preferred for time-sensitive or casual communication)
+- **Teams:** [Schedule meetings](https://teams.microsoft.com) for short and medium-length consultations
 
 ---
 
-## At a Glance
+## Course Description
 
-### Grading Breakdown (summary)
-- Participation and weekly journal reflections
-- Phase deliverables (Discovery, Dictionary, Execution)
-- Final presentation/brief in Phase 5
+MC 451—Research Methods in Mass Media introduces students to core research methodologies used in mass communication. Through this course, students will explore quantitative and qualitative research methods, including surveys, experimental designs, content analysis, and in-depth interviews. The course emphasizes development of skills necessary for the design, execution, and presentation of research studies while engaging with professional and ethical principles that guide mass communication research.
 
-### Weekly Rhythm
-- **Mon/Wed class:** activities, demos, peer feedback
-- **Weekly journal:** use `01_Journal` with the Weekly Journal Template
-- **Check-ins:** office hours or email; bring blockers early
+---
 
-### Key Policies
-- Come prepared with vault set up by Week 2
-- Late work: see full PDF for details and extensions
+## Course Structure: The Five Phases
+
+### Phase I: The Journalist (Weeks 1-4) - 150 points
+- Weekly Reading Journal (150 pts)
+- GitHub Profile Setup (included in Phase II)
+
+### Phase II: The Architect (Weeks 2-4) - 125 points  
+- GitHub Profile (25 pts)
+- Syllabus Contract (25 pts)
+- Project Setup (25 pts)
+- Archivist Report (25 pts)
+
+### Phase III: The Builder (Weeks 5-12) - 250 points
+- Annotated Manuscript (25 pts)
+- Project Prospectus (25 pts)
+- Topic Selection - RQs (25 pts)
+- Definitions Practice (25 pts)
+- Codebook & Qual Memo (50 pts)
+- Sampling Plan & Pilot (75 pts)
+- CITI Ethics Certification (50 pts)
+
+### Phase IV: The Analyst (Weeks 13-15) - 225 points
+- Data Wrangling [R] (50 pts)
+- Describing Data [R] (75 pts)
+- Inferencing Data [R] (100 pts)
+
+### Phase V: The Publisher (Weeks 16-17) - 250 points
+- Final Web Portfolio (250 pts)
+
+**Total Points:** 1000
+
+---
+
+## Grading Scale
+
+| Grade | Points |
+|-------|--------|
+| A | 900-1000 |
+| B | 800-899 |
+| C | 700-799 |
+| D | 600-699 |
+| F | < 599 |
+
+---
+
+## Required Software
+
+All software is free and open-source:
+
+- **R** - Statistical computing environment
+- **RStudio** - IDE for R and Python
+- **Obsidian** - Personal knowledge management
+- **Quarto** - Scientific and technical publishing
+- **Git** - Version control
+
+[Installation Guides →](resources/index.qmd){.btn .btn-primary}
+
+---
+
+## Course Policies
+
+### Late Work
+- Late submissions (after Friday 11:59 PM): -10% per business day
+- Non-emergency extensions must be requested before the deadline
+- Assignments more than one weekday late without approval: 0 points
+
+### Resubmission
+Assignments worth 50+ points may be revised and resubmitted within one week:
+- Final grade = average of original and resubmission
+- Example: 60% + 80% resubmission = 70% final grade
+
+### Participation
+Success requires attendance and active participation. Regular engagement with readings, activities, and discussions is essential.
+
+---
+
+## Academic Integrity
+
+Per the SIUE Student Academic Code (3C2), plagiarism and cheating will not be tolerated and may lead to failure on an assignment, in class, or dismissal from the University. Students must comply with University policies on academic honesty.
+
+---
+
+## Weekly Schedule
+
+| Week | Dates | Phase | Topic | Assignments Due |
+|------|-------|-------|-------|-----------------|
+| 1 | Jan 12 | The Journalist | Ch 1: The Science of Storytelling | GitHub Profile |
+| 2 | Jan 19 | The Publisher | Ch 2: The Publishing Engine | Syllabus Contract |
+| 3 | Jan 26 | The Scientist | Ch 3: The Scientific Approach | Project Setup |
+| 4 | Feb 02 | The Search | Ch 4: Intelligence Gathering | Archivist Report |
+| 5 | Feb 09 | The Lens | Ch 5: Theory as a Lens | Annotated Manuscript |
+| 6 | Feb 16 | The Architect | Ch 6: The Project Brief | Project Prospectus |
+| 7 | Feb 23 | The Translator | Ch 7: Structured Listening | Topic Selection (RQs) |
+| 8 | Mar 02 | The Variables | Ch 8: From Vibes to Variables | Definitions Practice |
+| 9 | Mar 09 | **SPRING BREAK** | No Readings | |
+| 10 | Mar 16 | The Rulebook | Ch 9: The Rulebook | Codebook & Qual Memo |
+| 11 | Mar 23 | The Sample | Ch 10: The Sample | Sampling Plan / Pilot |
+| 12 | Mar 30 | Field Work | No Reading | CITI Certification |
+| 13 | Apr 06 | The Analyst | Ch 11: Wrangling the Data | Data Wrangling [R] |
+| 14 | Apr 13 | The Narrative | Ch 12: Visualizing the Narrative | Describing Data [R] |
+| 15 | Apr 20 | The Inference | Ch 13: Making the Call | Inferencing Data [R] |
+| 16 | Apr 27 | Remote Assembly | Ch 14: The One-Click Report | |
+| 17 | May 04 | **Finals Week** | | Final Web Portfolio |
+
+*Schedule subject to change with notice*
+
+---
+
+## Additional Support
+
+### Accommodations (ACCESS)
+Contact Accessible Campus Community and Equitable Student Support:
+- **Website:** siue.edu/access
+- **Email:** myaccess@siue.edu  
+- **Phone:** 618-650-3726
+- **Location:** Student Success Center, Room 1203
+
+### Counseling Services (Cougar Care)
+- **Website:** cougarcare.siue.edu
+- **Phone:** 618-650-2842
+- **Location:** Student Success Center, Room 0222
+
+### Academic Support
+- Lovejoy Library Resources
+- Academic Success Sessions
+- Tutoring Resource Center
+- The Writing Center
+- Student Success Coaches (via Starfish)
+
+### Technical Support (ITS)
+- **Phone:** 618-650-5500
+- **Email:** help@siue.edu
+- **System Status:** [ITS Status Page](https://status.siue.edu)
+
+---
+
+## Download Full Syllabus
+
+[📄 Download Complete Syllabus (PDF)](MC451-Syllabus-2026Spring.pdf){.btn .btn-primary}
+
+---
+
+*All material, assignments, and deadlines are subject to change with prior notice.*
 - Academic integrity: cite data sources and collaborators
 
 ---
