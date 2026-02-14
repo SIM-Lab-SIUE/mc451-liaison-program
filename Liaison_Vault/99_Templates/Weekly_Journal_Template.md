@@ -13,7 +13,7 @@ Each week, you'll reflect on course material using **one of three approaches**. 
 
 **Example Prompt:** "How does this week's reading connect to what I'm working on?"
 
----
+---.
 
 ### 🔧 The Troubleshooter
 **Definition:** Document a challenge you faced and how you worked through it—technical, conceptual, or practical.

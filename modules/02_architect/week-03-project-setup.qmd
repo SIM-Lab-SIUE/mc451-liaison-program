@@ -1,0 +1,107 @@
+---
+title: "📂 Week 03: Project Setup"
+---
+
+::: assignment-header
+# Week 03: Project Setup
+
+**Role:** The Scientist \| **Phase:** Organization \| **Points:** 25
+
+**Due:** Before Week 4 class meeting
+:::
+
+------------------------------------------------------------------------
+
+## 🎯 The Mission (Why we are doing this)
+
+Amateur researchers have files scattered across Downloads, Desktop, and Documents folders. **Professional Liaisons** maintain a "Chain of Custody."
+
+If a colleague sits down at your computer, they should be able to navigate your entire project without asking you a single question. This week, you will prove that your "Digital Office" is built to code and ready for data.
+
+------------------------------------------------------------------------
+
+## 🛠️ The Task (Step-by-Step Instructions)
+
+### Step 1: Verify Your Vault Architecture
+
+You downloaded your `Liaison_Vault.zip` in Phase 1. Verify that your vault contains these folders **exactly** as written (case-sensitive):
+
+```         
+Liaison_Vault/
+├── 00_Inbox           (Messy notes)
+├── 01_Journal         (Reflections)
+├── 02_Literature      (PDFs & readings)
+├── 03_Project/        (Active research work)
+│   ├── 01_Prospectus/
+│   ├── 02_Codebook/
+│   ├── 03_Data/
+│   └── 04_Drafts/
+├── 04_Resources/      (Media & attachments)
+├── 99_Templates/      (Reusable templates)
+└── 00_START_HERE.md   (Orientation guide)
+```
+
+**What to check:** - All folder names start with `00`, `01`, `02`, etc. - No spaces in folder names (e.g., `01_Journal` NOT `01 Journal`) - Subfolders exist inside `03_Project/` - Hidden folder `.obsidian/` is present (if using Obsidian)
+
+------------------------------------------------------------------------
+
+### Step 2: Open Your Vault in Obsidian
+
+Tell Obsidian this folder is a vault:
+
+1.  **Open Obsidian**
+2.  Click **"Open folder as vault"** (or **File → Open as vault**)
+3.  Navigate to your `Liaison_Vault` folder and select it
+4.  Obsidian will create a `.obsidian/` hidden folder automatically
+
+------------------------------------------------------------------------
+
+### Step 3: Verify the File Explorer View
+
+In Obsidian's left sidebar, you should see the **File Explorer** showing all your folders:
+
+-   ✅ File tree shows numbered folders in correct order (00, 01, 02, 03, 04, 99)
+-   ✅ Subfolders visible under `03_Project/`
+-   ✅ `00_START_HERE.md` file visible at vault root
+-   ✅ `.obsidian/` folder visible in file explorer (or accessible via View → Show Hidden Files)
+
+**Take a Screenshot:** Capture the File Explorer pane showing your complete vault structure.
+
+------------------------------------------------------------------------
+
+## 📤 Submission Requirements
+
+Upload a **Screenshot (JPG or PNG)** showing your Obsidian file explorer with all folders visible.
+
+**What the screenshot must show:** 1. Obsidian window with your vault name in the title 2. File explorer sidebar displaying the numbered folder structure 3. All main folders: 00_Inbox, 01_Journal, 02_Literature, 03_Project, 04_Resources, 99_Templates 4. Subfolders inside 03_Project visible (01_Prospectus, 02_Codebook, 03_Data, 04_Drafts)
+
+------------------------------------------------------------------------
+
+## 🧐 Grading Checklist (Pass/Fail)
+
+Your submission will be checked for:
+
+-   [ ] **Numbered Folders:** Do folders start with `00`, `01`, `02`, etc.?
+-   [ ] **No Spaces:** Are filenames clean? (e.g., `01_Journal`, NOT `01 Journal`)
+-   [ ] **Folder Structure:** Are all 6 main folders present?
+-   [ ] **Subfolders:** Does `03_Project/` contain the four expected subfolders?
+-   [ ] **Obsidian Open:** Is Obsidian clearly open with your vault?
+-   [ ] **Screenshot Clear:** Can all folder names be read clearly?
+
+------------------------------------------------------------------------
+
+## 💡 Pro Tips
+
+**Already have a vault from Phase 1?** You're done! Just take the screenshot.
+
+**Lost your vault?** Re-download from the [Resources page](../../resources/index.qmd) and extract fresh.
+
+**Obsidian not showing all folders?** Try: - Restart Obsidian - Go to **Settings → File & Links → Show hidden files** (toggle on) - Refresh the file explorer
+
+**Stuck?** Reach out via email or office hours. We'll get it sorted!
+
+------------------------------------------------------------------------
+
+## Next: Phase 2 Activities
+
+Once you submit this, you're ready for: - Activity 1: Understanding Good Research Questions - Activity 2: Stakeholder & Data Source Mapping - Activity 3: Mini Research Proposal
