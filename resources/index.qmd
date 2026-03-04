@@ -2,6 +2,31 @@
 title: "Resources"
 ---
 
+## Course R Package
+
+:::{.callout-important}
+## Install coursepackR First
+
+Before doing anything else in R, install the course package. It sets up your entire R environment automatically.
+
+```r
+install.packages("remotes")
+remotes::install_github("SIM-Lab-SIUE/coursepackR")
+```
+
+Then run:
+
+```r
+library(coursepackR)
+mccourse_setup()   # installs all course packages + Quarto + TinyTeX
+mccourse_check()   # verifies everything is working
+```
+
+[Full Installation Instructions](install-r-rstudio.qmd){.btn .btn-primary .btn-sm}   [coursepackR on GitHub](https://github.com/SIM-Lab-SIUE/coursepackR){.btn .btn-secondary .btn-sm}
+:::
+
+---
+
 ## Essential Downloads
 
 ### Liaison Obsidian Vault

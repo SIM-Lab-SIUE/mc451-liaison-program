@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-14">
+<meta name="dcterms.date" content="2026-03-04">
 
 <title>Installing R &amp; RStudio – MC Research Methods: The Liaison Program</title>
 <style>
@@ -221,9 +221,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#essential-next-steps" id="toc-essential-next-steps" class="nav-link" data-scroll-target="#essential-next-steps">Essential Next Steps</a>
   <ul class="collapse">
-  <li><a href="#set-your-working-directory" id="toc-set-your-working-directory" class="nav-link" data-scroll-target="#set-your-working-directory">1. Set Your Working Directory</a></li>
-  <li><a href="#install-course-packages" id="toc-install-course-packages" class="nav-link" data-scroll-target="#install-course-packages">2. Install Course Packages</a></li>
-  <li><a href="#verify-packages-loaded" id="toc-verify-packages-loaded" class="nav-link" data-scroll-target="#verify-packages-loaded">3. Verify Packages Loaded</a></li>
+  <li><a href="#step-1-install-coursepackr" id="toc-step-1-install-coursepackr" class="nav-link" data-scroll-target="#step-1-install-coursepackr">Step 1: Install coursepackR</a></li>
+  <li><a href="#step-2-run-the-course-setup" id="toc-step-2-run-the-course-setup" class="nav-link" data-scroll-target="#step-2-run-the-course-setup">Step 2: Run the Course Setup</a></li>
+  <li><a href="#step-3-verify-your-environment" id="toc-step-3-verify-your-environment" class="nav-link" data-scroll-target="#step-3-verify-your-environment">Step 3: Verify Your Environment</a></li>
   </ul></li>
   <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
   <ul class="collapse">
@@ -254,7 +254,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 14, 2026</p>
+      <p class="date">March 4, 2026</p>
     </div>
   </div>
   
@@ -397,32 +397,73 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="essential-next-steps" class="level2">
 <h2 class="anchored" data-anchor-id="essential-next-steps">Essential Next Steps</h2>
-<p>Once R and RStudio are installed, you need to set up your R environment for the course:</p>
-<section id="set-your-working-directory" class="level3">
-<h3 class="anchored" data-anchor-id="set-your-working-directory">1. Set Your Working Directory</h3>
-<p>In RStudio Console, run:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"~/Documents"</span>)  <span class="co"># Or your preferred workspace folder</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Once R and RStudio are installed, complete your course setup with the <code>coursepackR</code> package.</p>
+<section id="step-1-install-coursepackr" class="level3">
+<h3 class="anchored" data-anchor-id="step-1-install-coursepackr">Step 1: Install coursepackR</h3>
+<p><code>coursepackR</code> is the official course package for MC 451. It installs all required packages, downloads assignment templates, and runs a system check to confirm everything is working. Run these two lines in the RStudio <strong>Console</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"remotes"</span>)</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>remotes<span class="sc">::</span><span class="fu">install_github</span>(<span class="st">"SIM-Lab-SIUE/coursepackR"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This may take 5–10 minutes the first time. You’ll see messages as dependencies install — that’s normal.</p>
 </section>
-<section id="install-course-packages" class="level3">
-<h3 class="anchored" data-anchor-id="install-course-packages">2. Install Course Packages</h3>
-<p>We’ll use these packages throughout the course. Install them with:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Core data science packages</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>,      <span class="co"># Data wrangling and visualization</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"rmarkdown"</span>,      <span class="co"># Create documents with R code</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"quarto"</span>,         <span class="co"># Publishing system</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"shiny"</span>,          <span class="co"># Interactive web apps</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ggplot2"</span>         <span class="co"># Advanced visualization</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This may take 5-15 minutes (packages are downloading and installing).</p>
+<section id="step-2-run-the-course-setup" class="level3">
+<h3 class="anchored" data-anchor-id="step-2-run-the-course-setup">Step 2: Run the Course Setup</h3>
+<p>Once installed, run the setup function. This configures Quarto, installs TinyTeX (needed for PDF rendering), and installs all course packages in one step:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(coursepackR)</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">mccourse_setup</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Follow any prompts that appear. Restart RStudio when it finishes.</p>
 </section>
-<section id="verify-packages-loaded" class="level3">
-<h3 class="anchored" data-anchor-id="verify-packages-loaded">3. Verify Packages Loaded</h3>
-<p>Test that the main packages work:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"All packages loaded successfully!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If no errors appear, you’re all set!</p>
+<section id="step-3-verify-your-environment" class="level3">
+<h3 class="anchored" data-anchor-id="step-3-verify-your-environment">Step 3: Verify Your Environment</h3>
+<p>Run the built-in system check to confirm everything is ready:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mccourse_check</span>()</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This runs eight diagnostic tests covering R, RStudio, Quarto, TinyTeX, and required packages. Green checkmarks mean you’re good. If anything shows red, the output will tell you what to fix.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Other Useful coursepackR Functions
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Function</th>
+<th>What It Does</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>download_week(3)</code></td>
+<td>Downloads the assignment template for Week 3</td>
+</tr>
+<tr class="even">
+<td><code>open_week(3)</code></td>
+<td>Opens the downloaded Week 3 materials in your file browser</td>
+</tr>
+<tr class="odd">
+<td><code>download_journal()</code></td>
+<td>Downloads the weekly reflection journal template</td>
+</tr>
+<tr class="even">
+<td><code>final_project()</code></td>
+<td>Scaffolds a complete final project folder with Quarto document and bibliography</td>
+</tr>
+<tr class="odd">
+<td><code>list_weeks()</code></td>
+<td>Shows all available weekly assignments</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<p><a href="https://github.com/SIM-Lab-SIUE/coursepackR" class="btn btn-secondary btn-sm">coursepackR on GitHub</a></p>
 <hr>
 </section>
 </section>

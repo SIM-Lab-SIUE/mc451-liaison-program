@@ -126,42 +126,53 @@ sudo apt install -y rstudio
 
 ## Essential Next Steps
 
-Once R and RStudio are installed, you need to set up your R environment for the course:
+Once R and RStudio are installed, complete your course setup with the `coursepackR` package.
 
-### 1. Set Your Working Directory
+### Step 1: Install coursepackR
 
-In RStudio Console, run:
-```r
-setwd("~/Documents")  # Or your preferred workspace folder
-```
-
-### 2. Install Course Packages
-
-We'll use these packages throughout the course. Install them with:
+`coursepackR` is the official course package for MC 451. It installs all required packages, downloads assignment templates, and runs a system check to confirm everything is working. Run these two lines in the RStudio **Console**:
 
 ```r
-# Core data science packages
-install.packages(c(
-  "tidyverse",      # Data wrangling and visualization
-  "rmarkdown",      # Create documents with R code
-  "quarto",         # Publishing system
-  "shiny",          # Interactive web apps
-  "ggplot2"         # Advanced visualization
-))
+install.packages("remotes")
+remotes::install_github("SIM-Lab-SIUE/coursepackR")
 ```
 
-This may take 5-15 minutes (packages are downloading and installing).
+This may take 5–10 minutes the first time. You'll see messages as dependencies install — that's normal.
 
-### 3. Verify Packages Loaded
+### Step 2: Run the Course Setup
 
-Test that the main packages work:
+Once installed, run the setup function. This configures Quarto, installs TinyTeX (needed for PDF rendering), and installs all course packages in one step:
+
 ```r
-library(tidyverse)
-library(ggplot2)
-print("All packages loaded successfully!")
+library(coursepackR)
+mccourse_setup()
 ```
 
-If no errors appear, you're all set!
+Follow any prompts that appear. Restart RStudio when it finishes.
+
+### Step 3: Verify Your Environment
+
+Run the built-in system check to confirm everything is ready:
+
+```r
+mccourse_check()
+```
+
+This runs eight diagnostic tests covering R, RStudio, Quarto, TinyTeX, and required packages. Green checkmarks mean you're good. If anything shows red, the output will tell you what to fix.
+
+::: {.callout-tip}
+## Other Useful coursepackR Functions
+
+| Function | What It Does |
+|---|---|
+| `download_week(3)` | Downloads the assignment template for Week 3 |
+| `open_week(3)` | Opens the downloaded Week 3 materials in your file browser |
+| `download_journal()` | Downloads the weekly reflection journal template |
+| `final_project()` | Scaffolds a complete final project folder with Quarto document and bibliography |
+| `list_weeks()` | Shows all available weekly assignments |
+:::
+
+[coursepackR on GitHub](https://github.com/SIM-Lab-SIUE/coursepackR){.btn .btn-secondary .btn-sm}
 
 ---
 

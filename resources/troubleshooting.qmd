@@ -8,9 +8,18 @@ date: last-modified
 Something broke. That's okay — it happens to everyone, including professional researchers and experienced programmers. This guide walks through the most common problems students encounter and how to fix them.
 
 ::: {.callout-tip}
-## Before You Panic
+## Before You Panic: Run mccourse_check()
 
-90% of rendering problems are fixed by one of these three things:
+The fastest way to diagnose a problem is to run the built-in system checker from the `coursepackR` package:
+
+```r
+library(coursepackR)
+mccourse_check()
+```
+
+This runs eight diagnostic tests covering R, Quarto, TinyTeX, and all required packages. It tells you exactly what's working and what isn't. If you haven't installed `coursepackR` yet, see the [R & RStudio Installation guide](install-r-rstudio.qmd).
+
+If `mccourse_check()` passes everything but you're still stuck, try these three things:
 
 1. **Restart R** — Session → Restart R (Ctrl+Shift+F10 / Cmd+Shift+F10)
 2. **Save your file** — Quarto only renders what's saved
