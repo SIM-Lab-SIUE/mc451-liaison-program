@@ -1,0 +1,187 @@
+---
+title: "What to Submit: Your Final Deliverables"
+---
+
+# What to Submit: Your Final Deliverables
+
+By Phase V, you've done serious research. Now it's time to share it. The final submission for this course has two parts: a **PDF report** and a **live GitHub Pages website**. This page explains exactly what each one is, what goes in it, and how to make sure you haven't missed anything.
+
+---
+
+## The Two Final Outputs
+
+| | PDF Report | GitHub Pages Website |
+|---|---|---|
+| **What it is** | A formatted research document | A public website with your portfolio |
+| **Rendered from** | Your `.qmd` file with `format: pdf` | Your `.qmd` file(s) with `format: html` |
+| **Audience** | Academic (instructor, peers) | Public (potential employers, classmates) |
+| **Submitted how** | Uploaded to Blackboard or emailed | URL submitted — the site itself is the submission |
+| **Contains** | Full report with citations, tables, figures | Same content, plus your research process and vault highlights |
+
+Both documents are produced from the same Quarto files — you just render them with different format settings.
+
+---
+
+## Part 1: The PDF Report
+
+Your PDF report is a complete research document. Think of it as something you could submit to a class or show a future employer as a writing sample.
+
+### Required Sections
+
+Your report must include all of the following sections, in this order:
+
+::: {.callout-important}
+## Required Report Sections
+
+- [ ] **Title page** — Title, your name, course name, date
+- [ ] **Abstract** — 150–200 words summarizing the study (what you asked, how you studied it, what you found)
+- [ ] **Introduction** — Background, why this topic matters, your research questions
+- [ ] **Method** — How you collected your data, what your codebook measured, how many units you analyzed
+- [ ] **Results** — What you found (tables, figures, frequencies — the numbers)
+- [ ] **Discussion** — What the results mean, how they connect to existing research, limitations
+- [ ] **References** — APA-formatted bibliography (Zotero can generate this automatically)
+:::
+
+### Rendering to PDF
+
+In your `.qmd` file's header, set:
+
+```yaml
+---
+title: "Your Report Title"
+author: "Your Name"
+date: today
+format: pdf
+---
+```
+
+Then click **Render** in RStudio. The PDF will appear in your project folder and open automatically.
+
+::: {.callout-tip}
+## PDF Rendering Requires a LaTeX Installation
+
+If you see an error like `"xelatex not found"` when rendering to PDF, you need to install TinyTeX. Run this once in the RStudio Console:
+
+```r
+install.packages("tinytex")
+tinytex::install_tinytex()
+```
+
+This takes about 5 minutes. After it completes, restart RStudio and try rendering again.
+:::
+
+---
+
+## Part 2: The GitHub Pages Website
+
+Your GitHub Pages site is a live, public-facing version of your research portfolio. It's hosted at a URL like:
+
+```
+https://yourusername.github.io/your-repo-name/
+```
+
+### What the Site Should Include
+
+Your portfolio website should contain:
+
+::: {.callout-important}
+## Required Website Pages
+
+- [ ] **Home/index page** — Brief introduction: who you are, what this project is
+- [ ] **Research summary** — Your main findings explained in plain language (not jargon)
+- [ ] **Full report** — Either embedded or linked as a downloadable PDF
+- [ ] **About** — A short bio and links to your GitHub profile
+:::
+
+The site doesn't need to be elaborate. A clean, readable site with working links is better than an ambitious design that's broken.
+
+### What a Finished Portfolio Looks Like
+
+::: {.callout-note}
+## Screenshot Placeholder
+
+*[Screenshot: Example student portfolio showing a homepage with a research project title, brief abstract, navigation links to the full report and methods section, and a simple header with the student's name. The site uses the default Quarto cosmo theme with readable fonts and good contrast.]*
+
+A finished portfolio typically has a simple navigation bar at the top, a clear headline for the project, and 2–3 paragraphs describing what you studied and what you found — written for a general audience, not an academic one.
+:::
+
+### Publishing to GitHub Pages
+
+1. Render your Quarto site (it outputs to the `docs/` folder)
+2. Commit and push all files to GitHub
+3. In your GitHub repository, go to **Settings → Pages**
+4. Set the source to **"Deploy from a branch"**, branch: `main`, folder: `/docs`
+5. Click Save. Your site will be live within a few minutes.
+
+After publishing, test every link on your site in a browser (not just in RStudio's preview).
+
+---
+
+## Side-by-Side Comparison
+
+| Section | PDF Report | GitHub Pages Site |
+|---|---|---|
+| Title & Author | ✅ Title page | ✅ On homepage |
+| Abstract | ✅ Formal abstract | ✅ Rewritten for general audience |
+| Introduction | ✅ Full academic intro | Optional (brief version) |
+| Method | ✅ Full methodology | Optional (brief summary) |
+| Results | ✅ Tables + figures | ✅ Key figures, plain language |
+| Discussion | ✅ Full discussion | ✅ "What we found" in plain language |
+| References | ✅ Full APA bibliography | Optional (link to PDF) |
+| Process notes | ❌ Not included | Optional (can add a "process" page) |
+
+---
+
+## Final Submission Checklist
+
+Use this before you submit anything:
+
+### PDF Report
+- [ ] All required sections are present and in order
+- [ ] Research questions are stated clearly in the Introduction
+- [ ] Method section explains your codebook and sample
+- [ ] Results section contains at least one table or figure
+- [ ] Discussion answers your original research questions
+- [ ] References are in APA format
+- [ ] PDF renders without errors
+
+### GitHub Pages Site
+- [ ] Site is live and accessible at a public URL
+- [ ] Homepage clearly states your name and project
+- [ ] All navigation links work when accessed from the live URL
+- [ ] Report is either embedded or downloadable
+- [ ] Site renders correctly on mobile (check on your phone)
+- [ ] You've submitted the URL, not just the GitHub repository link
+
+---
+
+## Common Last-Minute Problems
+
+**"My PDF renders locally but not on GitHub"**
+GitHub Pages only hosts HTML — the PDF is a separate file you produce locally and then push to the repository. Make sure the PDF is committed to your `docs/` folder.
+
+**"My charts look fine in RStudio but are missing in the PDF"**
+Check that your code chunks that produce plots use `echo: false` if you don't want the code shown, and make sure the chunk is not set to `eval: false`. Also ensure ggplot2 is loaded.
+
+**"My GitHub Pages site is showing a 404 error"**
+Check that (1) the `/docs` folder exists and contains an `index.html`, and (2) GitHub Pages is configured to serve from `/docs` on the `main` branch. It can take up to 10 minutes for changes to go live.
+
+**"I don't know if I need the full PDF in the website"**
+You should have both. The PDF is the academic deliverable. The website is the portfolio. Link to your PDF from the website so visitors can download it.
+
+---
+
+## Getting Help
+
+**Office Hours:** MW 10:00–11:30 AM and 1:30–3:00 PM
+**Email:** aleith@siue.edu
+
+If you're stuck on rendering, see the [Troubleshooting Guide](../../resources/troubleshooting.qmd).
+
+---
+
+:::{.phase-navigation}
+← [Phase V: The Publisher](index.qmd){.phase-nav-prev}
+
+<span class="phase-progress">Phase 5 of 5 — Final Deliverables</span>
+:::

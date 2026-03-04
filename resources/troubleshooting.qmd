@@ -1,0 +1,303 @@
+---
+title: "RStudio & Quarto Troubleshooting"
+date: last-modified
+---
+
+# RStudio & Quarto Troubleshooting Guide
+
+Something broke. That's okay — it happens to everyone, including professional researchers and experienced programmers. This guide walks through the most common problems students encounter and how to fix them.
+
+::: {.callout-tip}
+## Before You Panic
+
+90% of rendering problems are fixed by one of these three things:
+
+1. **Restart R** — Session → Restart R (Ctrl+Shift+F10 / Cmd+Shift+F10)
+2. **Save your file** — Quarto only renders what's saved
+3. **Check for a typo in your YAML header** — The section at the very top between the `---` lines is extremely picky about spacing
+
+Still stuck? Keep reading.
+:::
+
+---
+
+## Part 1: R, RStudio, and Quarto — What's the Difference?
+
+Before troubleshooting, it helps to understand what you actually installed. These are three separate things that work together.
+
+| Tool | What It Is | What You Use It For |
+|------|-----------|---------------------|
+| **R** | The programming language and calculation engine | Doing the actual math and analysis |
+| **RStudio** | The visual interface (IDE) for working with R | Writing code, viewing results, managing files |
+| **Quarto** | A document publishing system | Turning your R code + writing into a PDF or website |
+
+**The analogy:** Think of R as the engine of a car, RStudio as the dashboard and steering wheel, and Quarto as the printer that produces the final report.
+
+You need all three. R does the work. RStudio makes R usable. Quarto formats and publishes the output.
+
+**A common point of confusion:** When you click "Render" in RStudio, you're running Quarto — not R directly. Quarto then calls R behind the scenes to run your code. If either R or Quarto has a problem, rendering fails.
+
+---
+
+## Part 2: Rendering Failures
+
+Rendering is the process of turning your `.qmd` file into a PDF, HTML page, or Word document. When it fails, RStudio shows a red error in the "Background Jobs" tab or the Console.
+
+### How to Read the Error
+
+The error output can look overwhelming. Focus on the **last few lines** — that's usually where the actual problem is described.
+
+Look for lines that include:
+- `Error in` — something in your R code failed
+- `ERROR:` — Quarto itself hit a problem
+- `object not found` — you referenced something that doesn't exist
+- `could not find function` — a package isn't loaded
+- `unexpected` — usually a typo in your code
+
+### Common Rendering Errors
+
+#### "could not find function"
+
+```
+Error in my_function() : could not find function "my_function"
+```
+
+**Cause:** The package that contains this function isn't loaded.
+
+**Fix:** Add `library(packagename)` at the top of your document, in the first code chunk. For example:
+
+```r
+library(tidyverse)
+library(ggplot2)
+```
+
+---
+
+#### "object 'x' not found"
+
+```
+Error: object 'my_data' not found
+```
+
+**Cause:** You're trying to use a variable or dataset that hasn't been created yet, or it's referenced before it's loaded.
+
+**Fix:** Make sure the code chunk that *creates* the object comes *before* the chunk that *uses* it. Quarto runs code top to bottom.
+
+---
+
+#### YAML parsing error
+
+```
+ERROR: YAMLException: bad indentation of a mapping entry
+```
+
+**Cause:** A problem in the header section (the block between `---` at the top of your file).
+
+**Fix:** YAML is extremely strict about spaces. Check:
+- Use **spaces**, not tabs
+- Every line is indented consistently
+- Quotation marks are straight `"` not curly `"`
+
+Correct example:
+```yaml
+---
+title: "My Report"
+author: "Your Name"
+format: pdf
+---
+```
+
+---
+
+#### "pandoc document conversion failed"
+
+This is a general Quarto error. The real cause is usually in the lines above it. Scroll up in the error output to find the underlying problem.
+
+---
+
+#### Infinite spinning / render never completes
+
+**Cause:** Your code is stuck in a loop, or a computation is taking too long.
+
+**Fix:**
+1. Click the red Stop button in the Console
+2. Check if any code chunk has an infinite loop or is fetching data from a slow server
+3. Add `eval: false` to skip a problematic chunk temporarily:
+
+````markdown
+```{r}
+#| eval: false
+# This chunk won't run during rendering
+problem_code_here()
+```
+````
+
+---
+
+## Part 3: Mac-Specific Issues
+
+Mac users encounter a few extra setup quirks, particularly with Apple Silicon (M1/M2/M3) chips.
+
+### Which Mac Do You Have?
+
+Click the  (Apple) menu → **About This Mac**.
+
+- If you see **"Chip: Apple M1"** (or M2, M3) → you have Apple Silicon
+- If you see **"Processor: Intel"** → you have an Intel Mac
+
+This matters because some packages and tools have different versions for each chip.
+
+### Apple Silicon (M1/M2/M3): Common Issues
+
+#### Install the correct version of R
+
+There are **two versions** of R for macOS: one for Apple Silicon (`arm64`) and one for Intel (`x86_64`). Installing the wrong one causes subtle problems.
+
+**Fix:** Go to [cloud.r-project.org](https://cloud.r-project.org/), click **Download R for macOS**, and choose the file ending in `-arm64.pkg` for Apple Silicon.
+
+#### Packages fail to compile from source
+
+```
+ERROR: compilation failed for package 'xxx'
+```
+
+**Cause:** Some R packages need Xcode Command Line Tools to compile.
+
+**Fix:** Open Terminal (not RStudio) and run:
+
+```bash
+xcode-select --install
+```
+
+Follow the prompts. This takes a few minutes.
+
+#### "xcrun: error: invalid active developer path"
+
+Same fix as above — install Xcode Command Line Tools.
+
+---
+
+### macOS General Issues
+
+#### RStudio won't open (security warning)
+
+**Fix:** Go to **System Preferences → Security & Privacy → General** and click "Open Anyway" next to the RStudio warning. Apple flags newly downloaded apps until you explicitly approve them.
+
+#### Quarto not found after installing
+
+**Fix:** Quit RStudio completely and reopen it. Quarto installs a system-level command, and RStudio needs to be restarted to detect it.
+
+---
+
+## Part 4: Package Installation Problems
+
+Packages are add-ons that extend R's capabilities. Installing them should be simple, but occasionally it isn't.
+
+### The Basic Command
+
+```r
+install.packages("tidyverse")
+```
+
+Run this in the RStudio **Console** (the bottom-left pane), not inside a code chunk in your document.
+
+### Common Package Problems
+
+#### "package 'xxx' is not available for this version of R"
+
+**Cause:** The package name is misspelled, or the package needs a newer version of R.
+
+**Fix:**
+1. Double-check the spelling (package names are case-sensitive)
+2. Check your R version: run `R.version.string` in the Console
+3. Update R if it's older than version 4.0
+
+#### Installation takes forever or freezes
+
+**Fix:** Try installing just one package at a time instead of a group. Some packages (like `tidyverse`) install dozens of dependencies, which can fail silently.
+
+```r
+# Instead of all at once:
+install.packages(c("tidyverse", "ggplot2", "rmarkdown"))
+
+# Try one at a time:
+install.packages("tidyverse")
+install.packages("ggplot2")
+install.packages("rmarkdown")
+```
+
+#### "Warning: package was built under R version X.X.X"
+
+This is a **warning**, not an error. The package will usually still work. You can safely ignore this in most cases.
+
+#### "there is no package called 'xxx'" when using library()
+
+**Cause:** The package isn't installed yet, or was installed for a different R version.
+
+**Fix:** Install it first, then load it:
+```r
+install.packages("xxx")
+library(xxx)
+```
+
+#### Permission errors on Mac/Linux
+
+```
+Warning: 'lib = "/usr/local/lib/R/library"' is not writable
+```
+
+**Fix:** Install to your personal library instead:
+```r
+install.packages("xxx", lib = "~/R/library")
+```
+
+Or create the personal library:
+```r
+dir.create("~/R/library", recursive = TRUE)
+```
+
+---
+
+## Part 5: Installing Quarto
+
+Quarto is separate from R and RStudio — it needs its own installation.
+
+1. Go to [quarto.org/docs/get-started](https://quarto.org/docs/get-started/)
+2. Download the installer for your operating system
+3. Run the installer (accept all defaults)
+4. **Restart RStudio** after installation
+
+To verify Quarto is installed, open the **Terminal** tab in RStudio and run:
+```bash
+quarto --version
+```
+
+You should see a version number (e.g., `1.4.555`). If you get an error, Quarto isn't installed or RStudio can't find it — try restarting your computer.
+
+---
+
+## Part 6: Quick Diagnostic Checklist
+
+When something breaks, run through this list:
+
+- [ ] Is R installed? Run `R.version.string` in the Console.
+- [ ] Is Quarto installed? Run `quarto --version` in the Terminal tab.
+- [ ] Is RStudio up to date? Help → Check for Updates.
+- [ ] Did you save your `.qmd` file before rendering?
+- [ ] Are all required packages installed and loaded with `library()`?
+- [ ] Is there a typo in your YAML header (the `---` section)?
+- [ ] Does the error message point to a specific line number?
+
+---
+
+## Still Stuck?
+
+**Office Hours:** MW 10:00–11:30 AM and 1:30–3:00 PM
+**Email:** aleith@siue.edu
+
+When you email, include:
+1. A screenshot of the error message
+2. What you were trying to do when it happened
+3. Your operating system (Windows, macOS Intel, macOS Apple Silicon)
+
+The more detail you give, the faster we can help.

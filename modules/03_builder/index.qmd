@@ -139,12 +139,22 @@ Ready-to-use template in your vault. Copy and customize for your project.
 
 :::{.resource-card}
 
-#### 📚 Codebook Best Practices
+#### 📋 Codebook Walkthrough
 <span class="resource-badge difficulty">Beginner</span>
 
-Tips for writing clear variable definitions that others can follow.
+Step-by-step guide to building your codebook, with a worked example using a framing analysis study. Includes a complete variable list, coding rules, and a sample decisions log.
 
-*[Content to be added]*
+[Read Codebook Walkthrough](codebook-walkthrough.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+:::{.resource-card}
+
+#### 🎯 Research Question Examples
+<span class="resource-badge difficulty">Beginner</span>
+
+Annotated examples of strong and weak research questions, with before/after revisions and a checklist for evaluating your own RQ.
+
+[View RQ Examples](rq-examples.qmd){.btn .btn-sm .btn-secondary}
 :::
 
 :::{.resource-card}

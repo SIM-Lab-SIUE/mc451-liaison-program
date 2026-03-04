@@ -49,7 +49,17 @@ website:
           - text: "🎯 Phase V: The Publisher"
             href: modules/05_publisher/index.qmd
       - text: "Resources"
-        href: resources/index.qmd
+        menu:
+          - text: "Resources Overview"
+            href: resources/index.qmd
+          - text: "🛠️ Course Toolchain"
+            href: resources/toolchain.qmd
+          - text: "🔧 Troubleshooting"
+            href: resources/troubleshooting.qmd
+          - text: "📊 R & RStudio Installation"
+            href: resources/install-r-rstudio.qmd
+          - text: "💻 VS Code Setup"
+            href: resources/install-vscode.qmd
 
 format:
   html:

@@ -186,6 +186,30 @@ Start here for an overview of your vault structure and folder purposes.
 
 ---
 
+## Troubleshooting & Toolchain
+
+:::{.resource-card}
+
+#### 🛠️ Course Toolchain Overview
+<span class="resource-badge difficulty">Beginner</span>
+
+Plain-language explanations of every tool in the course — R, RStudio, Quarto, Obsidian, GitHub, and Zotero — and how they connect. Includes a workflow diagram.
+
+[Read Toolchain Overview](toolchain.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+:::{.resource-card}
+
+#### 🔧 RStudio & Quarto Troubleshooting
+<span class="resource-badge difficulty">Beginner</span>
+
+Fixes for the most common problems: rendering failures, Mac compatibility issues, package installation errors, and more. Start here when something breaks.
+
+[Read Troubleshooting Guide](troubleshooting.qmd){.btn .btn-sm .btn-secondary}
+:::
+
+---
+
 ## Learning Guides
 
 Step-by-step setup and configuration guides:

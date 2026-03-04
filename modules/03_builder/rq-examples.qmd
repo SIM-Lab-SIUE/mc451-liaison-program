@@ -1,0 +1,151 @@
+---
+title: "Research Question Examples"
+---
+
+# Research Question Examples: Strong, Weak, and Revised
+
+One of the hardest parts of content analysis is writing a research question that is both *specific enough to answer* and *broad enough to matter*. This page shows you what good research questions look like — and how to fix ones that aren't quite there yet.
+
+---
+
+## The Two Core Templates
+
+Most content analysis research questions follow one of two patterns:
+
+**Framing / descriptive:**
+> "How does [Source X] frame [Topic Y]?"
+
+**Relational / comparative:**
+> "What is the relationship between [Variable A] and [Variable B]?"
+
+Both templates work because they name specific, measurable things. The moment you can say exactly what you'd look for in your data, you have a viable research question.
+
+---
+
+## Strong Research Question Examples
+
+### Example 1 — Framing Analysis
+
+> **"How do U.S. national newspapers frame climate change as an economic issue versus an environmental issue in front-page coverage from 2018–2023?"**
+
+::: {.callout-note}
+## Why this works
+
+- **Source is specific:** "U.S. national newspapers" (you'd define which ones — NYT, WaPo, WSJ, etc.)
+- **Topic is specific:** climate change, and two named frames (economic vs. environmental)
+- **Measurable:** You can code each article as economic, environmental, both, or neither
+- **Bounded:** "front-page coverage" and "2018–2023" tell you exactly what to collect
+- **Answerable:** After coding 100+ articles, you can calculate the percentage for each frame
+:::
+
+---
+
+### Example 2 — Relational Analysis
+
+> **"What is the relationship between source type (government official vs. scientist vs. activist) and the uncertainty language used in news coverage of the COVID-19 vaccine?"**
+
+::: {.callout-note}
+## Why this works
+
+- **Variable A is specific:** source type — and three distinct categories are named
+- **Variable B is specific:** uncertainty language — which you'd define in your codebook (e.g., words like "may," "could," "preliminary")
+- **Measurable:** You can code both variables for every article
+- **Yields a real finding:** You'll be able to say whether scientist quotes use more/less hedging than government quotes
+:::
+
+---
+
+### Example 3 — Platform Comparison
+
+> **"How does Twitter/X coverage of the 2024 election differ from newspaper coverage in terms of emotional tone (positive, negative, neutral)?"**
+
+::: {.callout-note}
+## Why this works
+
+- **Comparison is built in:** Twitter vs. newspapers (the platform is a variable)
+- **Emotional tone is measurable:** three discrete categories that you can code consistently
+- **Event is bounded:** the 2024 election gives you a clear time frame
+- **Comparative design:** lets you run a simple frequency comparison between the two platforms
+:::
+
+---
+
+## Weak Research Questions — and How to Fix Them
+
+### Weak Example 1 — Too Vague
+
+> ❌ **"How do media outlets cover immigration?"**
+
+**Problems:**
+- "Media outlets" — which ones? All of them? That's thousands of sources.
+- "Cover" — in what way? Tone? Volume? Framing? Sources quoted?
+- "Immigration" — what aspect? Border policy? Asylum seekers? Undocumented workers?
+
+> ✅ **Revised:** "How do Fox News and MSNBC differ in the sources they quote (government officials, immigrants, advocates, researchers) in primetime immigration coverage from January–June 2024?"
+
+**What improved:**
+- Outlets are named (Fox, MSNBC)
+- "Cover" is replaced with a specific measurable thing (sources quoted, with categories defined)
+- Immigration is narrowed to a specific time window
+- The comparison is built into the question itself
+
+---
+
+### Weak Example 2 — Not Measurable
+
+> ❌ **"Is social media harmful to teenagers?"**
+
+**Problems:**
+- "Harmful" is not a variable — it's a conclusion. You can't code an article as "harmful."
+- This question belongs in a health/psychology study, not a content analysis
+- There's no source or text to analyze
+
+> ✅ **Revised:** "How do parenting magazines frame social media use among teenagers — as primarily harmful, primarily beneficial, or mixed — in articles published between 2020 and 2024?"
+
+**What improved:**
+- The source is defined (parenting magazines)
+- The frame categories are explicit (harmful / beneficial / mixed)
+- It's now a content analysis question, not a social science experiment
+- The time frame is bounded
+
+---
+
+### Weak Example 3 — Too Broad to Code
+
+> ❌ **"What is the relationship between race and media coverage?"**
+
+**Problems:**
+- "Race" needs to be operationalized — race of whom? The subject? The reporter? The source quoted?
+- "Media coverage" — which outlets? What time period? What topic?
+- This would take a team of researchers years to answer
+
+> ✅ **Revised:** "What is the relationship between the race of a crime suspect (as reported in the article) and the use of criminalizing language in local TV news crime reports in St. Louis from 2022–2023?"
+
+**What improved:**
+- Race is operationalized as "race of the suspect as reported in the article"
+- "Criminalizing language" is defined (you'd spell this out in your codebook)
+- Outlet type (local TV news), geography (St. Louis), and time frame (2022–2023) are all specified
+- This is still a big project, but it's concrete enough to actually do
+
+---
+
+## Writing Your Own Research Question: A Checklist
+
+Use this to evaluate your RQ before submitting:
+
+- [ ] **Source/text is named** — You know exactly what you're analyzing (which publication, platform, show, etc.)
+- [ ] **Topic is narrow** — Not "immigration" but "border wall coverage in 2023"
+- [ ] **Variable(s) are measurable** — You could train someone else to code the same variable consistently
+- [ ] **Time frame is specified** — Or at least bounded (e.g., "during the 2024 campaign season")
+- [ ] **Comparison or relationship is clear** — What are you comparing? Or what are you describing?
+- [ ] **You can answer it with content analysis** — The question is about what's *in* the text, not what effect it has on audiences
+
+---
+
+## Next Steps
+
+Once you have a solid research question, the next task is to translate it into a **codebook** — a document that defines exactly how you'll measure each variable.
+
+[→ Codebook Walkthrough](codebook-walkthrough.qmd){.btn .btn-primary}
+
+[← Back to Phase III](index.qmd){.btn .btn-secondary}

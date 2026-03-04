@@ -26,6 +26,18 @@ By the end of Phase V, you will:
 
 ---
 
+::: {.callout-important}
+## Before You Start Phase V
+
+Not sure what you're actually submitting? Read this first:
+
+**[→ What to Submit: Final Deliverables Explained](what-to-submit.qmd){.btn .btn-primary}**
+
+Covers the PDF report, the GitHub Pages site, required sections, and a submission checklist.
+:::
+
+---
+
 ## What You'll Do
 
 This is your moment to **tell the story** your data reveals:
@@ -186,6 +198,16 @@ ACTION: Recommend switching to format A; monitor user satisfaction
 ---
 
 ## Resources for Phase 5
+
+:::{.resource-card}
+
+#### ✅ What to Submit: Final Deliverables
+<span class="resource-badge difficulty">Beginner</span>
+
+Clear breakdown of both final outputs — the PDF report and the GitHub Pages website — with required sections, a side-by-side comparison, and a submission checklist.
+
+[Read the Guide](what-to-submit.qmd){.btn .btn-sm .btn-secondary}
+:::
 
 :::{.resource-card}
 

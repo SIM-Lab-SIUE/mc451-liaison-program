@@ -1,0 +1,183 @@
+---
+title: "Codebook Walkthrough"
+---
+
+# Codebook Walkthrough: Building Your Measurement Tool
+
+Think of a codebook as a set of instructions for reading your data. If you handed your codebook to a stranger, they should be able to look at the same 100 articles you looked at and come up with the same codes. That consistency is what makes content analysis *scientific* rather than just *opinion*.
+
+This page walks you through building a codebook from scratch, using a worked example so you can see what a finished product looks like.
+
+---
+
+## What Goes in a Codebook?
+
+A codebook has two parts:
+
+1. **A variable list** — Every piece of information you plan to record for each unit of analysis (each article, tweet, news segment, etc.)
+2. **Coding rules** — Plain English instructions for how to assign values to each variable, including how to handle edge cases
+
+---
+
+## The Example Study
+
+For this walkthrough, we'll build a codebook for a hypothetical study:
+
+> **Research Question:** "How do major U.S. newspapers frame COVID-19 vaccine hesitancy — as a medical issue, a political issue, or a social/cultural issue — in front-page coverage from 2021?"
+
+**Unit of analysis:** Each front-page newspaper article that mentions vaccine hesitancy.
+
+**Sources:** New York Times, Washington Post, Wall Street Journal.
+
+Now let's build the codebook.
+
+---
+
+## Step 1: Start With Identification Variables
+
+Every codebook needs variables that identify *which* article you coded. These aren't part of your analysis — they're bookkeeping.
+
+| Variable Name | What It Captures | Type | Allowed Values |
+|---|---|---|---|
+| `article_id` | Unique ID you assign | Text | Any (e.g., NYT-001, WP-042) |
+| `coder_initials` | Who coded this article | Text | Your initials (e.g., "JS") |
+| `date_coded` | When you coded it | Date | YYYY-MM-DD |
+| `publication` | Which newspaper | Categorical | NYT, WP, WSJ |
+| `pub_date` | Article publication date | Date | YYYY-MM-DD |
+| `headline` | Article headline | Text | Copy exactly from source |
+
+**Coding rule:** Copy the headline exactly. Do not paraphrase. If the headline is cut off in your database, note "[truncated]" at the end.
+
+---
+
+## Step 2: Add Your Main Analysis Variables
+
+These are the variables tied directly to your research question. For our example study, the main variable is *frame type*.
+
+| Variable Name | What It Captures | Type | Allowed Values |
+|---|---|---|---|
+| `primary_frame` | How hesitancy is primarily explained | Categorical | medical, political, social, mixed, none |
+| `hesitancy_tone` | How hesitancy is evaluated | Categorical | sympathetic, critical, neutral |
+| `source_type_dominant` | Most prominently quoted source | Categorical | expert, official, layperson, no_source |
+| `mentions_race` | Does article explicitly mention racial disparities? | Boolean | yes, no |
+
+---
+
+## Step 3: Write the Coding Rules
+
+This is the most important part. Rules need to be specific enough that two coders make the same decision on the same article.
+
+---
+
+### Variable: `primary_frame`
+
+**Definition:** The dominant explanation given in the article for *why* people are hesitant about vaccines.
+
+**Coding rule:** Read the full article. Ask yourself: "According to this article, what is the main reason people are hesitant?" Assign one of the following codes:
+
+| Code | Definition | Example language to look for |
+|---|---|---|
+| `medical` | Hesitancy is framed as concern about safety, side effects, or lack of data | "side effects," "not enough research," "long-term effects unknown" |
+| `political` | Hesitancy is framed as tied to political identity, distrust of government, or policy disputes | "partisan divide," "Republican counties," "government mandate," "freedom" |
+| `social` | Hesitancy is framed as driven by cultural distrust, misinformation spread, or community norms | "misinformation," "social media rumors," "historical distrust," "community leaders" |
+| `mixed` | Two or more frames receive roughly equal emphasis (neither dominates) | Use when no single frame accounts for more than 60% of explanation |
+| `none` | Article mentions hesitancy but does not explain it | Article simply states hesitancy exists without analysis |
+
+**Decision rule for `mixed`:** If you genuinely cannot determine which frame is primary after reading the full article, code `mixed`. If one frame is clearly more prominent even if another is mentioned, code the primary frame.
+
+---
+
+### Variable: `hesitancy_tone`
+
+**Definition:** The overall evaluative stance toward people who are vaccine hesitant.
+
+| Code | Definition |
+|---|---|
+| `sympathetic` | Hesitant individuals are portrayed with understanding; their concerns are treated as legitimate or understandable |
+| `critical` | Hesitant individuals are portrayed negatively; hesitancy is framed as dangerous, irrational, or selfish |
+| `neutral` | No clear positive or negative stance; article describes hesitancy without evaluation |
+
+**Important:** Code the *tone toward hesitant people*, not toward vaccines themselves.
+
+---
+
+### Variable: `source_type_dominant`
+
+**Definition:** The type of source most prominently quoted or cited in the article.
+
+| Code | Definition | Examples |
+|---|---|---|
+| `expert` | Scientists, doctors, public health researchers | "Dr. Smith, an epidemiologist at Johns Hopkins..." |
+| `official` | Government officials, politicians, agency spokespersons | "CDC Director...," "Sen. Jones said..." |
+| `layperson` | Ordinary citizens, patients, community members | "Maria, 34, a teacher from Ohio..." |
+| `no_source` | No human sources quoted | Data-only articles, editorials with no attribution |
+
+**Decision rule:** If two source types are equally prominent, use the one that appears first in the article.
+
+---
+
+### Variable: `mentions_race`
+
+**Definition:** Does the article explicitly discuss racial or ethnic disparities in vaccine hesitancy or vaccine access?
+
+- Code `yes` only if the article uses explicit racial or ethnic categories (e.g., Black Americans, Latino communities, white rural voters)
+- Code `no` if race is not mentioned, or if only vague references like "underserved communities" appear without racial specificity
+
+---
+
+## Step 4: Handle Edge Cases in Your Pilot
+
+When you first apply your codebook to 10–20 real articles, you'll hit situations you didn't anticipate. Document every one.
+
+**Format for each decision log entry:**
+
+```
+VARIABLE: primary_frame
+ARTICLE: NYT-007
+PROBLEM: Article discusses both anti-government sentiment AND concerns about mRNA technology in equal depth
+DECISION: Coded "mixed" — both political and medical frames are clearly developed across multiple paragraphs
+RULE UPDATE: Added to "mixed" definition: "two frames receiving roughly equal paragraph count"
+```
+
+These entries become part of your codebook. They show that you thought carefully about hard cases rather than guessing.
+
+---
+
+## What the Finished Codebook Looks Like
+
+Here's a sample completed row from the example study:
+
+| Variable | Value | Notes |
+|---|---|---|
+| `article_id` | NYT-003 | |
+| `coder_initials` | JS | |
+| `date_coded` | 2024-10-15 | |
+| `publication` | NYT | |
+| `pub_date` | 2021-04-22 | |
+| `headline` | "Vaccine Hesitancy Persists in Rural Areas Despite Outreach" | |
+| `primary_frame` | social | Focus on community trust and misinformation networks |
+| `hesitancy_tone` | sympathetic | Framed as understandable given history of medical mistrust |
+| `source_type_dominant` | layperson | Three community members quoted; one CDC official mentioned briefly |
+| `mentions_race` | no | No explicit racial categories used |
+
+---
+
+## Common Mistakes to Avoid
+
+**Making categories too broad.** If every article gets coded "mixed" because every article mentions multiple things, your categories aren't distinct enough. Sharpen the definitions.
+
+**Not writing decision rules.** Variable names alone aren't enough. Write out exactly what counts and what doesn't.
+
+**Skipping the pilot test.** You will encounter something you didn't expect. The pilot test is where you find those cases *before* you've coded 200 articles.
+
+**Changing definitions mid-project.** If you realize a definition needs to change after you've started coding, go back and re-code everything you already coded. Using different definitions at different points invalidates your results.
+
+---
+
+## Next Steps
+
+[← Research Question Examples](rq-examples.qmd){.btn .btn-secondary}
+
+[← Back to Phase III Overview](index.qmd){.btn .btn-secondary}
+
+[→ Phase IV: The Analyst](../04_analyst/index.qmd){.btn .btn-primary}

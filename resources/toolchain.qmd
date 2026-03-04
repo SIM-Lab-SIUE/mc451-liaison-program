@@ -1,0 +1,172 @@
+---
+title: "The Course Toolchain"
+date: last-modified
+---
+
+# The Course Toolchain: What Everything Is and Why We Use It
+
+When you first see the list of tools for this course — R, RStudio, Quarto, Obsidian, GitHub, Zotero — it can feel overwhelming. Why so many? Can't we just use Google Docs?
+
+The short answer: each tool does one thing well, and they're designed to work together. Once you see how they connect, the whole system makes sense.
+
+This page explains each tool in plain language and shows you how your workflow moves from start to finish.
+
+---
+
+## The Big Picture: Your Research Workflow
+
+Here's how information moves through the course from your first notes to your published portfolio:
+
+```{mermaid}
+flowchart LR
+    A["📚 Zotero\nCollect sources\n& citations"] --> B["📓 Obsidian\nNote-taking\n& journaling"]
+    B --> C["📊 RStudio\nWrite code\n& analyze data"]
+    C --> D["📄 Quarto\nRender documents\n& reports"]
+    D --> E["🐙 GitHub Pages\nPublish your\nportfolio online"]
+
+    style A fill:#e8f4f8,stroke:#2980b9
+    style B fill:#e8f5e9,stroke:#27ae60
+    style C fill:#fef9e7,stroke:#f39c12
+    style D fill:#fdf2f8,stroke:#8e44ad
+    style E fill:#fdedec,stroke:#e74c3c
+```
+
+Every tool has a clear role. None of them overlap. Let's go through each one.
+
+---
+
+## The Tools
+
+### 📚 Zotero — Your Citation Manager
+
+**What it is:** A free application that saves, organizes, and formats your academic sources.
+
+**What we use it for in this course:** Collecting journal articles, news sources, and other references for your literature review. When you write your report, Zotero automatically formats your bibliography in the correct citation style (APA, MLA, etc.).
+
+**How it connects:** You read sources in Zotero, take notes about them in Obsidian, and cite them in your Quarto documents.
+
+**Without it:** You'd manually track every source and format every citation by hand — a nightmare for a research project with dozens of references.
+
+[Download Zotero](https://www.zotero.org/download/){.btn .btn-secondary .btn-sm}
+
+---
+
+### 📓 Obsidian — Your Research Notebook
+
+**What it is:** A note-taking app that stores everything as plain text files on your computer (not in the cloud). Notes can be linked to each other like a personal wiki.
+
+**What we use it for in this course:** Your daily workspace. You'll keep your weekly journals, reading notes, research ideas, and project drafts here. The vault structure we give you is designed to match the phases of this course.
+
+**How it connects:** Obsidian is where you *think* and *draft*. When content is ready to become a formal document (like a report or codebook), you move it to RStudio/Quarto for final formatting.
+
+**Without it:** You could use any note-taking app (Notion, OneNote, even paper), but Obsidian's plain-text format makes it easy to move content into Quarto when you're ready.
+
+[Download Obsidian](https://obsidian.md/){.btn .btn-secondary .btn-sm}   [Setup Guide](../setup.qmd){.btn .btn-sm}
+
+---
+
+### 📊 R — The Analysis Engine
+
+**What it is:** A free programming language designed specifically for statistics and data analysis. It's widely used in academic research and journalism.
+
+**What we use it for in this course:** Running the actual calculations on your data — counting categories, computing percentages, creating charts and tables, and testing hypotheses.
+
+**How it connects:** You write R code inside RStudio. R does the math. The results appear in your Quarto documents.
+
+**Important:** You don't interact with R directly in this course. You work inside RStudio, which talks to R on your behalf.
+
+[Download R](https://cloud.r-project.org/){.btn .btn-secondary .btn-sm}
+
+---
+
+### 💻 RStudio — Your Coding Workspace
+
+**What it is:** A visual interface (called an IDE — Integrated Development Environment) that makes working with R much more manageable. It gives you a file editor, a console, a file browser, and a plot viewer all in one window.
+
+**What we use it for in this course:** Writing and running R code, rendering Quarto documents, and managing your project files.
+
+**How it connects:** RStudio is the hub that connects R (the engine) to Quarto (the publisher). You write your reports in `.qmd` files inside RStudio, then click "Render" to produce the final document.
+
+**The analogy:** If R is the engine of a car, RStudio is the dashboard — you don't need to understand the engine to drive, but you do need to know where the controls are.
+
+[Download RStudio](https://posit.co/download/rstudio-desktop/){.btn .btn-secondary .btn-sm}   [Install Guide](install-r-rstudio.qmd){.btn .btn-sm}
+
+---
+
+### 📄 Quarto — The Publishing System
+
+**What it is:** A document creation system that combines regular writing (like a Word document) with live R code. When you click "Render," Quarto runs all your code and produces a finished PDF, HTML page, or Word document.
+
+**What we use it for in this course:** Creating your final research reports and your public GitHub Pages portfolio. A Quarto document is like a Word document where the tables and charts update automatically when your data changes.
+
+**How it connects:** You write `.qmd` files in RStudio. Those files contain your text *and* your R code side by side. Quarto combines them into the finished output.
+
+**Why not just use Word?** Quarto ensures your analysis is *reproducible* — anyone can open your file, click render, and get the exact same results. That's a core standard in research.
+
+::: {.callout-tip}
+## Quarto vs. R Markdown
+
+If you've heard of R Markdown, Quarto is its successor. They work very similarly. Quarto files end in `.qmd` instead of `.Rmd`.
+:::
+
+[Quarto Documentation](https://quarto.org/docs/get-started/){.btn .btn-secondary .btn-sm}   [Troubleshooting](troubleshooting.qmd){.btn .btn-sm}
+
+---
+
+### 🐙 GitHub — Version Control & Publishing
+
+**What it is:** A website and set of tools for saving and tracking changes to your files over time. It's like Google Drive's version history, but much more powerful and designed for code.
+
+**What we use it for in this course:** Two things:
+
+1. **Backup and version control** — Every time you "commit" and "push," your work is safely saved online. You can always go back to an earlier version.
+2. **GitHub Pages** — GitHub can host your Quarto-rendered HTML files as a live website at a public URL. This is your final portfolio.
+
+**How it connects:** Your Quarto-rendered files (HTML) are pushed to GitHub, where GitHub Pages automatically serves them as a public website. This is how you "publish" your research.
+
+[Sign Up for GitHub](https://github.com/signup){.btn .btn-secondary .btn-sm}   [GitHub Setup Guide](../github-setup.qmd){.btn .btn-sm}
+
+---
+
+## How It All Flows Together
+
+Here's a typical week in the course:
+
+1. **Read** a journal article → save it in **Zotero**, take notes in **Obsidian**
+2. **Draft** your analysis plan in **Obsidian**
+3. **Write R code** in **RStudio** to analyze your dataset
+4. **Compose your report** in a `.qmd` file in **RStudio**, mixing your writing with your R code
+5. **Render** with **Quarto** → produces a PDF report or HTML page
+6. **Push** to **GitHub** → your portfolio goes live at your GitHub Pages URL
+
+---
+
+## Frequently Asked Questions
+
+**Do I need to learn all of these at once?**
+
+No. The phases of this course introduce tools gradually. You set up Obsidian and GitHub in Phase I–II, start using R and RStudio in Phase III–IV, and publish with Quarto and GitHub Pages in Phase V.
+
+**Can I use Google Docs instead of Obsidian?**
+
+Yes, for note-taking. Obsidian is recommended because it integrates well with the vault structure we've provided, but the course works with any note-taking system.
+
+**Can I use Excel instead of R?**
+
+For basic counting and percentages, yes. But R is required for anything beyond basic tabulation, and it's what you'll learn to use for your codebook and content analysis.
+
+**Why do I need GitHub if I'm not a programmer?**
+
+GitHub serves two purposes here: (1) it's a reliable backup for your work, and (2) it's how you publish your final portfolio. You don't need to understand all of Git — just the basics of committing and pushing files.
+
+---
+
+## Getting Help
+
+If any of these tools isn't working, check:
+
+- [RStudio & Quarto Troubleshooting](troubleshooting.qmd) — rendering errors, Mac issues, package failures
+- [R & RStudio Installation](install-r-rstudio.qmd) — setup from scratch
+- [GitHub Setup Guide](../github-setup.qmd) — version control and publishing
+
+**Still stuck?** Email aleith@siue.edu or come to office hours: MW 10:00–11:30 AM and 1:30–3:00 PM.
