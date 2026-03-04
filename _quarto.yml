@@ -24,6 +24,7 @@ project:
     - "!START_HERE.md"
     - "!LAUNCH_CHECKLIST.md"
     - "!UX_IMPROVEMENT_PLAN.md"
+    - "!Liaison_Vault/**"
 
 website:
   title: "MC Research Methods: The Liaison Program"

@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="dcterms.date" content="2026-01-14">
+<meta name="dcterms.date" content="2026-03-04">
 
-<title>Installing R &amp; RStudio – MC Research Methods: The Liaison Program</title>
+<title>RStudio &amp; Quarto Troubleshooting – MC Research Methods: The Liaison Program</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -210,30 +210,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#r-rstudio-setup-guide" id="toc-r-rstudio-setup-guide" class="nav-link active" data-scroll-target="#r-rstudio-setup-guide">R &amp; RStudio Setup Guide</a>
+  <li><a href="#rstudio-quarto-troubleshooting-guide" id="toc-rstudio-quarto-troubleshooting-guide" class="nav-link active" data-scroll-target="#rstudio-quarto-troubleshooting-guide">RStudio &amp; Quarto Troubleshooting Guide</a>
   <ul class="collapse">
-  <li><a href="#what-youre-installing" id="toc-what-youre-installing" class="nav-link" data-scroll-target="#what-youre-installing">What You’re Installing</a></li>
-  <li><a href="#installation-by-operating-system" id="toc-installation-by-operating-system" class="nav-link" data-scroll-target="#installation-by-operating-system">Installation by Operating System</a>
+  <li><a href="#part-1-r-rstudio-and-quarto-whats-the-difference" id="toc-part-1-r-rstudio-and-quarto-whats-the-difference" class="nav-link" data-scroll-target="#part-1-r-rstudio-and-quarto-whats-the-difference">Part 1: R, RStudio, and Quarto — What’s the Difference?</a></li>
+  <li><a href="#part-2-rendering-failures" id="toc-part-2-rendering-failures" class="nav-link" data-scroll-target="#part-2-rendering-failures">Part 2: Rendering Failures</a>
   <ul class="collapse">
-  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a></li>
-  <li><a href="#macos" id="toc-macos" class="nav-link" data-scroll-target="#macos">macOS</a></li>
-  <li><a href="#linux-ubuntudebian" id="toc-linux-ubuntudebian" class="nav-link" data-scroll-target="#linux-ubuntudebian">Linux (Ubuntu/Debian)</a></li>
+  <li><a href="#how-to-read-the-error" id="toc-how-to-read-the-error" class="nav-link" data-scroll-target="#how-to-read-the-error">How to Read the Error</a></li>
+  <li><a href="#common-rendering-errors" id="toc-common-rendering-errors" class="nav-link" data-scroll-target="#common-rendering-errors">Common Rendering Errors</a></li>
   </ul></li>
-  <li><a href="#essential-next-steps" id="toc-essential-next-steps" class="nav-link" data-scroll-target="#essential-next-steps">Essential Next Steps</a>
+  <li><a href="#part-3-mac-specific-issues" id="toc-part-3-mac-specific-issues" class="nav-link" data-scroll-target="#part-3-mac-specific-issues">Part 3: Mac-Specific Issues</a>
   <ul class="collapse">
-  <li><a href="#set-your-working-directory" id="toc-set-your-working-directory" class="nav-link" data-scroll-target="#set-your-working-directory">1. Set Your Working Directory</a></li>
-  <li><a href="#install-course-packages" id="toc-install-course-packages" class="nav-link" data-scroll-target="#install-course-packages">2. Install Course Packages</a></li>
-  <li><a href="#verify-packages-loaded" id="toc-verify-packages-loaded" class="nav-link" data-scroll-target="#verify-packages-loaded">3. Verify Packages Loaded</a></li>
+  <li><a href="#which-mac-do-you-have" id="toc-which-mac-do-you-have" class="nav-link" data-scroll-target="#which-mac-do-you-have">Which Mac Do You Have?</a></li>
+  <li><a href="#apple-silicon-m1m2m3-common-issues" id="toc-apple-silicon-m1m2m3-common-issues" class="nav-link" data-scroll-target="#apple-silicon-m1m2m3-common-issues">Apple Silicon (M1/M2/M3): Common Issues</a></li>
+  <li><a href="#macos-general-issues" id="toc-macos-general-issues" class="nav-link" data-scroll-target="#macos-general-issues">macOS General Issues</a></li>
   </ul></li>
-  <li><a href="#troubleshooting" id="toc-troubleshooting" class="nav-link" data-scroll-target="#troubleshooting">Troubleshooting</a>
+  <li><a href="#part-4-package-installation-problems" id="toc-part-4-package-installation-problems" class="nav-link" data-scroll-target="#part-4-package-installation-problems">Part 4: Package Installation Problems</a>
   <ul class="collapse">
-  <li><a href="#r-wont-start" id="toc-r-wont-start" class="nav-link" data-scroll-target="#r-wont-start">R won’t start</a></li>
-  <li><a href="#rstudio-cant-find-r" id="toc-rstudio-cant-find-r" class="nav-link" data-scroll-target="#rstudio-cant-find-r">RStudio can’t find R</a></li>
-  <li><a href="#package-installation-fails" id="toc-package-installation-fails" class="nav-link" data-scroll-target="#package-installation-fails">Package installation fails</a></li>
-  <li><a href="#permission-errors-especially-macos" id="toc-permission-errors-especially-macos" class="nav-link" data-scroll-target="#permission-errors-especially-macos">Permission errors (especially macOS)</a></li>
+  <li><a href="#the-basic-command" id="toc-the-basic-command" class="nav-link" data-scroll-target="#the-basic-command">The Basic Command</a></li>
+  <li><a href="#common-package-problems" id="toc-common-package-problems" class="nav-link" data-scroll-target="#common-package-problems">Common Package Problems</a></li>
   </ul></li>
-  <li><a href="#quick-reference" id="toc-quick-reference" class="nav-link" data-scroll-target="#quick-reference">Quick Reference</a></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a></li>
+  <li><a href="#part-5-installing-quarto" id="toc-part-5-installing-quarto" class="nav-link" data-scroll-target="#part-5-installing-quarto">Part 5: Installing Quarto</a></li>
+  <li><a href="#part-6-quick-diagnostic-checklist" id="toc-part-6-quick-diagnostic-checklist" class="nav-link" data-scroll-target="#part-6-quick-diagnostic-checklist">Part 6: Quick Diagnostic Checklist</a></li>
+  <li><a href="#still-stuck" id="toc-still-stuck" class="nav-link" data-scroll-target="#still-stuck">Still Stuck?</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -243,7 +241,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Installing R &amp; RStudio</h1>
+<h1 class="title">RStudio &amp; Quarto Troubleshooting</h1>
 </div>
 
 
@@ -254,7 +252,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">January 14, 2026</p>
+      <p class="date">March 4, 2026</p>
     </div>
   </div>
   
@@ -266,250 +264,255 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<section id="r-rstudio-setup-guide" class="level1">
-<h1>R &amp; RStudio Setup Guide</h1>
-<p>R and RStudio are essential tools for statistical analysis and data science in this course. This guide covers installation on all major operating systems.</p>
-<section id="what-youre-installing" class="level2">
-<h2 class="anchored" data-anchor-id="what-youre-installing">What You’re Installing</h2>
-<ul>
-<li><strong>R</strong>: The core statistical programming language and environment</li>
-<li><strong>RStudio</strong>: An IDE (Integrated Development Environment) that makes R much easier to use</li>
-</ul>
-</section>
-<section id="installation-by-operating-system" class="level2">
-<h2 class="anchored" data-anchor-id="installation-by-operating-system">Installation by Operating System</h2>
-<section id="windows" class="level3">
-<h3 class="anchored" data-anchor-id="windows">Windows</h3>
-<section id="step-1-install-r" class="level4">
-<h4 class="anchored" data-anchor-id="step-1-install-r">Step 1: Install R</h4>
+<section id="rstudio-quarto-troubleshooting-guide" class="level1">
+<h1>RStudio &amp; Quarto Troubleshooting Guide</h1>
+<p>Something broke. That’s okay — it happens to everyone, including professional researchers and experienced programmers. This guide walks through the most common problems students encounter and how to fix them.</p>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Before You Panic
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>90% of rendering problems are fixed by one of these three things:</p>
 <ol type="1">
-<li>Go to <a href="https://cloud.r-project.org/">CRAN (Comprehensive R Archive Network)</a></li>
-<li>Click <strong>“Download R for Windows”</strong></li>
-<li>Click <strong>“base”</strong> (first option)</li>
-<li>Click the download link for the latest version (typically named something like <code>R-4.x.x-win.exe</code>)</li>
-<li>Run the installer
-<ul>
-<li>Accept default settings (you can leave everything as-is)</li>
-<li>Click through the installation wizard</li>
-<li>Installation typically takes 2-5 minutes</li>
-</ul></li>
+<li><strong>Restart R</strong> — Session → Restart R (Ctrl+Shift+F10 / Cmd+Shift+F10)</li>
+<li><strong>Save your file</strong> — Quarto only renders what’s saved</li>
+<li><strong>Check for a typo in your YAML header</strong> — The section at the very top between the <code>---</code> lines is extremely picky about spacing</li>
 </ol>
-</section>
-<section id="step-2-install-rstudio" class="level4">
-<h4 class="anchored" data-anchor-id="step-2-install-rstudio">Step 2: Install RStudio</h4>
-<ol type="1">
-<li>Go to <a href="https://posit.co/download/rstudio-desktop/">Posit RStudio Downloads</a></li>
-<li>Click <strong>“Download RStudio Desktop”</strong> for Windows</li>
-<li>Run the installer
-<ul>
-<li>Accept default settings</li>
-<li>The installer will detect your R installation automatically</li>
-<li>Complete the installation</li>
-</ul></li>
-</ol>
-</section>
-<section id="step-3-verify-installation" class="level4">
-<h4 class="anchored" data-anchor-id="step-3-verify-installation">Step 3: Verify Installation</h4>
-<ol type="1">
-<li><p>Open <strong>RStudio</strong> (search for it in Windows Start menu)</p></li>
-<li><p>In the <strong>Console</strong> pane (usually bottom-left), you should see something like:</p>
-<pre><code>R version 4.x.x (20XX-XX-XX) -- "..."</code></pre></li>
-<li><p>Type: <code>print("Hello, R!")</code> and press Enter</p></li>
-<li><p>If you see <code>[1] "Hello, R!"</code>, you’re ready to go!</p></li>
-</ol>
+<p>Still stuck? Keep reading.</p>
+</div>
+</div>
 <hr>
-</section>
-</section>
-<section id="macos" class="level3">
-<h3 class="anchored" data-anchor-id="macos">macOS</h3>
-<section id="step-1-install-r-1" class="level4">
-<h4 class="anchored" data-anchor-id="step-1-install-r-1">Step 1: Install R</h4>
-<p><strong>Option A: Using the installer (Recommended for beginners)</strong></p>
-<ol type="1">
-<li>Go to <a href="https://cloud.r-project.org/">CRAN macOS</a></li>
-<li>Click <strong>“Download R for macOS”</strong></li>
-<li>Select the appropriate version:
-<ul>
-<li><strong>For Apple Silicon (M1/M2/M3 chips)</strong>: Download <code>R-x.x.x-arm64.pkg</code></li>
-<li><strong>For Intel Macs</strong>: Download <code>R-x.x.x-x86_64.pkg</code></li>
-<li>(Unsure? Check Apple menu → About This Mac → Chip)</li>
-</ul></li>
-<li>Run the <code>.pkg</code> installer and follow the prompts</li>
-<li>Installation takes 2-5 minutes</li>
-</ol>
-<p><strong>Option B: Using Homebrew (if you use Homebrew)</strong></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">brew</span> install r</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="step-2-install-rstudio-1" class="level4">
-<h4 class="anchored" data-anchor-id="step-2-install-rstudio-1">Step 2: Install RStudio</h4>
-<ol type="1">
-<li>Go to <a href="https://posit.co/download/rstudio-desktop/">Posit RStudio Downloads</a></li>
-<li>Click <strong>“Download RStudio Desktop”</strong> for macOS</li>
-<li>Select the appropriate version for your Mac (Apple Silicon or Intel)</li>
-<li>Open the downloaded <code>.dmg</code> file</li>
-<li>Drag RStudio to the Applications folder</li>
-<li>Launch RStudio from Applications</li>
-</ol>
-</section>
-<section id="step-3-verify-installation-1" class="level4">
-<h4 class="anchored" data-anchor-id="step-3-verify-installation-1">Step 3: Verify Installation</h4>
-<ol type="1">
-<li>Open <strong>RStudio</strong> (find in Applications folder or Spotlight search)</li>
-<li>In the Console, type: <code>print("Hello, R!")</code> and press Enter</li>
-<li>Confirm you see: <code>[1] "Hello, R!"</code></li>
-</ol>
-<hr>
-</section>
-</section>
-<section id="linux-ubuntudebian" class="level3">
-<h3 class="anchored" data-anchor-id="linux-ubuntudebian">Linux (Ubuntu/Debian)</h3>
-<section id="step-1-install-r-2" class="level4">
-<h4 class="anchored" data-anchor-id="step-1-install-r-2">Step 1: Install R</h4>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Update package lists</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt update</span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Install R</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install <span class="at">-y</span> r-base r-base-dev</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="step-2-install-rstudio-2" class="level4">
-<h4 class="anchored" data-anchor-id="step-2-install-rstudio-2">Step 2: Install RStudio</h4>
-<ol type="1">
-<li><p>Go to <a href="https://posit.co/download/rstudio-desktop/">Posit RStudio Downloads</a></p></li>
-<li><p>Select <strong>“RStudio Desktop”</strong> → Choose Linux version (Ubuntu 20/22 or Debian)</p></li>
-<li><p>Download the <code>.deb</code> file</p></li>
-<li><p>Install it:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> dpkg <span class="at">-i</span> rstudio-<span class="pp">[</span><span class="ss">version</span><span class="pp">]</span>.deb</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-</ol>
-<p>Or install from terminal directly:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sudo</span> apt install <span class="at">-y</span> rstudio</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="step-3-verify-installation-2" class="level4">
-<h4 class="anchored" data-anchor-id="step-3-verify-installation-2">Step 3: Verify Installation</h4>
-<ol type="1">
-<li><p>Launch RStudio from applications menu or terminal:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">rstudio</span> <span class="kw">&amp;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Test in Console: <code>print("Hello, R!")</code></p></li>
-<li><p>Confirm output: <code>[1] "Hello, R!"</code></p></li>
-</ol>
-<hr>
-</section>
-</section>
-</section>
-<section id="essential-next-steps" class="level2">
-<h2 class="anchored" data-anchor-id="essential-next-steps">Essential Next Steps</h2>
-<p>Once R and RStudio are installed, you need to set up your R environment for the course:</p>
-<section id="set-your-working-directory" class="level3">
-<h3 class="anchored" data-anchor-id="set-your-working-directory">1. Set Your Working Directory</h3>
-<p>In RStudio Console, run:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">setwd</span>(<span class="st">"~/Documents"</span>)  <span class="co"># Or your preferred workspace folder</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="install-course-packages" class="level3">
-<h3 class="anchored" data-anchor-id="install-course-packages">2. Install Course Packages</h3>
-<p>We’ll use these packages throughout the course. Install them with:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Core data science packages</span></span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(</span>
-<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>  <span class="st">"tidyverse"</span>,      <span class="co"># Data wrangling and visualization</span></span>
-<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a>  <span class="st">"rmarkdown"</span>,      <span class="co"># Create documents with R code</span></span>
-<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>  <span class="st">"quarto"</span>,         <span class="co"># Publishing system</span></span>
-<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>  <span class="st">"shiny"</span>,          <span class="co"># Interactive web apps</span></span>
-<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>  <span class="st">"ggplot2"</span>         <span class="co"># Advanced visualization</span></span>
-<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>This may take 5-15 minutes (packages are downloading and installing).</p>
-</section>
-<section id="verify-packages-loaded" class="level3">
-<h3 class="anchored" data-anchor-id="verify-packages-loaded">3. Verify Packages Loaded</h3>
-<p>Test that the main packages work:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
-<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span>
-<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a><span class="fu">print</span>(<span class="st">"All packages loaded successfully!"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>If no errors appear, you’re all set!</p>
-<hr>
-</section>
-</section>
-<section id="troubleshooting" class="level2">
-<h2 class="anchored" data-anchor-id="troubleshooting">Troubleshooting</h2>
-<section id="r-wont-start" class="level3">
-<h3 class="anchored" data-anchor-id="r-wont-start">R won’t start</h3>
-<ul>
-<li><strong>Windows</strong>: Try reinstalling R with administrator privileges</li>
-<li><strong>Mac</strong>: Restart your computer and try again</li>
-<li><strong>Linux</strong>: Run <code>sudo apt install -y r-base</code> to ensure all dependencies are installed</li>
-</ul>
-</section>
-<section id="rstudio-cant-find-r" class="level3">
-<h3 class="anchored" data-anchor-id="rstudio-cant-find-r">RStudio can’t find R</h3>
-<ul>
-<li>RStudio should auto-detect R, but if not:
-<ul>
-<li><strong>Tools</strong> → <strong>Global Options</strong> → <strong>General</strong></li>
-<li>Look for “R version” section</li>
-<li>If blank, manually browse to your R installation</li>
-</ul></li>
-</ul>
-</section>
-<section id="package-installation-fails" class="level3">
-<h3 class="anchored" data-anchor-id="package-installation-fails">Package installation fails</h3>
-<ul>
-<li>Make sure you have internet connection</li>
-<li>Try: <code>install.packages("package_name", repos="http://cran.r-project.org")</code></li>
-<li>Some packages require additional system libraries (ask in course chat!)</li>
-</ul>
-</section>
-<section id="permission-errors-especially-macos" class="level3">
-<h3 class="anchored" data-anchor-id="permission-errors-especially-macos">Permission errors (especially macOS)</h3>
-<ul>
-<li>Try: <code>install.packages("package", type="source")</code></li>
-</ul>
-<hr>
-</section>
-</section>
-<section id="quick-reference" class="level2">
-<h2 class="anchored" data-anchor-id="quick-reference">Quick Reference</h2>
+<section id="part-1-r-rstudio-and-quarto-whats-the-difference" class="level2">
+<h2 class="anchored" data-anchor-id="part-1-r-rstudio-and-quarto-whats-the-difference">Part 1: R, RStudio, and Quarto — What’s the Difference?</h2>
+<p>Before troubleshooting, it helps to understand what you actually installed. These are three separate things that work together.</p>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 15%">
+<col style="width: 28%">
+<col style="width: 55%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Action</th>
-<th>Command</th>
+<th>Tool</th>
+<th>What It Is</th>
+<th>What You Use It For</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td>See R version</td>
-<td><code>R.version.string</code></td>
+<td><strong>R</strong></td>
+<td>The programming language and calculation engine</td>
+<td>Doing the actual math and analysis</td>
 </tr>
 <tr class="even">
-<td>List installed packages</td>
-<td><code>library()</code></td>
+<td><strong>RStudio</strong></td>
+<td>The visual interface (IDE) for working with R</td>
+<td>Writing code, viewing results, managing files</td>
 </tr>
 <tr class="odd">
-<td>Load a package</td>
-<td><code>library(package_name)</code></td>
-</tr>
-<tr class="even">
-<td>Install a package</td>
-<td><code>install.packages("package_name")</code></td>
-</tr>
-<tr class="odd">
-<td>Get help</td>
-<td><code>help(function_name)</code> or <code>?function_name</code></td>
-</tr>
-<tr class="even">
-<td>Exit R</td>
-<td><code>q()</code></td>
+<td><strong>Quarto</strong></td>
+<td>A document publishing system</td>
+<td>Turning your R code + writing into a PDF or website</td>
 </tr>
 </tbody>
 </table>
+<p><strong>The analogy:</strong> Think of R as the engine of a car, RStudio as the dashboard and steering wheel, and Quarto as the printer that produces the final report.</p>
+<p>You need all three. R does the work. RStudio makes R usable. Quarto formats and publishes the output.</p>
+<p><strong>A common point of confusion:</strong> When you click “Render” in RStudio, you’re running Quarto — not R directly. Quarto then calls R behind the scenes to run your code. If either R or Quarto has a problem, rendering fails.</p>
 <hr>
 </section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
+<section id="part-2-rendering-failures" class="level2">
+<h2 class="anchored" data-anchor-id="part-2-rendering-failures">Part 2: Rendering Failures</h2>
+<p>Rendering is the process of turning your <code>.qmd</code> file into a PDF, HTML page, or Word document. When it fails, RStudio shows a red error in the “Background Jobs” tab or the Console.</p>
+<section id="how-to-read-the-error" class="level3">
+<h3 class="anchored" data-anchor-id="how-to-read-the-error">How to Read the Error</h3>
+<p>The error output can look overwhelming. Focus on the <strong>last few lines</strong> — that’s usually where the actual problem is described.</p>
+<p>Look for lines that include: - <code>Error in</code> — something in your R code failed - <code>ERROR:</code> — Quarto itself hit a problem - <code>object not found</code> — you referenced something that doesn’t exist - <code>could not find function</code> — a package isn’t loaded - <code>unexpected</code> — usually a typo in your code</p>
+</section>
+<section id="common-rendering-errors" class="level3">
+<h3 class="anchored" data-anchor-id="common-rendering-errors">Common Rendering Errors</h3>
+<section id="could-not-find-function" class="level4">
+<h4 class="anchored" data-anchor-id="could-not-find-function">“could not find function”</h4>
+<pre><code>Error in my_function() : could not find function "my_function"</code></pre>
+<p><strong>Cause:</strong> The package that contains this function isn’t loaded.</p>
+<p><strong>Fix:</strong> Add <code>library(packagename)</code> at the top of your document, in the first code chunk. For example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(ggplot2)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="object-x-not-found" class="level4">
+<h4 class="anchored" data-anchor-id="object-x-not-found">“object ‘x’ not found”</h4>
+<pre><code>Error: object 'my_data' not found</code></pre>
+<p><strong>Cause:</strong> You’re trying to use a variable or dataset that hasn’t been created yet, or it’s referenced before it’s loaded.</p>
+<p><strong>Fix:</strong> Make sure the code chunk that <em>creates</em> the object comes <em>before</em> the chunk that <em>uses</em> it. Quarto runs code top to bottom.</p>
+<hr>
+</section>
+<section id="yaml-parsing-error" class="level4">
+<h4 class="anchored" data-anchor-id="yaml-parsing-error">YAML parsing error</h4>
+<pre><code>ERROR: YAMLException: bad indentation of a mapping entry</code></pre>
+<p><strong>Cause:</strong> A problem in the header section (the block between <code>---</code> at the top of your file).</p>
+<p><strong>Fix:</strong> YAML is extremely strict about spaces. Check: - Use <strong>spaces</strong>, not tabs - Every line is indented consistently - Quotation marks are straight <code>"</code> not curly <code>"</code></p>
+<p>Correct example:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"My Report"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="fu">author</span><span class="kw">:</span><span class="at"> </span><span class="st">"Your Name"</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">format</span><span class="kw">:</span><span class="at"> pdf</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="pp">---</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+<section id="pandoc-document-conversion-failed" class="level4">
+<h4 class="anchored" data-anchor-id="pandoc-document-conversion-failed">“pandoc document conversion failed”</h4>
+<p>This is a general Quarto error. The real cause is usually in the lines above it. Scroll up in the error output to find the underlying problem.</p>
+<hr>
+</section>
+<section id="infinite-spinning-render-never-completes" class="level4">
+<h4 class="anchored" data-anchor-id="infinite-spinning-render-never-completes">Infinite spinning / render never completes</h4>
+<p><strong>Cause:</strong> Your code is stuck in a loop, or a computation is taking too long.</p>
+<p><strong>Fix:</strong> 1. Click the red Stop button in the Console 2. Check if any code chunk has an infinite loop or is fetching data from a slow server 3. Add <code>eval: false</code> to skip a problematic chunk temporarily:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>::: {.cell}</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="in">```{.r .cell-code}</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co"># This chunk won't run during rendering</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="fu">problem_code_here</span>()</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a>:::</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+</section>
+<section id="part-3-mac-specific-issues" class="level2">
+<h2 class="anchored" data-anchor-id="part-3-mac-specific-issues">Part 3: Mac-Specific Issues</h2>
+<p>Mac users encounter a few extra setup quirks, particularly with Apple Silicon (M1/M2/M3) chips.</p>
+<section id="which-mac-do-you-have" class="level3">
+<h3 class="anchored" data-anchor-id="which-mac-do-you-have">Which Mac Do You Have?</h3>
+<p>Click the (Apple) menu → <strong>About This Mac</strong>.</p>
 <ul>
-<li><strong>Official R Documentation</strong>: https://www.r-project.org/</li>
-<li><strong>RStudio Cheat Sheets</strong>: https://posit.co/resources/cheatsheets/</li>
-<li><strong>R for Data Science (Book)</strong>: https://r4ds.hadley.nz/</li>
-<li><strong>Course Support</strong>: Check the course discussion board for questions</li>
+<li>If you see <strong>“Chip: Apple M1”</strong> (or M2, M3) → you have Apple Silicon</li>
+<li>If you see <strong>“Processor: Intel”</strong> → you have an Intel Mac</li>
 </ul>
-<p>You’re ready to start the course! See you in Module 1.</p>
+<p>This matters because some packages and tools have different versions for each chip.</p>
+</section>
+<section id="apple-silicon-m1m2m3-common-issues" class="level3">
+<h3 class="anchored" data-anchor-id="apple-silicon-m1m2m3-common-issues">Apple Silicon (M1/M2/M3): Common Issues</h3>
+<section id="install-the-correct-version-of-r" class="level4">
+<h4 class="anchored" data-anchor-id="install-the-correct-version-of-r">Install the correct version of R</h4>
+<p>There are <strong>two versions</strong> of R for macOS: one for Apple Silicon (<code>arm64</code>) and one for Intel (<code>x86_64</code>). Installing the wrong one causes subtle problems.</p>
+<p><strong>Fix:</strong> Go to <a href="https://cloud.r-project.org/">cloud.r-project.org</a>, click <strong>Download R for macOS</strong>, and choose the file ending in <code>-arm64.pkg</code> for Apple Silicon.</p>
+</section>
+<section id="packages-fail-to-compile-from-source" class="level4">
+<h4 class="anchored" data-anchor-id="packages-fail-to-compile-from-source">Packages fail to compile from source</h4>
+<pre><code>ERROR: compilation failed for package 'xxx'</code></pre>
+<p><strong>Cause:</strong> Some R packages need Xcode Command Line Tools to compile.</p>
+<p><strong>Fix:</strong> Open Terminal (not RStudio) and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">xcode-select</span> <span class="at">--install</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Follow the prompts. This takes a few minutes.</p>
+</section>
+<section id="xcrun-error-invalid-active-developer-path" class="level4">
+<h4 class="anchored" data-anchor-id="xcrun-error-invalid-active-developer-path">“xcrun: error: invalid active developer path”</h4>
+<p>Same fix as above — install Xcode Command Line Tools.</p>
+<hr>
+</section>
+</section>
+<section id="macos-general-issues" class="level3">
+<h3 class="anchored" data-anchor-id="macos-general-issues">macOS General Issues</h3>
+<section id="rstudio-wont-open-security-warning" class="level4">
+<h4 class="anchored" data-anchor-id="rstudio-wont-open-security-warning">RStudio won’t open (security warning)</h4>
+<p><strong>Fix:</strong> Go to <strong>System Preferences → Security &amp; Privacy → General</strong> and click “Open Anyway” next to the RStudio warning. Apple flags newly downloaded apps until you explicitly approve them.</p>
+</section>
+<section id="quarto-not-found-after-installing" class="level4">
+<h4 class="anchored" data-anchor-id="quarto-not-found-after-installing">Quarto not found after installing</h4>
+<p><strong>Fix:</strong> Quit RStudio completely and reopen it. Quarto installs a system-level command, and RStudio needs to be restarted to detect it.</p>
+<hr>
+</section>
+</section>
+</section>
+<section id="part-4-package-installation-problems" class="level2">
+<h2 class="anchored" data-anchor-id="part-4-package-installation-problems">Part 4: Package Installation Problems</h2>
+<p>Packages are add-ons that extend R’s capabilities. Installing them should be simple, but occasionally it isn’t.</p>
+<section id="the-basic-command" class="level3">
+<h3 class="anchored" data-anchor-id="the-basic-command">The Basic Command</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Run this in the RStudio <strong>Console</strong> (the bottom-left pane), not inside a code chunk in your document.</p>
+</section>
+<section id="common-package-problems" class="level3">
+<h3 class="anchored" data-anchor-id="common-package-problems">Common Package Problems</h3>
+<section id="package-xxx-is-not-available-for-this-version-of-r" class="level4">
+<h4 class="anchored" data-anchor-id="package-xxx-is-not-available-for-this-version-of-r">“package ‘xxx’ is not available for this version of R”</h4>
+<p><strong>Cause:</strong> The package name is misspelled, or the package needs a newer version of R.</p>
+<p><strong>Fix:</strong> 1. Double-check the spelling (package names are case-sensitive) 2. Check your R version: run <code>R.version.string</code> in the Console 3. Update R if it’s older than version 4.0</p>
+</section>
+<section id="installation-takes-forever-or-freezes" class="level4">
+<h4 class="anchored" data-anchor-id="installation-takes-forever-or-freezes">Installation takes forever or freezes</h4>
+<p><strong>Fix:</strong> Try installing just one package at a time instead of a group. Some packages (like <code>tidyverse</code>) install dozens of dependencies, which can fail silently.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Instead of all at once:</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="fu">c</span>(<span class="st">"tidyverse"</span>, <span class="st">"ggplot2"</span>, <span class="st">"rmarkdown"</span>))</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Try one at a time:</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"tidyverse"</span>)</span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"ggplot2"</span>)</span>
+<span id="cb10-7"><a href="#cb10-7" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"rmarkdown"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="warning-package-was-built-under-r-version-x.x.x" class="level4">
+<h4 class="anchored" data-anchor-id="warning-package-was-built-under-r-version-x.x.x">“Warning: package was built under R version X.X.X”</h4>
+<p>This is a <strong>warning</strong>, not an error. The package will usually still work. You can safely ignore this in most cases.</p>
+</section>
+<section id="there-is-no-package-called-xxx-when-using-library" class="level4">
+<h4 class="anchored" data-anchor-id="there-is-no-package-called-xxx-when-using-library">“there is no package called ‘xxx’” when using library()</h4>
+<p><strong>Cause:</strong> The package isn’t installed yet, or was installed for a different R version.</p>
+<p><strong>Fix:</strong> Install it first, then load it:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"xxx"</span>)</span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(xxx)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="permission-errors-on-maclinux" class="level4">
+<h4 class="anchored" data-anchor-id="permission-errors-on-maclinux">Permission errors on Mac/Linux</h4>
+<pre><code>Warning: 'lib = "/usr/local/lib/R/library"' is not writable</code></pre>
+<p><strong>Fix:</strong> Install to your personal library instead:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">install.packages</span>(<span class="st">"xxx"</span>, <span class="at">lib =</span> <span class="st">"~/R/library"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Or create the personal library:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dir.create</span>(<span class="st">"~/R/library"</span>, <span class="at">recursive =</span> <span class="cn">TRUE</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<hr>
+</section>
+</section>
+</section>
+<section id="part-5-installing-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="part-5-installing-quarto">Part 5: Installing Quarto</h2>
+<p>Quarto is separate from R and RStudio — it needs its own installation.</p>
+<ol type="1">
+<li>Go to <a href="https://quarto.org/docs/get-started/">quarto.org/docs/get-started</a></li>
+<li>Download the installer for your operating system</li>
+<li>Run the installer (accept all defaults)</li>
+<li><strong>Restart RStudio</strong> after installation</li>
+</ol>
+<p>To verify Quarto is installed, open the <strong>Terminal</strong> tab in RStudio and run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb15"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>You should see a version number (e.g., <code>1.4.555</code>). If you get an error, Quarto isn’t installed or RStudio can’t find it — try restarting your computer.</p>
+<hr>
+</section>
+<section id="part-6-quick-diagnostic-checklist" class="level2">
+<h2 class="anchored" data-anchor-id="part-6-quick-diagnostic-checklist">Part 6: Quick Diagnostic Checklist</h2>
+<p>When something breaks, run through this list:</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Is R installed? Run <code>R.version.string</code> in the Console.</label></li>
+<li><label><input type="checkbox">Is Quarto installed? Run <code>quarto --version</code> in the Terminal tab.</label></li>
+<li><label><input type="checkbox">Is RStudio up to date? Help → Check for Updates.</label></li>
+<li><label><input type="checkbox">Did you save your <code>.qmd</code> file before rendering?</label></li>
+<li><label><input type="checkbox">Are all required packages installed and loaded with <code>library()</code>?</label></li>
+<li><label><input type="checkbox">Is there a typo in your YAML header (the <code>---</code> section)?</label></li>
+<li><label><input type="checkbox">Does the error message point to a specific line number?</label></li>
+</ul>
+<hr>
+</section>
+<section id="still-stuck" class="level2">
+<h2 class="anchored" data-anchor-id="still-stuck">Still Stuck?</h2>
+<p><strong>Office Hours:</strong> MW 10:00–11:30 AM and 1:30–3:00 PM <strong>Email:</strong> aleith@siue.edu</p>
+<p>When you email, include: 1. A screenshot of the error message 2. What you were trying to do when it happened 3. Your operating system (Windows, macOS Intel, macOS Apple Silicon)</p>
+<p>The more detail you give, the faster we can help.</p>
 
 
 </section>

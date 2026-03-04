@@ -1,0 +1,1020 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The Surprise Detector – MC Research Methods: The Liaison Program</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../custom-styling.scss">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">MC Research Methods: The Liaison Program</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../setup.html"> 
+<span class="menu-text">Get Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-phases" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Phases</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-phases">    
+        <li>
+    <a class="dropdown-item" href="../../modules/01_journalist/index.html">
+ <span class="dropdown-text">📰 Phase I: The Journalist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../modules/02_architect/index.html">
+ <span class="dropdown-text">🏗️ Phase II: The Architect</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../modules/03_builder/index.html">
+ <span class="dropdown-text">🔨 Phase III: The Builder</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../modules/04_analyst/index.html">
+ <span class="dropdown-text">📊 Phase IV: The Analyst</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../modules/05_publisher/index.html">
+ <span class="dropdown-text">🎯 Phase V: The Publisher</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../../resources/index.html">
+ <span class="dropdown-text">Resources Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/toolchain.html">
+ <span class="dropdown-text">🛠️ Course Toolchain</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/troubleshooting.html">
+ <span class="dropdown-text">🔧 Troubleshooting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/install-r-rstudio.html">
+ <span class="dropdown-text">📊 R &amp; RStudio Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/install-vscode.html">
+ <span class="dropdown-text">💻 VS Code Setup</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#the-logic-of-hypothesis-testing" id="toc-the-logic-of-hypothesis-testing" class="nav-link" data-scroll-target="#the-logic-of-hypothesis-testing">The Logic of Hypothesis Testing</a></li>
+  <li><a href="#p-values-quantifying-surprise" id="toc-p-values-quantifying-surprise" class="nav-link" data-scroll-target="#p-values-quantifying-surprise">P-Values: Quantifying Surprise</a></li>
+  <li><a href="#the-0.05-threshold-and-why-its-arbitrary" id="toc-the-0.05-threshold-and-why-its-arbitrary" class="nav-link" data-scroll-target="#the-0.05-threshold-and-why-its-arbitrary">The 0.05 Threshold (and Why It’s Arbitrary)</a></li>
+  <li><a href="#what-p-values-do-not-mean" id="toc-what-p-values-do-not-mean" class="nav-link" data-scroll-target="#what-p-values-do-not-mean">What P-Values Do NOT Mean</a></li>
+  <li><a href="#chi-square-test-categorical-relationships" id="toc-chi-square-test-categorical-relationships" class="nav-link" data-scroll-target="#chi-square-test-categorical-relationships">Chi-Square Test: Categorical Relationships</a>
+  <ul class="collapse">
+  <li><a href="#the-research-question" id="toc-the-research-question" class="nav-link" data-scroll-target="#the-research-question">The Research Question</a></li>
+  <li><a href="#creating-the-contingency-table" id="toc-creating-the-contingency-table" class="nav-link" data-scroll-target="#creating-the-contingency-table">Creating the Contingency Table</a></li>
+  <li><a href="#running-the-chi-square-test" id="toc-running-the-chi-square-test" class="nav-link" data-scroll-target="#running-the-chi-square-test">Running the Chi-Square Test</a></li>
+  <li><a href="#assumptions-and-warnings" id="toc-assumptions-and-warnings" class="nav-link" data-scroll-target="#assumptions-and-warnings">Assumptions and Warnings</a></li>
+  <li><a href="#effect-size-cramérs-v" id="toc-effect-size-cramérs-v" class="nav-link" data-scroll-target="#effect-size-cramérs-v">Effect Size: Cramér’s V</a></li>
+  </ul></li>
+  <li><a href="#confidence-intervals-estimating-uncertainty" id="toc-confidence-intervals-estimating-uncertainty" class="nav-link" data-scroll-target="#confidence-intervals-estimating-uncertainty">Confidence Intervals: Estimating Uncertainty</a>
+  <ul class="collapse">
+  <li><a href="#comparing-groups-with-confidence-intervals" id="toc-comparing-groups-with-confidence-intervals" class="nav-link" data-scroll-target="#comparing-groups-with-confidence-intervals">Comparing Groups with Confidence Intervals</a></li>
+  </ul></li>
+  <li><a href="#running-statistical-tests-in-r" id="toc-running-statistical-tests-in-r" class="nav-link" data-scroll-target="#running-statistical-tests-in-r">Running Statistical Tests in R</a>
+  <ul class="collapse">
+  <li><a href="#chi-square-test-categorical-categorical" id="toc-chi-square-test-categorical-categorical" class="nav-link" data-scroll-target="#chi-square-test-categorical-categorical">Chi-Square Test (Categorical × Categorical)</a></li>
+  <li><a href="#t-test-comparing-two-group-means" id="toc-t-test-comparing-two-group-means" class="nav-link" data-scroll-target="#t-test-comparing-two-group-means">T-Test (Comparing Two Group Means)</a></li>
+  <li><a href="#correlation-two-numeric-variables" id="toc-correlation-two-numeric-variables" class="nav-link" data-scroll-target="#correlation-two-numeric-variables">Correlation (Two Numeric Variables)</a></li>
+  </ul></li>
+  <li><a href="#statistical-significance-vs.-practical-significance" id="toc-statistical-significance-vs.-practical-significance" class="nav-link" data-scroll-target="#statistical-significance-vs.-practical-significance">Statistical Significance vs.&nbsp;Practical Significance</a></li>
+  <li><a href="#when-hypothesis-testing-isnt-appropriate" id="toc-when-hypothesis-testing-isnt-appropriate" class="nav-link" data-scroll-target="#when-hypothesis-testing-isnt-appropriate">When Hypothesis Testing Isn’t Appropriate</a></li>
+  <li><a href="#reporting-statistical-results" id="toc-reporting-statistical-results" class="nav-link" data-scroll-target="#reporting-statistical-results">Reporting Statistical Results</a></li>
+  <li><a href="#practice-statistical-inference" id="toc-practice-statistical-inference" class="nav-link" data-scroll-target="#practice-statistical-inference">Practice: Statistical Inference</a>
+  <ul class="collapse">
+  <li><a href="#exercise-14.1-interpreting-p-values" id="toc-exercise-14.1-interpreting-p-values" class="nav-link" data-scroll-target="#exercise-14.1-interpreting-p-values">Exercise 14.1: Interpreting P-Values</a></li>
+  <li><a href="#exercise-14.2-chi-square-test" id="toc-exercise-14.2-chi-square-test" class="nav-link" data-scroll-target="#exercise-14.2-chi-square-test">Exercise 14.2: Chi-Square Test</a></li>
+  <li><a href="#exercise-14.3-confidence-intervals" id="toc-exercise-14.3-confidence-intervals" class="nav-link" data-scroll-target="#exercise-14.3-confidence-intervals">Exercise 14.3: Confidence Intervals</a></li>
+  <li><a href="#exercise-14.4-t-test" id="toc-exercise-14.4-t-test" class="nav-link" data-scroll-target="#exercise-14.4-t-test">Exercise 14.4: T-Test</a></li>
+  </ul></li>
+  <li><a href="#reflection-questions" id="toc-reflection-questions" class="nav-link" data-scroll-target="#reflection-questions">Reflection Questions</a></li>
+  <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary">Chapter Summary</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a></li>
+  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Surprise Detector</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand the logic of null hypothesis significance testing (NHST)</li>
+<li>Interpret p-values correctly (and avoid common misinterpretations)</li>
+<li>Conduct chi-square tests for categorical relationships in R</li>
+<li>Calculate and interpret confidence intervals</li>
+<li>Distinguish between statistical significance and practical significance</li>
+<li>Recognize when hypothesis testing is appropriate and when it’s not</li>
+<li>Report statistical results following APA guidelines</li>
+</ul>
+<hr>
+<p>You’ve visualized your data. You created a scatterplot showing that songs with negative lyric sentiment tend to chart higher than songs with positive sentiment. You faceted a boxplot and noticed that high-intensity songs appear more common among top-charting hits than low-intensity songs.</p>
+<p>But here’s the uncomfortable question: Could these patterns be flukes?</p>
+<p>With a dataset of 200 songs, random variation creates patterns. If you shuffle sentiment labels randomly and plot the results, you’ll sometimes see apparent differences between groups—not because sentiment actually matters, but because chance produces noise that looks like signal.</p>
+<p>Statistical inference is how we distinguish signal from noise. It asks: “If nothing real were happening—if sentiment truly didn’t affect chart performance—how surprised should we be to see a pattern this strong?”</p>
+<p>This chapter teaches you to quantify surprise.</p>
+</section>
+<section id="the-logic-of-hypothesis-testing" class="level2">
+<h2 class="anchored" data-anchor-id="the-logic-of-hypothesis-testing">The Logic of Hypothesis Testing</h2>
+<p>Hypothesis testing feels backward at first. You don’t directly prove what you believe. Instead, you assume the opposite (the <strong>null hypothesis</strong>), then calculate how surprising your data would be if that assumption were true.</p>
+<p><strong>An analogy</strong>: Imagine you suspect a coin is unfair—weighted to land heads more often. You can’t prove it’s unfair directly. But you can flip it 100 times and see what happens.</p>
+<ul>
+<li><strong>Null hypothesis (H₀)</strong>: The coin is fair (50/50 heads/tails)</li>
+<li><strong>Alternative hypothesis (H₁)</strong>: The coin is unfair</li>
+</ul>
+<p>You flip 100 times. Result: 65 heads, 35 tails.</p>
+<p><strong>Question</strong>: If the coin were truly fair, how often would random chance produce 65 or more heads out of 100 flips?</p>
+<p><strong>Answer</strong> (from probability theory): About 0.3% of the time.</p>
+<p>That’s rare. If the null hypothesis (fair coin) were true, you’d almost never see 65 heads. So either: 1. The coin is fair, and you witnessed a very unlikely event (0.3% chance), OR 2. The coin is unfair</p>
+<p>Most researchers conclude: The null hypothesis is probably false. The coin is likely unfair.</p>
+<p>This is the logic of <strong>null hypothesis significance testing (NHST)</strong>: Assume nothing’s happening, calculate how surprising your data are, and reject the null if the data are sufficiently surprising.</p>
+</section>
+<section id="p-values-quantifying-surprise" class="level2">
+<h2 class="anchored" data-anchor-id="p-values-quantifying-surprise">P-Values: Quantifying Surprise</h2>
+<p>The <strong>p-value</strong> is the probability of observing data at least as extreme as yours, assuming the null hypothesis is true.</p>
+<p><strong>Coin example</strong>: p = 0.003 (0.3%)</p>
+<p><strong>Music example</strong>: You test whether negative sentiment songs chart differently than positive sentiment songs.</p>
+<ul>
+<li>H₀: Sentiment and chart position are unrelated</li>
+<li>H₁: Sentiment and chart position are related</li>
+</ul>
+<p>You run a statistical test. Result: p = 0.02 (2%)</p>
+<p><strong>Interpretation</strong>: If sentiment truly didn’t matter (H₀ is true), you’d see a difference this large or larger only 2% of the time due to random chance.</p>
+<p>That’s surprising. Most researchers would reject the null hypothesis and conclude that sentiment and chart position are related.</p>
+</section>
+<section id="the-0.05-threshold-and-why-its-arbitrary" class="level2">
+<h2 class="anchored" data-anchor-id="the-0.05-threshold-and-why-its-arbitrary">The 0.05 Threshold (and Why It’s Arbitrary)</h2>
+<p>By convention, researchers use <strong>p &lt; 0.05</strong> as the threshold for “statistical significance.”</p>
+<ul>
+<li>p &lt; 0.05 → “Statistically significant” → Reject null hypothesis</li>
+<li>p ≥ 0.05 → “Not statistically significant” → Fail to reject null</li>
+</ul>
+<p><strong>But this threshold is arbitrary.</strong> There’s nothing magical about 5%. It’s a convention that emerged historically and stuck. Some fields use stricter thresholds (p &lt; 0.01 or p &lt; 0.001). Others are moving away from bright-line cutoffs entirely.</p>
+<p><strong>What p = 0.049 vs.&nbsp;p = 0.051 really means</strong>: Almost nothing. The first barely crosses the threshold; the second barely misses. Yet one is declared “significant” and the other “not significant.” This is why many statisticians now recommend reporting exact p-values and focusing on effect sizes rather than binary yes/no decisions.</p>
+</section>
+<section id="what-p-values-do-not-mean" class="level2">
+<h2 class="anchored" data-anchor-id="what-p-values-do-not-mean">What P-Values Do NOT Mean</h2>
+<p>P-values are wildly misinterpreted. Here’s what they <strong>do not</strong> tell you:</p>
+<p><strong>❌ “p = 0.03 means there’s a 3% chance the null hypothesis is true”</strong></p>
+<p><strong>Wrong.</strong> The null hypothesis is either true or false (you just don’t know which). P-values tell you about the probability of <em>data</em>, not hypotheses. Correct interpretation: “If H₀ were true, we’d see data this extreme 3% of the time.”</p>
+<p><strong>❌ “p = 0.03 means there’s a 97% chance the alternative hypothesis is true”</strong></p>
+<p><strong>Wrong.</strong> P-values say nothing about the probability of H₁ being true.</p>
+<p><strong>❌ “p = 0.03 means the effect is large or important”</strong></p>
+<p><strong>Wrong.</strong> Statistical significance doesn’t imply practical significance. A tiny, trivial effect can be statistically significant with a large enough sample. A large, important effect can be non-significant with a small sample.</p>
+<p><strong>❌ “p &gt; 0.05 means there’s no effect”</strong></p>
+<p><strong>Wrong.</strong> Failing to find significance doesn’t prove the null. It means your data aren’t strong enough evidence to reject it. Absence of evidence isn’t evidence of absence.</p>
+<p><strong>✓ Correct interpretation</strong>: “If the null hypothesis were true, we’d observe data at least this extreme [p × 100]% of the time due to random variation.”</p>
+</section>
+<section id="chi-square-test-categorical-relationships" class="level2">
+<h2 class="anchored" data-anchor-id="chi-square-test-categorical-relationships">Chi-Square Test: Categorical Relationships</h2>
+<p>The <strong>chi-square test</strong> (χ²) tests whether two categorical variables are independent or related.</p>
+<p><strong>Use case</strong>: Do lyric sentiment and chart performance category (top 10 vs.&nbsp;not top 10) relate to each other?</p>
+<section id="the-research-question" class="level3">
+<h3 class="anchored" data-anchor-id="the-research-question">The Research Question</h3>
+<p><strong>Hypothesis</strong>: Negative sentiment songs are more likely to chart in the top 10 than positive sentiment songs.</p>
+<p><strong>Null hypothesis (H₀)</strong>: Sentiment and top-10 status are independent (unrelated).</p>
+<p><strong>Alternative hypothesis (H₁)</strong>: Sentiment and top-10 status are related.</p>
+</section>
+<section id="creating-the-contingency-table" class="level3">
+<h3 class="anchored" data-anchor-id="creating-the-contingency-table">Creating the Contingency Table</h3>
+<p>First, create a binary “top 10” variable and cross-tabulate it with sentiment:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(tidyverse)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>music_data <span class="ot">&lt;-</span> music_data <span class="sc">%&gt;%</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">top10 =</span> <span class="fu">if_else</span>(Max_Rank <span class="sc">&lt;=</span> <span class="dv">10</span>, <span class="st">"Top 10"</span>, <span class="st">"Not Top 10"</span>))</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Create contingency table</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(music_data<span class="sc">$</span>Lyric_Sentiment, music_data<span class="sc">$</span>top10)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Example output</strong>:</p>
+<pre><code>                Not Top 10  Top 10
+  Positive           35       15
+  Negative           25       25
+  Neutral            20       10
+  Mixed              30       20</code></pre>
+<p><strong>Observation</strong>: Negative songs have a higher proportion in top 10 (25/50 = 50%) than Positive songs (15/50 = 30%).</p>
+<p><strong>Question</strong>: Is this difference statistically significant, or could it be chance?</p>
+</section>
+<section id="running-the-chi-square-test" class="level3">
+<h3 class="anchored" data-anchor-id="running-the-chi-square-test">Running the Chi-Square Test</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Chi-square test</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(music_data<span class="sc">$</span>Lyric_Sentiment, music_data<span class="sc">$</span>top10)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Output</strong>:</p>
+<pre><code>    Pearson's Chi-squared test
+
+data:  music_data$Lyric_Sentiment and music_data$top10
+X-squared = 8.42, df = 3, p-value = 0.038</code></pre>
+<p><strong>Interpretation</strong>:</p>
+<ul>
+<li><strong>χ² = 8.42</strong>: The test statistic (measures how much the observed frequencies differ from what we’d expect if variables were independent)</li>
+<li><strong>df = 3</strong>: Degrees of freedom (based on table dimensions: [rows - 1] × [columns - 1] = [4 - 1] × [2 - 1] = 3)</li>
+<li><strong>p = 0.038</strong>: If sentiment and chart position were unrelated, we’d see a chi-square value this large or larger about 3.8% of the time by chance</li>
+</ul>
+<p><strong>Conclusion</strong>: p &lt; 0.05, so we reject the null hypothesis. Lyric sentiment and top-10 chart performance appear to be related.</p>
+</section>
+<section id="assumptions-and-warnings" class="level3">
+<h3 class="anchored" data-anchor-id="assumptions-and-warnings">Assumptions and Warnings</h3>
+<p>Chi-square tests have assumptions:</p>
+<ol type="1">
+<li><strong>Independence</strong>: Each observation is independent (one song can’t be coded twice)</li>
+<li><strong>Expected frequencies</strong>: Each cell in the contingency table should have an expected frequency ≥ 5</li>
+</ol>
+<p><strong>Check expected frequencies</strong>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(music_data<span class="sc">$</span>Lyric_Sentiment, music_data<span class="sc">$</span>top10)<span class="sc">$</span>expected</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>If any cell has expected frequency &lt; 5, the test may be unreliable. Consider: - Combining categories (e.g., merge “Neutral” and “Mixed”) - Using Fisher’s exact test instead</p>
+</section>
+<section id="effect-size-cramérs-v" class="level3">
+<h3 class="anchored" data-anchor-id="effect-size-cramérs-v">Effect Size: Cramér’s V</h3>
+<p>Statistical significance tells you whether a relationship exists. <strong>Effect size</strong> tells you how strong it is.</p>
+<p><strong>Cramér’s V</strong> measures association strength for categorical variables: - V = 0: No association - V = 0.1: Small effect - V = 0.3: Medium effect - V = 0.5: Large effect</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(rcompanion)</span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">cramerV</span>(music_data<span class="sc">$</span>Lyric_Sentiment, music_data<span class="sc">$</span>top10)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Example output</strong>: V = 0.21</p>
+<p><strong>Interpretation</strong>: A small-to-medium effect. Sentiment and chart position are related, but the relationship isn’t overwhelmingly strong.</p>
+</section>
+</section>
+<section id="confidence-intervals-estimating-uncertainty" class="level2">
+<h2 class="anchored" data-anchor-id="confidence-intervals-estimating-uncertainty">Confidence Intervals: Estimating Uncertainty</h2>
+<p>P-values tell you whether to reject the null. <strong>Confidence intervals</strong> tell you the range of plausible values for an effect.</p>
+<p><strong>Example</strong>: What’s the average chart position for negative sentiment songs?</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate mean chart position for negative songs</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>negative_songs <span class="ot">&lt;-</span> music_data <span class="sc">%&gt;%</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Lyric_Sentiment <span class="sc">==</span> <span class="st">"Negative"</span>)</span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="fu">mean</span>(negative_songs<span class="sc">$</span>Max_Rank)  <span class="co"># Point estimate</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Output</strong>: Mean = 32.4</p>
+<p>But this is just one sample. The true population mean (if we coded all songs ever) is unknown. A <strong>95% confidence interval</strong> gives a range of plausible values.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate 95% CI</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(negative_songs<span class="sc">$</span>Max_Rank)<span class="sc">$</span>conf.int</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Output</strong>: [28.1, 36.7]</p>
+<p><strong>Interpretation</strong>: We’re 95% confident that the true average chart position for negative sentiment songs lies between 28.1 and 36.7.</p>
+<p><strong>What “95% confident” means</strong>: If we repeated this study 100 times with different random samples, about 95 of those confidence intervals would contain the true population mean. It does <em>not</em> mean there’s a 95% probability the true mean is in this specific interval.</p>
+<section id="comparing-groups-with-confidence-intervals" class="level3">
+<h3 class="anchored" data-anchor-id="comparing-groups-with-confidence-intervals">Comparing Groups with Confidence Intervals</h3>
+<p>Compare negative vs.&nbsp;positive songs:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Negative songs</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>negative_ci <span class="ot">&lt;-</span> <span class="fu">t.test</span>(negative_songs<span class="sc">$</span>Max_Rank)<span class="sc">$</span>conf.int</span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>negative_ci</span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Positive songs</span></span>
+<span id="cb9-6"><a href="#cb9-6" aria-hidden="true" tabindex="-1"></a>positive_songs <span class="ot">&lt;-</span> music_data <span class="sc">%&gt;%</span></span>
+<span id="cb9-7"><a href="#cb9-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Lyric_Sentiment <span class="sc">==</span> <span class="st">"Positive"</span>)</span>
+<span id="cb9-8"><a href="#cb9-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb9-9"><a href="#cb9-9" aria-hidden="true" tabindex="-1"></a>positive_ci <span class="ot">&lt;-</span> <span class="fu">t.test</span>(positive_songs<span class="sc">$</span>Max_Rank)<span class="sc">$</span>conf.int</span>
+<span id="cb9-10"><a href="#cb9-10" aria-hidden="true" tabindex="-1"></a>positive_ci</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Output</strong>: - Negative: [28.1, 36.7] - Positive: [40.2, 52.8]</p>
+<p><strong>Interpretation</strong>: The confidence intervals don’t overlap. This suggests negative songs chart significantly higher (lower numbers = better) than positive songs.</p>
+</section>
+</section>
+<section id="running-statistical-tests-in-r" class="level2">
+<h2 class="anchored" data-anchor-id="running-statistical-tests-in-r">Running Statistical Tests in R</h2>
+<section id="chi-square-test-categorical-categorical" class="level3">
+<h3 class="anchored" data-anchor-id="chi-square-test-categorical-categorical">Chi-Square Test (Categorical × Categorical)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="fu">chisq.test</span>(music_data<span class="sc">$</span>Lyric_Sentiment, music_data<span class="sc">$</span>top10)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="t-test-comparing-two-group-means" class="level3">
+<h3 class="anchored" data-anchor-id="t-test-comparing-two-group-means">T-Test (Comparing Two Group Means)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Are negative songs faster (higher tempo) than positive songs?</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">t.test</span>(Tempo <span class="sc">~</span> Lyric_Sentiment, </span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>       <span class="at">data =</span> music_data <span class="sc">%&gt;%</span> <span class="fu">filter</span>(Lyric_Sentiment <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"Negative"</span>, <span class="st">"Positive"</span>)))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Output</strong>:</p>
+<pre><code>    Welch Two Sample t-test
+
+data:  Tempo by Lyric_Sentiment
+t = 2.13, df = 87.5, p-value = 0.036
+alternative hypothesis: true difference in means is not equal to 0
+95 percent confidence interval:
+ 1.2  22.8
+sample estimates:
+mean in group Negative mean in group Positive 
+                 128.5                   116.5</code></pre>
+<p><strong>Interpretation</strong>: - Negative songs have higher average tempo (128.5 BPM) than positive songs (116.5 BPM) - Difference: 12 BPM - 95% CI for difference: [1.2, 22.8] - p = 0.036, so the difference is statistically significant</p>
+</section>
+<section id="correlation-two-numeric-variables" class="level3">
+<h3 class="anchored" data-anchor-id="correlation-two-numeric-variables">Correlation (Two Numeric Variables)</h3>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Is there a relationship between tempo and chart peak?</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="fu">cor.test</span>(music_data<span class="sc">$</span>Tempo, music_data<span class="sc">$</span>Max_Rank)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Output</strong>:</p>
+<pre><code>    Pearson's product-moment correlation
+
+data:  music_data$Tempo and music_data$Max_Rank
+t = -1.92, df = 198, p-value = 0.056
+alternative hypothesis: true correlation is not equal to 0
+95 percent confidence interval:
+ -0.267  0.003
+sample estimates:
+       cor 
+-0.135</code></pre>
+<p><strong>Interpretation</strong>: - Weak negative correlation (r = -0.135): Faster songs tend to chart slightly higher - p = 0.056 (just above 0.05 threshold), so not quite statistically significant by conventional standards - 95% CI includes zero [-0.267, 0.003], suggesting the relationship might not exist in the population</p>
+</section>
+</section>
+<section id="statistical-significance-vs.-practical-significance" class="level2">
+<h2 class="anchored" data-anchor-id="statistical-significance-vs.-practical-significance">Statistical Significance vs.&nbsp;Practical Significance</h2>
+<p>A finding can be <strong>statistically significant</strong> (unlikely to be chance) but <strong>practically trivial</strong> (too small to matter).</p>
+<p><strong>Example</strong>: You test whether negative songs have higher tempo. Result:</p>
+<ul>
+<li>Difference: 2.1 BPM (negative songs average 121.1, positive songs average 119.0)</li>
+<li>p = 0.003 (highly statistically significant)</li>
+<li>Sample size: 10,000 songs</li>
+</ul>
+<p><strong>Is 2.1 BPM meaningful?</strong> Listeners can’t perceive a 2 BPM difference. DJs wouldn’t care. This is statistically significant but practically trivial.</p>
+<p><strong>Conversely</strong>: A difference of 30 BPM (very noticeable) might not be statistically significant if your sample is only 15 songs. Lack of significance doesn’t mean the effect doesn’t exist—just that you don’t have enough data to detect it reliably.</p>
+<p><strong>Takeaway</strong>: Always report effect sizes and confidence intervals alongside p-values. Statistical significance tells you <em>whether</em> there’s an effect; effect size tells you <em>how much</em>.</p>
+</section>
+<section id="when-hypothesis-testing-isnt-appropriate" class="level2">
+<h2 class="anchored" data-anchor-id="when-hypothesis-testing-isnt-appropriate">When Hypothesis Testing Isn’t Appropriate</h2>
+<p>Hypothesis tests work when you have: 1. A clear null hypothesis 2. Random or representative sampling 3. Sufficient sample size 4. Data that meet test assumptions</p>
+<p><strong>When NOT to use hypothesis testing</strong>:</p>
+<p><strong>Exploratory analysis</strong>: If you’re exploring data without specific predictions, hypothesis tests are misleading. You’re fishing for patterns, which inflates false positives.</p>
+<p><strong>Convenience samples</strong>: If your 200 songs aren’t a random sample of all music (they’re probably not), p-values don’t generalize to the population. They only describe this specific dataset.</p>
+<p><strong>Tiny samples</strong>: With n = 10, even large effects may not reach significance. The test lacks power.</p>
+<p><strong>Multiple comparisons</strong>: If you test 20 hypotheses at p &lt; 0.05, you’d expect 1 false positive by chance. Adjust for multiple testing or report all tests conducted.</p>
+</section>
+<section id="reporting-statistical-results" class="level2">
+<h2 class="anchored" data-anchor-id="reporting-statistical-results">Reporting Statistical Results</h2>
+<p>Follow <strong>APA format</strong> for transparency:</p>
+<p><strong>Chi-square</strong>:</p>
+<p>“A chi-square test revealed a significant relationship between lyric sentiment and top-10 chart status, χ²(3, N = 200) = 8.42, p = .038, Cramér’s V = 0.21. Negative sentiment songs were more likely to chart in the top 10 (50%) than positive sentiment songs (30%).”</p>
+<p><strong>T-test</strong>:</p>
+<p>“An independent samples t-test showed that negative sentiment songs (M = 128.5 BPM, SD = 24.3) had significantly higher tempo than positive sentiment songs (M = 116.5 BPM, SD = 22.1), t(87.5) = 2.13, p = .036, 95% CI [1.2, 22.8], d = 0.51.”</p>
+<p><strong>Correlation</strong>:</p>
+<p>“Tempo and chart peak position were weakly negatively correlated, r(198) = -.135, p = .056, 95% CI [-.267, .003], indicating that faster songs tended to chart slightly higher, though this relationship did not reach statistical significance.”</p>
+<p><strong>What to include</strong>: - Test name - Test statistic and degrees of freedom - Exact p-value (not just “p &lt; .05”) - Effect size - Descriptive statistics (means, SDs) - Confidence intervals when available</p>
+<hr>
+</section>
+<section id="practice-statistical-inference" class="level2">
+<h2 class="anchored" data-anchor-id="practice-statistical-inference">Practice: Statistical Inference</h2>
+<section id="exercise-14.1-interpreting-p-values" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-14.1-interpreting-p-values">Exercise 14.1: Interpreting P-Values</h3>
+<p>For each p-value, write a correct interpretation:</p>
+<ol type="1">
+<li>p = 0.03</li>
+<li>p = 0.18</li>
+<li>p = 0.001</li>
+</ol>
+<hr>
+</section>
+<section id="exercise-14.2-chi-square-test" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-14.2-chi-square-test">Exercise 14.2: Chi-Square Test</h3>
+<p>Test whether Emotional_Intensity (Low/Medium/High) relates to top-10 chart status.</p>
+<ol type="1">
+<li>Create a contingency table</li>
+<li>Run the chi-square test</li>
+<li>Interpret the p-value</li>
+<li>Calculate Cramér’s V</li>
+<li>Write an APA-formatted results sentence</li>
+</ol>
+<hr>
+</section>
+<section id="exercise-14.3-confidence-intervals" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-14.3-confidence-intervals">Exercise 14.3: Confidence Intervals</h3>
+<p>Calculate 95% confidence intervals for average tempo in each sentiment category. Do the intervals overlap? What does that tell you?</p>
+<hr>
+</section>
+<section id="exercise-14.4-t-test" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-14.4-t-test">Exercise 14.4: T-Test</h3>
+<p>Test whether songs that reached #1 have different average tempo than songs that peaked at #2-10. Report:</p>
+<ol type="1">
+<li>Descriptive statistics (means, SDs, sample sizes)</li>
+<li>Test statistic and p-value</li>
+<li>95% CI for the difference</li>
+<li>Effect size (Cohen’s d)</li>
+<li>Interpretation in plain language</li>
+</ol>
+<hr>
+</section>
+</section>
+<section id="reflection-questions" class="level2">
+<h2 class="anchored" data-anchor-id="reflection-questions">Reflection Questions</h2>
+<ol type="1">
+<li><p><strong>The 0.05 Threshold</strong>: If p = 0.048, you reject the null. If p = 0.052, you don’t. Does this bright line make sense, or should we think about evidence more continuously? What are the consequences of treating 0.05 as a hard cutoff?</p></li>
+<li><p><strong>Publication Bias</strong>: Studies with p &lt; 0.05 are more likely to be published than studies with p &gt; 0.05. How does this distort our understanding of what’s true? If you found p = 0.08, would you report it honestly or keep testing until you got p &lt; 0.05?</p></li>
+<li><p><strong>Significance vs.&nbsp;Importance</strong>: You can have a statistically significant finding that’s practically trivial (2 BPM difference in tempo). How should researchers balance these? When does statistical significance matter, and when should we prioritize effect size?</p></li>
+</ol>
+<hr>
+</section>
+<section id="chapter-summary" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-summary">Chapter Summary</h2>
+<p>This chapter introduced statistical inference and hypothesis testing:</p>
+<ul>
+<li><strong>Null hypothesis significance testing (NHST)</strong>: Assume nothing is happening (H₀), calculate how surprising the data are, reject H₀ if sufficiently surprising</li>
+<li><strong>P-value</strong>: Probability of observing data at least this extreme if H₀ were true</li>
+<li><strong>p &lt; 0.05</strong>: Conventional threshold for “statistical significance,” but arbitrary</li>
+<li><strong>Chi-square test</strong>: Tests independence of two categorical variables</li>
+<li><strong>Effect sizes</strong> (Cramér’s V, Cohen’s d): Measure strength of relationships, complementing p-values</li>
+<li><strong>Confidence intervals</strong>: Range of plausible values for a parameter (e.g., mean, difference, correlation)</li>
+<li><strong>95% CI interpretation</strong>: If we repeated the study 100 times, ~95 of those intervals would contain the true value</li>
+<li><strong>Statistical vs.&nbsp;practical significance</strong>: Statistical significance doesn’t imply importance; small effects can be significant with large samples</li>
+<li><strong>Common p-value misinterpretations</strong>: P-values don’t tell you the probability H₀ is true, or that H₁ is true, or that the effect is large</li>
+<li><strong>When not to test</strong>: Exploratory analysis, convenience samples, tiny samples, multiple comparisons without correction</li>
+<li><strong>Reporting standards</strong>: Include test statistic, df, exact p-value, effect size, descriptives, CIs</li>
+</ul>
+<hr>
+</section>
+<section id="key-terms" class="level2">
+<h2 class="anchored" data-anchor-id="key-terms">Key Terms</h2>
+<ul>
+<li><strong>Alternative hypothesis (H₁)</strong>: The claim that there is an effect or relationship</li>
+<li><strong>Chi-square test (χ²)</strong>: Statistical test for independence of categorical variables</li>
+<li><strong>Confidence interval (CI)</strong>: Range of plausible values for a population parameter</li>
+<li><strong>Cramér’s V</strong>: Effect size measure for categorical associations (0 = none, 1 = perfect)</li>
+<li><strong>Effect size</strong>: Magnitude of a relationship or difference (distinct from statistical significance)</li>
+<li><strong>Null hypothesis (H₀)</strong>: The claim that there is no effect or relationship</li>
+<li><strong>Null hypothesis significance testing (NHST)</strong>: Framework for testing whether data are surprising under H₀</li>
+<li><strong>P-value</strong>: Probability of observing data at least as extreme as yours if H₀ is true</li>
+<li><strong>Practical significance</strong>: Whether an effect is large enough to matter in real-world contexts</li>
+<li><strong>Statistical significance</strong>: Whether a result is unlikely to have occurred by chance alone (conventionally p &lt; 0.05)</li>
+<li><strong>Type I error</strong>: False positive (rejecting true H₀)</li>
+<li><strong>Type II error</strong>: False negative (failing to reject false H₀)</li>
+</ul>
+<hr>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>Chapter 15 (Interpreting the Call) moves beyond mechanical hypothesis testing to the art of interpretation. You’ve run statistical tests—now you need to make sense of what they mean. This chapter covers effect sizes in context, statistical power, what to do when results are “marginally significant” (p ≈ 0.06), how to handle unexpected findings, and the difference between exploratory and confirmatory analysis. Most importantly, it teaches honest, nuanced interpretation: acknowledging limitations, considering alternative explanations, and avoiding overstating findings.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

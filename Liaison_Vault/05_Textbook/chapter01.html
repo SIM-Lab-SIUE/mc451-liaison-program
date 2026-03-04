@@ -1,0 +1,870 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.23">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>The Architecture of Curiosity – MC Research Methods: The Liaison Program</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-1fe81d0376b2c50856e68e651e390326.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../custom-styling.scss">
+</head>
+
+<body class="nav-fixed quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    </a>
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">MC Research Methods: The Liaison Program</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../index.html"> 
+<span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../setup.html"> 
+<span class="menu-text">Get Started</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../syllabus.html"> 
+<span class="menu-text">Syllabus</span></a>
+  </li>  
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-phases" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Phases</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-phases">    
+        <li>
+    <a class="dropdown-item" href="../../modules/01_journalist/index.html">
+ <span class="dropdown-text">📰 Phase I: The Journalist</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../modules/02_architect/index.html">
+ <span class="dropdown-text">🏗️ Phase II: The Architect</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../modules/03_builder/index.html">
+ <span class="dropdown-text">🔨 Phase III: The Builder</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../modules/04_analyst/index.html">
+ <span class="dropdown-text">📊 Phase IV: The Analyst</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../modules/05_publisher/index.html">
+ <span class="dropdown-text">🎯 Phase V: The Publisher</span></a>
+  </li>  
+    </ul>
+  </li>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-resources" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Resources</span>
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="nav-menu-resources">    
+        <li>
+    <a class="dropdown-item" href="../../resources/index.html">
+ <span class="dropdown-text">Resources Overview</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/toolchain.html">
+ <span class="dropdown-text">🛠️ Course Toolchain</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/troubleshooting.html">
+ <span class="dropdown-text">🔧 Troubleshooting</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/install-r-rstudio.html">
+ <span class="dropdown-text">📊 R &amp; RStudio Installation</span></a>
+  </li>  
+        <li>
+    <a class="dropdown-item" href="../../resources/install-vscode.html">
+ <span class="dropdown-text">💻 VS Code Setup</span></a>
+  </li>  
+    </ul>
+  </li>
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#learning-objectives" id="toc-learning-objectives" class="nav-link active" data-scroll-target="#learning-objectives">Learning Objectives</a></li>
+  <li><a href="#why-we-tell-stories-and-why-that-matters-for-science" id="toc-why-we-tell-stories-and-why-that-matters-for-science" class="nav-link" data-scroll-target="#why-we-tell-stories-and-why-that-matters-for-science">Why We Tell Stories (and Why That Matters for Science)</a></li>
+  <li><a href="#the-limits-of-everyday-knowing" id="toc-the-limits-of-everyday-knowing" class="nav-link" data-scroll-target="#the-limits-of-everyday-knowing">The Limits of Everyday Knowing</a></li>
+  <li><a href="#the-sacred-flaw-hypotheses-as-dramatic-tension" id="toc-the-sacred-flaw-hypotheses-as-dramatic-tension" class="nav-link" data-scroll-target="#the-sacred-flaw-hypotheses-as-dramatic-tension">The Sacred Flaw: Hypotheses as Dramatic Tension</a></li>
+  <li><a href="#mapping-narrative-structure-onto-research-design" id="toc-mapping-narrative-structure-onto-research-design" class="nav-link" data-scroll-target="#mapping-narrative-structure-onto-research-design">Mapping Narrative Structure onto Research Design</a>
+  <ul class="collapse">
+  <li><a href="#the-inciting-incident-the-research-problem" id="toc-the-inciting-incident-the-research-problem" class="nav-link" data-scroll-target="#the-inciting-incident-the-research-problem">The Inciting Incident: The Research Problem</a></li>
+  <li><a href="#the-protagonist-the-researcher-as-seeker" id="toc-the-protagonist-the-researcher-as-seeker" class="nav-link" data-scroll-target="#the-protagonist-the-researcher-as-seeker">The Protagonist: The Researcher as Seeker</a></li>
+  <li><a href="#the-antagonist-confounds-bias-and-noise" id="toc-the-antagonist-confounds-bias-and-noise" class="nav-link" data-scroll-target="#the-antagonist-confounds-bias-and-noise">The Antagonist: Confounds, Bias, and Noise</a></li>
+  <li><a href="#rising-action-literature-review-and-theory" id="toc-rising-action-literature-review-and-theory" class="nav-link" data-scroll-target="#rising-action-literature-review-and-theory">Rising Action: Literature Review and Theory</a></li>
+  <li><a href="#the-climax-data-analysis" id="toc-the-climax-data-analysis" class="nav-link" data-scroll-target="#the-climax-data-analysis">The Climax: Data Analysis</a></li>
+  <li><a href="#falling-action-interpretation-and-limitations" id="toc-falling-action-interpretation-and-limitations" class="nav-link" data-scroll-target="#falling-action-interpretation-and-limitations">Falling Action: Interpretation and Limitations</a></li>
+  <li><a href="#resolution-implications-and-future-research" id="toc-resolution-implications-and-future-research" class="nav-link" data-scroll-target="#resolution-implications-and-future-research">Resolution: Implications and Future Research</a></li>
+  </ul></li>
+  <li><a href="#anecdote-vs.-data-complementary-not-oppositional" id="toc-anecdote-vs.-data-complementary-not-oppositional" class="nav-link" data-scroll-target="#anecdote-vs.-data-complementary-not-oppositional">Anecdote vs.&nbsp;Data: Complementary, Not Oppositional</a></li>
+  <li><a href="#the-dataset-unified-music-data-and-the-questions-they-raise" id="toc-the-dataset-unified-music-data-and-the-questions-they-raise" class="nav-link" data-scroll-target="#the-dataset-unified-music-data-and-the-questions-they-raise">The Dataset: Unified Music Data and the Questions They Raise</a></li>
+  <li><a href="#the-five-phase-structure" id="toc-the-five-phase-structure" class="nav-link" data-scroll-target="#the-five-phase-structure">The Five-Phase Structure</a>
+  <ul class="collapse">
+  <li><a href="#phase-i-the-journalist-weeks-1-3" id="toc-phase-i-the-journalist-weeks-1-3" class="nav-link" data-scroll-target="#phase-i-the-journalist-weeks-1-3">Phase I: The Journalist (Weeks 1-3)</a></li>
+  <li><a href="#phase-ii-the-architect-weeks-4-6" id="toc-phase-ii-the-architect-weeks-4-6" class="nav-link" data-scroll-target="#phase-ii-the-architect-weeks-4-6">Phase II: The Architect (Weeks 4-6)</a></li>
+  <li><a href="#phase-iii-the-translator-weeks-7-10" id="toc-phase-iii-the-translator-weeks-7-10" class="nav-link" data-scroll-target="#phase-iii-the-translator-weeks-7-10">Phase III: The Translator (Weeks 7-10)</a></li>
+  <li><a href="#phase-iv-the-analyst-weeks-11-15" id="toc-phase-iv-the-analyst-weeks-11-15" class="nav-link" data-scroll-target="#phase-iv-the-analyst-weeks-11-15">Phase IV: The Analyst (Weeks 11-15)</a></li>
+  <li><a href="#phase-v-the-publisher-weeks-16-17" id="toc-phase-v-the-publisher-weeks-16-17" class="nav-link" data-scroll-target="#phase-v-the-publisher-weeks-16-17">Phase V: The Publisher (Weeks 16-17)</a></li>
+  </ul></li>
+  <li><a href="#obsidian-habit-the-research-journal" id="toc-obsidian-habit-the-research-journal" class="nav-link" data-scroll-target="#obsidian-habit-the-research-journal">Obsidian Habit: The Research Journal</a></li>
+  <li><a href="#practice-applying-the-narrative-framework" id="toc-practice-applying-the-narrative-framework" class="nav-link" data-scroll-target="#practice-applying-the-narrative-framework">Practice: Applying the Narrative Framework</a>
+  <ul class="collapse">
+  <li><a href="#exercise-1.1-identifying-narrative-elements-in-research" id="toc-exercise-1.1-identifying-narrative-elements-in-research" class="nav-link" data-scroll-target="#exercise-1.1-identifying-narrative-elements-in-research">Exercise 1.1: Identifying Narrative Elements in Research</a></li>
+  <li><a href="#exercise-1.2-from-observation-to-research-question" id="toc-exercise-1.2-from-observation-to-research-question" class="nav-link" data-scroll-target="#exercise-1.2-from-observation-to-research-question">Exercise 1.2: From Observation to Research Question</a></li>
+  <li><a href="#exercise-1.3-distinguishing-types-of-evidence" id="toc-exercise-1.3-distinguishing-types-of-evidence" class="nav-link" data-scroll-target="#exercise-1.3-distinguishing-types-of-evidence">Exercise 1.3: Distinguishing Types of Evidence</a></li>
+  </ul></li>
+  <li><a href="#reflection-questions" id="toc-reflection-questions" class="nav-link" data-scroll-target="#reflection-questions">Reflection Questions</a></li>
+  <li><a href="#chapter-summary" id="toc-chapter-summary" class="nav-link" data-scroll-target="#chapter-summary">Chapter Summary</a></li>
+  <li><a href="#key-terms" id="toc-key-terms" class="nav-link" data-scroll-target="#key-terms">Key Terms</a></li>
+  <li><a href="#looking-ahead" id="toc-looking-ahead" class="nav-link" data-scroll-target="#looking-ahead">Looking Ahead</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">The Architecture of Curiosity</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="learning-objectives" class="level2">
+<h2 class="anchored" data-anchor-id="learning-objectives">Learning Objectives</h2>
+<ul>
+<li>Understand research as a structured form of storytelling</li>
+<li>Recognize how narrative elements map onto research design</li>
+<li>Examine the neuroscience foundations of hypothesis testing</li>
+<li>Identify the relationship between journalistic and scientific ways of knowing</li>
+</ul>
+<hr>
+<p>There’s a particular kind of discomfort that settles in when you realize your intuition was wrong. It happened to me a few years ago while watching a Twitch streamer play a notoriously toxic first-person shooter. The chat was predictably chaotic—insults flying, rage-quitting threats, the usual performative aggression. And yet the viewer count kept climbing. I switched over to a cozy farming simulator stream, expecting calmer waters and comparable engagement. The chat was indeed friendlier, but the audience was a fraction of the size.</p>
+<p>The pattern seemed obvious: toxicity attracts audiences. It was the kind of observation that feels true because you’ve seen it enough times to build a story around it. Negativity drives engagement. Drama sells. People are terrible.</p>
+<p>Except that’s not research. That’s pattern recognition masquerading as knowledge. And the gap between the two is where this course lives.</p>
+</section>
+<section id="why-we-tell-stories-and-why-that-matters-for-science" class="level2">
+<h2 class="anchored" data-anchor-id="why-we-tell-stories-and-why-that-matters-for-science">Why We Tell Stories (and Why That Matters for Science)</h2>
+<p>The neuroscientist Lisa Feldman Barrett has spent her career dismantling the idea that the brain passively receives information from the world. Instead, she argues, the brain is fundamentally a prediction machine. It generates models of reality, tests those models against incoming sensory data, and updates its beliefs when predictions fail. This prediction-error cycle—guess, test, revise—is not a metaphor for the scientific method. It <em>is</em> the scientific method, embedded in the architecture of cognition itself.</p>
+<p>Will Storr, in <em>The Science of Storytelling</em>, extends this framework to narrative. He suggests that stories emerged as cognitive tools for managing social complexity. They model cause-and-effect relationships, simulate outcomes, and allow groups to coordinate behavior around shared beliefs. When our predictions about the world fail—when the story breaks—we experience cognitive dissonance. Resolution requires either changing the story or rejecting the evidence.</p>
+<p>This is worth pausing on, because it reframes what research actually does. We often think of science as the opposite of storytelling—cold, objective, stripped of human subjectivity. But the brain doesn’t toggle between “creative mode” and “analytical mode.” It uses the same narrative machinery for both. The difference lies not in the architecture but in the rigor we apply to testing the story.</p>
+</section>
+<section id="the-limits-of-everyday-knowing" class="level2">
+<h2 class="anchored" data-anchor-id="the-limits-of-everyday-knowing">The Limits of Everyday Knowing</h2>
+<p>Before formalizing the scientific approach, it’s worth acknowledging how we actually make sense of the world in daily life. We rely on mental shortcuts because we can’t run a study for every decision:</p>
+<ul>
+<li><p><strong>Tradition</strong> is what we’ve always done. It offers stability and continuity, but it resists updating and often lacks evidence beyond “this is how it’s done.”</p></li>
+<li><p><strong>Authority</strong> defers to experts or institutions. This is efficient and often necessary, but it’s only as reliable as the expertise itself—which can be misapplied, biased, or compromised by conflicts of interest.</p></li>
+<li><p><strong>Common sense</strong> feels self-evidently true. Yet it’s culturally bound and frequently contradictory. (“Look before you leap” vs.&nbsp;“He who hesitates is lost.”)</p></li>
+<li><p><strong>Intuition</strong> is fast and sometimes insightful, drawing on accumulated experience. But it’s also shaped by cognitive biases, emotional states, and the availability of recent examples.</p></li>
+</ul>
+<p>These shortcuts work well enough for navigating daily life. They become problematic when we try to build knowledge that others should trust, or when the stakes demand more than a good guess. Research offers a more disciplined alternative—not because scientists are smarter or less biased, but because the process itself is designed to expose those biases to scrutiny.</p>
+</section>
+<section id="the-sacred-flaw-hypotheses-as-dramatic-tension" class="level2">
+<h2 class="anchored" data-anchor-id="the-sacred-flaw-hypotheses-as-dramatic-tension">The Sacred Flaw: Hypotheses as Dramatic Tension</h2>
+<p>Storr identifies a recurring element in compelling narratives: the “sacred flaw.” This is a deeply held but erroneous belief that the protagonist clings to even as evidence mounts against it. The story’s tension arises from the inevitable collision between this false certainty and reality.</p>
+<p>In research, the <strong>null hypothesis</strong> plays this role. It’s the default story: “Nothing interesting is happening here. Any pattern you see is random noise.” The researcher’s task is to accumulate evidence so overwhelming that maintaining the null hypothesis becomes untenable. When we “reject the null,” we’re forcing the data to tell a new story—one that challenges what we assumed to be true.</p>
+<p>This framing transforms statistical significance from an abstract threshold into a narrative device. A p-value of .001 doesn’t just mean “statistically unlikely under the null hypothesis.” It means the old story is so incompatible with the evidence that clinging to it would require willful ignorance.</p>
+<p>Consider the Twitch example again. The null hypothesis would be: “There is no relationship between game genre and audience engagement.” My anecdotal observation suggested otherwise, but to move from hunch to knowledge requires systematically testing whether the pattern holds across many channels, many games, many nights. The null hypothesis stands as the skeptical voice saying, “You noticed a few cases. That’s not enough.”</p>
+</section>
+<section id="mapping-narrative-structure-onto-research-design" class="level2">
+<h2 class="anchored" data-anchor-id="mapping-narrative-structure-onto-research-design">Mapping Narrative Structure onto Research Design</h2>
+<p>If research is storytelling with evidence, then the components of research design should map onto narrative structure. And they do, surprisingly well:</p>
+<section id="the-inciting-incident-the-research-problem" class="level3">
+<h3 class="anchored" data-anchor-id="the-inciting-incident-the-research-problem">The Inciting Incident: The Research Problem</h3>
+<p>Every story begins with disruption. The protagonist’s stable world encounters something unexpected, and that disruption demands response. In research, the inciting incident is an <strong>anomaly</strong>—an observation that doesn’t fit existing explanations.</p>
+<p>During the early months of the COVID-19 pandemic, for instance, Twitch viewership spiked by 87%. Anecdotally, people seemed to be using livestreams to cope with isolation. But was this usage actually meeting psychological needs, or was it simply a default behavior—digital channel-surfing in the absence of other options? The gap between what we observed (increased usage) and what we didn’t yet understand (the psychological function of that usage) became the inciting incident for a research project.</p>
+</section>
+<section id="the-protagonist-the-researcher-as-seeker" class="level3">
+<h3 class="anchored" data-anchor-id="the-protagonist-the-researcher-as-seeker">The Protagonist: The Researcher as Seeker</h3>
+<p>In detective fiction, the detective gathers clues, formulates theories, and tests them against evidence. The researcher performs the same function. The parallel isn’t accidental—both are engaged in abductive reasoning, working backward from observations to find the most plausible explanation.</p>
+<p>Like a detective, the researcher must remain skeptical of convenient narratives and willing to revise theories when evidence contradicts them. The integrity of the investigation depends on this intellectual honesty.</p>
+</section>
+<section id="the-antagonist-confounds-bias-and-noise" class="level3">
+<h3 class="anchored" data-anchor-id="the-antagonist-confounds-bias-and-noise">The Antagonist: Confounds, Bias, and Noise</h3>
+<p>The antagonist in research isn’t a person—it’s the chaos that obscures truth. Confounding variables muddy causal relationships. Sampling bias makes findings ungeneralizable. Measurement error introduces noise. These aren’t malicious forces; they’re inherent to working with messy, real-world data. But they function narratively as obstacles that the researcher must systematically overcome through rigorous design.</p>
+</section>
+<section id="rising-action-literature-review-and-theory" class="level3">
+<h3 class="anchored" data-anchor-id="rising-action-literature-review-and-theory">Rising Action: Literature Review and Theory</h3>
+<p>Before confronting the antagonist, the protagonist needs preparation. In research, the <strong>literature review</strong> provides this groundwork. Previous studies reveal what is already known, where gaps exist, and which methods have succeeded or failed. Theory provides the conceptual framework—the lens through which we interpret findings and generate hypotheses.</p>
+<p>For the Twitch pandemic study, the research team turned to Uses and Gratifications Theory, which posits that people actively select media to fulfill specific psychological needs. If Twitch was successfully meeting needs for social connection and tension release during lockdown, the data should show measurable changes in how users engaged with the platform’s chat functions.</p>
+</section>
+<section id="the-climax-data-analysis" class="level3">
+<h3 class="anchored" data-anchor-id="the-climax-data-analysis">The Climax: Data Analysis</h3>
+<p>The climax is the moment when all the setup pays off. In research, this is the <strong>statistical test</strong>—the point where accumulated evidence either supports or refutes the hypothesis. Everything has led to this: the research question, the sample, the coding scheme. Now we run the analysis and discover what the data actually show.</p>
+<p>For the Twitch study, the climax came when the team compared chat logs from January 2020 (pre-pandemic) to April 2020 (early pandemic). The findings were more nuanced than expected. The number of unique people chatting didn’t increase significantly, but the volume of messages skyrocketed, and the emotional intensity of the language became more pronounced—both more positive and more negative.</p>
+<p>The hypothesis that users would seek targeted social interaction (tagging specific people) was largely unsupported. Instead, the data suggested something different: users were broadcasting emotions into the general chat rather than directing them at individuals. They were, in a sense, screaming into the void—using the platform for emotional release rather than interpersonal connection.</p>
+</section>
+<section id="falling-action-interpretation-and-limitations" class="level3">
+<h3 class="anchored" data-anchor-id="falling-action-interpretation-and-limitations">Falling Action: Interpretation and Limitations</h3>
+<p>After the climax, the detective explains what the evidence reveals and acknowledges what remains uncertain. The <strong>Discussion section</strong> performs this function. What do the findings mean? How do they fit into the broader literature? What alternative explanations exist? What questions remain unanswered?</p>
+<p>This is where intellectual honesty becomes paramount. Every study has limitations—constraints of sample size, measurement precision, or generalizability. Acknowledging these limitations doesn’t weaken the research; it strengthens it by demonstrating that the researcher understands the boundaries of the claims being made.</p>
+</section>
+<section id="resolution-implications-and-future-research" class="level3">
+<h3 class="anchored" data-anchor-id="resolution-implications-and-future-research">Resolution: Implications and Future Research</h3>
+<p>The story concludes by showing how the world has changed in light of what we’ve learned. In research, the <strong>Implications section</strong> argues why the findings matter—to practitioners, policymakers, or future scholars. The narrative may be complete, but it opens new threads for others to pursue.</p>
+<p>For the Twitch study, the implications touched on platform design, mental health interventions, and the evolving role of parasocial relationships during crises. The findings suggested that platforms might need to consider how they facilitate emotional expression, not just social connection—a distinction that has design consequences.</p>
+</section>
+</section>
+<section id="anecdote-vs.-data-complementary-not-oppositional" class="level2">
+<h2 class="anchored" data-anchor-id="anecdote-vs.-data-complementary-not-oppositional">Anecdote vs.&nbsp;Data: Complementary, Not Oppositional</h2>
+<p>Mass communication students are skilled storytellers. They know how to find a compelling anecdote, conduct interviews, and craft narratives that move audiences. This is journalism, and it’s valuable. But journalism and science serve different epistemic functions.</p>
+<p><strong>Journalism</strong> makes the abstract concrete. It humanizes statistics, provides texture to trends, and makes audiences care about issues by showing their impact on individual lives. A profile of a single Twitch streamer who found community during isolation is far more emotionally resonant than a p-value.</p>
+<p><strong>Science</strong> establishes generalizability. It asks whether the pattern we observed in one case holds across many cases. It quantifies relationships, controls for confounds, and builds evidence that withstands skeptical scrutiny.</p>
+<p>The tension between anecdote and data isn’t a flaw—it’s productive. Anecdotes generate hypotheses; data test them. Data identify patterns; anecdotes explain why those patterns matter to real people. A complete research report often uses both: quantitative findings to establish the pattern, qualitative examples to illustrate what it looks like in practice.</p>
+<p>The mistake is treating one as a substitute for the other. A moving interview with a Twitch user doesn’t prove that millions of others had the same experience. But a statistically significant finding without any human context risks being true but unpersuasive.</p>
+</section>
+<section id="the-dataset-unified-music-data-and-the-questions-they-raise" class="level2">
+<h2 class="anchored" data-anchor-id="the-dataset-unified-music-data-and-the-questions-they-raise">The Dataset: Unified Music Data and the Questions They Raise</h2>
+<p>This course will give you the opportunity to conduct original research using a unified dataset of music from the past several decades. The data include:</p>
+<ul>
+<li><strong>1792 songs</strong> combining Billboard chart data, Spotify audio features, and Genius lyrics metadata</li>
+<li>Chart rankings from Billboard Hot 100 and Billboard 200</li>
+<li>Spotify audio features (danceability, energy, valence, tempo, and more)</li>
+<li>Complete lyrics, genre tags, and metadata from Genius</li>
+</ul>
+<p>This isn’t a toy dataset assembled for pedagogical convenience. It’s research-scale data that could support a thesis or publishable study. And because it’s large, messy, and real, it will teach you skills that transfer to any dataset you encounter in your career.</p>
+<p>The data allow for multiple kinds of research questions. You might ask:</p>
+<ul>
+<li>Is there a relationship between lyric sentiment (positive vs.&nbsp;negative) and chart success?</li>
+<li>Do songs in major keys chart higher than songs in minor keys?</li>
+<li>Have lyric themes changed over time? Are contemporary songs more focused on personal struggle, love, or social issues than songs from previous decades?</li>
+<li>Do high-energy songs (measured by Spotify’s “energy” feature) receive more radio airplay than lower-energy songs?</li>
+</ul>
+<p>These questions are tractable with the data you’ll have. They’re also genuinely interesting—the kind of findings that could appear in a media studies journal or inform industry strategy.</p>
+<p>But here’s the critical lesson: before you can answer any of these questions, you need to understand the architecture of research itself. You need to know how to move from a vague curiosity (“I wonder if…”) to a testable hypothesis. You need to know how to operationalize concepts like “lyric sentiment” into measurable variables. You need to know how to sample, how to code, how to test statistical relationships, and how to interpret the results with appropriate humility.</p>
+<p>That’s what this course teaches. Not by lecturing about methods in the abstract, but by having you <em>do</em> research—from initial question to final report.</p>
+</section>
+<section id="the-five-phase-structure" class="level2">
+<h2 class="anchored" data-anchor-id="the-five-phase-structure">The Five-Phase Structure</h2>
+<p>This textbook is organized around the research process itself, divided into five phases that mirror the narrative arc we’ve been discussing:</p>
+<section id="phase-i-the-journalist-weeks-1-3" class="level3">
+<h3 class="anchored" data-anchor-id="phase-i-the-journalist-weeks-1-3">Phase I: The Journalist (Weeks 1-3)</h3>
+<p>You’ll set up the infrastructure for research—learning to manage information, organize sources, and render polished documents. At this stage, you’re working like a journalist: gathering information, taking notes, building context. The tools (Obsidian for note-taking, Quarto for document rendering) will feel new, but the mindset should be familiar.</p>
+</section>
+<section id="phase-ii-the-architect-weeks-4-6" class="level3">
+<h3 class="anchored" data-anchor-id="phase-ii-the-architect-weeks-4-6">Phase II: The Architect (Weeks 4-6)</h3>
+<p>You’ll design the study. This means conducting a literature review, selecting a theoretical framework, and formulating research questions. The goal is to build a blueprint—a project prospectus—that maps out what you’ll study, why it matters, and how you’ll proceed.</p>
+</section>
+<section id="phase-iii-the-translator-weeks-7-10" class="level3">
+<h3 class="anchored" data-anchor-id="phase-iii-the-translator-weeks-7-10">Phase III: The Translator (Weeks 7-10)</h3>
+<p>You’ll engage in qualitative content analysis, coding song lyrics to identify themes, sentiment, and patterns. This is where you translate subjective impressions (“these lyrics feel melancholic”) into systematic categories (“this song is coded as negative valence”). You’ll build a codebook, test its reliability, and apply it to your dataset.</p>
+</section>
+<section id="phase-iv-the-analyst-weeks-11-15" class="level3">
+<h3 class="anchored" data-anchor-id="phase-iv-the-analyst-weeks-11-15">Phase IV: The Analyst (Weeks 11-15)</h3>
+<p><strong>This is the first time you’ll do math.</strong> You’ll clean the data, visualize patterns with descriptive statistics, and conduct inferential tests (likely a Chi-Square test of independence) to determine whether the relationships you observed are statistically significant. The emphasis is on transparency and reproducibility—your analysis will be documented in code, not hidden in proprietary software.</p>
+</section>
+<section id="phase-v-the-publisher-weeks-16-17" class="level3">
+<h3 class="anchored" data-anchor-id="phase-v-the-publisher-weeks-16-17">Phase V: The Publisher (Weeks 16-17)</h3>
+<p>You’ll compile everything into a polished research report. Using Quarto, you’ll create a document that integrates your literature review, methods, findings, and discussion into a single reproducible manuscript. This isn’t just a class assignment; it’s a portfolio piece that demonstrates your ability to conduct and communicate original research.</p>
+</section>
+</section>
+<section id="obsidian-habit-the-research-journal" class="level2">
+<h2 class="anchored" data-anchor-id="obsidian-habit-the-research-journal">Obsidian Habit: The Research Journal</h2>
+<p>Throughout the semester, you’ll maintain a research journal in Obsidian. Each week, write a brief entry that includes:</p>
+<ul>
+<li><strong>The story you think the data might tell.</strong> What pattern or relationship are you curious about?</li>
+<li><strong>The evidence you would need to support that story.</strong> What would the data look like if your hunch is correct?</li>
+<li><strong>The contradiction that would make the story false.</strong> What would disprove your hypothesis?</li>
+</ul>
+<p>This habit trains you to think in falsifiable narratives—to formulate hunches as testable claims rather than unexamined assumptions. Over time, you’ll develop the instinct to ask: “What would it take to prove me wrong?”</p>
+<hr>
+</section>
+<section id="practice-applying-the-narrative-framework" class="level2">
+<h2 class="anchored" data-anchor-id="practice-applying-the-narrative-framework">Practice: Applying the Narrative Framework</h2>
+<section id="exercise-1.1-identifying-narrative-elements-in-research" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1.1-identifying-narrative-elements-in-research">Exercise 1.1: Identifying Narrative Elements in Research</h3>
+<p>Read the abstract below and identify the narrative elements:</p>
+<blockquote class="blockquote">
+<p><strong>Abstract</strong>: Social media influencers increasingly promote cryptocurrency investments to young audiences. This study examined whether parasocial relationships with influencers predict investment behavior among 18-25-year-olds. Survey data (n=450) revealed that followers with strong parasocial bonds were 3.2 times more likely to invest in cryptocurrencies mentioned by influencers, even when controlling for financial literacy. These findings suggest regulatory attention to influencer finance content may be warranted.</p>
+</blockquote>
+<p><strong>Your Task</strong>: Map this abstract onto the narrative structure:</p>
+<ol type="1">
+<li><strong>Inciting Incident</strong>: _______________</li>
+<li><strong>Protagonist (Researcher’s Goal)</strong>: _______________</li>
+<li><strong>Antagonist (Potential Confounds)</strong>: _______________</li>
+<li><strong>Theory as Framework</strong>: _______________</li>
+<li><strong>Climax (Key Finding)</strong>: _______________</li>
+<li><strong>Resolution (Implications)</strong>: _______________</li>
+</ol>
+<hr>
+</section>
+<section id="exercise-1.2-from-observation-to-research-question" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1.2-from-observation-to-research-question">Exercise 1.2: From Observation to Research Question</h3>
+<p>You’ve noticed that certain music genres seem to dominate different chart eras. Hip-hop appears more prevalent in recent years, while rock dominated the 1980s-1990s.</p>
+<p><strong>Your Task</strong>:</p>
+<ol type="1">
+<li>Write this as an <strong>anecdotal observation</strong> (2-3 sentences, narrative style).</li>
+<li>Translate it into a <strong>research question</strong> (1 sentence, testable).</li>
+<li>Identify what <strong>data</strong> you would need to test this systematically.</li>
+<li>What <strong>theory</strong> might explain this pattern? (Use intuition for now; formal theory comes in Chapter 5.)</li>
+</ol>
+<hr>
+</section>
+<section id="exercise-1.3-distinguishing-types-of-evidence" class="level3">
+<h3 class="anchored" data-anchor-id="exercise-1.3-distinguishing-types-of-evidence">Exercise 1.3: Distinguishing Types of Evidence</h3>
+<p>For each statement, identify whether it’s <strong>journalistic evidence</strong> (anecdote, case study) or <strong>scientific evidence</strong> (systematic, generalizable):</p>
+<ol type="1">
+<li>“Kendrick Lamar’s <em>To Pimp a Butterfly</em> explores themes of systemic racism and personal identity through complex metaphors.”</li>
+<li>“A content analysis of 500 rap songs from 2010-2020 found that 42% included references to social justice issues, compared to 18% in the 1990-2000 period.”</li>
+<li>“An interview with three music producers revealed frustration with streaming platforms’ payout structures.”</li>
+<li>“Statistical analysis of 10,000 songs showed that tracks with higher energy scores (as measured by Spotify’s algorithm) were significantly more likely to appear in workout playlists.”</li>
+</ol>
+<p><strong>Discussion</strong>: Which types of evidence are more <strong>emotionally compelling</strong>? Which are more <strong>generalizable</strong>? How might you combine both in a research report?</p>
+<hr>
+</section>
+</section>
+<section id="reflection-questions" class="level2">
+<h2 class="anchored" data-anchor-id="reflection-questions">Reflection Questions</h2>
+<ol type="1">
+<li><p><strong>Reframing Resistance</strong>: Many students approach research methods with apprehension. After reading this chapter, has your perception shifted? Do you see connections between research and skills you already possess—storytelling, critical thinking, detective work?</p></li>
+<li><p><strong>Prediction Errors</strong>: Barrett suggests that our brains constantly make predictions and update them when wrong. Reflect on a time when your prediction about media was challenged by evidence. What was your “sacred flaw,” and what prompted you to revise it?</p></li>
+<li><p><strong>The Role of Anecdote</strong>: Think about claims you’ve made or heard recently: “TikTok is destroying attention spans,” “Streaming has killed album-oriented music,” “Podcasts are the future of news.” Are these based on anecdotes or data? How would you test them systematically?</p></li>
+</ol>
+<hr>
+</section>
+<section id="chapter-summary" class="level2">
+<h2 class="anchored" data-anchor-id="chapter-summary">Chapter Summary</h2>
+<p>This chapter established the foundational philosophy of the course: <strong>research is storytelling with evidence</strong>. Key takeaways include:</p>
+<ul>
+<li>The brain uses the same narrative architecture for creative storytelling and scientific hypothesis testing.</li>
+<li>The <strong>null hypothesis</strong> functions as a “sacred flaw”—a default assumption that must be challenged with compelling evidence.</li>
+<li>Research follows a narrative arc: inciting incident (research problem) → rising action (theory and methods) → climax (data analysis) → resolution (implications).</li>
+<li><strong>Anecdotes</strong> provide emotional resonance and generate hypotheses; <strong>data</strong> provide systematic evidence across many cases.</li>
+<li>This course trains you to conduct research by doing it—from research question to final report—using a dataset of over 300,000 songs.</li>
+</ul>
+<hr>
+</section>
+<section id="key-terms" class="level2">
+<h2 class="anchored" data-anchor-id="key-terms">Key Terms</h2>
+<ul>
+<li><strong>Anecdote</strong>: A single illustrative example or case study</li>
+<li><strong>Confirmation bias</strong>: The tendency to seek information that confirms existing beliefs</li>
+<li><strong>Hypothesis</strong>: A testable prediction derived from theory</li>
+<li><strong>Narrative arc</strong>: The structure of a story (exposition, rising action, climax, falling action, resolution)</li>
+<li><strong>Null hypothesis</strong>: The assumption that no relationship or effect exists; the default story</li>
+<li><strong>P-value</strong>: The probability of observing data as extreme as yours if the null hypothesis were true</li>
+<li><strong>Prediction error</strong>: The gap between expected and observed outcomes</li>
+<li><strong>Sacred flaw</strong>: A deeply held but erroneous belief (Storr’s term)</li>
+<li><strong>Systematic inquiry</strong>: Research conducted using consistent, replicable methods</li>
+</ul>
+<hr>
+</section>
+<section id="looking-ahead" class="level2">
+<h2 class="anchored" data-anchor-id="looking-ahead">Looking Ahead</h2>
+<p>Chapter 2 introduces the <strong>technical infrastructure</strong> that makes research reproducible: R, RStudio, Quarto, and version control. These tools might seem intimidating at first, but they serve a simple purpose: they allow you to document every step of your analysis so that others (including your future self) can verify and build upon your work. You’ll learn why code-based workflows prevent replication crises and how computational tools transform research from static documents into dynamic, transparent reports.</p>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+
+
+
+
+</body></html>
